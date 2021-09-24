@@ -1,0 +1,105 @@
+@import 'font.css';
+
+@mixin headers {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+}
+@mixin content-headers {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  color: #1f2041;
+  left: 67px;
+}
+
+.content {
+  position: absolute;
+  width: 436px;
+  height: 321px;
+  left: 846px;
+  top: 145px;
+}
+
+.elements-name {
+  width: 37px;
+  height: 297px;
+}
+.elements-name_h1 {
+  @include headers;
+  width: 29px;
+  height: 30px;
+  font-size: 24px;
+  line-height: 29px;
+  left: 8px;
+}
+.elements-name_h2 {
+  @include headers;
+  width: 27px;
+  height: 24px;
+  font-size: 19px;
+  line-height: 23px;
+  left: 10px;
+  top: 107px;
+}
+.elements-name_h3 {
+  @include headers;
+  width: 17px;
+  height: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  left: 20px;
+  top: 208px;
+}
+.elements-name_body {
+  @include headers;
+  width: 37px;
+  height: 24px;
+  font-size: 14px;
+  line-height: 24px;
+
+  top: 273px;
+}
+.content-h1 {
+  @include content-headers;
+  width: 359px;
+  height: 59px;
+  font-size: 24px;
+  line-height: 29px;
+  top: 0px;
+}
+
+.content-h2 {
+  @include content-headers;
+  width: 312px;
+  height: 47px;
+  font-size: 19px;
+  line-height: 23px;
+  top: 105px;
+}
+.content-h3 {
+  @include content-headers;
+  width: 186px;
+  height: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  top: 210px;
+  text-transform: uppercase;
+}
+.content-body {
+  position: absolute;
+  left: 67px;
+  width: 301px;
+  font-family: 'Montserrat';
+  height: 48px;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  top: 273px;
+  color: rgba(31, 32, 65, 0.75);
+}
