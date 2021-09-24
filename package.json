@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.pug --open=firefox",
-    "build": "parcel index.pug -d docs --public-url ./"
+    "start": "parcel colors-type.pug --open=firefox",
+    "build": "parcel colors-type.pug -d docs --public-url ./"
   },
   "keywords": [],
   "author": "",
