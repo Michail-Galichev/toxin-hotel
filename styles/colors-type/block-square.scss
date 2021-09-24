@@ -27,3 +27,114 @@
   font-weight: normal;
   font-style: italic;
 }
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 1440px;
+  height: 900px;
+  background: #e5e5e5;
+  overflow: scroll;
+}
+
+@mixin square {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+}
+
+@mixin colors-text {
+  white-space: nowrap;
+  position: absolute;
+  left: 105px;
+  width: 171px;
+  height: 56px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 27.78px;
+  display: flex;
+  align-items: center;
+  color: #1f2041;
+}
+
+.colors {
+  position: absolute;
+  width: 281px;
+  height: 610px;
+  left: 150px;
+  top: 145px;
+}
+
+.colors-black {
+  @include square;
+  background: #1f2041;
+}
+.colors-black_75 {
+  @include square;
+  top: 90px;
+  background: rgba(31, 32, 65, 0.75);
+}
+
+.colors-black_50 {
+  @include square;
+  top: 180px;
+  background: rgba(31, 32, 65, 0.5);
+}
+.colors-black_25 {
+  @include square;
+  top: 270px;
+  background: rgba(31, 32, 65, 0.25);
+}
+.colors-black_5 {
+  @include square;
+  top: 360px;
+  background: rgba(31, 32, 65, 0.05);
+}
+.colors-purple {
+  @include square;
+  top: 450px;
+  background: #bc9cff;
+}
+
+.colors-green {
+  @include square;
+  top: 540px;
+  background: #6fcf97;
+}
+
+.colors-black_text {
+  @include colors-text;
+  top: 7px;
+}
+.colors-black_75_text {
+  @include colors-text;
+  top: 97px;
+}
+
+.colors-black_50_text {
+  @include colors-text;
+  top: 187px;
+}
+.colors-black_25_text {
+  @include colors-text;
+  top: 277px;
+}
+.colors-black_5_text {
+  @include colors-text;
+  top: 367px;
+}
+.colors-purple_text {
+  top: 457px;
+  @include colors-text;
+}
+
+.colors-green_text {
+  @include colors-text;
+  top: 547px;
+}
