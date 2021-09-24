@@ -1,0 +1,30 @@
+.logo {
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+
+.circle {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 32px;
+  left: 32px;
+}
+
+.curve1 {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 48.35px;
+  left: 43.3px;
+}
+
+.curve2 {
+  position: absolute;
+  width: 11px;
+  height: 7px;
+  top: 43.35px;
+  left: 56.77px;
+}
+/*# sourceMappingURL=logo.css.map */
