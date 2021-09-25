@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype"), url("fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("fonts/Montserrat-Bold.woff") format("woff"), url("fonts/Montserrat-Bold.ttf") format("truetype"), url("fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/Montserrat-Italic.eot");
+  src: local("☺"), url("fonts/Montserrat-Italic.woff") format("woff"), url("fonts/Montserrat-Italic.ttf") format("truetype"), url("fonts/Montserrat-Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+.copyright-text {
+  position: absolute;
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.75);
+  top: 26px;
+  left: 140px;
+  width: 372px;
+}
+
+.copyright-text2 {
+  position: absolute;
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.75);
+  top: 176px;
+  left: 104px;
+  width: 560px;
+  text-align: center;
+}
+/*# sourceMappingURL=copyright.css.map */
