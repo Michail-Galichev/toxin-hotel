@@ -1,0 +1,114 @@
+.fa-instagram {
+  //  padding: 20px;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 228px;
+  top: 23px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.fa-facebook-square {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 184px;
+  top: 23px;
+
+  font-family: Font Awesome 5 Brands;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 23px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.fa-twitter {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 140px;
+  top: 23px;
+
+  font-family: Font Awesome 5 Brands;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 23px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.instagram-footer-mobile {
+  //  padding: 20px;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 224px;
+  top: 48px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.facebook-footer-mobile {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 267px;
+  top: 48px;
+
+  font-family: Font Awesome 5 Brands;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 23px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.twitter-footer-mobile {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 224px;
+  top: 48px;
+
+  font-family: Font Awesome 5 Brands;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 23px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.fa-gradient {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(188, 156, 255, 1)),
+    to(rgba(139, 164, 249, 1))
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
