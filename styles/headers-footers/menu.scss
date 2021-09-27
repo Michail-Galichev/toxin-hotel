@@ -1,0 +1,133 @@
+@mixin links {
+  font-family: 'Montserrat';
+  text-decoration: none;
+  padding-right: 20px;
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+ul.registration {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding-left: 0px;
+  left: 530px;
+  top: 26px;
+}
+
+ul.registered {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding-left: 0px;
+  left: 712px;
+  top: 26px;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  @include links;
+}
+
+a:hover {
+  color: rgba(31, 32, 65, 0.75);
+  font-weight: bold;
+}
+
+@mixin buttons {
+  //  position: relative;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background: lianer-gradient(#fff, #fff) padding-box,
+    linear-gradient(rgba(188, 156, 255, 1), rgba(139, 164, 249, 1)) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  text-align: center;
+  text-decoration: none;
+  height: 34px;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #bc9cff;
+}
+
+.button-to-come-in {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(rgba(188, 156, 255, 1), rgba(139, 164, 249, 1)) border-box;
+
+  border: 2px solid transparent;
+  border-radius: 22px;
+  text-align: center;
+  text-decoration: none;
+  width: 66px;
+  margin-right: 20px;
+  height: 34px;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #bc9cff;
+}
+
+.button-register {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(rgba(188, 156, 255, 1), rgba(139, 164, 249, 1)) border-box;
+
+  border: 2px solid transparent;
+  border-radius: 22px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 20px;
+  height: 34px;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  width: 172px;
+}
+
+.buttons {
+  position: relative;
+  top: 18px;
+  left: 969px;
+}
+
+.button-to-come-in span {
+  position: relative;
+  width: 87px;
+  margin-right: 20px;
+  top: 10px;
+  width: 47px;
+  left: 20px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.button-register span {
+  position: relative;
+  width: 163px;
+  margin-right: 20px;
+  top: 10px;
+  left: 20px;
+  width: 157px;
+  height: 15px;
+}
+
+.button-register:hover,
+.button-to-come-in:hover {
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #ffffff;
+}
