@@ -1,11 +1,19 @@
 div
   .nav
-    div 
-      .logotip 
-        div 
-          .nav-logo_reg
-            include logo-gradient
-              div 
-                .toxin 
-                  include toxin
-        
+    ul(class="registered") 
+      li 
+        a(href="#" class="information") О нас
+      li
+        a(href="#" class="services") Услуги  
+      li
+        a(href="#" class="vacancy") Вакансии  
+      li 
+        a(href="#" class="news") Новости 
+      li 
+        a(href="#" class="agreements") Соглашения
+  div 
+    .nav-logo
+      include logo-gradient
+  div 
+    .nav-toxin 
+      include toxin

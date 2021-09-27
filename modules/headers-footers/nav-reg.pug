@@ -1,11 +1,25 @@
 div
   .nav-reg
-    div 
-      .logotip 
-        div 
-          .nav-logo_reg
-            include logo-gradient
-              div 
-                .toxin 
-                  include toxin
-        
+    div
+      .buttons
+        a.button-to-come-in(href="#") 
+          span Войти
+        a.button-register(href="#") 
+          span Зарегистрироваться
+    ul(class="registration") 
+      li 
+        a(href="#" class="information") О нас
+      li
+        a(href="#" class="services") Услуги  
+      li
+        a(href="#" class="vacancy") Вакансии  
+      li 
+        a(href="#" class="news") Новости 
+      li 
+        a(href="#" class="agreements") Соглашения 
+  div 
+    .nav-logo_reg
+      include logo-gradient
+  div 
+    .nav-reg-toxin 
+      include toxin        
