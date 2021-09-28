@@ -31,13 +31,13 @@ body {
 .footer {
   @include nav;
   height: 372px;
-  top: 134px;
+  top: 94px;
 }
 
 .copyright {
   @include nav;
   height: 70px;
-  top: 175px;
+  top: 95px;
 }
 
 .footer-mobile {
@@ -45,5 +45,5 @@ body {
   width: 768px;
   height: 367px;
   left: 336px;
-  top: 215px;
+  top: 135px;
 }
