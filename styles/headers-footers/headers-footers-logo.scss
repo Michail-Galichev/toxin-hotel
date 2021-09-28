@@ -1,8 +1,35 @@
+//Свойства логотипа блока  nav-reg.pug
+
 .nav-logo_reg {
   width: 40px;
   height: 40px;
   position: relative;
-  top: 1px;
+  top: 24px;
+  left: 140px;
+}
+
+.nav-reg-toxin {
+  width: 53.19px;
+  height: 12.95px;
+  position: absolute;
+  left: 192.5px;
+  top: 168.33px;
+}
+//Свойства логотипа блока nav.reg
+.nav-logo {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 24px;
+  left: 140px;
+}
+
+.nav-toxin {
+  width: 53.19px;
+  height: 12.95px;
+  position: absolute;
+  left: 192.5px;
+  top: 278.33px;
 }
 
 .nav-circle_reg {
@@ -28,12 +55,21 @@
   top: 22.29px;
 }
 
+//Свойства логотипа блоков footer.pug и  footer-mobile.pug
 .footer-logo {
   width: 40px;
   height: 40px;
   position: relative;
-  top: 64px;
-  left: 142px;
+  top: 85px;
+  left: 140px;
+}
+
+.toxin {
+  width: 53.19px;
+  height: 12.95px;
+  position: absolute;
+  left: 192.5px;
+  top: 113.33px;
 }
 
 .footer-mobile-circle {
@@ -59,25 +95,10 @@
   left: 351.47px;
 }
 
-.logotip {
-  position: absolute;
-  width: 105.69px;
-  height: 40px;
-  left: 140px;
-}
-
-.toxin {
-  width: 53.19px;
-  height: 12.95px;
-  position: absolute;
-  left: 23px;
-  top: 0px;
-}
-
 .footer-mobile-toxin {
   position: absolute;
   width: 53.19px;
   height: 12.95px;
   top: 132px;
-  left: 358.5px;
+  left: 383.5px;
 }
