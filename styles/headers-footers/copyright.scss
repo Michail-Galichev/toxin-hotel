@@ -30,29 +30,38 @@
 
 @mixin copyright-text {
   position: absolute;
-
-  height: 18px;
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 17px;
-
   color: rgba(31, 32, 65, 0.75);
 }
 
 .copyright-text {
   @include copyright-text;
+  height: 18px;
   top: 26px;
   left: 140px;
   width: 372px;
+  line-height: 17px;
 }
 
 .copyright-text2 {
   @include copyright-text;
   top: 176px;
+  height: 18px;
   left: 104px;
   width: 560px;
   text-align: center;
+  line-height: 17px;
+}
+
+.footer-content {
+  position: absolute;
+  width: 260px;
+  height: 72px;
+  left: 140px;
+  top: 155px;
+  @include copyright-text;
+  line-height: 24px;
 }
