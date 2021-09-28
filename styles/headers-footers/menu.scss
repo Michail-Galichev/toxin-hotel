@@ -39,6 +39,42 @@ a:hover {
   font-weight: bold;
 }
 
+.nav-expand_more1 {
+  fill: rgba(31, 32, 65, 0.5);
+  top: 32px;
+  left: 1135px;
+  position: absolute;
+}
+
+.nav-expand_more1:hover,
+.nav-expand_more2:hover,
+.nav-reg-expand_more1:hover,
+.nav-reg-expand_more2:hover {
+  fill: rgba(31, 32, 65, 0.75);
+}
+
+.nav-expand_more2 {
+  fill: rgba(31, 32, 65, 0.5);
+  top: 32px;
+  left: 828px;
+  position: absolute;
+}
+.nav-reg-expand_more1 {
+  fill: rgba(31, 32, 65, 0.5);
+  top: 32px;
+  left: 646px;
+  position: absolute;
+}
+.nav-reg-expand_more2 {
+  fill: rgba(31, 32, 65, 0.5);
+  top: 32px;
+  left: 953px;
+  position: absolute;
+}
+
+.vacancy {
+  margin-left: 22px;
+}
 //Кнопки "Войти" и "Зарегистрироваться"
 
 .button-to-come-in {
@@ -70,7 +106,6 @@ a:hover {
   border-radius: 22px;
   text-align: center;
   text-decoration: none;
-  margin-right: 20px;
   height: 34px;
   font-size: 12px;
   line-height: 15px;
@@ -82,7 +117,7 @@ a:hover {
 .buttons {
   position: relative;
   top: 16px;
-  left: 969px;
+  left: 989px;
 }
 
 .button-to-come-in span {
@@ -151,6 +186,8 @@ a.navigation {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 14.63px;
 }
 
 // Ссылка на подписку и поле для email
@@ -177,18 +214,41 @@ a.navigation {
   line-height: 24px;
 
   color: rgba(31, 32, 65, 0.75);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .input-email {
-  width: 216px;
+  width: 201px;
   height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
   border-right: none;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+  padding-left: 15px;
 }
 
-.material-icons-outlined.md-36 {
-  font-family: 'Material Icon';
-  font-size: 36px;
+.svg-arrow {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 95px;
+  right: -1.8px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-left: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  text-align: center;
+}
+.arrow-forward {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
 }
