@@ -77,6 +77,29 @@ a:hover {
   margin-left: 22px;
 }
 
+.rectangle-image {
+  position: absolute;
+  width: 1px;
+  height: 30px;
+  left: 986px;
+  top: -5px;
+}
+
+.name-guest {
+  position: absolute;
+  width: 100px;
+  height: 18px;
+  left: 1006px;
+  top: 0px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
+}
+
 .button-to-come-in {
   display: inline-block;
   -webkit-box-align: center;
