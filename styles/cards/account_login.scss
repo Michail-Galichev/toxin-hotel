@@ -46,7 +46,7 @@ body {
 .account-login-input-email {
   position: absolute;
   width: 299.5px;
-  height: 44px;
+  height: 42px;
   padding-left: 15px;
   left: 30px;
   top: 90px;
@@ -55,7 +55,7 @@ body {
 .account-login-input-password {
   position: absolute;
   width: 299.5px;
-  height: 44px;
+  height: 42px;
   padding-left: 15px;
   left: 30px;
   top: 144px;
@@ -139,7 +139,7 @@ body {
 
 .account-login-link_create span {
   position: absolute;
-  top: 15px;
+  top: 14px;
   left: 18px;
   width: 62px;
   height: 15px;
@@ -163,10 +163,26 @@ body {
   fill: url('#paint0_linear');
 }
 
-.account-login-link-image_to-come-in:hover {
+.block-link-image:hover .account-login-link-image_to-come-in {
   fill: white;
 }
 
-.block-link-image:hover .account-login-link-image_to-come-in {
-  fill: white;
+@mixin input-placeholder {
+  height: 18px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: rgba(31, 32, 65, 0.25);
+}
+input.account-login-input-password::placeholder {
+  @include input-placeholder;
+  width: 55px;
+}
+input.account-login-input-email::placeholder {
+  @include input-placeholder;
+  width: 40px;
 }
