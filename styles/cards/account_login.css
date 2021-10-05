@@ -180,6 +180,7 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #ffffff;
+  border: none;
 }
 
 .account-login-link-image_to-come-in {
