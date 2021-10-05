@@ -1,0 +1,245 @@
+@charset "UTF-8";
+/* свойства формы*/
+.search-room {
+  position: absolute;
+  background: white;
+  height: 374px;
+  width: 380px;
+  left: 140px;
+  top: 150px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* свойства заголовков*/
+h1 {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  color: #1f2041;
+  width: 320px;
+  height: 59px;
+  left: 30px;
+  top: 40px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.search-room-header__arrival {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  color: #1f2041;
+  width: 83px;
+  height: 15px;
+  left: 30px;
+  top: 120px;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.search-room-header__departure {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  color: #1f2041;
+  width: 83px;
+  height: 15px;
+  left: 200px;
+  top: 120px;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.search-room-header__gast {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  color: #1f2041;
+  position: absolute;
+  width: 43px;
+  height: 15px;
+  top: 205px;
+  left: 30px;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+
+/* поля дат*/
+.search-room__arrival-date {
+  position: absolute;
+  width: 150px;
+  height: 44px;
+  left: 30px;
+  top: 140.44px;
+  padding-left: 15px;
+  background-image: url(img/expand_more.svg) no-repeat right;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.search-room__date-of-departure {
+  position: absolute;
+  width: 150px;
+  height: 44px;
+  left: 200px;
+  top: 140.44px;
+  padding-left: 15px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.expand-more-arrival-date__div {
+  position: relative;
+  pointer-events: none;
+  width: 44px;
+  height: 44px;
+  left: 136px;
+  top: 140px;
+}
+
+.expand-more-date-of-departure__div {
+  position: relative;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  left: 306px;
+  top: 96px;
+  pointer-events: none;
+}
+
+.expand-more__img {
+  position: absolute;
+  top: 18px;
+  left: 21px;
+}
+
+/* dropdown гости */
+.search-room__gast {
+  position: absolute;
+  width: 320px;
+  height: 44px;
+  left: 30px;
+  top: 225px;
+  background: #ffffff;
+  padding-left: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* кнопка */
+.search-room__pick-up-a-room {
+  position: absolute;
+  top: 300px;
+  left: 30px;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 320px;
+  height: 42px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #bc9cff;
+}
+
+span {
+  position: absolute;
+  top: 14px;
+  left: 18px;
+  width: 280px;
+  height: 15px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 15px;
+  font-style: normal;
+  font-weight: bold;
+  font-family: 'Montserrat';
+}
+
+.search-room__pick-up-a-room:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #ffffff;
+  border: none;
+}
+
+.account-registration-link-image_pay {
+  position: absolute;
+  left: 290px;
+  top: 13px;
+  fill: url("#paint0_linear");
+}
+
+.block-link-image:hover .account-registration-link-image_pay {
+  fill: white;
+}
+
+/* plceholder */
+.search-room__gast::-webkit-input-placeholder {
+  height: 18px;
+  width: 112px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.search-room__gast:-ms-input-placeholder {
+  height: 18px;
+  width: 112px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.search-room__gast::-ms-input-placeholder {
+  height: 18px;
+  width: 112px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.search-room__gast::placeholder {
+  height: 18px;
+  width: 112px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+}
+/*# sourceMappingURL=search-room.css.map */
