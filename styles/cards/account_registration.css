@@ -294,6 +294,10 @@ input[type='date'] {
   fill: url("#paint0_linear");
 }
 
+.block-link-image {
+  background: #000;
+}
+
 .block-link-image:hover .account-registration-link-image_pay {
   fill: white;
 }
