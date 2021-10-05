@@ -48,20 +48,80 @@
   top: 144px;
 }
 
-/* Радиокнопки*/
-.input-radio {
-  position: absolute;
-  top: 200px;
-  left: 34px;
+input[type='date'] {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+  text-transform: uppercase;
+  content: attr(placeholder) !important;
 }
 
-input[type='radio'],
-label {
+/* Checkbox*/
+
+.checkbox {
+  position: absolute;
+  top: 456px;
+  left: 30px;
+}
+
+.checkbox__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox__div {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 10px;
   cursor: pointer;
 }
 
-label {
+/* :checked*/
+
+.checkbox__input:checked ~ .checkbox__div {
+  border: 1px solid #bc9cff;
+}
+
+.checkbox__input:checked ~ .checkbox__div::before {
+  position: absolute;
+  top: 3px;
+  left: 22px;
+  background-image: url(img/2ectangle2.1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.4s;
+}
+
+/* ::before*/
+
+.checkbox__div::before {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  left: 4px;
+  top: 3px;
+  background-color: rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+/* Спецпредложения*/
+.checkbox__p {
+  position: absolute;
+  width: 210px;
   height: 24px;
+  left: 50px;
+  top: -2px;
 
   font-family: 'Montserrat';
   font-style: normal;
@@ -69,58 +129,8 @@ label {
   font-size: 14px;
   line-height: 24px;
 
-  color: rgba(31, 32, 65, 0.5);
-}
-input[type='radio'] {
-  position: relative;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
-
-  visibility: hidden;
-  width: 20px;
-  height: 20px;
-  margin: 0 5px 0 5px;
-  padding: 0;
-}
-input[type='radio']::after {
-  position: relative;
-  margin: 4px -26px -5px -4px;
-  display: inline-block;
-  visibility: visible;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  background: linear-gradient(rgb(255, 255, 255) 0%, rgb(225, 225, 225) 100%);
-  content: '';
-}
-input[type='radio']:checked::after {
-  position: relative;
-  top: 0;
-  left: 9px;
-  display: inline-block;
-  visibility: visible;
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
-  border: 1px solid red;
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  content: '';
-}
-.input-sex-men-label {
-  width: 62px;
-  margin-right: 20px;
-}
-.input-sex-women-label {
-  width: 73px;
-}
-
-lable input[type='radio']:checked::after {
   color: rgba(31, 32, 65, 0.75);
 }
-///////////////////////////////////
 
 .account-registration-header_date-of-birth {
   position: absolute;
@@ -278,6 +288,7 @@ lable input[type='radio']:checked::after {
 .account-registration-link_pay:hover {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #ffffff;
+  border: none;
 }
 
 .account-registration-link-image_pay {
