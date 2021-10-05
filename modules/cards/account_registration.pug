@@ -2,18 +2,31 @@ form.account-registration(action="/login" method="post")
   h1.account-registration-header1 Регистрация аккаунта
   input.account-registration-input-name(type="text" name="name" placeholder="Имя")
   input.account-registration-input-lastname(type="text" name="lastname" placeholder="Фамилия")
-  .input-radio
-      input.input-sex-men#sexMen(type='radio' name='sex' value='men' checked)
-      label.input-sex-men-label Мужчина
-      input.input-sex-women#sexWomen(type='radio' name='sex' value='women')
-      label.input-sex-women-label Женщина
+  
+  
+  .radio
+    label.radio-label_men 
+      input.radio-label-men_input(type='radio' name='sex' value='men' checked='')
+      |         Мужчина
+      .radio-input_men
+      
+    label.radio-label_women
+      input.radio-label-women_input(type='radio' name='sex' value='men')
+      |         Женщина
+      .radio-input_women
+      
+    
   h2.account-registration-header_date-of-birth Дата рождения
   input.account-registration-input-date-of-birth(type="date" name="date-of-birth")
   h2.account-registration-header_login-details Данные для входа в сервис
   input.account-registration-input-email(type="email" name="email" placeholder="Email")
   input.account-registration-input-password(type="password" name="password" placeholder="Пароль")
+  label.checkbox
+    input(type="checkbox" class="checkbox__input" autocomplete='off')
+    .checkbox__div 
+    p.checkbox__p Получать спецпредложения 
   
-  div 
+   
     .block-link-image
       a.account-registration-link_pay(href="#") 
         span перейти к оплате
