@@ -131,7 +131,7 @@ h1 {
   left: 21px;
 }
 
-/* dropdown гости */
+/* поле гости */
 .search-room__gast {
   position: absolute;
   width: 320px;
@@ -144,6 +144,30 @@ h1 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
+}
+
+/* dropdown */
+.dropdown__div {
+  position: relative;
+  display: inline-block;
+  left: 306px;
+  top: 125.56px;
+  background: olive;
+}
+
+.dropdown__content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown__div:checked ~ .dropdown__content {
+  display: block;
 }
 
 /* кнопка */
