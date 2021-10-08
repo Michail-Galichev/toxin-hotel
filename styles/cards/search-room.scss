@@ -128,7 +128,21 @@ h1 {
 
 /* поле гости */
 
-.search-room__gast {
+/* .search-room__gast {
+  position: absolute;
+  width: 320px;
+  height: 44px;
+  left: 30px;
+  top: 225px;
+  background: #ffffff;
+  padding-left: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+ */
+.search-room__gast::after {
+  //  display: none;
   position: absolute;
   width: 320px;
   height: 44px;
@@ -143,28 +157,175 @@ h1 {
 
 /* dropdown */
 
-.dropdown__div {
-  position: relative;
-  display: inline-block;
-  left: 306px;
-  top: 125.56px;
-  background: olive;
+.dropdown__expand-more {
+  position: absolute;
+
+  left: 325.74px;
+  top: 245.56px;
+  cursor: pointer;
 }
 
-.dropdown__content {
+.dropdown {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 16px;
-  z-index: 1;
+  width: 320px;
+  height: 159px;
+  left: 30px;
+  top: 269px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top: none;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  z-index: 1000;
 }
 
-.dropdown__div:checked ~ .dropdown__content {
+@mixin circle-plus {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+@mixin circle-minus {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  cursor: pointer;
+
+  box-sizing: border-box;
+  border-radius: 22px;
+}
+
+.dropdown__circle-plus1 {
+  @include circle-plus;
+  left: 283px;
+  top: 7px;
+}
+
+.dropdown__circle-plus2 {
+  @include circle-plus;
+  left: 283px;
+  top: 44px;
+}
+
+.dropdown__circle-plus3 {
+  @include circle-plus;
+  left: 283px;
+  top: 82px;
+}
+
+.dropdown__circle-minus1 {
+  @include circle-minus;
+  left: 221px;
+  top: 7px;
+}
+
+.dropdown__circle-minus2 {
+  @include circle-minus;
+  left: 221px;
+  top: 44px;
+}
+
+.dropdown__circle-minus3 {
+  @include circle-minus;
+  left: 221px;
+  top: 82px;
+}
+
+p.dropdown-p__minus {
+  font-family: 'Montserrat';
+  text-align: center;
+  color: rgba(31, 32, 65, 0.5);
+  position: absolute;
+  top: 3px;
+  left: 11px;
+}
+
+p.dropdown-p__plus {
+  font-family: 'Montserrat';
+  text-align: center;
+  color: rgba(31, 32, 65, 0.5);
+  position: absolute;
+  top: 4px;
+  left: 10px;
+}
+.dropdown__p {
+  margin-bottom: 18px;
+  margin-left: 15px;
+
+  width: 83px;
+  height: 15px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+
+  text-transform: uppercase;
+
+  color: #1f2041;
+}
+
+.first {
+  margin-top: 11px;
+}
+
+.dropdown__link1 {
+  width: 72px;
+  height: 15px;
+  position: absolute;
+  top: 131px;
+  left: 14px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #bc9cff;
+}
+
+.dropdown__link2 {
+  width: 84px;
+  height: 15px;
+  position: absolute;
+  right: 7px;
+  top: 131px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #bc9cff;
+}
+
+.dropdown__expand-more:active ~ .dropdown {
   display: block;
 }
-
+.dropdown__expand-more:active + .search-room__gast::after {
+  border-bottom: none;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
 /* кнопка */
 
 .search-room__pick-up-a-room {
@@ -174,7 +335,7 @@ h1 {
   display: inline-block;
   align-items: center;
   justify-content: center;
-  width: 320px;
+  width: 316px;
   height: 42px;
 
   background: linear-gradient(#fff, #fff) padding-box,
