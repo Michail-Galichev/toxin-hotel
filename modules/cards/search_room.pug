@@ -13,15 +13,25 @@ form.search-room(action="#")
   
   h2.search-room-header__gast гости
   input.search-room__gast(type="text" placeholder="Сколько гостей")
-  .dropdown__div 
-    img.expand-more__img(src="img/expand_more.svg", alt="expand_more")
-    .dropdown__content 
-      p взрослые
-      p дети
-      p младенцы
-
-
-
+  img.dropdown__expand-more(src="img/expand_more.svg", alt="expand_more")
+  .dropdown
+    p.dropdown__p.first взрослые 
+    p.dropdown__p дети 
+    p.dropdown__p младенцы
+    .dropdown__circle-plus1
+      p.dropdown-p__plus +
+    .dropdown__circle-plus2
+      p.dropdown-p__plus +
+    .dropdown__circle-plus3 
+      p.dropdown-p__plus +
+    .dropdown__circle-minus1
+      p.dropdown-p__minus -
+    .dropdown__circle-minus2
+      p.dropdown-p__minus -
+    .dropdown__circle-minus3
+      p.dropdown-p__minus -
+    a.dropdown__link1(href="#") очистить
+    a.dropdown__link2(href="#") применить 
   .block-link-image
     a.search-room__pick-up-a-room(href="#") 
       span Подобрать номер
