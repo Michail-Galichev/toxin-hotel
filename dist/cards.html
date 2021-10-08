@@ -209,7 +209,20 @@ h1 {
 }
 
 /* поле гости */
-.search-room__gast {
+/* .search-room__gast {
+  position: absolute;
+  width: 320px;
+  height: 44px;
+  left: 30px;
+  top: 225px;
+  background: #ffffff;
+  padding-left: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+ */
+.search-room__gast::after {
   position: absolute;
   width: 320px;
   height: 44px;
@@ -224,27 +237,187 @@ h1 {
 }
 
 /* dropdown */
-.dropdown__div {
-  position: relative;
-  display: inline-block;
-  left: 306px;
-  top: 125.56px;
-  background: olive;
+.dropdown__expand-more {
+  position: absolute;
+  left: 325.74px;
+  top: 245.56px;
+  cursor: pointer;
 }
 
-.dropdown__content {
+.dropdown {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 16px;
-  z-index: 1;
+  width: 320px;
+  height: 159px;
+  left: 30px;
+  top: 269px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  z-index: 1000;
 }
 
-.dropdown__div:checked ~ .dropdown__content {
+.dropdown__circle-plus1 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  cursor: pointer;
+  left: 283px;
+  top: 7px;
+}
+
+.dropdown__circle-plus2 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  cursor: pointer;
+  left: 283px;
+  top: 44px;
+}
+
+.dropdown__circle-plus3 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  cursor: pointer;
+  left: 283px;
+  top: 82px;
+}
+
+.dropdown__circle-minus1 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  left: 221px;
+  top: 7px;
+}
+
+.dropdown__circle-minus2 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  left: 221px;
+  top: 44px;
+}
+
+.dropdown__circle-minus3 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  left: 221px;
+  top: 82px;
+}
+
+p.dropdown-p__minus {
+  font-family: 'Montserrat';
+  text-align: center;
+  color: rgba(31, 32, 65, 0.5);
+  position: absolute;
+  top: 3px;
+  left: 11px;
+}
+
+p.dropdown-p__plus {
+  font-family: 'Montserrat';
+  text-align: center;
+  color: rgba(31, 32, 65, 0.5);
+  position: absolute;
+  top: 4px;
+  left: 10px;
+}
+
+.dropdown__p {
+  margin-bottom: 18px;
+  margin-left: 15px;
+  width: 83px;
+  height: 15px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+
+.first {
+  margin-top: 11px;
+}
+
+.dropdown__link1 {
+  width: 72px;
+  height: 15px;
+  position: absolute;
+  top: 131px;
+  left: 14px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #bc9cff;
+}
+
+.dropdown__link2 {
+  width: 84px;
+  height: 15px;
+  position: absolute;
+  right: 7px;
+  top: 131px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #bc9cff;
+}
+
+.dropdown__expand-more:active ~ .dropdown {
   display: block;
+}
+
+.dropdown__expand-more:active + .search-room__gast::after {
+  border-bottom: none;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 /* кнопка */
@@ -259,7 +432,7 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 320px;
+  width: 316px;
   height: 42px;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
@@ -374,9 +547,10 @@ span {
 }
 
 body {
-  background: #e5e5e5;
+  position: relative;
   width: 1440px;
-  height: 900px;
+  height: 1350px;
+  background: #f4f4f6;
 }
 
 .account-login {
@@ -835,8 +1009,8 @@ input[type='date'] {
 
 .account-registration-link_pay {
   position: absolute;
-  top: 498px;
-  left: 30px;
+  top: 40px;
+  left: -2px;
   display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -844,7 +1018,7 @@ input[type='date'] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 320px;
+  width: 318px;
   height: 42px;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
@@ -1134,4 +1308,4 @@ input.account-registration-input-lastname::placeholder {
   top: 41.35px;
   left: 55.77px;
 }
-/*# sourceMappingURL=logo.css.map */</style></head><body> <div><div class="logo"><div><div class="circle"> <img src="/circle.0bad5bb2.svg" alt="circle"></div></div><div> <div class="curve1"><img src="/curve-left.9e51c5f7.svg" alt="curve left"></div></div><div> <div class="curve2"> <img src="/curve-rieght.69c56049.svg" alt="curve reight"></div></div></div></div><form class="search-room" action="#"><h1 class="search-room__header">Найдём номера под ваши пожелания</h1><h2 class="search-room-header__arrival">прибытие</h2><h2 class="search-room-header__departure"> выезд</h2><input class="search-room__arrival-date" type="date"><div class="expand-more-arrival-date__div"><img class="expand-more__img" src="/expand_more.18b6c6e6.svg" alt="expand_more"></div><input class="search-room__date-of-departure" type="date"><div class="expand-more-date-of-departure__div"><img class="expand-more__img" src="/expand_more.18b6c6e6.svg" alt="expand_more"></div><h2 class="search-room-header__gast">гости</h2><input class="search-room__gast" type="text" placeholder="Сколько гостей"><div class="dropdown__div"> <img class="expand-more__img" src="/expand_more.18b6c6e6.svg" alt="expand_more"><div class="dropdown__content"> <p>взрослые</p><p>дети</p><p>младенцы</p></div></div><div class="block-link-image"><a class="search-room__pick-up-a-room" href="#"> <span>Подобрать номер</span><svg class="account-registration-link-image_pay" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z"></path><defs><lineargradient id="paint0_linear" x1="9" y1="-13" x2="9" y2="31" gradientUnits="userSpaceOnUse"><stop stop-color="#BC9CFF"></stop><stop offset="1" stop-color="#8BA4F9"></stop></lineargradient></defs></svg></a></div></form><form class="account-login" action="/login" method="post"><h1 class="account-login-header">Войти</h1><input class="account-login-input-email" type="email" name="email" placeholder="Email"><input class="account-login-input-password" type="password" name="password" placeholder="Пароль"><div> <div class="block-link-image"><a class="account-login-link_to-come-in" href="#"> <span>Войти</span><svg class="account-login-link-image_to-come-in" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z"></path><defs><lineargradient id="paint0_linear" x1="9" y1="-13" x2="9" y2="31" gradientUnits="userSpaceOnUse"><stop stop-color="#BC9CFF"></stop><stop offset="1" stop-color="#8BA4F9"></stop></lineargradient></defs></svg></a></div></div><a class="account-login-link_create" href="#"> <span>Создать</span></a><p class="account-login-paragraf">Нет аккаунта на Toxin?  </p></form><form class="account-registration" action="/login" method="post"><h1 class="account-registration-header1">Регистрация аккаунта</h1><input class="account-registration-input-name" type="text" name="name" placeholder="Имя"><input class="account-registration-input-lastname" type="text" name="lastname" placeholder="Фамилия"><div class="radio"><label class="radio-label_men"> <input class="radio-label-men_input" type="radio" name="sex" value="men" checked="">        Мужчина<div class="radio-input_men"></div></label><label class="radio-label_women"><input class="radio-label-women_input" type="radio" name="sex" value="men">        Женщина<div class="radio-input_women"></div></label></div><h2 class="account-registration-header_date-of-birth">Дата рождения</h2><input class="account-registration-input-date-of-birth" type="date" name="date-of-birth"><h2 class="account-registration-header_login-details">Данные для входа в сервис</h2><input class="account-registration-input-email" type="email" name="email" placeholder="Email"><input class="account-registration-input-password" type="password" name="password" placeholder="Пароль"><label class="checkbox"><input class="checkbox__input" type="checkbox" autocomplete="off"><div class="checkbox__div"> </div><p class="checkbox__p">Получать спецпредложения </p><div class="block-link-image"><a class="account-registration-link_pay" href="#"> <span>перейти к оплате</span><svg class="account-registration-link-image_pay" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z"></path><defs><lineargradient id="paint0_linear" x1="9" y1="-13" x2="9" y2="31" gradientUnits="userSpaceOnUse"><stop stop-color="#BC9CFF"></stop><stop offset="1" stop-color="#8BA4F9"></stop></lineargradient></defs></svg></a></div></label><a class="account-registration-link_to-come-in" href="#"> <span>войти</span></a><p class="account-registration-paragraf">Уже есть аккаунт на Toxin</p></form></body></html>
+/*# sourceMappingURL=logo.css.map */</style></head><body> <div><div class="logo"><div><div class="circle"> <img src="/circle.0bad5bb2.svg" alt="circle"></div></div><div> <div class="curve1"><img src="/curve-left.9e51c5f7.svg" alt="curve left"></div></div><div> <div class="curve2"> <img src="/curve-rieght.69c56049.svg" alt="curve reight"></div></div></div></div><form class="search-room" action="#"><h1 class="search-room__header">Найдём номера под ваши пожелания</h1><h2 class="search-room-header__arrival">прибытие</h2><h2 class="search-room-header__departure"> выезд</h2><input class="search-room__arrival-date" type="date"><div class="expand-more-arrival-date__div"><img class="expand-more__img" src="/expand_more.18b6c6e6.svg" alt="expand_more"></div><input class="search-room__date-of-departure" type="date"><div class="expand-more-date-of-departure__div"><img class="expand-more__img" src="/expand_more.18b6c6e6.svg" alt="expand_more"></div><h2 class="search-room-header__gast">гости</h2><input class="search-room__gast" type="text" placeholder="Сколько гостей"><img class="dropdown__expand-more" src="/expand_more.18b6c6e6.svg" alt="expand_more"><div class="dropdown"><p class="dropdown__p first">взрослые </p><p class="dropdown__p">дети </p><p class="dropdown__p">младенцы</p><div class="dropdown__circle-plus1"><p class="dropdown-p__plus">+</p></div><div class="dropdown__circle-plus2"><p class="dropdown-p__plus">+</p></div><div class="dropdown__circle-plus3"> <p class="dropdown-p__plus">+</p></div><div class="dropdown__circle-minus1"><p class="dropdown-p__minus">-</p></div><div class="dropdown__circle-minus2"><p class="dropdown-p__minus">-</p></div><div class="dropdown__circle-minus3"><p class="dropdown-p__minus">-</p></div><a class="dropdown__link1" href="#">очистить</a><a class="dropdown__link2" href="#">применить </a></div><div class="block-link-image"><a class="search-room__pick-up-a-room" href="#"> <span>Подобрать номер</span><svg class="account-registration-link-image_pay" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z"></path><defs><lineargradient id="paint0_linear" x1="9" y1="-13" x2="9" y2="31" gradientUnits="userSpaceOnUse"><stop stop-color="#BC9CFF"></stop><stop offset="1" stop-color="#8BA4F9"></stop></lineargradient></defs></svg></a></div></form><form class="account-login" action="/login" method="post"><h1 class="account-login-header">Войти</h1><input class="account-login-input-email" type="email" name="email" placeholder="Email"><input class="account-login-input-password" type="password" name="password" placeholder="Пароль"><div> <div class="block-link-image"><a class="account-login-link_to-come-in" href="#"> <span>Войти</span><svg class="account-login-link-image_to-come-in" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z"></path><defs><lineargradient id="paint0_linear" x1="9" y1="-13" x2="9" y2="31" gradientUnits="userSpaceOnUse"><stop stop-color="#BC9CFF"></stop><stop offset="1" stop-color="#8BA4F9"></stop></lineargradient></defs></svg></a></div></div><a class="account-login-link_create" href="#"> <span>Создать</span></a><p class="account-login-paragraf">Нет аккаунта на Toxin?  </p></form><form class="account-registration" action="/login" method="post"><h1 class="account-registration-header1">Регистрация аккаунта</h1><input class="account-registration-input-name" type="text" name="name" placeholder="Имя"><input class="account-registration-input-lastname" type="text" name="lastname" placeholder="Фамилия"><div class="radio"><label class="radio-label_men"> <input class="radio-label-men_input" type="radio" name="sex" value="men" checked="">        Мужчина<div class="radio-input_men"></div></label><label class="radio-label_women"><input class="radio-label-women_input" type="radio" name="sex" value="men">        Женщина<div class="radio-input_women"></div></label></div><h2 class="account-registration-header_date-of-birth">Дата рождения</h2><input class="account-registration-input-date-of-birth" type="date" name="date-of-birth"><h2 class="account-registration-header_login-details">Данные для входа в сервис</h2><input class="account-registration-input-email" type="email" name="email" placeholder="Email"><input class="account-registration-input-password" type="password" name="password" placeholder="Пароль"><label class="checkbox"><input class="checkbox__input" type="checkbox" autocomplete="off"><div class="checkbox__div"> </div><p class="checkbox__p">Получать спецпредложения </p><div class="block-link-image"><a class="account-registration-link_pay" href="#"> <span>перейти к оплате</span><svg class="account-registration-link-image_pay" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z"></path><defs><lineargradient id="paint0_linear" x1="9" y1="-13" x2="9" y2="31" gradientUnits="userSpaceOnUse"><stop stop-color="#BC9CFF"></stop><stop offset="1" stop-color="#8BA4F9"></stop></lineargradient></defs></svg></a></div></label><a class="account-registration-link_to-come-in" href="#"> <span>войти</span></a><p class="account-registration-paragraf">Уже есть аккаунт на Toxin</p></form></body></html>
