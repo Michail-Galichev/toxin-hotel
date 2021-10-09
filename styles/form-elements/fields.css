@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype"), url("fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("fonts/Montserrat-Bold.woff") format("woff"), url("fonts/Montserrat-Bold.ttf") format("truetype"), url("fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/Montserrat-Italic.eot");
+  src: local("☺"), url("fonts/Montserrat-Italic.woff") format("woff"), url("fonts/Montserrat-Italic.ttf") format("truetype"), url("fonts/Montserrat-Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  width: 1440px;
+  height: 1853px;
+  background: white;
+}
+
+/* общие свойства для input*/
+input {
+  display: block;
+  width: 318px;
+  height: 42px;
+  position: absolute;
+  border-radius: 4px;
+}
+
+/* поле email */
+.input__email {
+  top: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* свойства тексотвых подписей к полям */
+.label-input__email {
+  position: absolute;
+  width: 72px;
+  height: 15px;
+  left: 141px;
+  top: 143px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+
+span {
+  position: absolute;
+  font-weight: normal;
+  text-align: right;
+  left: 261px;
+}
+/*# sourceMappingURL=fields.css.map */
