@@ -1,0 +1,41 @@
+form.searching-results(action="#")
+  h1.searching-results__h1 
+    span.span__h1 № 
+    | 888
+  p.p__luxury Люкс
+  p.p__price-per-day 9900₽ 
+    span.span__per-day в сутки
+  h2.searching-results-header__arrival прибытие
+  h2.searching-results-header__departure  выезд
+
+  input.searching-results__arrival-date(type="date")
+  .searching-results-expand-more__arrival-date
+    img.expand-more__img(src="img/expand_more.svg", alt="expand_more")
+  
+  input.searching-results__date-of-departure(type="date")
+  .searching-results-expand-more__date-of-departure
+    img.expand-more__img(src="img/expand_more.svg", alt="expand_more")
+
+  h2.searching-results-header__gast гости
+  input.searching-results__gast(type="text" placeholder="3 гостя")
+  img.searching-results-gast__expand-more(src="img/expand_more.svg", alt="expand_more")
+
+  p.searcning-results__p1 9 990₽ х 4 суток 
+  p.searcning-results__p2 Сбор за услуги: скидка 2 179₽
+  p.searcning-results__p3 Сбор за дополнительные услуги
+  p.searcning-results__p4 39 960₽
+  p.searcning-results__p5 0₽
+  p.searcning-results__p6 300₽
+
+  h2.searching-results-h2__total Итого
+  h2.searching-results-h2__summ 38 081₽
+
+  .searching-results__block
+    a.searching-results-link__to-book(href="#") 
+      span.link__to-book Забронировать
+      svg.searching-results-image__to-book(width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg')
+        path(d='M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z')
+        defs
+          lineargradient#paint0_linear(x1='9' y1='-13' x2='9' y2='31' gradientUnits='userSpaceOnUse')
+            stop(stop-color='#BC9CFF')
+            stop(offset='1' stop-color='#8BA4F9')
