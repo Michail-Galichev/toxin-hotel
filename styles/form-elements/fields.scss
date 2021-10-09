@@ -1,0 +1,52 @@
+@import '../fonts.scss';
+
+body {
+  width: 1440px;
+  height: 1853px;
+
+  background: rgba(255, 255, 255, 1);
+}
+/* общие свойства для input*/
+input {
+  display: block;
+  width: 318px;
+  height: 42px;
+  position: absolute;
+
+  border-radius: 4px;
+}
+
+/* поле email */
+
+.input__email {
+  top: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+}
+
+/* свойства тексотвых подписей к полям */
+
+.label-input__email {
+  position: absolute;
+  width: 72px;
+  height: 15px;
+  left: 141px;
+  top: 143px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+
+  text-transform: uppercase;
+
+  color: #1f2041;
+}
+
+span {
+  position: absolute;
+  font-weight: normal;
+  text-align: right;
+  left: 261px;
+}
