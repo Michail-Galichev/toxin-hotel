@@ -106,6 +106,7 @@ h1 {
   border-radius: 4px;
 }
 
+/* блоки изображений */
 .expand-more-arrival-date__div {
   position: relative;
   pointer-events: none;
@@ -132,20 +133,7 @@ h1 {
 }
 
 /* поле гости */
-/* .search-room__gast {
-  position: absolute;
-  width: 320px;
-  height: 44px;
-  left: 30px;
-  top: 225px;
-  background: #ffffff;
-  padding-left: 15px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-}
- */
-.search-room__gast::after {
+.search-room__gast {
   position: absolute;
   width: 320px;
   height: 44px;
@@ -279,7 +267,7 @@ p.dropdown-p__plus {
   color: rgba(31, 32, 65, 0.5);
   position: absolute;
   top: 4px;
-  left: 10px;
+  left: 9px;
 }
 
 .dropdown__p {
