@@ -183,6 +183,7 @@ h1 {
   border-radius: 4px;
 }
 
+/* блоки изображений */
 .expand-more-arrival-date__div {
   position: relative;
   pointer-events: none;
@@ -209,20 +210,7 @@ h1 {
 }
 
 /* поле гости */
-/* .search-room__gast {
-  position: absolute;
-  width: 320px;
-  height: 44px;
-  left: 30px;
-  top: 225px;
-  background: #ffffff;
-  padding-left: 15px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-}
- */
-.search-room__gast::after {
+.search-room__gast {
   position: absolute;
   width: 320px;
   height: 44px;
@@ -356,7 +344,7 @@ p.dropdown-p__plus {
   color: rgba(31, 32, 65, 0.5);
   position: absolute;
   top: 4px;
-  left: 10px;
+  left: 9px;
 }
 
 .dropdown__p {
@@ -620,6 +608,7 @@ body {
   color: #000000;
 }
 
+/* кнопка войти */
 .account-login-link_to-come-in {
   position: absolute;
   top: 208px;
@@ -645,6 +634,7 @@ body {
   color: #bc9cff;
 }
 
+/* кнопка создать */
 .account-login-link_create {
   position: absolute;
   top: 282px;
@@ -668,6 +658,7 @@ body {
   color: #bc9cff;
 }
 
+/* подпись к кнопке войти */
 .account-login-link_to-come-in span {
   position: absolute;
   width: 280px;
@@ -681,6 +672,7 @@ body {
   font-weight: bold;
 }
 
+/* подпись к кнопке создать */
 .account-login-link_create span {
   position: absolute;
   top: 14px;
@@ -694,6 +686,7 @@ body {
   font-family: 'Montserrat';
 }
 
+/* hover для кнопок */
 .account-login-link_to-come-in:hover,
 .account-login-link_create:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
@@ -702,15 +695,16 @@ body {
   border: none;
 }
 
+.block-link-image:hover .account-login-link-image_to-come-in {
+  fill: white;
+}
+
+/* картинка для кнопки вход */
 .account-login-link-image_to-come-in {
   position: absolute;
   left: 290px;
   top: 13px;
   fill: url("#paint0_linear");
-}
-
-.block-link-image:hover .account-login-link-image_to-come-in {
-  fill: white;
 }
 
 input.account-login-input-password::-webkit-input-placeholder {
@@ -1279,7 +1273,480 @@ input.account-registration-input-lastname::placeholder {
   color: rgba(31, 32, 65, 0.25);
   width: 69px;
 }
-/*# sourceMappingURL=account_registration.css.map */.logo {
+/*# sourceMappingURL=account_registration.css.map */@charset "UTF-8";
+/* свойства формы */
+.searching-results {
+  position: relative;
+  width: 380px;
+  height: 512px;
+  left: 560px;
+  top: 104px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+/* свойства № */
+.span__h1 {
+  position: absolute;
+  width: 69px;
+  height: 30px;
+  left: -46px;
+  top: 4px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1f2041;
+}
+
+/* основной заголовок */
+.searching-results__h1 {
+  position: absolute;
+  width: 69px;
+  height: 30px;
+  left: 50px;
+  top: 42px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 17px;
+  color: #1f2041;
+}
+
+/* свойства параграфа люкс */
+.p__luxury {
+  position: absolute;
+  width: 41px;
+  height: 15px;
+  left: 108px;
+  top: 49px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #bc9cff;
+}
+
+/* свойства параграфа цена засутки */
+.p__price-per-day {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  left: 250px;
+  top: 49px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.span__per-day {
+  position: absolute;
+  font-size: 12px;
+  font-weight: normal;
+  left: -64px;
+  top: 2px;
+}
+
+/* подписи для поля дат */
+.searching-results-header__arrival {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  color: #1f2041;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  height: 15px;
+  width: 83px;
+  left: 30px;
+  top: 90px;
+}
+
+.searching-results-header__departure {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  color: #1f2041;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  height: 15px;
+  width: 83px;
+  left: 200px;
+  top: 90px;
+}
+
+.searching-results-header__gast {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  color: #1f2041;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  height: 15px;
+  position: absolute;
+  width: 43px;
+  top: 175px;
+  left: 30px;
+}
+
+/* поля дат */
+.searching-results__arrival-date {
+  position: absolute;
+  width: 150px;
+  height: 44px;
+  left: 30px;
+  top: 110px;
+  padding-left: 15px;
+  background-image: url(/expand_more.18b6c6e6.svg) no-repeat right;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.searching-results__date-of-departure {
+  position: absolute;
+  width: 150px;
+  height: 44px;
+  left: 200px;
+  top: 110.44px;
+  padding-left: 15px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* блоки изображений полей дат*/
+.searching-results-expand-more__arrival-date {
+  position: relative;
+  pointer-events: none;
+  width: 44px;
+  height: 44px;
+  left: 136px;
+  top: 110px;
+}
+
+.searching-results-expand-more__date-of-departure {
+  position: relative;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  left: 306px;
+  top: 65px;
+  pointer-events: none;
+}
+
+.expand-more__img {
+  position: absolute;
+  top: 18px;
+  left: 21px;
+}
+
+/* поле гости */
+.searching-results__gast {
+  position: absolute;
+  width: 320px;
+  height: 44px;
+  left: 30px;
+  top: 195px;
+  background: #ffffff;
+  padding-left: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* блок изображения поля гости */
+.searching-results-gast__expand-more {
+  position: absolute;
+  left: 325.74px;
+  top: 215.56px;
+  cursor: pointer;
+}
+
+/* параграфы */
+.searcning-results__p1 {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  height: 24px;
+  width: 116px;
+  position: absolute;
+  top: 252.56px;
+  left: 30px;
+}
+
+.searcning-results__p2 {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  position: absolute;
+  height: 24px;
+  width: 214px;
+  top: 283px;
+  left: 30px;
+}
+
+.searcning-results__p3 {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  position: absolute;
+  height: 36px;
+  width: 214px;
+  top: 316px;
+  left: 30px;
+  line-height: 18px;
+}
+
+.searcning-results__p4 {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  position: absolute;
+  top: 252.56px;
+  height: 24px;
+  width: 57px;
+  right: 30px;
+}
+
+.searcning-results__p5 {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  position: absolute;
+  height: 24px;
+  width: 20px;
+  top: 283px;
+  right: 30px;
+}
+
+.searcning-results__p6 {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  position: absolute;
+  top: 314px;
+  height: 24px;
+  width: 37px;
+  right: 30px;
+}
+
+/* заголовки итого и сумма */
+.searching-results-h2__total {
+  position: absolute;
+  width: 60px;
+  height: 24px;
+  left: 30px;
+  top: 390px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1f2041;
+}
+
+.searching-results-h2__summ {
+  position: absolute;
+  width: 60px;
+  height: 24px;
+  right: 47px;
+  top: 390px;
+  white-space: nowrap;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1f2041;
+}
+
+/* кнопка */
+.searching-results-link__to-book {
+  position: absolute;
+  top: 437.56px;
+  left: 28px;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 316px;
+  height: 42px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #bc9cff;
+}
+
+.searching-results-link__to-book span {
+  position: absolute;
+  width: 280px;
+  top: 14px;
+  height: 15px;
+  left: 20px;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+}
+
+.searching-results-link__to-book:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #ffffff;
+  border: none;
+}
+
+.searching-results-image__to-book {
+  position: absolute;
+  left: 290px;
+  top: 13px;
+  fill: url("#paint0_linear");
+}
+
+.searching-results__block:hover .searching-results-image__to-book {
+  fill: white;
+}
+
+/* placeholder */
+::-webkit-input-placeholder {
+  width: 50px;
+  height: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+:-ms-input-placeholder {
+  width: 50px;
+  height: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+::-ms-input-placeholder {
+  width: 50px;
+  height: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+::placeholder {
+  width: 50px;
+  height: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/* информационые кнопки */
+.searching-results__information1 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 250px;
+  top: 283.56px;
+  cursor: pointer;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.searching-results__information2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 250px;
+  top: 317.56px;
+  cursor: pointer;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.searching-results-information__p {
+  position: absolute;
+  left: 7.5px;
+  top: 2px;
+  font-family: 'Montserrat';
+  width: 4px;
+  height: 14px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+}
+/*# sourceMappingURL=searching_results.css.map */.logo {
   width: 48px;
   height: 48px;
   position: relative;
@@ -1308,4 +1775,4 @@ input.account-registration-input-lastname::placeholder {
   top: 41.35px;
   left: 55.77px;
 }
-/*# sourceMappingURL=logo.css.map */</style></head><body> <div><div class="logo"><div><div class="circle"> <img src="/circle.0bad5bb2.svg" alt="circle"></div></div><div> <div class="curve1"><img src="/curve-left.9e51c5f7.svg" alt="curve left"></div></div><div> <div class="curve2"> <img src="/curve-rieght.69c56049.svg" alt="curve reight"></div></div></div></div><form class="search-room" action="#"><h1 class="search-room__header">Найдём номера под ваши пожелания</h1><h2 class="search-room-header__arrival">прибытие</h2><h2 class="search-room-header__departure"> выезд</h2><input class="search-room__arrival-date" type="date"><div class="expand-more-arrival-date__div"><img class="expand-more__img" src="/expand_more.18b6c6e6.svg" alt="expand_more"></div><input class="search-room__date-of-departure" type="date"><div class="expand-more-date-of-departure__div"><img class="expand-more__img" src="/expand_more.18b6c6e6.svg" alt="expand_more"></div><h2 class="search-room-header__gast">гости</h2><input class="search-room__gast" type="text" placeholder="Сколько гостей"><img class="dropdown__expand-more" src="/expand_more.18b6c6e6.svg" alt="expand_more"><div class="dropdown"><p class="dropdown__p first">взрослые </p><p class="dropdown__p">дети </p><p class="dropdown__p">младенцы</p><div class="dropdown__circle-plus1"><p class="dropdown-p__plus">+</p></div><div class="dropdown__circle-plus2"><p class="dropdown-p__plus">+</p></div><div class="dropdown__circle-plus3"> <p class="dropdown-p__plus">+</p></div><div class="dropdown__circle-minus1"><p class="dropdown-p__minus">-</p></div><div class="dropdown__circle-minus2"><p class="dropdown-p__minus">-</p></div><div class="dropdown__circle-minus3"><p class="dropdown-p__minus">-</p></div><a class="dropdown__link1" href="#">очистить</a><a class="dropdown__link2" href="#">применить </a></div><div class="block-link-image"><a class="search-room__pick-up-a-room" href="#"> <span>Подобрать номер</span><svg class="account-registration-link-image_pay" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z"></path><defs><lineargradient id="paint0_linear" x1="9" y1="-13" x2="9" y2="31" gradientUnits="userSpaceOnUse"><stop stop-color="#BC9CFF"></stop><stop offset="1" stop-color="#8BA4F9"></stop></lineargradient></defs></svg></a></div></form><form class="account-login" action="/login" method="post"><h1 class="account-login-header">Войти</h1><input class="account-login-input-email" type="email" name="email" placeholder="Email"><input class="account-login-input-password" type="password" name="password" placeholder="Пароль"><div> <div class="block-link-image"><a class="account-login-link_to-come-in" href="#"> <span>Войти</span><svg class="account-login-link-image_to-come-in" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z"></path><defs><lineargradient id="paint0_linear" x1="9" y1="-13" x2="9" y2="31" gradientUnits="userSpaceOnUse"><stop stop-color="#BC9CFF"></stop><stop offset="1" stop-color="#8BA4F9"></stop></lineargradient></defs></svg></a></div></div><a class="account-login-link_create" href="#"> <span>Создать</span></a><p class="account-login-paragraf">Нет аккаунта на Toxin?  </p></form><form class="account-registration" action="/login" method="post"><h1 class="account-registration-header1">Регистрация аккаунта</h1><input class="account-registration-input-name" type="text" name="name" placeholder="Имя"><input class="account-registration-input-lastname" type="text" name="lastname" placeholder="Фамилия"><div class="radio"><label class="radio-label_men"> <input class="radio-label-men_input" type="radio" name="sex" value="men" checked="">        Мужчина<div class="radio-input_men"></div></label><label class="radio-label_women"><input class="radio-label-women_input" type="radio" name="sex" value="men">        Женщина<div class="radio-input_women"></div></label></div><h2 class="account-registration-header_date-of-birth">Дата рождения</h2><input class="account-registration-input-date-of-birth" type="date" name="date-of-birth"><h2 class="account-registration-header_login-details">Данные для входа в сервис</h2><input class="account-registration-input-email" type="email" name="email" placeholder="Email"><input class="account-registration-input-password" type="password" name="password" placeholder="Пароль"><label class="checkbox"><input class="checkbox__input" type="checkbox" autocomplete="off"><div class="checkbox__div"> </div><p class="checkbox__p">Получать спецпредложения </p><div class="block-link-image"><a class="account-registration-link_pay" href="#"> <span>перейти к оплате</span><svg class="account-registration-link-image_pay" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z"></path><defs><lineargradient id="paint0_linear" x1="9" y1="-13" x2="9" y2="31" gradientUnits="userSpaceOnUse"><stop stop-color="#BC9CFF"></stop><stop offset="1" stop-color="#8BA4F9"></stop></lineargradient></defs></svg></a></div></label><a class="account-registration-link_to-come-in" href="#"> <span>войти</span></a><p class="account-registration-paragraf">Уже есть аккаунт на Toxin</p></form></body></html>
+/*# sourceMappingURL=logo.css.map */</style></head><body> <div><div class="logo"><div><div class="circle"> <img src="/circle.0bad5bb2.svg" alt="circle"></div></div><div> <div class="curve1"><img src="/curve-left.9e51c5f7.svg" alt="curve left"></div></div><div> <div class="curve2"> <img src="/curve-rieght.69c56049.svg" alt="curve reight"></div></div></div></div><form class="search-room" action="#"><h1 class="search-room__header">Найдём номера под ваши пожелания</h1><h2 class="search-room-header__arrival">прибытие</h2><h2 class="search-room-header__departure"> выезд</h2><input class="search-room__arrival-date" type="date"><div class="expand-more-arrival-date__div"><img class="expand-more__img" src="/expand_more.18b6c6e6.svg" alt="expand_more"></div><input class="search-room__date-of-departure" type="date"><div class="expand-more-date-of-departure__div"><img class="expand-more__img" src="/expand_more.18b6c6e6.svg" alt="expand_more"></div><h2 class="search-room-header__gast">гости</h2><input class="search-room__gast" type="text" placeholder="Сколько гостей"><img class="dropdown__expand-more" src="/expand_more.18b6c6e6.svg" alt="expand_more"><div class="dropdown"><p class="dropdown__p first">взрослые </p><p class="dropdown__p">дети </p><p class="dropdown__p">младенцы</p><div class="dropdown__circle-plus1"><p class="dropdown-p__plus">+</p></div><div class="dropdown__circle-plus2"><p class="dropdown-p__plus">+</p></div><div class="dropdown__circle-plus3"> <p class="dropdown-p__plus">+</p></div><div class="dropdown__circle-minus1"><p class="dropdown-p__minus">-</p></div><div class="dropdown__circle-minus2"><p class="dropdown-p__minus">-</p></div><div class="dropdown__circle-minus3"><p class="dropdown-p__minus">-</p></div><a class="dropdown__link1" href="#">очистить</a><a class="dropdown__link2" href="#">применить </a></div><div class="block-link-image"><a class="search-room__pick-up-a-room" href="#"> <span>Подобрать номер</span><svg class="account-registration-link-image_pay" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z"></path><defs><lineargradient id="paint0_linear" x1="9" y1="-13" x2="9" y2="31" gradientUnits="userSpaceOnUse"><stop stop-color="#BC9CFF"></stop><stop offset="1" stop-color="#8BA4F9"></stop></lineargradient></defs></svg></a></div></form><form class="account-login" action="/login" method="post"><h1 class="account-login-header">Войти</h1><input class="account-login-input-email" type="email" name="email" placeholder="Email"><input class="account-login-input-password" type="password" name="password" placeholder="Пароль"><div> <div class="block-link-image"><a class="account-login-link_to-come-in" href="#"> <span>Войти</span><svg class="account-login-link-image_to-come-in" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z"></path><defs><lineargradient id="paint0_linear" x1="9" y1="-13" x2="9" y2="31" gradientUnits="userSpaceOnUse"><stop stop-color="#BC9CFF"></stop><stop offset="1" stop-color="#8BA4F9"></stop></lineargradient></defs></svg></a></div></div><a class="account-login-link_create" href="#"> <span>Создать</span></a><p class="account-login-paragraf">Нет аккаунта на Toxin?  </p></form><form class="account-registration" action="/login" method="post"><h1 class="account-registration-header1">Регистрация аккаунта</h1><input class="account-registration-input-name" type="text" name="name" placeholder="Имя"><input class="account-registration-input-lastname" type="text" name="lastname" placeholder="Фамилия"><div class="radio"><label class="radio-label_men"> <input class="radio-label-men_input" type="radio" name="sex" value="men" checked="">        Мужчина<div class="radio-input_men"></div></label><label class="radio-label_women"><input class="radio-label-women_input" type="radio" name="sex" value="men">        Женщина<div class="radio-input_women"></div></label></div><h2 class="account-registration-header_date-of-birth">Дата рождения</h2><input class="account-registration-input-date-of-birth" type="date" name="date-of-birth"><h2 class="account-registration-header_login-details">Данные для входа в сервис</h2><input class="account-registration-input-email" type="email" name="email" placeholder="Email"><input class="account-registration-input-password" type="password" name="password" placeholder="Пароль"><label class="checkbox"><input class="checkbox__input" type="checkbox" autocomplete="off"><div class="checkbox__div"> </div><p class="checkbox__p">Получать спецпредложения </p><div class="block-link-image"><a class="account-registration-link_pay" href="#"> <span>перейти к оплате</span><svg class="account-registration-link-image_pay" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z"></path><defs><lineargradient id="paint0_linear" x1="9" y1="-13" x2="9" y2="31" gradientUnits="userSpaceOnUse"><stop stop-color="#BC9CFF"></stop><stop offset="1" stop-color="#8BA4F9"></stop></lineargradient></defs></svg></a></div></label><a class="account-registration-link_to-come-in" href="#"> <span>войти</span></a><p class="account-registration-paragraf">Уже есть аккаунт на Toxin</p></form><form class="searching-results" action="#"><h1 class="searching-results__h1"> <span class="span__h1">№ </span>888</h1><p class="p__luxury">Люкс</p><p class="p__price-per-day">9900₽ <span class="span__per-day">в сутки</span></p><h2 class="searching-results-header__arrival">прибытие</h2><h2 class="searching-results-header__departure"> выезд</h2><input class="searching-results__arrival-date" type="date"><div class="searching-results-expand-more__arrival-date"><img class="expand-more__img" src="/expand_more.18b6c6e6.svg" alt="expand_more"></div><input class="searching-results__date-of-departure" type="date"><div class="searching-results-expand-more__date-of-departure"><img class="expand-more__img" src="/expand_more.18b6c6e6.svg" alt="expand_more"></div><h2 class="searching-results-header__gast">гости</h2><input class="searching-results__gast" type="text" placeholder="3 гостя"><img class="searching-results-gast__expand-more" src="/expand_more.18b6c6e6.svg" alt="expand_more"><p class="searcning-results__p1">9 990₽ х 4 суток </p><p class="searcning-results__p2">Сбор за услуги: скидка 2 179₽</p><p class="searcning-results__p3">Сбор за дополнительные услуги</p><p class="searcning-results__p4">39 960₽</p><p class="searcning-results__p5">0₽</p><p class="searcning-results__p6">300₽</p><h2 class="searching-results-h2__total">Итого</h2><h2 class="searching-results-h2__summ">38 081₽</h2><div class="searching-results__block"><a class="searching-results-link__to-book" href="#"> <span class="link__to-book">Забронировать</span><svg class="searching-results-image__to-book" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z"></path><defs><lineargradient id="paint0_linear" x1="9" y1="-13" x2="9" y2="31" gradientUnits="userSpaceOnUse"><stop stop-color="#BC9CFF"></stop><stop offset="1" stop-color="#8BA4F9"></stop></lineargradient></defs></svg></a></div><div class="searching-results__information1"><p class="searching-results-information__p">i</p></div><div class="searching-results__information2"><p class="searching-results-information__p">i</p></div></form></body></html>
