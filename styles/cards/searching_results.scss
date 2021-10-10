@@ -214,7 +214,6 @@
 
 @mixin paragraf {
   position: absolute;
-  height: 24px;
 
   font-family: 'Montserrat';
   font-style: normal;
@@ -227,6 +226,8 @@
 
 .searcning-results__p1 {
   @include paragraf;
+  height: 24px;
+  width: 116px;
   position: absolute;
   top: 252.56px;
   left: 30px;
@@ -234,24 +235,33 @@
 .searcning-results__p2 {
   @include paragraf;
   position: absolute;
+  height: 24px;
+  width: 214px;
   top: 283px;
   left: 30px;
 }
 .searcning-results__p3 {
   @include paragraf;
   position: absolute;
-  top: 314px;
+  height: 36px;
+  width: 214px;
+  top: 316px;
   left: 30px;
+  line-height: 18px;
 }
 .searcning-results__p4 {
   @include paragraf;
   position: absolute;
   top: 252.56px;
+  height: 24px;
+  width: 57px;
   right: 30px;
 }
 .searcning-results__p5 {
   @include paragraf;
   position: absolute;
+  height: 24px;
+  width: 20px;
   top: 283px;
   right: 30px;
 }
@@ -259,6 +269,8 @@
   @include paragraf;
   position: absolute;
   top: 314px;
+  height: 24px;
+  width: 37px;
   right: 30px;
 }
 
@@ -364,4 +376,48 @@
   line-height: 24px;
 
   color: rgba(31, 32, 65, 0.75);
+}
+
+/* информационые кнопки */
+
+.searching-results__information1 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 250px;
+  top: 283.56px;
+  cursor: pointer;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.searching-results__information2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 250px;
+  top: 317.56px;
+  cursor: pointer;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.searching-results-information__p {
+  position: absolute;
+  left: 7.5px;
+  top: 2px;
+  font-family: 'Montserrat';
+  width: 4px;
+  height: 14px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+
+  text-align: right;
+
+  color: rgba(31, 32, 65, 0.25);
 }
