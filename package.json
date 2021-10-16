@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel cards.pug --open=firefox",
+    "start": "parcel form_elements.pug --open=firefox",
     "build": "parcel colors-type.pug -d docs --public-url ./"
   },
   "keywords": [],
