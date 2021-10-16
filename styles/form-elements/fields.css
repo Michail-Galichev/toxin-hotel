@@ -1,58 +1,144 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'Montserrat';
-  src: url("fonts/Montserrat-Regular.eot");
-  src: local("☺"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype"), url("fonts/Montserrat-Regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url("fonts/Montserrat-Bold.eot");
-  src: local("☺"), url("fonts/Montserrat-Bold.woff") format("woff"), url("fonts/Montserrat-Bold.ttf") format("truetype"), url("fonts/Montserrat-Bold.svg") format("svg");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url("fonts/Montserrat-Italic.eot");
-  src: local("☺"), url("fonts/Montserrat-Italic.woff") format("woff"), url("fonts/Montserrat-Italic.ttf") format("truetype"), url("fonts/Montserrat-Italic.svg") format("svg");
-  font-weight: normal;
-  font-style: italic;
-}
-
-body {
-  width: 1440px;
-  height: 1853px;
-  background: white;
-}
-
 /* общие свойства для input*/
-input {
-  display: block;
+/* поле default */
+.input__default {
   width: 318px;
   height: 42px;
   position: absolute;
   border-radius: 4px;
-}
-
-/* поле email */
-.input__email {
   top: 20px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  background: #ffffff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  left: 0px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
 }
 
-/* свойства тексотвых подписей к полям */
-.label-input__email {
+/* поле hover/focus */
+.input__hover-focus {
+  width: 318px;
+  height: 42px;
   position: absolute;
-  width: 72px;
+  border-radius: 4px;
+  top: 20px;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+/* поле dropdown */
+.input__dropdown {
+  width: 318px;
+  height: 42px;
+  position: absolute;
+  border-radius: 4px;
+  top: 20px;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+/* поле masked */
+.input__masked {
+  width: 318px;
+  height: 42px;
+  position: absolute;
+  border-radius: 4px;
+  top: 20px;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  white-space: pre;
+}
+
+/* поле arrivale-date */
+.input-dropdown__arrivale-date {
+  width: 318px;
+  height: 42px;
+  position: absolute;
+  border-radius: 4px;
+  top: 20px;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  width: 150px;
+}
+
+/* поле departure-date */
+.input-dropdown__departure-date {
+  width: 318px;
+  height: 42px;
+  position: absolute;
+  border-radius: 4px;
+  top: 20px;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  width: 150px;
+}
+
+/* поле filter date */
+.input__filter-date {
+  width: 318px;
+  height: 42px;
+  position: absolute;
+  border-radius: 4px;
+  top: 20px;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  width: 266px;
+}
+
+/* поле subscription */
+.input__subscription {
+  width: 318px;
+  height: 42px;
+  position: absolute;
+  border-radius: 4px;
+  top: 20px;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  width: 267px;
+}
+
+/* свойства label подписей к полям */
+/* label default */
+.label-input__default {
+  position: absolute;
   height: 15px;
   left: 141px;
-  top: 143px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
@@ -60,12 +146,511 @@ input {
   line-height: 15px;
   text-transform: uppercase;
   color: #1f2041;
+  top: 143px;
+  width: 72px;
 }
 
-span {
+/* label hover/focus */
+.label-input__hover-focus {
+  position: absolute;
+  height: 15px;
+  left: 141px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+  top: 223.44px;
+  width: 72px;
+}
+
+/* label dropdown */
+.label-input__dropdown {
+  position: absolute;
+  height: 15px;
+  left: 141px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+  top: 304.44px;
+  width: 81px;
+}
+
+/* label masked */
+.label-input__masked-text-field {
+  position: absolute;
+  height: 15px;
+  left: 141px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+  top: 387px;
+  width: 130px;
+}
+
+/* label  arrivale-date*/
+.label-input-dropdown__arrivale-date {
+  position: absolute;
+  height: 15px;
+  left: 141px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+  top: 487px;
+  width: 150px;
+}
+
+/* label departure-date */
+.label-input-dropdown__departure-date {
+  position: absolute;
+  height: 15px;
+  left: 141px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+  top: 487px;
+  width: 150px;
+  left: 310px;
+}
+
+/* label filter date */
+.label-input__filter-date {
+  position: absolute;
+  height: 15px;
+  left: 141px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+  top: 588px;
+  width: 197px;
+}
+
+/* label subscription */
+.label-input__subscription {
+  position: absolute;
+  height: 15px;
+  left: 141px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+  top: 690px;
+  width: 170px;
+}
+
+.span__default {
   position: absolute;
   font-weight: normal;
   text-align: right;
   left: 261px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.span__hover-focus {
+  position: absolute;
+  font-weight: normal;
+  text-align: right;
+  left: 220px;
+  color: rgba(31, 32, 65, 0.5);
+  white-space: pre;
+}
+
+/* default placeholder */
+.input__default::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.input__default:-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.input__default::-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.input__default::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+/* masked placeholder */
+.input__masked::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+  text-transform: uppercase;
+}
+.input__masked:-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+  text-transform: uppercase;
+}
+.input__masked::-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+  text-transform: uppercase;
+}
+.input__masked::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+  text-transform: uppercase;
+}
+
+/* hover/focus placeholder */
+.input__hover-focus::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.input__hover-focus:-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.input__hover-focus::-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.input__hover-focus::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/* dropdown placeholder */
+.input__dropdown::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.input__dropdown:-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.input__dropdown::-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.input__dropdown::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/* dropdown__arrivale-date placeholder */
+.input-dropdown__arrivale-date::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+  text-transform: uppercase;
+}
+.input-dropdown__arrivale-date:-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+  text-transform: uppercase;
+}
+.input-dropdown__arrivale-date::-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+  text-transform: uppercase;
+}
+.input-dropdown__arrivale-date::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+  text-transform: uppercase;
+}
+
+/* dropdown__departure-date placeholder */
+.input-dropdown__departure-date::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  text-transform: uppercase;
+}
+.input-dropdown__departure-date:-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  text-transform: uppercase;
+}
+.input-dropdown__departure-date::-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  text-transform: uppercase;
+}
+.input-dropdown__departure-date::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  text-transform: uppercase;
+}
+
+/* filter date placeholder */
+.input__filter-date::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.input__filter-date:-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.input__filter-date::-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.input__filter-date::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/* subscription placeholder */
+.input__subscription::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.input__subscription:-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.input__subscription::-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.input__subscription::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+/* dropdown img */
+.input-dropdown__img {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 276px;
+  top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* dropdown arrivale date img */
+.input-dropdown-arrivale-date__img {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 108px;
+  top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* dropdown departure date img */
+.input-dropdown-departure-date__img {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 108px;
+  top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* fliter date img */
+.fliter-date__img {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 224px;
+  top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* subscription img */
+.subscription {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 224px;
+  top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=fields.css.map */
