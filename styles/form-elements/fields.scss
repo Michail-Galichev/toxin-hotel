@@ -1,52 +1,313 @@
-@import '../fonts.scss';
-
-body {
-  width: 1440px;
-  height: 1853px;
-
-  background: rgba(255, 255, 255, 1);
-}
 /* общие свойства для input*/
-input {
-  display: block;
+@mixin input {
   width: 318px;
   height: 42px;
   position: absolute;
-
   border-radius: 4px;
-}
-
-/* поле email */
-
-.input__email {
   top: 20px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  background: #ffffff;
   box-sizing: border-box;
+  left: 0px;
+  box-sizing: border-box;
+  padding-left: 15px;
 }
 
-/* свойства тексотвых подписей к полям */
+/* поле default */
 
-.label-input__email {
+.input__default {
+  @include input;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+/* поле hover/focus */
+
+.input__hover-focus {
+  @include input;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+/* поле dropdown */
+
+.input__dropdown {
+  @include input;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+/* поле masked */
+.input__masked {
+  @include input;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  white-space: pre;
+}
+
+/* поле arrivale-date */
+
+.input-dropdown__arrivale-date {
+  @include input;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  width: 150px;
+}
+
+/* поле departure-date */
+
+.input-dropdown__departure-date {
+  @include input;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  width: 150px;
+}
+
+/* поле filter date */
+
+.input__filter-date {
+  @include input;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  width: 266px;
+}
+
+/* поле subscription */
+.input__subscription {
+  @include input;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  width: 267px;
+}
+
+/* свойства label подписей к полям */
+
+@mixin label {
   position: absolute;
-  width: 72px;
   height: 15px;
   left: 141px;
-  top: 143px;
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-
   text-transform: uppercase;
-
   color: #1f2041;
 }
 
-span {
+/* label default */
+
+.label-input__default {
+  @include label;
+  top: 143px;
+  width: 72px;
+}
+
+/* label hover/focus */
+
+.label-input__hover-focus {
+  @include label;
+  top: 223.44px;
+  width: 72px;
+}
+
+/* label dropdown */
+
+.label-input__dropdown {
+  @include label;
+  top: 304.44px;
+  width: 81px;
+}
+
+/* label masked */
+
+.label-input__masked-text-field {
+  @include label;
+  top: 387px;
+  width: 130px;
+}
+
+/* label  arrivale-date*/
+
+.label-input-dropdown__arrivale-date {
+  @include label;
+  top: 487px;
+  width: 150px;
+}
+
+/* label departure-date */
+
+.label-input-dropdown__departure-date {
+  @include label;
+  top: 487px;
+  width: 150px;
+  left: 310px;
+}
+
+/* label filter date */
+.label-input__filter-date {
+  @include label;
+  top: 588px;
+  width: 197px;
+}
+
+/* label subscription */
+.label-input__subscription {
+  @include label;
+  top: 690px;
+  width: 170px;
+}
+
+.span__default {
   position: absolute;
   font-weight: normal;
   text-align: right;
   left: 261px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.span__hover-focus {
+  position: absolute;
+  font-weight: normal;
+  text-align: right;
+  left: 220px;
+  color: rgba(31, 32, 65, 0.5);
+  white-space: pre;
+}
+
+/* default placeholder */
+.input__default::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+/* masked placeholder */
+.input__masked::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+  text-transform: uppercase;
+}
+
+/* hover/focus placeholder */
+.input__hover-focus::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/* dropdown placeholder */
+.input__dropdown::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/* dropdown__arrivale-date placeholder */
+.input-dropdown__arrivale-date::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+  text-transform: uppercase;
+}
+
+/* dropdown__departure-date placeholder */
+.input-dropdown__departure-date::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  text-transform: uppercase;
+}
+
+/* filter date placeholder */
+
+.input__filter-date::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/* subscription placeholder */
+.input__subscription::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+/* dropdown img */
+
+.input-dropdown__img {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 276px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* dropdown arrivale date img */
+.input-dropdown-arrivale-date__img {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 108px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* dropdown departure date img */
+
+.input-dropdown-departure-date__img {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 108px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* fliter date img */
+
+.fliter-date__img {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 224px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* subscription img */
+.subscription {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 224px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
