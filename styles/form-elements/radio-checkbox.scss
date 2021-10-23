@@ -418,3 +418,59 @@ h2 {
   top: 625px;
   position: absolute;
 }
+
+/* звёзды */
+
+@mixin stars {
+  background-image: url(img/star_border.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+  position: absolute;
+  top: 0px;
+}
+
+.rate-button__star1 {
+  @include stars;
+  left: 0px;
+}
+.rate-button__star2 {
+  @include stars;
+  left: 27px;
+}
+.rate-button__star3 {
+  @include stars;
+  left: 54px;
+}
+.rate-button__star4 {
+  @include stars;
+  left: 81px;
+}
+.rate-button__star5 {
+  @include stars;
+  left: 108px;
+}
+
+/* группа 1*/
+
+.rate-button__stars1 {
+  height: 24px;
+  width: 120px;
+  position: absolute;
+}
+
+.rate-button__stars2 {
+  height: 24px;
+  width: 120px;
+  position: absolute;
+  left: 160px;
+  top: 28px;
+}
+
+.hover:hover {
+  background-image: url(img/star.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
