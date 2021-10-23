@@ -1,0 +1,53 @@
+.check
+  h2 Checkbox Buttons
+  label.checkbox.options 
+    input.checkbox__input(type="checkbox")
+    .checkbox__view    
+    | Можно курить
+  label.checkbox.options 
+    input.checkbox__input(type="checkbox" checked='') 
+    .checkbox__view
+    | Можно с питомцами
+  label.checkbox.options.checkbox__gast
+    input.checkbox__input(type="checkbox" checked="")
+    .checkbox__view
+    | Можно можно пригласить гостей 
+    | (до 10 человек)
+
+.radio
+  h2 radio Buttons
+  label.radio-label__men
+    input.radio__input(type='radio' name='sex' value='men' checked='')
+    |         Мужчина
+    .radio-view__men
+      
+  label.radio-label__women
+    input.radio__input(type='radio' name='sex' value='women')
+    |         Женщина
+    .radio-view__women
+
+.toggle
+  h2 toggle
+  label.toggle__labbel1
+    input(type="checkbox" class="toggle__input1" checked='' )
+    .toggle__checked 
+    p.toggle-checked__p Получать спецпредложения 
+  label.toggle__label2
+    input(type="checkbox" class="toggle__input2" autocomplete='off')
+    .toggle__non-checked 
+    p.toggle-nonchecked__p Получать спецпредложения 
+
+
+.like-button 
+  h2 like button 
+  label.like-button__labbel1
+    input(type="checkbox" class="like-button__input1" autocomplete='off' )
+    .like-button__none-checked
+      p.like-button__p 2 
+  label.like-button__labbel2
+    input(type="checkbox" class="like-button__input2" checked='')
+    .like-button__checked 
+      p.like-button__p 12
+
+.rate-button  
+  h2 rate button
