@@ -1,6 +1,30 @@
 @charset "UTF-8";
 /* общие свойства для input*/
-/* поле default */
+span {
+  position: absolute;
+  width: 57px;
+  height: 15px;
+  left: 262.74px;
+  top: 0px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+/* text fild default*/
+.text-field__default {
+  position: absolute;
+  height: 67px;
+  width: 320px;
+  left: 141px;
+  top: 140px;
+}
+
 .input__default {
   width: 318px;
   height: 42px;
@@ -17,6 +41,14 @@
 }
 
 /* поле hover/focus */
+.text-field__hover-focus {
+  height: 64.4423828125px;
+  width: 320px;
+  left: 141px;
+  top: 227px;
+  position: absolute;
+}
+
 .input__hover-focus {
   width: 318px;
   height: 42px;
@@ -33,6 +65,14 @@
 }
 
 /* поле dropdown */
+.dropdown {
+  height: 64.4423828125px;
+  width: 320px;
+  left: 141px;
+  top: 311px;
+  position: absolute;
+}
+
 .input__dropdown {
   width: 318px;
   height: 42px;
@@ -49,6 +89,14 @@
 }
 
 /* поле masked */
+.masked-text-field {
+  height: 67px;
+  width: 320px;
+  left: 141px;
+  top: 395px;
+  position: absolute;
+}
+
 .input__masked {
   width: 318px;
   height: 42px;
@@ -66,7 +114,15 @@
 }
 
 /* поле arrivale-date */
-.input-dropdown__arrivale-date {
+.arrivale-date {
+  height: 65px;
+  width: 150px;
+  left: 141px;
+  top: 502px;
+  position: absolute;
+}
+
+.input__arrivale-date {
   width: 318px;
   height: 42px;
   position: absolute;
@@ -83,7 +139,15 @@
 }
 
 /* поле departure-date */
-.input-dropdown__departure-date {
+.departure-date {
+  height: 65px;
+  width: 150px;
+  left: 311px;
+  top: 502px;
+  position: absolute;
+}
+
+.input__departure-date {
   width: 318px;
   height: 42px;
   position: absolute;
@@ -100,6 +164,14 @@
 }
 
 /* поле filter date */
+.filter-date {
+  height: 65px;
+  width: 266px;
+  left: 141px;
+  top: 607px;
+  position: absolute;
+}
+
 .input__filter-date {
   width: 318px;
   height: 42px;
@@ -117,6 +189,14 @@
 }
 
 /* поле subscription */
+.subscription {
+  height: 64px;
+  width: 267px;
+  left: 140px;
+  top: 712px;
+  position: absolute;
+}
+
 .input__subscription {
   width: 318px;
   height: 42px;
@@ -133,145 +213,7 @@
   width: 267px;
 }
 
-/* свойства label подписей к полям */
-/* label default */
-.label-input__default {
-  position: absolute;
-  height: 15px;
-  left: 141px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1f2041;
-  top: 143px;
-  width: 72px;
-}
-
-/* label hover/focus */
-.label-input__hover-focus {
-  position: absolute;
-  height: 15px;
-  left: 141px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1f2041;
-  top: 223.44px;
-  width: 72px;
-}
-
-/* label dropdown */
-.label-input__dropdown {
-  position: absolute;
-  height: 15px;
-  left: 141px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1f2041;
-  top: 304.44px;
-  width: 81px;
-}
-
-/* label masked */
-.label-input__masked-text-field {
-  position: absolute;
-  height: 15px;
-  left: 141px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1f2041;
-  top: 387px;
-  width: 130px;
-}
-
-/* label  arrivale-date*/
-.label-input-dropdown__arrivale-date {
-  position: absolute;
-  height: 15px;
-  left: 141px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1f2041;
-  top: 487px;
-  width: 150px;
-}
-
-/* label departure-date */
-.label-input-dropdown__departure-date {
-  position: absolute;
-  height: 15px;
-  left: 141px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1f2041;
-  top: 487px;
-  width: 150px;
-  left: 310px;
-}
-
-/* label filter date */
-.label-input__filter-date {
-  position: absolute;
-  height: 15px;
-  left: 141px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1f2041;
-  top: 588px;
-  width: 197px;
-}
-
-/* label subscription */
-.label-input__subscription {
-  position: absolute;
-  height: 15px;
-  left: 141px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1f2041;
-  top: 690px;
-  width: 170px;
-}
-
-.span__default {
-  position: absolute;
-  font-weight: normal;
-  text-align: right;
-  left: 261px;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.span__hover-focus {
+.text-field__hover-focus > span {
   position: absolute;
   font-weight: normal;
   text-align: right;
@@ -421,7 +363,7 @@
 }
 
 /* dropdown__arrivale-date placeholder */
-.input-dropdown__arrivale-date::-webkit-input-placeholder {
+.input__arrivale-date::-webkit-input-placeholder {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -430,7 +372,7 @@
   color: rgba(31, 32, 65, 0.75);
   text-transform: uppercase;
 }
-.input-dropdown__arrivale-date:-ms-input-placeholder {
+.input__arrivale-date:-ms-input-placeholder {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -439,7 +381,7 @@
   color: rgba(31, 32, 65, 0.75);
   text-transform: uppercase;
 }
-.input-dropdown__arrivale-date::-ms-input-placeholder {
+.input__arrivale-date::-ms-input-placeholder {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -448,7 +390,7 @@
   color: rgba(31, 32, 65, 0.75);
   text-transform: uppercase;
 }
-.input-dropdown__arrivale-date::placeholder {
+.input__arrivale-date::placeholder {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -459,7 +401,7 @@
 }
 
 /* dropdown__departure-date placeholder */
-.input-dropdown__departure-date::-webkit-input-placeholder {
+.input__departure-date::-webkit-input-placeholder {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -468,7 +410,7 @@
   color: rgba(31, 32, 65, 0.75);
   text-transform: uppercase;
 }
-.input-dropdown__departure-date:-ms-input-placeholder {
+.input__departure-date:-ms-input-placeholder {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -477,7 +419,7 @@
   color: rgba(31, 32, 65, 0.75);
   text-transform: uppercase;
 }
-.input-dropdown__departure-date::-ms-input-placeholder {
+.input__departure-date::-ms-input-placeholder {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -486,7 +428,7 @@
   color: rgba(31, 32, 65, 0.75);
   text-transform: uppercase;
 }
-.input-dropdown__departure-date::placeholder {
+.input__departure-date::placeholder {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -583,7 +525,7 @@
 }
 
 /* dropdown arrivale date img */
-.input-dropdown-arrivale-date__img {
+.input-arrivale-date__img {
   position: absolute;
   width: 42px;
   height: 42px;
@@ -601,7 +543,7 @@
 }
 
 /* dropdown departure date img */
-.input-dropdown-departure-date__img {
+.input-departure-date__img {
   position: absolute;
   width: 42px;
   height: 42px;
@@ -637,7 +579,7 @@
 }
 
 /* subscription img */
-.subscription {
+.subscription__img {
   position: absolute;
   width: 42px;
   height: 42px;
