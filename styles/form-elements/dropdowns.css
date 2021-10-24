@@ -1,0 +1,89 @@
+/* dropdown default */
+.dropdown-default {
+  height: 64px;
+  width: 266px;
+  left: 140px;
+  top: 876px;
+  position: absolute;
+}
+
+.dropdown-default > span {
+  left: 209px;
+}
+
+.dropdown-default__input {
+  position: absolute;
+  width: 266px;
+  height: 44px;
+  top: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.dropdown-default__img {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  left: 222px;
+  top: 20px;
+  cursor: pointer;
+  background-image: url("img/expand_more.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*  dropdown-expanded */
+.dropdown-expanded {
+  position: absolute;
+  height: 181.5576171875px;
+  width: 266px;
+  left: 140px;
+  top: 960px;
+}
+
+.dropdown-expanded > span {
+  left: 196px;
+}
+
+.dropdown-expanded__input {
+  position: absolute;
+  width: 266px;
+  height: 44px;
+  top: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.dropdown-expanded__img {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  left: 222px;
+  top: 20px;
+  cursor: pointer;
+  background-image: url("img/expand_more.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dropdown-expanded__form {
+  position: absolute;
+  width: 266px;
+  height: 119px;
+  left: 0px;
+  top: 64px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+}
+/*# sourceMappingURL=dropdowns.css.map */
