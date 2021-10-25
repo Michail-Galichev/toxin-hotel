@@ -484,6 +484,7 @@ h2 {
   position: absolute;
 }
 
+/* группа 2*/
 .rate-button__stars2 {
   height: 24px;
   width: 120px;
@@ -492,9 +493,88 @@ h2 {
   top: 28px;
 }
 
+/* hover для звезд */
 .hover:hover {
   background-image: url(img/star.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/*блок rich-checkbox-buttons */
+.rich-checkbox-buttons {
+  height: 145px;
+  width: 266px;
+  left: 587px;
+  top: 1196px;
+  position: absolute;
+}
+
+/* стили меток checkbox */
+.rich-checkbox-buttons__label {
+  display: block;
+  margin-bottom: 44px;
+  margin-top: 14px;
+  padding-left: 30px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/* скрываем стандартные checkbox */
+.rich-checkbox-buttons__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* кастомные checkbox */
+.rich-checkbox-buttons__div {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  position: absolute;
+  margin-left: -30px;
+}
+
+/* блоки дополнительных подписей checkbox */
+.rich-checkbox-buttons__hallway {
+  position: absolute;
+  width: 203px;
+  height: 28px;
+  left: 30px;
+  top: 55px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.rich-checkbox-buttons__helper {
+  position: absolute;
+  width: 236px;
+  height: 28px;
+  left: 30px;
+  top: 117px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.rich-checkbox-buttons__input:checked + .rich-checkbox-buttons__div {
+  background-image: url("img/Vector.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #bc9cff;
 }
 /*# sourceMappingURL=radio-checkbox.css.map */
