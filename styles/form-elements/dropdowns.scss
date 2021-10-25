@@ -253,7 +253,6 @@ p.last {
   left: 140px;
   top: 1246px;
   position: absolute;
-  border: yellowgreen 1px solid;
 }
 
 /* стили заголовка checkbox list expanded */
@@ -272,10 +271,9 @@ p.last {
   position: absolute;
   top: 0px;
   left: 222px;
-  background-image: url('img/expand_more.svg');
+  background-image: url('img/expand_more_expanded.svg');
   background-position: center;
   background-repeat: no-repeat;
-  border: yellowgreen 1px solid;
 }
 
 /* checkbox block */
@@ -286,6 +284,8 @@ p.last {
   top: 47px;
   position: absolute;
 }
+
+/* свойства меток checkbox */
 
 .checkbox-block > label {
   margin-bottom: 12px;
@@ -299,6 +299,7 @@ p.last {
   padding-left: 30px;
 }
 
+/* скрываем стандартные checkbox*/
 .checkbox-block__input {
   position: absolute;
   width: 1px;
@@ -307,6 +308,7 @@ p.last {
   clip: rect(0 0 0 0);
 }
 
+/* стили для кастомных checkbox*/
 .checkbox-list__div {
   position: absolute;
   width: 20px;
@@ -317,9 +319,266 @@ p.last {
   border-radius: 4px;
 }
 
+/* checked */
 .checkbox-block__input:checked + .checkbox-list__div {
   border: 1px solid rgba(188, 156, 255, 1);
   background-image: url('img/Vector.png');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/* блок dropdown gast empty*/
+
+.dropdown-gast__empty {
+  height: 221px;
+  width: 320px;
+  left: 587px;
+  top: 876px;
+  position: absolute;
+}
+
+/* свойства текстового поля*/
+.dropdown-gast-empty__input {
+  position: absolute;
+  width: 320px;
+  height: 44px;
+  top: 20px;
+  padding-left: 15px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+/* placeholder */
+
+.dropdown-gast-empty__input::placeholder {
+  width: 112px;
+  height: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/* стили expand more*/
+
+.dropdown-gast-empty__img {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  left: 276px;
+  top: 20px;
+  background-image: url('img/expand_more.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* свойства dropdown гости empty*/
+
+.dropdown-gast-empty__form {
+  position: absolute;
+  width: 320px;
+  height: 159px;
+  top: 62.56px;
+  left: px;
+  background: #ffffff;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+/* кнопки +/- */
+
+.dropdown-gast-empty__form > .dropdown__circle-plus1 {
+  @include circle-plus;
+  left: 283px;
+}
+.dropdown-gast-empty__form > .dropdown__circle-plus2 {
+  @include circle-plus;
+  left: 283px;
+}
+.dropdown-gast-empty__form > .dropdown__circle-plus3 {
+  @include circle-plus;
+  left: 283px;
+}
+.dropdown-gast-empty__form > .dropdown__circle-minus1 {
+  @include circle-minus;
+  left: 221px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+.dropdown-gast-empty__form > .dropdown__circle-minus2 {
+  @include circle-minus;
+  left: 221px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+.dropdown-gast-empty__form > .dropdown__circle-minus3 {
+  @include circle-minus;
+  left: 221px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+/* счётчики */
+
+@mixin counter {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: #1f2041;
+  display: flex;
+  height: 15px;
+  width: 92px;
+  left: 221px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.adults {
+  top: 13px;
+  @include counter;
+}
+.children {
+  top: 50px;
+  @include counter;
+}
+.babies {
+  top: 87px;
+  @include counter;
+}
+
+/////////////////////////////////////////////////////////////
+
+/* свойства dropdown гости filled in*/
+
+.dropdown-gast__filled-in {
+  height: 221.5576171875px;
+  width: 320px;
+  left: 979px;
+  top: 876px;
+  position: absolute;
+}
+
+/* свойства текстового поля*/
+.dropdown-gast-filled-in__input {
+  position: absolute;
+  width: 320px;
+  height: 44px;
+  top: 20px;
+  padding-left: 15px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+/* placeholder */
+
+.dropdown-gast-filled-in__input::placeholder {
+  width: 112px;
+  height: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/* стили expand more*/
+
+.dropdown-gast-filled-in__img {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  left: 276px;
+  top: 20px;
+  background-image: url('img/expand_more.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* свойства dropdown гости empty*/
+
+.dropdown-gast-filled-in__form {
+  position: absolute;
+  width: 320px;
+  height: 159px;
+  top: 62.56px;
+  left: px;
+  background: #ffffff;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+/* кнопки +/- */
+
+.dropdown-gast-filled-in__form > .dropdown__circle-plus1 {
+  @include circle-plus;
+  left: 283px;
+}
+.dropdown-gast-filled-in__form > .dropdown__circle-plus2 {
+  @include circle-plus;
+  left: 283px;
+}
+.dropdown-gast-filled-in__form > .dropdown__circle-plus3 {
+  @include circle-plus;
+  left: 283px;
+}
+.dropdown-gast-filled-in__form > .dropdown__circle-minus1 {
+  @include circle-minus;
+  left: 221px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.dropdown-gast-filled-in__form > .dropdown__circle-minus2 {
+  @include circle-minus;
+  left: 221px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.dropdown-gast-filled-in__form > .dropdown__circle-minus3 {
+  @include circle-minus;
+  left: 221px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+/* счётчики */
+
+@mixin counter {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: #1f2041;
+  display: flex;
+  height: 15px;
+  width: 92px;
+  left: 221px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.adults {
+  top: 13px;
+  @include counter;
+}
+.children {
+  top: 50px;
+  @include counter;
+}
+.babies {
+  top: 87px;
+  @include counter;
 }
