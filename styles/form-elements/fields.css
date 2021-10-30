@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* общие свойства для input*/
-span {
+.text-field__span {
   position: absolute;
   width: 57px;
   height: 15px;

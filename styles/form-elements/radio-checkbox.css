@@ -392,7 +392,7 @@ h2 {
 }
 
 .like-button__input1:checked + .like-button__none-checked {
-  background-image: url("img/favorite.svg");
+  background-image: url("img/favorite.png");
   background-repeat: no-repeat;
   background-position: center left 5px;
   border: 1px solid #bc9cff;
@@ -404,7 +404,7 @@ h2 {
 }
 
 .like-button__input2:checked + .like-button__checked {
-  background-image: url("img/favorite.svg");
+  background-image: url("img/favorite.png");
   background-repeat: no-repeat;
   background-position: center left 5px;
   border: 1px solid #bc9cff;
