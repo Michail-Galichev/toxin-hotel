@@ -1,0 +1,184 @@
+/* блок приемущества*/
+
+.advantages {
+  height: 158px;
+  width: 291px;
+  left: 140px;
+  top: 1564px;
+  position: absolute;
+}
+
+/*смайлик*/
+.advantages__face {
+  height: 48px;
+  width: 48px;
+  left: 0px;
+  top: 0px;
+}
+
+.advantages__face > svg {
+  margin: 4px;
+}
+
+/*город*/
+.advantages__city {
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  left: 0px;
+  top: 89px;
+}
+
+.advantages__city > svg {
+  margin: 4px 5px 4px 6px;
+}
+
+/* приемущество комфорт*/
+.advantages-face__comfort {
+  height: 48px;
+  width: 233px;
+  left: 58px;
+  top: 3px;
+  position: absolute;
+}
+
+/* приемущество удобство */
+.advantages-city__convenience {
+  height: 48px;
+  width: 233px;
+  left: 58px;
+  top: 92px;
+  position: absolute;
+}
+
+/*миксин свойств описания приемуществ */
+
+@mixin paragraf {
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  position: absolute;
+}
+
+/*жирный шрифт*/
+.advantages-face__bold {
+  font-weight: bold;
+  @include paragraf;
+}
+
+/*нормальный шрифт*/
+.advantages-face__normal {
+  font-weight: normal;
+  @include paragraf;
+  top: 23px;
+}
+
+/*жирный шрифт*/
+.advantages-city__bold {
+  font-weight: bold;
+  @include paragraf;
+}
+
+/*нормальный шрифт*/
+.advantages-city__normal {
+  font-weight: normal;
+  @include paragraf;
+  top: 23px;
+}
+
+/* горизоньальная линия блока advantages-face */
+.advantages-face__line {
+  position: absolute;
+  width: 280px;
+  height: 1px;
+  right: 11px;
+  top: 68px;
+  background: rgba(31, 32, 65, 0.1);
+}
+
+/* горизоньальная линия блока advantages-city */
+
+.advantages-city__line {
+  position: absolute;
+  width: 280px;
+  height: 1px;
+  right: 11px;
+  top: 65px;
+  background: rgba(31, 32, 65, 0.1);
+}
+
+/*блок отзывов*/
+
+.reviews {
+  height: 133px;
+  width: 711px;
+  left: 587px;
+  top: 1574px;
+  position: absolute;
+}
+
+/*фото пользователя*/
+
+.reviews__img {
+  left: -20px;
+  top: -10px;
+  position: absolute;
+}
+
+/*like checkbox*/
+
+.reviews__like-button {
+  right: 756px;
+  top: 28px;
+  position: absolute;
+}
+
+/* блок данных о пользователе*/
+.reviews__user {
+  height: 48px;
+  width: 220.5px;
+  left: 58px;
+  top: 3px;
+  position: absolute;
+}
+
+/* имя пользователя*/
+
+.reviews-user__name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/*срок давности отзыва*/
+
+.reviews-user__time {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/*отзыв*/
+
+.reviews__content {
+  position: absolute;
+  width: 653px;
+  height: 72px;
+  left: 58px;
+  top: 61px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
