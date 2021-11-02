@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel headers-footers.pug --open=firefox",
+    "start": "parcel ui_kit/headers-footers.pug --open=firefox",
     "build": "parcel colors-type.pug -d docs --public-url ./"
   },
   "keywords": [],

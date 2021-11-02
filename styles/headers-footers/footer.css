@@ -1,0 +1,628 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1440px;
+  height: 1350px;
+  background: #e5e5e5;
+}
+
+/*свойства блока навигации/регистрации*/
+.nav-reg {
+  position: absolute;
+  width: 1440px;
+  left: 0px;
+  background: white;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+  top: 140px;
+  height: 70px;
+}
+
+.nav-reg__logo {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  left: 140px;
+}
+
+.nav-reg__logo > .curve-reight-gradient {
+  position: absolute;
+  top: 15.29px;
+  left: 21.4px;
+}
+
+.nav-reg__logo > .curve-left-gradient {
+  position: absolute;
+  top: 15.29px;
+  left: 9.4px;
+}
+
+/*логотип токсин*/
+.nav-reg__toxin {
+  width: 53.19px;
+  height: 12.95px;
+  position: absolute;
+  left: 192.5px;
+  top: 28.33px;
+}
+
+/*блок кнопок*/
+.nav-reg__buttons {
+  position: absolute;
+  top: 16px;
+  left: 989px;
+  height: 38px;
+}
+
+.nav-reg-buttons__to-come-in {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  font-family: Montserrat;
+  margin-right: 20px;
+  height: 34px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #bc9cff;
+  width: 87px;
+}
+
+/*"Зарегистрироваться"*/
+.nav-reg-buttons__register {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  font-family: Montserrat;
+  margin-right: 20px;
+  height: 34px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #bc9cff;
+  width: 192px;
+}
+
+/*подпись войти*/
+.nav-reg-buttons__to-come-in > span {
+  position: absolute;
+  width: 84 px;
+  top: 12px;
+  width: 47px;
+  left: 24px;
+}
+
+/* подпись зарегистрироаться*/
+.nav-reg-buttons__register > span {
+  position: absolute;
+  width: 163px;
+  top: 12px;
+  left: 130px;
+  width: 157px;
+  height: 15px;
+}
+
+/*hover для кнопок*/
+.nav-reg-buttons__register:hover,
+.nav-reg-buttons__to-come-in:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #ffffff;
+}
+
+/*горизонтальное меню*/
+.nav-reg__ul {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding-left: 0px;
+  left: 530px;
+  top: 26px;
+}
+
+.nav-reg__ul > li {
+  display: inline-block;
+}
+
+/*свойства пунктов меню*/
+.nav-reg-ul-li__a {
+  font-family: 'Montserrat';
+  text-decoration: none;
+  padding-right: 20px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+  margin-bottom: 12px;
+}
+
+/*hover для меню */
+.nav-reg-ul-li__a:hover {
+  color: rgba(31, 32, 65, 0.75);
+  font-weight: bold;
+}
+
+/*картика expand_more*/
+.nav-reg__expand_more1 {
+  fill: rgba(31, 32, 65, 0.5);
+  top: 32px;
+  left: 646px;
+  position: absolute;
+}
+
+.nav-reg__expand_more2 {
+  fill: rgba(31, 32, 65, 0.5);
+  top: 32px;
+  left: 953px;
+  position: absolute;
+}
+
+/*пункт меню вакансии*/
+.vacancy {
+  margin-left: 22px;
+}
+
+.nav-reg-expand_more1:hover,
+.nav-reg-expand_more2:hover {
+  fill: rgba(31, 32, 65, 0.75);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1440px;
+  height: 1350px;
+  background: #e5e5e5;
+}
+
+/*свойства блока навигации/регистрации*/
+.nav-reg {
+  position: absolute;
+  width: 1440px;
+  left: 0px;
+  background: white;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+  top: 140px;
+  height: 70px;
+}
+
+.nav-reg__logo {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  left: 140px;
+}
+
+.nav-reg__logo > .curve-reight-gradient {
+  position: absolute;
+  top: 15.29px;
+  left: 21.4px;
+}
+
+.nav-reg__logo > .curve-left-gradient {
+  position: absolute;
+  top: 15.29px;
+  left: 9.4px;
+}
+
+/*логотип токсин*/
+.nav-reg__toxin {
+  width: 53.19px;
+  height: 12.95px;
+  position: absolute;
+  left: 192.5px;
+  top: 28.33px;
+}
+
+/*блок кнопок*/
+.nav-reg__buttons {
+  position: absolute;
+  top: 16px;
+  left: 989px;
+  height: 38px;
+}
+
+.nav-reg-buttons__to-come-in {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  font-family: Montserrat;
+  margin-right: 20px;
+  height: 34px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #bc9cff;
+  width: 87px;
+}
+
+/*"Зарегистрироваться"*/
+.nav-reg-buttons__register {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  font-family: Montserrat;
+  margin-right: 20px;
+  height: 34px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #bc9cff;
+  width: 192px;
+}
+
+/*подпись войти*/
+.nav-reg-buttons__to-come-in > span {
+  position: absolute;
+  width: 84 px;
+  top: 12px;
+  width: 47px;
+  left: 24px;
+}
+
+/* подпись зарегистрироаться*/
+.nav-reg-buttons__register > span {
+  position: absolute;
+  width: 163px;
+  top: 12px;
+  left: 130px;
+  width: 157px;
+  height: 15px;
+}
+
+/*hover для кнопок*/
+.nav-reg-buttons__register:hover,
+.nav-reg-buttons__to-come-in:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #ffffff;
+}
+
+/*горизонтальное меню*/
+.nav-reg__ul {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding-left: 0px;
+  left: 530px;
+  top: 26px;
+}
+
+.nav-reg__ul > li {
+  display: inline-block;
+}
+
+/*свойства пунктов меню*/
+.nav-reg-ul-li__a {
+  font-family: 'Montserrat';
+  text-decoration: none;
+  padding-right: 20px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+  margin-bottom: 12px;
+}
+
+/*hover для меню */
+.nav-reg-ul-li__a:hover {
+  color: rgba(31, 32, 65, 0.75);
+  font-weight: bold;
+}
+
+/*картика expand_more*/
+.nav-reg__expand_more1 {
+  fill: rgba(31, 32, 65, 0.5);
+  top: 32px;
+  left: 646px;
+  position: absolute;
+}
+
+.nav-reg__expand_more2 {
+  fill: rgba(31, 32, 65, 0.5);
+  top: 32px;
+  left: 953px;
+  position: absolute;
+}
+
+/*пункт меню вакансии*/
+.vacancy {
+  margin-left: 22px;
+}
+
+.nav-reg-expand_more1:hover,
+.nav-reg-expand_more2:hover {
+  fill: rgba(31, 32, 65, 0.75);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Italic.eot");
+  src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+.copyright {
+  position: absolute;
+  width: 1440px;
+  left: 0px;
+  background: white;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+  height: 70px;
+  top: 733px;
+}
+
+.copyright-text {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  height: 18px;
+  top: 26px;
+  left: 140px;
+  width: 372px;
+  line-height: 17px;
+}
+
+.copyright-text2 {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  top: 176px;
+  height: 18px;
+  left: 104px;
+  width: 560px;
+  text-align: center;
+  line-height: 17px;
+}
+
+/*свойства блока*/
+.footer {
+  position: absolute;
+  width: 1440px;
+  left: 0px;
+  background: white;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+  height: 372px;
+  top: 360px;
+}
+
+/*логотип*/
+.footer__logo {
+  position: absolute;
+  top: 100px;
+  left: 140px;
+  width: 40px;
+  height: 40px;
+}
+
+.footer__logo > .curve-reight-gradient {
+  position: absolute;
+  top: 15.29px;
+  left: 21.4px;
+}
+
+.footer__logo > .curve-left-gradient {
+  position: absolute;
+  top: 15.29px;
+  left: 9.4px;
+}
+
+/*логотип токсин*/
+.footer__toxin {
+  width: 53.19px;
+  height: 12.95px;
+  position: absolute;
+  left: 192.5px;
+  top: 113.33px;
+}
+
+/*бронирование номеров*/
+.footer__content {
+  position: absolute;
+  width: 260px;
+  height: 72px;
+  left: 140px;
+  top: 155px;
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+}
+
+.footer__ul1 {
+  position: absolute;
+  left: 440px;
+  top: 104px;
+}
+
+.footer__ul1 > li {
+  display: block;
+}
+
+.footer__ul2 {
+  position: absolute;
+  left: 640px;
+  top: 104px;
+}
+
+.footer__ul2 > li {
+  display: block;
+}
+
+.footer__ul3 {
+  position: absolute;
+  left: 840px;
+  top: 104px;
+}
+
+.footer__ul3 > li {
+  display: block;
+}
+
+/*свойства пунктов*/
+.footer-ul-li__a {
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+/*допкласс для первых пунктов меню*/
+.navigation {
+  color: rgba(31, 32, 65, 0.75);
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 21px;
+  font-family: Montserrat;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 14.63px;
+}
+
+.footer__subscription {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  top: 104px;
+  left: 1040px;
+}
+
+/*ссылка на подписку*/
+.footer__subscription > a {
+  margin-bottom: 10px;
+}
+
+/*спец предложения...*/
+.footer__subscription > p {
+  white-space: pre-wrap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-bottom: 15px;
+}
+
+/*поле email*/
+.footer-subscription__input-email {
+  position: absolute;
+  top: 94px;
+  width: 260px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  padding-left: 15px;
+}
+
+/*стрелка*/
+.footer-subscription__arrow {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 94px;
+  left: 232px;
+  background-position: center;
+  cursor: pointer;
+  background-image: url("../img/arrow_forward.svg");
+  background-repeat: no-repeat;
+}
+
+/*placeholder input email*/
+.footer-subscription__input-email::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.footer-subscription__input-email:-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.footer-subscription__input-email::-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.footer-subscription__input-email::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
+/*# sourceMappingURL=footer.css.map */

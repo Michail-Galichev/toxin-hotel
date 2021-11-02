@@ -1,31 +1,39 @@
+@import 'nav-reg.scss';
+
 @font-face {
   font-family: 'Montserrat';
-  src: url('fonts/Montserrat-Regular.eot');
-  src: local('☺'), url('fonts/Montserrat-Regular.woff') format('woff'),
-    url('fonts/Montserrat-Regular.ttf') format('truetype'),
-    url('fonts/Montserrat-Regular.svg') format('svg');
+  src: url('../fonts/Montserrat-Regular.eot');
+  src: local('☺'), url('../fonts/Montserrat-Regular.woff') format('woff'),
+    url('../fonts/Montserrat-Regular.ttf') format('truetype'),
+    url('../fonts/Montserrat-Regular.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('fonts/Montserrat-Bold.eot');
-  src: local('☺'), url('fonts/Montserrat-Bold.woff') format('woff'),
-    url('fonts/Montserrat-Bold.ttf') format('truetype'),
-    url('fonts/Montserrat-Bold.svg') format('svg');
+  src: url('../fonts/Montserrat-Bold.eot');
+  src: local('☺'), url('../fonts/Montserrat-Bold.woff') format('woff'),
+    url('../fonts/Montserrat-Bold.ttf') format('truetype'),
+    url('../fonts/Montserrat-Bold.svg') format('svg');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('fonts/Montserrat-Italic.eot');
-  src: local('☺'), url('fonts/Montserrat-Italic.woff') format('woff'),
-    url('fonts/Montserrat-Italic.ttf') format('truetype'),
-    url('fonts/Montserrat-Italic.svg') format('svg');
+  src: url('../fonts/Montserrat-Italic.eot');
+  src: local('☺'), url('../fonts/Montserrat-Italic.woff') format('woff'),
+    url('../fonts/Montserrat-Italic.ttf') format('truetype'),
+    url('../fonts/Montserrat-Italic.svg') format('svg');
   font-weight: normal;
   font-style: italic;
+}
+
+.copyrighting {
+  @include navigation;
+  height: 70px;
+  top: 733px;
 }
 
 @mixin copyright-text {
@@ -37,7 +45,7 @@
   color: rgba(31, 32, 65, 0.75);
 }
 
-.copyright-text {
+.copyrighting__text {
   @include copyright-text;
   height: 18px;
   top: 26px;
@@ -46,7 +54,7 @@
   line-height: 17px;
 }
 
-.copyright-text2 {
+.copyrighting__text2 {
   @include copyright-text;
   top: 176px;
   height: 18px;
@@ -54,14 +62,4 @@
   width: 560px;
   text-align: center;
   line-height: 17px;
-}
-
-.footer-content {
-  position: absolute;
-  width: 260px;
-  height: 72px;
-  left: 140px;
-  top: 155px;
-  @include copyright-text;
-  line-height: 24px;
 }
