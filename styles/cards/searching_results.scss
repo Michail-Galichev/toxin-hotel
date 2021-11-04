@@ -1,0 +1,423 @@
+/* свойства формы */
+
+.searching-results {
+  position: relative;
+  width: 380px;
+  height: 512px;
+  left: 560px;
+  top: 104px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+/* свойства № */
+
+.span__h1 {
+  position: absolute;
+  width: 69px;
+  height: 30px;
+  left: -46px;
+  top: 4px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #1f2041;
+}
+
+/* основной заголовок */
+
+.searching-results__h1 {
+  position: absolute;
+  width: 69px;
+  height: 30px;
+  left: 50px;
+  top: 42px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 17px;
+
+  color: #1f2041;
+}
+
+/* свойства параграфа люкс */
+
+.p__luxury {
+  position: absolute;
+  width: 41px;
+  height: 15px;
+  left: 108px;
+  top: 49px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+
+  text-transform: uppercase;
+
+  color: #bc9cff;
+}
+
+/* свойства параграфа цена засутки */
+
+.p__price-per-day {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  left: 250px;
+  top: 49px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.span__per-day {
+  position: absolute;
+  font-size: 12px;
+  font-weight: normal;
+  left: -64px;
+  top: 2px;
+}
+
+/* подписи для поля дат */
+
+@mixin headers {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  color: #1f2041;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  height: 15px;
+}
+
+.searching-results-header__arrival {
+  @include headers;
+  width: 83px;
+  left: 30px;
+  top: 90px;
+}
+
+.searching-results-header__departure {
+  @include headers;
+  width: 83px;
+  left: 200px;
+  top: 90px;
+}
+
+.searching-results-header__gast {
+  @include headers;
+  position: absolute;
+  width: 43px;
+  top: 175px;
+  left: 30px;
+}
+
+/* поля дат */
+.searching-results__arrival-date {
+  position: absolute;
+  width: 150px;
+  height: 44px;
+  left: 30px;
+  top: 110px;
+  padding-left: 15px;
+  background-image: url(../img/expand_more.svg) no-repeat right;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.searching-results__date-of-departure {
+  position: absolute;
+  width: 150px;
+  height: 44px;
+  left: 200px;
+  top: 110.44px;
+  padding-left: 15px;
+  background: #ffffff;
+
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* блоки изображений полей дат*/
+
+.searching-results-expand-more__arrival-date {
+  position: relative;
+  pointer-events: none;
+  width: 44px;
+  height: 44px;
+  left: 136px;
+  top: 110px;
+}
+
+.searching-results-expand-more__date-of-departure {
+  position: relative;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  left: 306px;
+  top: 65px;
+  pointer-events: none;
+}
+
+.expand-more__img {
+  position: absolute;
+  top: 18px;
+  left: 21px;
+}
+
+/* поле гости */
+.searching-results__gast {
+  position: absolute;
+  width: 320px;
+  height: 44px;
+  left: 30px;
+  top: 195px;
+  background: #ffffff;
+  padding-left: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* блок изображения поля гости */
+
+.searching-results-gast__expand-more {
+  position: absolute;
+
+  left: 325.74px;
+  top: 215.56px;
+  cursor: pointer;
+}
+
+/* параграфы */
+
+@mixin paragraf {
+  position: absolute;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.searcning-results__p1 {
+  @include paragraf;
+  height: 24px;
+  width: 116px;
+  position: absolute;
+  top: 252.56px;
+  left: 30px;
+}
+.searcning-results__p2 {
+  @include paragraf;
+  position: absolute;
+  height: 24px;
+  width: 214px;
+  top: 283px;
+  left: 30px;
+}
+.searcning-results__p3 {
+  @include paragraf;
+  position: absolute;
+  height: 36px;
+  width: 214px;
+  top: 316px;
+  left: 30px;
+  line-height: 18px;
+}
+.searcning-results__p4 {
+  @include paragraf;
+  position: absolute;
+  top: 252.56px;
+  height: 24px;
+  width: 57px;
+  right: 30px;
+}
+.searcning-results__p5 {
+  @include paragraf;
+  position: absolute;
+  height: 24px;
+  width: 20px;
+  top: 283px;
+  right: 30px;
+}
+.searcning-results__p6 {
+  @include paragraf;
+  position: absolute;
+  top: 314px;
+  height: 24px;
+  width: 37px;
+  right: 30px;
+}
+
+/* заголовки итого и сумма */
+.searching-results-h2__total {
+  position: absolute;
+  width: 60px;
+  height: 24px;
+  left: 30px;
+  top: 390px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+
+  color: #1f2041;
+}
+
+.searching-results-h2__summ {
+  position: absolute;
+  width: 60px;
+  height: 24px;
+  right: 47px;
+  top: 390px;
+  white-space: nowrap;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+
+  color: #1f2041;
+}
+
+/* кнопка */
+
+.searching-results-link__to-book {
+  position: absolute;
+  top: 437.56px;
+  left: 28px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 316px;
+  height: 42px;
+
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(rgba(188, 156, 255, 1), rgba(139, 164, 249, 1)) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #bc9cff;
+}
+
+.searching-results-link__to-book span {
+  position: absolute;
+  width: 280px;
+  top: 14px;
+  height: 15px;
+  left: 20px;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+}
+
+.searching-results-link__to-book:hover {
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #ffffff;
+  border: none;
+}
+
+.searching-results-image__to-book {
+  position: absolute;
+  left: 290px;
+  top: 13px;
+  fill: url('#paint0_linear');
+}
+
+.searching-results__block:hover .searching-results-image__to-book {
+  fill: white;
+}
+
+/* placeholder */
+
+::placeholder {
+  width: 50px;
+  height: 24px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/* информационые кнопки */
+
+.searching-results__information1 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 250px;
+  top: 283.56px;
+  cursor: pointer;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.searching-results__information2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 250px;
+  top: 317.56px;
+  cursor: pointer;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.searching-results-information__p {
+  position: absolute;
+  left: 6.5px;
+  top: 2px;
+  font-family: 'Montserrat';
+  width: 4px;
+  height: 14px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+
+  text-align: right;
+
+  color: rgba(31, 32, 65, 0.25);
+}
