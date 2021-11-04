@@ -5,54 +5,6 @@
 
 body {
   width: 1440px;
-  height: 900px;
-  background: #e5e5e5;
-}
-
-@mixin nav {
-  position: absolute;
-  width: 1440px;
-  left: 0px;
-  background: rgba(255, 255, 255, 1);
-  box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
-}
-
-.nav-reg {
-  @include nav;
-  top: 140px;
-}
-
-.nav {
-  @include nav;
-  top: 94px;
-}
-
-.footer {
-  @include nav;
-  height: 372px;
-  top: 94px;
-}
-
-.copyright {
-  @include nav;
-  height: 70px;
-  top: 95px;
-}
-
-.footer-mobile {
-  @include nav;
-  width: 768px;
-  height: 367px;
-  left: 336px;
-  top: 135px;
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  width: 1440px;
   height: 1350px;
   background: #e5e5e5;
 }
