@@ -48,7 +48,7 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  background-image: url(img/arrow_forward.svg);
+  background-image: url(../img/arrow_forward.svg);
   background-repeat: no-repeat;
   background-position: center;
   transform: rotate(180deg);
@@ -59,7 +59,7 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  background-image: url(img/arrow_forward.svg);
+  background-image: url(../img/arrow_forward.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -180,7 +180,7 @@
 }
 
 div.days__current-date {
-  background-image: url(img/current_date.svg);
+  background-image: url(../img/current_date.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

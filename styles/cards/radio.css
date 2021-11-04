@@ -65,13 +65,13 @@
 
 .radio-label-men_input:checked + .radio-input_men {
   box-shadow: 0 0 0 1px #bc9cff;
-  background-image: url(img/2ectangle2.1.svg);
+  background-image: url(../img/2ectangle2.1.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .radio-label-women_input:checked + .radio-input_women {
   box-shadow: 0 0 0 1px #bc9cff;
-  background-image: url(img/2ectangle2.1.svg);
+  background-image: url(../img/2ectangle2.1.svg);
   background-repeat: no-repeat;
   background-position: center;
 }

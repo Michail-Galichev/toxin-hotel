@@ -109,7 +109,7 @@
 /* звёзды */
 
 @mixin stars {
-  background-image: url(img/star_border.svg);
+  background-image: url(../img/star_border.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 24px;
@@ -141,7 +141,7 @@
 }
 
 .hover:hover {
-  background-image: url(img/star.svg);
+  background-image: url(../img/star.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -209,7 +209,7 @@
 /* вперед назад */
 
 .number-card_expand-more-left {
-  background-image: url(img/expand_more_left.svg);
+  background-image: url(../img/expand_more_left.svg);
   position: absolute;
   width: 44px;
   height: 44px;
@@ -220,7 +220,7 @@
 }
 
 .number-card_expand-more-right {
-  background-image: url(img/expand_more_right.svg);
+  background-image: url(../img/expand_more_right.svg);
   position: absolute;
   width: 44px;
   height: 44px;

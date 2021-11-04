@@ -139,7 +139,7 @@
   left: 30px;
   top: 110px;
   padding-left: 15px;
-  background-image: url(img/expand_more.svg) no-repeat right;
+  background-image: url(../img/expand_more.svg) no-repeat right;
   border: 1px solid rgba(31, 32, 65, 0.25);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
