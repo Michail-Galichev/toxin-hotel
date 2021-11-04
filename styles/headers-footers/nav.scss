@@ -1,5 +1,45 @@
-//Горизонтальное меню блоков nav-reg и nav.
-ul.registration {
+@import 'nav-reg.scss';
+
+.nav {
+  @include navigation;
+  top: 250px;
+  height: 70px;
+}
+
+//Свойства логотипа блока  nav.pug
+
+.nav__logo {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  left: 140px;
+}
+
+.nav__logo > .curve-reight-gradient {
+  position: absolute;
+  top: 15.29px;
+  left: 21.4px;
+}
+
+.nav__logo > .curve-left-gradient {
+  position: absolute;
+  top: 15.29px;
+  left: 9.4px;
+}
+
+/*логотип токсин*/
+.nav__toxin {
+  width: 53.19px;
+  height: 12.95px;
+  position: absolute;
+  left: 192.5px;
+  top: 28.33px;
+}
+
+/*горизонтальное меню*/
+
+.nav__ul {
   position: absolute;
   list-style: none;
   margin: 0;
@@ -8,273 +48,65 @@ ul.registration {
   top: 26px;
 }
 
-ul.registered {
-  position: absolute;
-  list-style: none;
-  margin: 0;
-  padding-left: 0px;
-  left: 712px;
-  top: 26px;
-}
-
-li {
+.nav__ul > li {
   display: inline-block;
 }
 
-a {
-  font-family: 'Montserrat';
-  text-decoration: none;
-  padding-right: 20px;
-  display: inline-block;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: rgba(31, 32, 65, 0.5);
-  margin-bottom: 12px;
+/*свойства пунктов меню*/
+
+.nav-reg-ul-li__a {
+  @include menu;
 }
 
-a:hover {
+/*hover для меню */
+.nav-reg-ul-li__a:hover {
   color: rgba(31, 32, 65, 0.75);
   font-weight: bold;
 }
 
-.nav-expand_more1 {
-  fill: rgba(31, 32, 65, 0.5);
-  top: 32px;
-  left: 1135px;
-  position: absolute;
-}
-
-.nav-expand_more1:hover,
-.nav-expand_more2:hover,
-.nav-reg-expand_more1:hover,
-.nav-reg-expand_more2:hover {
-  fill: rgba(31, 32, 65, 0.75);
-}
-
-.nav-expand_more2 {
-  fill: rgba(31, 32, 65, 0.5);
-  top: 32px;
-  left: 828px;
-  position: absolute;
-}
-.nav-reg-expand_more1 {
+/*картика expand_more*/
+.nav__expand_more1 {
   fill: rgba(31, 32, 65, 0.5);
   top: 32px;
   left: 646px;
   position: absolute;
 }
-.nav-reg-expand_more2 {
+.nav__expand_more2 {
   fill: rgba(31, 32, 65, 0.5);
   top: 32px;
   left: 953px;
   position: absolute;
 }
-
+/*пункт меню вакансии*/
 .vacancy {
   margin-left: 22px;
 }
 
-.rectangle-image {
+.nav-expand_more1:hover,
+.nav-expand_more2:hover {
+  fill: rgba(31, 32, 65, 0.75);
+}
+
+.nav__vertical-line {
   position: absolute;
   width: 1px;
   height: 30px;
-  left: 986px;
-  top: -5px;
+  right: 260px;
+  top: 20px;
+  background: rgba(31, 32, 65, 0.1);
 }
 
-.name-guest {
+.nav__guest-name {
   position: absolute;
   width: 100px;
   height: 18px;
-  left: 1006px;
-  top: 0px;
+  right: 140px;
+  top: 26px;
 
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-
-  /* Dark 50% */
-
-  color: rgba(31, 32, 65, 0.5);
-}
-//Кнопки "Войти" и "Зарегистрироваться"
-
-.button-to-come-in {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(#fff, #fff) padding-box,
-    linear-gradient(rgba(188, 156, 255, 1), rgba(139, 164, 249, 1)) border-box;
-  border: 2px solid transparent;
-  border-radius: 22px;
-  text-align: center;
-  text-decoration: none;
-  width: 66px;
-  margin-right: 20px;
-  height: 34px;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #bc9cff;
-}
-
-.button-register {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(#fff, #fff) padding-box,
-    linear-gradient(rgba(188, 156, 255, 1), rgba(139, 164, 249, 1)) border-box;
-  border: 2px solid transparent;
-  border-radius: 22px;
-  text-align: center;
-  text-decoration: none;
-  height: 34px;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #bc9cff;
-  width: 172px;
-}
-
-.buttons {
-  position: relative;
-  top: 16px;
-  left: 989px;
-}
-
-.button-to-come-in span {
-  position: relative;
-  width: 87px;
-  margin-right: 20px;
-  top: 10px;
-  width: 47px;
-  left: 20px;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.button-register span {
-  position: relative;
-  width: 163px;
-  margin-right: 20px;
-  top: 10px;
-  left: 20px;
-  width: 157px;
-  height: 15px;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.button-register:hover,
-.button-to-come-in:hover {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-}
-
-// Свойства меню футера
-
-.footers-menu1 {
-  position: absolute;
-  left: 440px;
-  top: 104px;
-}
-
-li.ul-footers-menu1 {
-  display: block;
-}
-
-.footers-menu2 {
-  position: absolute;
-  left: 640px;
-  top: 104px;
-}
-
-li.ul-footers-menu2 {
-  display: block;
-}
-
-.footers-menu3 {
-  position: absolute;
-  left: 840px;
-  top: 104px;
-}
-
-li.ul-footers-menu3 {
-  display: block;
-}
-
-a.navigation {
-  color: rgba(31, 32, 65, 0.75);
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  font-size: 12px;
-  line-height: 14.63px;
-}
-
-// Ссылка на подписку и поле для email
-
-.subscription {
-  position: absolute;
-  width: 260px;
-  height: 84px;
-  top: 104px;
-  left: 1040px;
-}
-
-.subscription-link {
-  margin-bottom: 10px;
-}
-
-.subscription-paragraf {
-  white-space: pre-wrap;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-
-  color: rgba(31, 32, 65, 0.75);
-  margin-bottom: 15px;
-}
-
-.input-email {
-  width: 201px;
-  height: 44px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-right: none;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  padding-left: 15px;
-}
-
-.svg-arrow {
-  position: absolute;
-  width: 44px;
-  height: 44px;
-  top: 95px;
-  right: -1.8px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-left: none;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  text-align: center;
-}
-.arrow-forward {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-}
-::placeholder {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.25);
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
 }

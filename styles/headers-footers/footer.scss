@@ -1,70 +1,38 @@
-//Свойства логотипа блока  nav-reg.pug
+@import 'nav-reg.scss';
+@import 'copyright.scss';
 
-.nav-logo_reg {
-  width: 40px;
-  height: 40px;
-  position: relative;
-  top: 24px;
+/*свойства блока*/
+.footer {
+  @include navigation;
+  height: 372px;
+  top: 360px;
+}
+
+/*логотип*/
+
+.footer__logo {
+  position: absolute;
+  top: 100px;
   left: 140px;
-}
-
-.nav-reg-toxin {
-  width: 53.19px;
-  height: 12.95px;
-  position: absolute;
-  left: 192.5px;
-  top: 168.33px;
-}
-//Свойства логотипа блока nav.reg
-.nav-logo {
   width: 40px;
   height: 40px;
-  position: relative;
-  top: 24px;
-  left: 140px;
 }
 
-.nav-toxin {
-  width: 53.19px;
-  height: 12.95px;
+.footer__logo > .curve-reight-gradient {
   position: absolute;
-  left: 192.5px;
-  top: 278.33px;
+  top: 15.29px;
+  left: 21.4px;
 }
 
-.nav-circle_reg {
+.footer__logo > .curve-left-gradient {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 15px;
+  top: 15.29px;
+  left: 9.4px;
 }
 
-.nav-curve1_reg {
-  position: absolute;
-  width: 11.76px;
-  height: 11.76px;
-  left: 9.41px;
-  top: 28.29px;
-}
+/*логотип токсин*/
 
-.nav-curve2_reg {
-  position: absolute;
-  width: 9.12px;
-  height: 5.91px;
-  left: 20.47px;
-  top: 22.29px;
-}
-
-//Свойства логотипа блоков footer.pug и  footer-mobile.pug
-.footer-logo {
-  width: 40px;
-  height: 40px;
-  position: relative;
-  top: 85px;
-  left: 140px;
-}
-
-.toxin {
+.footer__toxin {
   width: 53.19px;
   height: 12.95px;
   position: absolute;
@@ -72,33 +40,137 @@
   top: 113.33px;
 }
 
-.footer-mobile-circle {
+/*бронирование номеров*/
+.footer__content {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 120px;
-  left: 331px;
-}
-.footer-mobile-curve1 {
-  position: absolute;
-  width: 11.76px;
-  height: 11.76px;
-  top: 132.29px;
-  left: 340.41px;
+  width: 260px;
+  height: 72px;
+  left: 140px;
+  top: 155px;
+  @include copyright-text;
+  line-height: 24px;
 }
 
-.footer-mobile-curve2 {
+// Свойства меню футера
+
+.footer__ul1 {
   position: absolute;
-  width: 9.12px;
-  height: 5.91px;
-  top: 126.29px;
-  left: 351.47px;
+  left: 440px;
+  top: 104px;
 }
 
-.footer-mobile-toxin {
+.footer__ul1 > li {
+  display: block;
+}
+
+.footer__ul2 {
   position: absolute;
-  width: 53.19px;
-  height: 12.95px;
-  top: 132px;
-  left: 383.5px;
+  left: 640px;
+  top: 104px;
+}
+
+.footer__ul2 > li {
+  display: block;
+}
+
+.footer__ul3 {
+  position: absolute;
+  left: 840px;
+  top: 104px;
+}
+
+.footer__ul3 > li {
+  display: block;
+}
+
+/*свойства пунктов*/
+
+.footer-ul-li__a {
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+/*допкласс для первых пунктов меню*/
+
+.navigation {
+  color: rgba(31, 32, 65, 0.75);
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 21px;
+  font-family: Montserrat;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 14.63px;
+}
+
+// Блок подписки и поля для email
+
+.footer__subscription {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  top: 104px;
+  left: 1040px;
+}
+
+/*ссылка на подписку*/
+.footer__subscription > a {
+  margin-bottom: 10px;
+}
+
+/*спец предложения...*/
+.footer__subscription > p {
+  white-space: pre-wrap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-bottom: 15px;
+}
+
+/*поле email*/
+
+.footer-subscription__input-email {
+  position: absolute;
+  top: 94px;
+  width: 260px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  padding-left: 15px;
+}
+
+/*стрелка*/
+
+.footer-subscription__arrow {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 94px;
+  left: 232px;
+  background-position: center;
+  cursor: pointer;
+  background-image: url('../img/arrow_forward.svg');
+  background-repeat: no-repeat;
+}
+
+/*placeholder input email*/
+
+.footer-subscription__input-email::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
 }
