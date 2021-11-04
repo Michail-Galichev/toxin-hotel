@@ -95,7 +95,7 @@ input[type='date'] {
   position: absolute;
   top: 3px;
   left: 22px;
-  background-image: url(img/2ectangle2.1.svg);
+  background-image: url(../img/2ectangle2.1.svg);
   background-repeat: no-repeat;
   background-position: center;
   transition: 0.4s;
@@ -171,9 +171,7 @@ input[type='date'] {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-
   text-transform: uppercase;
-
   color: #1f2041;
 }
 
@@ -201,29 +199,25 @@ input[type='date'] {
   height: 18px;
   left: 30px;
   top: 584px;
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-
   display: flex;
   align-items: center;
-
   color: #000000;
 }
 
 .account-registration-link_pay {
   position: absolute;
-  top: 498px;
-  left: 30px;
+  top: 40px;
+  left: -2px;
   display: inline-block;
   align-items: center;
   justify-content: center;
-  width: 320px;
+  width: 318px;
   height: 42px;
-
   background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(rgba(188, 156, 255, 1), rgba(139, 164, 249, 1)) border-box;
   border: 2px solid transparent;
@@ -296,6 +290,10 @@ input[type='date'] {
   left: 290px;
   top: 13px;
   fill: url('#paint0_linear');
+}
+
+.block-link-image {
+  background: #000;
 }
 
 .block-link-image:hover .account-registration-link-image_pay {

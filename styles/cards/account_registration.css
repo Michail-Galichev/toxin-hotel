@@ -92,7 +92,7 @@ input[type='date'] {
   position: absolute;
   top: 3px;
   left: 22px;
-  background-image: url(img/2ectangle2.1.svg);
+  background-image: url(../img/2ectangle2.1.svg);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-transition: 0.4s;
@@ -207,8 +207,8 @@ input[type='date'] {
 
 .account-registration-link_pay {
   position: absolute;
-  top: 498px;
-  left: 30px;
+  top: 40px;
+  left: -2px;
   display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -216,7 +216,7 @@ input[type='date'] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 320px;
+  width: 318px;
   height: 42px;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
@@ -292,6 +292,10 @@ input[type='date'] {
   left: 290px;
   top: 13px;
   fill: url("#paint0_linear");
+}
+
+.block-link-image {
+  background: #000;
 }
 
 .block-link-image:hover .account-registration-link-image_pay {

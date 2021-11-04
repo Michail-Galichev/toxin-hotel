@@ -1,5 +1,5 @@
+@charset "UTF-8";
 /*  свойства формы */
-
 .number-card__luxury {
   position: absolute;
   width: 270px;
@@ -7,8 +7,8 @@
   left: 980px;
   top: 559.5px;
   background: #ffffff;
-
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
 }
 
@@ -19,7 +19,6 @@
 }
 
 /* основной заголовок */
-
 .number-card__h1 {
   position: absolute;
   width: 59px;
@@ -32,25 +31,21 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
-
   color: #1f2041;
 }
 
 /* свойства № */
-
 .number-card__span {
   position: absolute;
   width: 34px;
   height: 12px;
   left: -27px;
   top: 4px;
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 17px;
-
   color: #1f2041;
 }
 
@@ -61,27 +56,22 @@
   height: 15px;
   left: 67px;
   top: 176px;
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-
   text-transform: uppercase;
-
   color: #bc9cff;
 }
 
 /* цена за сутки */
-
 .number-card-p__price-per-day {
   position: absolute;
   width: 100px;
   height: 20px;
   left: 153px;
   top: 176px;
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
@@ -96,19 +86,16 @@
   height: 20px;
   left: 27px;
   top: 1px;
-
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
-
   color: rgba(31, 32, 65, 0.5);
 }
 
 /* звёзды */
-
-@mixin stars {
+.number-card__star1 {
   background-image: url(../img/star_border.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -117,26 +104,54 @@
   background-size: 24px;
   position: absolute;
   top: 216px;
-}
-
-.number-card__star1 {
-  @include stars;
   left: 20px;
 }
+
 .number-card__star2 {
-  @include stars;
+  background-image: url(../img/star_border.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+  position: absolute;
+  top: 216px;
   left: 47px;
 }
+
 .number-card__star3 {
-  @include stars;
+  background-image: url(../img/star_border.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+  position: absolute;
+  top: 216px;
   left: 74px;
 }
+
 .number-card__star4 {
-  @include stars;
+  background-image: url(../img/star_border.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+  position: absolute;
+  top: 216px;
   left: 101px;
 }
+
 .number-card__star5 {
-  @include stars;
+  background-image: url(../img/star_border.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+  position: absolute;
+  top: 216px;
   left: 127px;
 }
 
@@ -147,24 +162,21 @@
 }
 
 /* отзывы */
-
 .number-card__reviews {
   position: absolute;
   width: 90px;
   height: 18px;
   left: 104px;
   top: 222.56px;
-
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
-
   text-align: right;
-
   color: rgba(31, 32, 65, 0.5);
 }
+
 .number-card-reviews__span {
   position: absolute;
   font-weight: normal;
@@ -173,41 +185,65 @@
 }
 
 /* шарики */
-
-@mixin ellipce {
+.number-card__ellipce1 {
   position: absolute;
   width: 7.5px;
   height: 7.49px;
-
   top: 129px;
   border-radius: 50%;
   border: 1px solid #ffffff;
-  box-sizing: border-box;
-  filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
-}
-
-.number-card__ellipce1 {
-  @include ellipce;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+          filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
   border: none;
   background: #ffffff;
   left: 218px;
 }
 
 .number-card__ellipce2 {
-  @include ellipce;
+  position: absolute;
+  width: 7.5px;
+  height: 7.49px;
+  top: 129px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+          filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
   left: 228px;
 }
+
 .number-card__ellipce3 {
-  @include ellipce;
+  position: absolute;
+  width: 7.5px;
+  height: 7.49px;
+  top: 129px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+          filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
   left: 238px;
 }
+
 .number-card__ellipce4 {
-  @include ellipce;
+  position: absolute;
+  width: 7.5px;
+  height: 7.49px;
+  top: 129px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+          filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
   left: 248px;
 }
 
 /* вперед назад */
-
 .number-card_expand-more-left {
   background-image: url(../img/expand_more_left.svg);
   position: absolute;
@@ -229,3 +265,4 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+/*# sourceMappingURL=number_card888.css.map */
