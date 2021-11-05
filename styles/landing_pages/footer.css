@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/*миксин текста копирайта*/
+/* миксин свойства заголовков*/
+/*миксин кнопок дропдауна +*/
+/*миксин кнопок дропдауна -*/
+/*миксин блока навигации/регистрации/футера/копирайта*/
+/*свойства блока*/
+.footer {
+  position: absolute;
+  width: 1440px;
+  left: 0px;
+  background: white;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+  height: 372px;
+  top: 900px;
+}
+
+/*логотип*/
+.footer__logo {
+  position: absolute;
+  top: 100px;
+  left: 140px;
+  width: 40px;
+  height: 40px;
+}
+
+.footer__logo > .curve-reight-gradient {
+  position: absolute;
+  top: 15.29px;
+  left: 21.4px;
+}
+
+.footer__logo > .curve-left-gradient {
+  position: absolute;
+  top: 15.29px;
+  left: 9.4px;
+}
+
+/*логотип токсин*/
+.footer__toxin {
+  width: 53.19px;
+  height: 12.95px;
+  position: absolute;
+  left: 192.5px;
+  top: 113.33px;
+}
+
+/*бронирование номеров*/
+.footer__content {
+  position: absolute;
+  width: 260px;
+  height: 72px;
+  left: 140px;
+  top: 155px;
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+}
+
+.footer__ul1 {
+  position: absolute;
+  left: 440px;
+  top: 104px;
+}
+
+.footer__ul1 > li {
+  display: block;
+}
+
+.footer__ul2 {
+  position: absolute;
+  left: 640px;
+  top: 104px;
+}
+
+.footer__ul2 > li {
+  display: block;
+}
+
+.footer__ul3 {
+  position: absolute;
+  left: 840px;
+  top: 104px;
+}
+
+.footer__ul3 > li {
+  display: block;
+}
+
+/*свойства пунктов*/
+.footer-ul-li__a {
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+/*допкласс для первых пунктов меню*/
+.navigation {
+  color: rgba(31, 32, 65, 0.75);
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 21px;
+  font-family: Montserrat;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 14.63px;
+}
+
+.footer__subscription {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  top: 104px;
+  left: 1040px;
+}
+
+/*ссылка на подписку*/
+.footer__subscription > a {
+  margin-bottom: 10px;
+}
+
+/*спец предложения...*/
+.footer__subscription > p {
+  white-space: pre-wrap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-bottom: 15px;
+}
+
+/*поле email*/
+.footer-subscription__input-email {
+  position: absolute;
+  top: 94px;
+  width: 260px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  padding-left: 15px;
+}
+
+/*стрелка*/
+.footer-subscription__arrow {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 94px;
+  left: 232px;
+  background-position: center;
+  cursor: pointer;
+  background-image: url("../img/arrow_forward.svg");
+  background-repeat: no-repeat;
+}
+
+/*placeholder input email*/
+.footer-subscription__input-email::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.footer-subscription__input-email:-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.footer-subscription__input-email::-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.footer-subscription__input-email::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
+/*# sourceMappingURL=footer.css.map */

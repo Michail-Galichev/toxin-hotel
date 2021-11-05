@@ -1,0 +1,145 @@
+@import '../mixins.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1440px;
+  height: 1350px;
+  background: #e5e5e5;
+}
+
+.nav-reg {
+  @include navigation;
+  top: 0px;
+  height: 70px;
+}
+
+//Свойства логотипа блока  nav-reg.pug
+
+.nav-reg__logo {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  left: 140px;
+}
+
+.nav-reg__logo > .curve-reight-gradient {
+  position: absolute;
+  top: 15.29px;
+  left: 21.4px;
+}
+
+.nav-reg__logo > .curve-left-gradient {
+  position: absolute;
+  top: 15.29px;
+  left: 9.4px;
+}
+
+/*логотип токсин*/
+.nav-reg__toxin {
+  width: 53.19px;
+  height: 12.95px;
+  position: absolute;
+  left: 192.5px;
+  top: 28.33px;
+}
+
+/*блок кнопок*/
+.nav-reg__buttons {
+  position: absolute;
+  top: 16px;
+  left: 989px;
+  height: 38px;
+}
+
+//Кнопка "Войти"
+
+.nav-reg-buttons__to-come-in {
+  @include button;
+  width: 87px;
+}
+
+/*"Зарегистрироваться"*/
+.nav-reg-buttons__register {
+  @include button;
+  width: 192px;
+}
+
+/*подпись войти*/
+.nav-reg-buttons__to-come-in > span {
+  position: absolute;
+  width: 84 px;
+  top: 12px;
+  width: 47px;
+  left: 22px;
+}
+
+/* подпись зарегистрироаться*/
+.nav-reg-buttons__register > span {
+  position: absolute;
+  width: 163px;
+  top: 12px;
+  left: 132px;
+  width: 157px;
+  height: 15px;
+}
+
+/*hover для кнопок*/
+.nav-reg-buttons__register:hover,
+.nav-reg-buttons__to-come-in:hover {
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #ffffff;
+}
+
+/*горизонтальное меню*/
+
+.nav-reg__ul {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding-left: 0px;
+  left: 530px;
+  top: 26px;
+}
+
+.nav-reg__ul > li {
+  display: inline-block;
+}
+
+.nav-reg-ul-li__a {
+  @include menu;
+}
+
+/*hover для меню */
+.nav-reg-ul-li__a:hover {
+  color: rgba(31, 32, 65, 0.75);
+  font-weight: bold;
+}
+
+/*картика expand_more*/
+.nav-reg__expand_more1 {
+  fill: rgba(31, 32, 65, 0.5);
+  top: 32px;
+  left: 646px;
+  position: absolute;
+}
+
+.nav-reg__expand_more2 {
+  fill: rgba(31, 32, 65, 0.5);
+  top: 32px;
+  left: 953px;
+  position: absolute;
+}
+/*пункт меню вакансии*/
+.vacancy {
+  margin-left: 22px;
+}
+
+.nav-reg-expand_more1:hover,
+.nav-reg-expand_more2:hover {
+  fill: rgba(31, 32, 65, 0.75);
+}
