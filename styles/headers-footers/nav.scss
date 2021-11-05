@@ -1,0 +1,112 @@
+@import 'nav-reg.scss';
+
+.nav {
+  @include navigation;
+  top: 250px;
+  height: 70px;
+}
+
+//Свойства логотипа блока  nav.pug
+
+.nav__logo {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  left: 140px;
+}
+
+.nav__logo > .curve-reight-gradient {
+  position: absolute;
+  top: 15.29px;
+  left: 21.4px;
+}
+
+.nav__logo > .curve-left-gradient {
+  position: absolute;
+  top: 15.29px;
+  left: 9.4px;
+}
+
+/*логотип токсин*/
+.nav__toxin {
+  width: 53.19px;
+  height: 12.95px;
+  position: absolute;
+  left: 192.5px;
+  top: 28.33px;
+}
+
+/*горизонтальное меню*/
+
+.nav__ul {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding-left: 0px;
+  left: 530px;
+  top: 26px;
+}
+
+.nav__ul > li {
+  display: inline-block;
+}
+
+/*свойства пунктов меню*/
+
+.nav-reg-ul-li__a {
+  @include menu;
+}
+
+/*hover для меню */
+.nav-reg-ul-li__a:hover {
+  color: rgba(31, 32, 65, 0.75);
+  font-weight: bold;
+}
+
+/*картика expand_more*/
+.nav__expand_more1 {
+  fill: rgba(31, 32, 65, 0.5);
+  top: 32px;
+  left: 646px;
+  position: absolute;
+}
+.nav__expand_more2 {
+  fill: rgba(31, 32, 65, 0.5);
+  top: 32px;
+  left: 953px;
+  position: absolute;
+}
+/*пункт меню вакансии*/
+.vacancy {
+  margin-left: 22px;
+}
+
+.nav-expand_more1:hover,
+.nav-expand_more2:hover {
+  fill: rgba(31, 32, 65, 0.75);
+}
+
+.nav__vertical-line {
+  position: absolute;
+  width: 1px;
+  height: 30px;
+  right: 260px;
+  top: 20px;
+  background: rgba(31, 32, 65, 0.1);
+}
+
+.nav__guest-name {
+  position: absolute;
+  width: 100px;
+  height: 18px;
+  right: 140px;
+  top: 26px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
