@@ -66,7 +66,7 @@ h2 {
 /* checked */
 
 .checkbox__input:checked + .checkbox__view {
-  background-image: url('img/Vector.png');
+  background-image: url('../img/Vector.png');
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid rgba(188, 156, 255, 1);
@@ -177,13 +177,13 @@ h2 {
 
 .radio__input:checked + .radio-view__men {
   border: 1px solid rgba(188, 156, 255, 1);
-  background-image: url('img/2ectangle2.1.svg');
+  background-image: url('../img/2ectangle2.1.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 .radio__input:checked + .radio-view__women {
   border: 1px solid rgba(188, 156, 255, 1);
-  background-image: url('img/2ectangle2.1.svg');
+  background-image: url('../img/2ectangle2.1.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -245,7 +245,7 @@ h2 {
   position: absolute;
   top: 3px;
   left: 22px;
-  background-image: url(img/2ectangle2.1.svg);
+  background-image: url(../img/2ectangle2.1.svg);
   background-repeat: no-repeat;
   background-position: center;
   transition: 0.4s;
@@ -261,7 +261,7 @@ h2 {
   position: absolute;
   top: 3px;
   left: 22px;
-  background-image: url(img/2ectangle2.1.svg);
+  background-image: url(../img/2ectangle2.1.svg);
   background-repeat: no-repeat;
   background-position: center;
   transition: 0.4s;
@@ -354,7 +354,7 @@ h2 {
 .like-button__none-checked {
   @include border;
   top: 31px;
-  background-image: url('img/favorite_border.svg');
+  background-image: url('../img/favorite_border.svg');
   background-repeat: no-repeat;
   background-position: center left 5px;
 }
@@ -363,7 +363,7 @@ h2 {
   @include border;
   top: 31px;
   left: 50px;
-  background-image: url('img/favorite_border.svg');
+  background-image: url('../img/favorite_border.svg');
   background-repeat: no-repeat;
   background-position: center left 5px;
 }
@@ -392,7 +392,7 @@ h2 {
 }
 
 .like-button__input1:checked + .like-button__none-checked {
-  background-image: url('img/favorite.png');
+  background-image: url('../img/favorite.png');
   background-repeat: no-repeat;
   background-position: center left 5px;
   border: 1px solid #bc9cff;
@@ -405,7 +405,7 @@ h2 {
 }
 
 .like-button__input2:checked + .like-button__checked {
-  background-image: url('img/favorite.png');
+  background-image: url('../img/favorite.png');
   background-repeat: no-repeat;
   background-position: center left 5px;
   border: 1px solid #bc9cff;
@@ -422,7 +422,7 @@ h2 {
 /* звёзды */
 
 @mixin stars {
-  background-image: url(img/star_border.svg);
+  background-image: url(../img/star_border.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 24px;
@@ -471,7 +471,7 @@ h2 {
 
 /* hover для звезд */
 .hover:hover {
-  background-image: url(img/star.svg);
+  background-image: url(../img/star.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -555,7 +555,7 @@ h2 {
 }
 
 .rich-checkbox-buttons__input:checked + .rich-checkbox-buttons__div {
-  background-image: url('img/Vector.png');
+  background-image: url('../img/Vector.png');
   background-position: center;
   background-repeat: no-repeat;
   border: 1px solid #bc9cff;

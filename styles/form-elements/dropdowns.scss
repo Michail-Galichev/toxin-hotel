@@ -34,7 +34,7 @@
 
 .dropdown-default__img {
   @include expand_more;
-  background-image: url('img/expand_more.svg');
+  background-image: url('../img/expand_more.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -80,7 +80,7 @@
 
 .dropdown-expanded__img {
   @include expand_more;
-  background-image: url('img/expand_more.svg');
+  background-image: url('../img/expand_more.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -240,7 +240,7 @@ p.last {
   position: absolute;
   top: 0px;
   left: 222px;
-  background-image: url('img/expand_more.svg');
+  background-image: url('../img/expand_more.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -271,7 +271,7 @@ p.last {
   position: absolute;
   top: 0px;
   left: 222px;
-  background-image: url('img/expand_more_expanded.svg');
+  background-image: url('../img/expand_more_expanded.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -322,7 +322,7 @@ p.last {
 /* checked */
 .checkbox-block__input:checked + .checkbox-list__div {
   border: 1px solid rgba(188, 156, 255, 1);
-  background-image: url('img/Vector.png');
+  background-image: url('../img/Vector.png');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -372,7 +372,7 @@ p.last {
   height: 44px;
   left: 276px;
   top: 20px;
-  background-image: url('img/expand_more.svg');
+  background-image: url('../img/expand_more.svg');
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -501,7 +501,7 @@ p.last {
   height: 44px;
   left: 276px;
   top: 20px;
-  background-image: url('img/expand_more.svg');
+  background-image: url('../img/expand_more.svg');
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;

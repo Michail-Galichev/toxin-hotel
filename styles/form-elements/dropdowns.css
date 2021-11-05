@@ -32,7 +32,7 @@
   left: 222px;
   top: 20px;
   cursor: pointer;
-  background-image: url("img/expand_more.svg");
+  background-image: url("../img/expand_more.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -115,7 +115,7 @@
   left: 222px;
   top: 20px;
   cursor: pointer;
-  background-image: url("img/expand_more.svg");
+  background-image: url("../img/expand_more.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -324,7 +324,7 @@ p.last {
   position: absolute;
   top: 0px;
   left: 222px;
-  background-image: url("img/expand_more.svg");
+  background-image: url("../img/expand_more.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -352,7 +352,7 @@ p.last {
   position: absolute;
   top: 0px;
   left: 222px;
-  background-image: url("img/expand_more_expanded.svg");
+  background-image: url("../img/expand_more_expanded.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -402,7 +402,7 @@ p.last {
 /* checked */
 .checkbox-block__input:checked + .checkbox-list__div {
   border: 1px solid #bc9cff;
-  background-image: url("img/Vector.png");
+  background-image: url("../img/Vector.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -480,7 +480,7 @@ p.last {
   height: 44px;
   left: 276px;
   top: 20px;
-  background-image: url("img/expand_more.svg");
+  background-image: url("../img/expand_more.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -719,7 +719,7 @@ p.last {
   height: 44px;
   left: 276px;
   top: 20px;
-  background-image: url("img/expand_more.svg");
+  background-image: url("../img/expand_more.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
