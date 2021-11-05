@@ -180,11 +180,11 @@
 }
 
 div.days__current-date {
-  background-image: url(../img/current_date.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
   color: #ffffff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
 }
 
 .days__img23 {
