@@ -86,3 +86,21 @@
   color: rgba(31, 32, 65, 0.5);
   margin-bottom: 12px;
 }
+
+/* дни недели */
+
+@mixin days-week {
+  position: absolute;
+  top: 74px;
+  height: 39px;
+  width: 37px;
+  color: #bc9cff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+}
