@@ -530,6 +530,10 @@ body {
   color: rgba(31, 32, 65, 0.5);
 }
 
+.footer-ul-li__a:hover {
+  color: rgba(31, 32, 65, 0.75);
+}
+
 /*допкласс для первых пунктов меню*/
 .navigation {
   color: rgba(31, 32, 65, 0.75);

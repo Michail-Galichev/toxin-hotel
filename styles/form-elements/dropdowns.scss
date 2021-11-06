@@ -1,11 +1,4 @@
-@mixin expand_more {
-  width: 44px;
-  height: 44px;
-  position: absolute;
-  left: 222px;
-  top: 20px;
-  cursor: pointer;
-}
+@import '../mixins.scss';
 
 /* dropdown default */
 .dropdown-default {
@@ -104,7 +97,6 @@
   height: 119px;
   left: 0px;
   top: 64px;
-
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.5);
   border-top: none;
@@ -113,27 +105,6 @@
 }
 
 /* кнопки +/- */
-
-@mixin circle-plus {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  box-sizing: border-box;
-  border-radius: 22px;
-  cursor: pointer;
-}
-
-@mixin circle-minus {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  cursor: pointer;
-
-  box-sizing: border-box;
-  border-radius: 22px;
-}
 
 .dropdown__circle-plus1 {
   @include circle-plus;
@@ -194,7 +165,6 @@ p.dropdown-p__plus {
   margin-left: 15px;
   width: 83px;
   height: 15px;
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
@@ -424,23 +394,6 @@ p.last {
   border: 1px solid rgba(31, 32, 65, 0.25);
 }
 
-/* счётчики */
-
-@mixin counter {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  color: #1f2041;
-  display: flex;
-  height: 15px;
-  width: 92px;
-  left: 221px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-}
-
 .adults {
   top: 13px;
   @include counter;
@@ -551,23 +504,6 @@ p.last {
   @include circle-minus;
   left: 221px;
   border: 1px solid rgba(31, 32, 65, 0.25);
-}
-
-/* счётчики */
-
-@mixin counter {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  color: #1f2041;
-  display: flex;
-  height: 15px;
-  width: 92px;
-  left: 221px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
 }
 
 .adults {
