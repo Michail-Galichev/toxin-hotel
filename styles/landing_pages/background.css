@@ -32,4 +32,22 @@
   background-image: url("../img/landing_page_image.png");
   background-repeat: no-repeat;
 }
+
+.best-room {
+  height: 48px;
+  width: 297px;
+  left: 1009px;
+  top: 834px;
+  position: absolute;
+}
+
+.best-room > p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.75);
+}
 /*# sourceMappingURL=background.css.map */
