@@ -28,12 +28,23 @@
   font-style: italic;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1440px;
+  height: 1343px;
+  background: #e5e5e5;
+}
+
 .background {
   position: absolute;
   width: 1440px;
-  height: 830px;
+  height: 900px;
   left: 0px;
-  top: 70px;
+  top: 0px;
   background-image: url('../img/landing_page_image.png');
   background-repeat: no-repeat;
 }

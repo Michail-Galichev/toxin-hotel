@@ -6,6 +6,11 @@
 /*миксин блока навигации/регистрации/футера/копирайта*/
 /*миксин кнопок*/
 /*свойства пунктов меню*/
+/* дни недели */
+/* счётчики */
+/* свойства изображения expand more*/
+/*кнопки +/- */
+/*миксин для placeholder*/
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +18,7 @@
 
 body {
   width: 1440px;
-  height: 1350px;
+  height: 1343px;
   background: #e5e5e5;
 }
 
@@ -26,6 +31,7 @@ body {
           box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
   top: 0px;
   height: 70px;
+  z-index: 1;
 }
 
 .nav-reg__logo {
