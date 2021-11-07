@@ -1,0 +1,489 @@
+@charset "UTF-8";
+/*миксин текста копирайта*/
+/* миксин свойства заголовков*/
+/*миксин кнопок дропдауна +*/
+/*миксин кнопок дропдауна -*/
+/*миксин блока навигации/регистрации/футера/копирайта*/
+/*миксин кнопок*/
+/*свойства пунктов меню*/
+/* дни недели */
+/* счётчики */
+/* свойства изображения expand more*/
+/*кнопки +/- */
+/*миксин для placeholder*/
+.account-registration {
+  position: absolute;
+  width: 380px;
+  height: 646px;
+  left: 533px;
+  top: 89px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 5;
+}
+
+.account-registration-header1 {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  color: #1f2041;
+  width: 320px;
+  height: 30px;
+  left: 30px;
+  top: 33px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.account-registration-input-name {
+  position: absolute;
+  width: 299.5px;
+  height: 42px;
+  padding-left: 15px;
+  left: 30px;
+  top: 90px;
+}
+
+.account-registration-input-lastname {
+  position: absolute;
+  width: 299.5px;
+  height: 42px;
+  padding-left: 15px;
+  left: 30px;
+  top: 144px;
+}
+
+input[type='date'] {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+  text-transform: uppercase;
+  content: attr(placeholder) !important;
+}
+
+/* Checkbox*/
+.checkbox {
+  position: absolute;
+  top: 456px;
+  left: 30px;
+}
+
+.checkbox__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox__div {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* :checked*/
+.checkbox__input:checked ~ .checkbox__div {
+  border: 1px solid #bc9cff;
+}
+
+.checkbox__input:checked ~ .checkbox__div::before {
+  position: absolute;
+  top: 3px;
+  left: 22px;
+  background-image: url(../img/2ectangle2.1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* ::before*/
+.checkbox__div::before {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  left: 4px;
+  top: 3px;
+  background-color: rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* Спецпредложения*/
+.checkbox__p {
+  position: absolute;
+  width: 210px;
+  height: 24px;
+  left: 50px;
+  top: -2px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.account-registration-header_date-of-birth {
+  position: absolute;
+  width: 118px;
+  height: 15px;
+  left: 30px;
+  top: 242px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+
+.account-registration-input-date-of-birth {
+  position: absolute;
+  width: 299.5px;
+  height: 42px;
+  padding-left: 15px;
+  left: 30px;
+  top: 262px;
+}
+
+.account-registration-header_login-details {
+  position: absolute;
+  width: 211px;
+  height: 15px;
+  left: 30px;
+  top: 326px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+
+.account-registration-input-email {
+  position: absolute;
+  width: 299.5px;
+  height: 42px;
+  padding-left: 15px;
+  left: 30px;
+  top: 346px;
+}
+
+.account-registration-input-password {
+  position: absolute;
+  width: 299.5px;
+  height: 42px;
+  padding-left: 15px;
+  left: 30px;
+  top: 400px;
+}
+
+.account-registration-paragraf {
+  position: absolute;
+  width: 186px;
+  height: 18px;
+  left: 30px;
+  top: 584px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+}
+
+.account-registration-link_pay {
+  position: absolute;
+  top: 40px;
+  left: -2px;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 318px;
+  height: 42px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #bc9cff;
+}
+
+.account-registration-link_to-come-in {
+  position: absolute;
+  top: 572px;
+  left: 251px;
+  width: 99px;
+  height: 42px;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #bc9cff;
+}
+
+.account-registration-link_to-come-in span {
+  position: absolute;
+  width: 47px;
+  top: 14px;
+  height: 15px;
+  left: 25.5px;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+}
+
+.account-registration-link_pay span {
+  position: absolute;
+  top: 14px;
+  left: 19.5px;
+  width: 280px;
+  height: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  font-style: normal;
+  font-weight: bold;
+  font-family: 'Montserrat';
+}
+
+.account-registration-link_to-come-in:hover,
+.account-registration-link_pay:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #ffffff;
+  border: none;
+}
+
+.account-registration-link-image_pay {
+  position: absolute;
+  left: 290px;
+  top: 13px;
+  fill: url("#paint0_linear");
+}
+
+.block-link-image:hover .account-registration-link-image_pay {
+  fill: white;
+}
+
+input.account-registration-input-email::-webkit-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 40px;
+}
+
+input.account-registration-input-email:-ms-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 40px;
+}
+
+input.account-registration-input-email::-ms-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 40px;
+}
+
+input.account-registration-input-email::placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 40px;
+}
+
+input.account-registration-input-password::-webkit-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 55px;
+}
+
+input.account-registration-input-password:-ms-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 55px;
+}
+
+input.account-registration-input-password::-ms-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 55px;
+}
+
+input.account-registration-input-password::placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 55px;
+}
+
+input.account-registration-input-name::-webkit-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 32px;
+}
+
+input.account-registration-input-name:-ms-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 32px;
+}
+
+input.account-registration-input-name::-ms-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 32px;
+}
+
+input.account-registration-input-name::placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 32px;
+}
+
+input.account-registration-input-lastname::-webkit-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 69px;
+}
+
+input.account-registration-input-lastname:-ms-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 69px;
+}
+
+input.account-registration-input-lastname::-ms-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 69px;
+}
+
+input.account-registration-input-lastname::placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 69px;
+}
+/*# sourceMappingURL=account_registration.css.map */
