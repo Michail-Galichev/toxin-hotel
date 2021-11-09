@@ -1,0 +1,98 @@
+@import 'general-properties-rooms.scss';
+@import '../mixins.scss';
+
+/*  свойства формы №888 */
+
+.number-card__888 {
+  left: 466px;
+  top: 151px;
+  @include cards;
+}
+
+/*  свойства формы № 840*/
+
+.number-card__840 {
+  @include cards;
+  left: 748px;
+  top: 151px;
+}
+
+/*  свойства формы № 980*/
+
+.number-card__980 {
+  @include cards;
+  left: 1030px;
+  top: 151px;
+}
+
+/*  свойства формы № 856*/
+
+.number-card__856 {
+  @include cards;
+  left: 466px;
+  top: 428.5px;
+}
+
+/*  свойства формы № 740*/
+
+.number-card__740 {
+  @include cards;
+  left: 748px;
+  top: 428.5px;
+}
+
+/*  свойства формы № 982*/
+
+.number-card__982 {
+  @include cards;
+  left: 1030px;
+  top: 428.5px;
+}
+
+/*  свойства формы № 678*/
+
+.number-card__678 {
+  @include cards;
+  left: 466px;
+  top: 706.5px;
+}
+
+/*  свойства формы № 450*/
+
+.number-card__450 {
+  @include cards;
+  left: 748px;
+  top: 706.5px;
+}
+
+/*  свойства формы № 350*/
+
+.number-card__350 {
+  @include cards;
+  left: 1030px;
+  top: 706.5px;
+}
+
+/*  свойства формы № 666*/
+
+.number-card__666 {
+  @include cards;
+  left: 466px;
+  top: 984.5px;
+}
+
+/*  свойства формы № 444*/
+
+.number-card__444 {
+  @include cards;
+  left: 748px;
+  top: 984.5px;
+}
+
+/*  свойства формы № 352*/
+
+.number-card__352 {
+  @include cards;
+  left: 1030px;
+  top: 984.5px;
+}

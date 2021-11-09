@@ -1,0 +1,28 @@
+@import '../fonts.scss';
+@import '../mixins.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 1440px;
+  height: 1880px;
+  position: relative;
+  background: rgba(255, 255, 255, 1);
+}
+
+.headers {
+  height: 30px;
+  width: 529px;
+  left: 465px;
+  top: 100px;
+  position: absolute;
+}
+
+.headers > h1 {
+  @include headers;
+  font-size: 24px;
+  line-height: 29px;
+}

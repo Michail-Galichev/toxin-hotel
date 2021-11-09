@@ -1,0 +1,610 @@
+@charset "UTF-8";
+/*миксин текста копирайта*/
+/* миксин свойства заголовков*/
+/*миксин кнопок дропдауна +*/
+/*миксин кнопок дропдауна -*/
+/*миксин блока навигации/регистрации/футера/копирайта*/
+/*миксин кнопок*/
+/*свойства пунктов меню*/
+/* дни недели */
+/* счётчики */
+/* свойства изображения expand more*/
+/* свойства изображения expand more*/
+/*кнопки +/- */
+/*миксин для placeholder*/
+/* общие свойства для input*/
+/*mixin для рамки checkbox*/
+/*шарики*/
+/*звёзды*/
+/*миксин карточек*/
+/*миксин свойств вложенных блоков*/
+/* миксин свойств для оформления текста в кнопке*/
+/*миксин заголовка h2 */
+/*миксин свойств контента блоков*/
+/*блок поля даты пребывания*/
+.dates-of-stay {
+  position: absolute;
+  width: 266px;
+  height: 65px;
+  left: 140px;
+  top: 100px;
+}
+
+/*заголовок поля даты пребывания*/
+.dates-of-stay > h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+
+/*свойства поля даты пребывания */
+.dates-of-stay__input {
+  width: 318px;
+  height: 42px;
+  position: absolute;
+  border-radius: 4px;
+  top: 20px;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  width: 262px;
+  height: 42px;
+  left: 0px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 2px;
+}
+
+/*свойства изображения expand more*/
+.dates-of-stay__expanded-more {
+  top: 20px;
+  left: 222px;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background-image: url(../img/expand_more.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+/*свойства placeholder поля даты пребывания */
+.dates-of-stay__input::-webkit-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+.dates-of-stay__input:-ms-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+.dates-of-stay__input::-ms-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+.dates-of-stay__input::placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/*блок поля гости*/
+.guests {
+  position: absolute;
+  width: 266px;
+  height: 63.56px;
+  left: 140px;
+  top: 184.44px;
+}
+
+/*заголовок поля гости*/
+.guests > h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+
+/*свойства поля гости*/
+.guests__input {
+  width: 318px;
+  height: 42px;
+  position: absolute;
+  border-radius: 4px;
+  top: 20px;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  width: 262px;
+  height: 42px;
+  left: 0px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 2px;
+}
+
+/*свойства изображения expand more*/
+.guests__expanded-more {
+  top: 20px;
+  left: 222px;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background-image: url(../img/expand_more.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+/*свойства placeholder поля гости */
+.guests__input::-webkit-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+.guests__input:-ms-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+.guests__input::-ms-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+.guests__input::placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/* блок слайдера*/
+.range-slider {
+  height: 72px;
+  width: 266px;
+  left: 140px;
+  top: 278px;
+  position: absolute;
+}
+
+/*заголовок слайдера*/
+.range-slider > h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+
+/* подписи слайдера */
+.range-slider__p {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  white-space: nowrap;
+  width: 102px;
+  height: 15px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+/*направляющая слайдера*/
+.range-slider__guide {
+  position: absolute;
+  width: 266px;
+  height: 6px;
+  top: 38.44px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+}
+
+/* левый ползунок */
+.range-slider__circle-left {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 77px;
+  top: 34px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6fcf97), to(#66d2ea));
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+}
+
+/*правый ползунок*/
+.range-slider__circle-right {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 162px;
+  top: 33px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6fcf97), to(#66d2ea));
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+}
+
+/*подсветка выбранного диапазона*/
+.range-slider__illumination {
+  position: absolute;
+  width: 88px;
+  height: 6px;
+  left: 82px;
+  top: 38.44px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6fcf97), to(#66d2ea));
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border-radius: 3px;
+}
+
+/*стоимость за сутки пребывания*/
+.range-slider__price {
+  position: absolute;
+  width: 264px;
+  height: 14px;
+  top: 58px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+/* свойства блока checkbox*/
+.check__house-rule {
+  position: absolute;
+  width: 222px;
+  height: 129.12px;
+  left: 140px;
+  top: 380px;
+}
+
+/* свойства заголовка */
+.check__house-rule > h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+  margin-bottom: 12px;
+}
+
+.options {
+  top: 16px;
+  display: block;
+  padding-bottom: 3px;
+}
+
+/* скрываем чекбокс браузера*/
+.check-house-rule__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* свойства label */
+.check-house-rule__checkbox {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+/* свойства рамки для checkbox */
+.check-house-rule__view {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  left: 0;
+}
+
+/* checked */
+.check-house-rule__input:checked + .check-house-rule__view {
+  background-image: url("../img/Vector.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #bc9cff;
+}
+
+/* доп класс для метки */
+.checkbox__gast {
+  white-space: pre;
+  width: 192px;
+  height: 36px;
+}
+
+/*блок доступность */
+.rich-checkbox-buttons {
+  height: 145px;
+  width: 266px;
+  left: 140px;
+  top: 540px;
+  position: absolute;
+}
+
+/*заголовок checkbox*/
+.rich-checkbox-buttons > h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+
+/* стили меток checkbox */
+.rich-checkbox-buttons__label {
+  display: block;
+  margin-bottom: 44px;
+  margin-top: 16px;
+  padding-left: 30px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/* скрываем стандартные checkbox */
+.rich-checkbox-buttons__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* кастомные checkbox */
+.rich-checkbox-buttons__div {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  position: absolute;
+  margin-left: -30px;
+}
+
+/* блоки дополнительных подписей checkbox */
+.rich-checkbox-buttons__hallway {
+  position: absolute;
+  width: 203px;
+  height: 28px;
+  left: 30px;
+  top: 55px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.rich-checkbox-buttons__helper {
+  position: absolute;
+  width: 236px;
+  height: 28px;
+  left: 30px;
+  top: 117px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.rich-checkbox-buttons__input:checked + .rich-checkbox-buttons__div {
+  background-image: url("../img/Vector.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #bc9cff;
+}
+
+/* блок удобства номера*/
+.room-amenities {
+  position: absolute;
+  width: 266px;
+  height: 64px;
+  left: 140px;
+  top: 715.44px;
+}
+
+/*заголовок удобства номера*/
+.room-amenities > h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+  position: absolute;
+  height: 15px;
+  width: 133px;
+}
+
+/*поле удобства номера*/
+.room-amenities__input {
+  width: 318px;
+  height: 42px;
+  position: absolute;
+  border-radius: 4px;
+  top: 20px;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  width: 262px;
+  height: 42px;
+  left: 0px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 2px;
+}
+
+input.room-amenities__input::-webkit-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+
+input.room-amenities__input:-ms-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+
+input.room-amenities__input::-ms-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+
+input.room-amenities__input::placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/*expand more удобства номера*/
+.room-amenities__expanded-more {
+  top: 20px;
+  left: 222px;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background-image: url(../img/expand_more.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+/*expand more дополнительные условия*/
+.additional-amenities__expanded-more {
+  left: 362px;
+  top: 795px;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background-image: url(../img/expand_more.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* заголовок дополнительные удобства*/
+.additional-amenities > h2 {
+  position: absolute;
+  width: 209px;
+  height: 15px;
+  left: 140px;
+  top: 809px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+/*# sourceMappingURL=side-bare.css.map */

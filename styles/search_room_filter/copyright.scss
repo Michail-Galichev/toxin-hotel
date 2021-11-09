@@ -1,0 +1,26 @@
+@import '../mixins.scss';
+
+.copyrighting {
+  @include navigation;
+  height: 70px;
+  top: 1800px;
+}
+
+.copyrighting__text {
+  @include copyright-text;
+  height: 18px;
+  top: 26px;
+  left: 140px;
+  width: 372px;
+  line-height: 17px;
+}
+
+.copyrighting__text2 {
+  @include copyright-text;
+  top: 176px;
+  height: 18px;
+  left: 104px;
+  width: 560px;
+  text-align: center;
+  line-height: 17px;
+}
