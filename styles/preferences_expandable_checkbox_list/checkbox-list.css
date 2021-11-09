@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* checkbox block */
+.checkbox-block {
+  height: 171px;
+  width: 222px;
+  top: 843px;
+  left: 140px;
+  position: absolute;
+}
+
+/* свойства меток checkbox */
+.checkbox-block > label {
+  margin-bottom: 12px;
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  padding-left: 30px;
+}
+
+/* скрываем стандартные checkbox*/
+.checkbox-block__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* стили для кастомных checkbox*/
+.checkbox-list__div {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* checked */
+.checkbox-block__input:checked + .checkbox-list__div {
+  border: 1px solid #bc9cff;
+  background-image: url("../img/Vector.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.additional-amenities__expanded-more {
+  background-image: url(../img/expand_more_expanded.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*# sourceMappingURL=checkbox-list.css.map */
