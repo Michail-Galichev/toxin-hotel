@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/*миксин текста копирайта*/
+/* миксин свойства заголовков*/
+/*миксин кнопок дропдауна +*/
+/*миксин кнопок дропдауна -*/
+/*миксин блока навигации/регистрации/футера/копирайта*/
+/*миксин кнопок*/
+/*свойства пунктов меню*/
+/* дни недели */
+/* счётчики */
+/* свойства изображения expand more*/
+/* свойства изображения expand more*/
+/*кнопки +/- */
+/*миксин для placeholder*/
+/* общие свойства для input*/
+/*mixin для рамки checkbox*/
+/*шарики*/
+/*звёзды*/
+/*миксин карточек*/
+/*миксин свойств вложенных блоков*/
+/* миксин свойств для оформления текста в кнопке*/
+/*миксин заголовка h2 */
+/*миксин свойств контента блоков*/
+.dropdown-expanded__form {
+  position: absolute;
+  width: 266px;
+  height: 119px;
+  left: 140px;
+  top: 779px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+/* кнопки +/- */
+.dropdown__circle-plus1 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  cursor: pointer;
+  left: 229px;
+  top: 7px;
+}
+
+.dropdown__circle-plus2 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  cursor: pointer;
+  left: 229px;
+  top: 44px;
+}
+
+.dropdown__circle-plus3 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  cursor: pointer;
+  left: 229px;
+  top: 82px;
+}
+
+.dropdown__circle-minus1 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  left: 167px;
+  top: 7px;
+}
+
+.dropdown__circle-minus2 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  left: 167px;
+  top: 44px;
+}
+
+.dropdown__circle-minus3 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  left: 167px;
+  top: 82px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+p.dropdown-p__minus {
+  font-family: 'Montserrat';
+  text-align: center;
+  color: rgba(31, 32, 65, 0.5);
+  position: absolute;
+  top: 3px;
+  left: 11px;
+}
+
+p.dropdown-p__plus {
+  font-family: 'Montserrat';
+  text-align: center;
+  color: rgba(31, 32, 65, 0.5);
+  position: absolute;
+  top: 4px;
+  left: 9px;
+}
+
+.dropdown__p {
+  margin-bottom: 22px;
+  margin-left: 15px;
+  width: 83px;
+  height: 15px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #1f2041;
+}
+
+.first {
+  margin-top: 11px;
+}
+
+p.last {
+  color: rgba(31, 32, 65, 0.25);
+}
+/*# sourceMappingURL=dropdown.css.map */
