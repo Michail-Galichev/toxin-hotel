@@ -44,9 +44,8 @@
 /*свойства поля даты пребывания */
 .dates-of-stay__input {
   width: 318px;
-  height: 42px;
+  height: 44px;
   position: absolute;
-  border-radius: 4px;
   top: 20px;
   background: #ffffff;
   -webkit-box-sizing: border-box;
@@ -54,8 +53,8 @@
   left: 0px;
   box-sizing: border-box;
   padding-left: 15px;
-  width: 262px;
-  height: 42px;
+  width: 266px;
+  height: 44px;
   left: 0px;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -140,9 +139,8 @@
 /*свойства поля гости*/
 .guests__input {
   width: 318px;
-  height: 42px;
+  height: 44px;
   position: absolute;
-  border-radius: 4px;
   top: 20px;
   background: #ffffff;
   -webkit-box-sizing: border-box;
@@ -150,8 +148,8 @@
   left: 0px;
   box-sizing: border-box;
   padding-left: 15px;
-  width: 262px;
-  height: 42px;
+  width: 266px;
+  height: 44px;
   left: 0px;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -504,9 +502,8 @@
 /*поле удобства номера*/
 .room-amenities__input {
   width: 318px;
-  height: 42px;
+  height: 44px;
   position: absolute;
-  border-radius: 4px;
   top: 20px;
   background: #ffffff;
   -webkit-box-sizing: border-box;
@@ -514,12 +511,13 @@
   left: 0px;
   box-sizing: border-box;
   padding-left: 15px;
-  width: 262px;
-  height: 42px;
+  width: 266px;
+  height: 44px;
   left: 0px;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 input.room-amenities__input::-webkit-input-placeholder {

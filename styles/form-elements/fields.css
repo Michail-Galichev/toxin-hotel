@@ -9,8 +9,11 @@
 /* дни недели */
 /* счётчики */
 /* свойства изображения expand more*/
+/* свойства изображения expand more*/
 /*кнопки +/- */
 /*миксин для placeholder*/
+/* общие свойства для input*/
+/*mixin для рамки checkbox*/
 /*шарики*/
 /*звёзды*/
 /*миксин карточек*/
@@ -18,7 +21,6 @@
 /* миксин свойств для оформления текста в кнопке*/
 /*миксин заголовка h2 */
 /*миксин свойств контента блоков*/
-/* общие свойства для input*/
 .text-field__span {
   position: absolute;
   width: 57px;
@@ -46,9 +48,8 @@
 
 .input__default {
   width: 318px;
-  height: 42px;
+  height: 44px;
   position: absolute;
-  border-radius: 4px;
   top: 20px;
   background: #ffffff;
   -webkit-box-sizing: border-box;
@@ -70,9 +71,8 @@
 
 .input__hover-focus {
   width: 318px;
-  height: 42px;
+  height: 44px;
   position: absolute;
-  border-radius: 4px;
   top: 20px;
   background: #ffffff;
   -webkit-box-sizing: border-box;
@@ -94,9 +94,8 @@
 
 .input__dropdown {
   width: 318px;
-  height: 42px;
+  height: 44px;
   position: absolute;
-  border-radius: 4px;
   top: 20px;
   background: #ffffff;
   -webkit-box-sizing: border-box;
@@ -118,9 +117,8 @@
 
 .input__masked {
   width: 318px;
-  height: 42px;
+  height: 44px;
   position: absolute;
-  border-radius: 4px;
   top: 20px;
   background: #ffffff;
   -webkit-box-sizing: border-box;
@@ -143,9 +141,8 @@
 
 .input__arrivale-date {
   width: 318px;
-  height: 42px;
+  height: 44px;
   position: absolute;
-  border-radius: 4px;
   top: 20px;
   background: #ffffff;
   -webkit-box-sizing: border-box;
@@ -168,9 +165,8 @@
 
 .input__departure-date {
   width: 318px;
-  height: 42px;
+  height: 44px;
   position: absolute;
-  border-radius: 4px;
   top: 20px;
   background: #ffffff;
   -webkit-box-sizing: border-box;
@@ -193,9 +189,8 @@
 
 .input__filter-date {
   width: 318px;
-  height: 42px;
+  height: 44px;
   position: absolute;
-  border-radius: 4px;
   top: 20px;
   background: #ffffff;
   -webkit-box-sizing: border-box;
@@ -218,9 +213,8 @@
 
 .input__subscription {
   width: 318px;
-  height: 42px;
+  height: 44px;
   position: absolute;
-  border-radius: 4px;
   top: 20px;
   background: #ffffff;
   -webkit-box-sizing: border-box;

@@ -9,10 +9,18 @@
 /* дни недели */
 /* счётчики */
 /* свойства изображения expand more*/
+/* свойства изображения expand more*/
 /*кнопки +/- */
 /*миксин для placeholder*/
+/* общие свойства для input*/
+/*mixin для рамки checkbox*/
 /*шарики*/
 /*звёзды*/
+/*миксин карточек*/
+/*миксин свойств вложенных блоков*/
+/* миксин свойств для оформления текста в кнопке*/
+/*миксин заголовка h2 */
+/*миксин свойств контента блоков*/
 /*  свойства формы */
 .number-card__luxury {
   position: absolute;
@@ -117,7 +125,7 @@
   height: 24px;
   background-size: 24px;
   position: absolute;
-  top: 216px;
+  top: 0px;
   left: 20px;
 }
 
@@ -129,7 +137,7 @@
   height: 24px;
   background-size: 24px;
   position: absolute;
-  top: 216px;
+  top: 0px;
   left: 47px;
 }
 
@@ -141,7 +149,7 @@
   height: 24px;
   background-size: 24px;
   position: absolute;
-  top: 216px;
+  top: 0px;
   left: 74px;
 }
 
@@ -153,7 +161,7 @@
   height: 24px;
   background-size: 24px;
   position: absolute;
-  top: 216px;
+  top: 0px;
   left: 101px;
 }
 
@@ -165,7 +173,7 @@
   height: 24px;
   background-size: 24px;
   position: absolute;
-  top: 216px;
+  top: 0px;
   left: 127px;
 }
 
