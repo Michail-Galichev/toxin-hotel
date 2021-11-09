@@ -1,3 +1,5 @@
+@import '../mixins.scss';
+
 /* свойства блока checkbox*/
 
 .check {
@@ -212,17 +214,6 @@ h2 {
 }
 
 /* состояние checked*/
-
-@mixin border {
-  position: absolute;
-  left: 0px;
-  width: 40px;
-  height: 20px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 10px;
-  cursor: pointer;
-}
 
 .toggle__checked {
   top: 31px;

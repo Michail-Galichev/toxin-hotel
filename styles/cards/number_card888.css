@@ -1,4 +1,18 @@
 @charset "UTF-8";
+/*миксин текста копирайта*/
+/* миксин свойства заголовков*/
+/*миксин кнопок дропдауна +*/
+/*миксин кнопок дропдауна -*/
+/*миксин блока навигации/регистрации/футера/копирайта*/
+/*миксин кнопок*/
+/*свойства пунктов меню*/
+/* дни недели */
+/* счётчики */
+/* свойства изображения expand more*/
+/*кнопки +/- */
+/*миксин для placeholder*/
+/*шарики*/
+/*звёзды*/
 /*  свойства формы */
 .number-card__luxury {
   position: absolute;
@@ -21,17 +35,17 @@
 /* основной заголовок */
 .number-card__h1 {
   position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  color: #1f2041;
   width: 59px;
   height: 21px;
   left: 36px;
   top: 171px;
   padding-top: 3px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
   font-size: 14px;
   line-height: 17px;
-  color: #1f2041;
 }
 
 /* свойства № */

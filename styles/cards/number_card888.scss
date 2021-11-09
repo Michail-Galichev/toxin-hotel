@@ -1,3 +1,5 @@
+@import '../mixins.scss';
+
 /*  свойства формы */
 
 .number-card__luxury {
@@ -7,7 +9,6 @@
   left: 980px;
   top: 559.5px;
   background: #ffffff;
-
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
 }
@@ -21,19 +22,14 @@
 /* основной заголовок */
 
 .number-card__h1 {
-  position: absolute;
+  @include headers;
   width: 59px;
   height: 21px;
   left: 36px;
   top: 171px;
   padding-top: 3px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
   font-size: 14px;
   line-height: 17px;
-
-  color: #1f2041;
 }
 
 /* свойства № */
@@ -44,13 +40,11 @@
   height: 12px;
   left: -27px;
   top: 4px;
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 17px;
-
   color: #1f2041;
 }
 
@@ -61,15 +55,12 @@
   height: 15px;
   left: 67px;
   top: 176px;
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-
   text-transform: uppercase;
-
   color: #bc9cff;
 }
 
@@ -81,7 +72,6 @@
   height: 20px;
   left: 153px;
   top: 176px;
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
@@ -96,7 +86,6 @@
   height: 20px;
   left: 27px;
   top: 1px;
-
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -107,17 +96,6 @@
 }
 
 /* звёзды */
-
-@mixin stars {
-  background-image: url(../img/star_border.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 24px;
-  height: 24px;
-  background-size: 24px;
-  position: absolute;
-  top: 216px;
-}
 
 .number-card__star1 {
   @include stars;
@@ -154,15 +132,12 @@
   height: 18px;
   left: 104px;
   top: 222.56px;
-
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
-
   text-align: right;
-
   color: rgba(31, 32, 65, 0.5);
 }
 .number-card-reviews__span {
@@ -173,18 +148,6 @@
 }
 
 /* шарики */
-
-@mixin ellipce {
-  position: absolute;
-  width: 7.5px;
-  height: 7.49px;
-
-  top: 129px;
-  border-radius: 50%;
-  border: 1px solid #ffffff;
-  box-sizing: border-box;
-  filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
-}
 
 .number-card__ellipce1 {
   @include ellipce;

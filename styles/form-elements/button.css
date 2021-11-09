@@ -1,4 +1,22 @@
 @charset "UTF-8";
+/*миксин текста копирайта*/
+/* миксин свойства заголовков*/
+/*миксин кнопок дропдауна +*/
+/*миксин кнопок дропдауна -*/
+/*миксин блока навигации/регистрации/футера/копирайта*/
+/*миксин кнопок*/
+/*свойства пунктов меню*/
+/* дни недели */
+/* счётчики */
+/* свойства изображения expand more*/
+/*кнопки +/- */
+/*миксин для placeholder*/
+/*шарики*/
+/*звёзды*/
+/*миксин карточек*/
+/*миксин свойств вложенных блоков*/
+/* миксин свойств для оформления текста в кнопке*/
+/*миксин свойств контента блоков*/
 /* блок слайдера*/
 .range-slider {
   height: 47px;
@@ -160,7 +178,6 @@
   top: 166px;
 }
 
-/* миксин свойств для оформления текста в кнопке*/
 /*свойства текста кнопки 1*/
 .buttons__a1 > p {
   color: #ffffff;
@@ -282,18 +299,21 @@
 /* свойства текста кнопки*/
 .buttons-payment > p {
   position: absolute;
-  width: 280px;
+  width: 59px;
   height: 15px;
-  left: 20px;
+  left: 19px;
   top: 14px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  white-space: nowrap;
+  width: 280px;
+  height: 15px;
+  left: 20px;
+  top: 14px;
 }
 
 /*белая стрелка*/
@@ -317,7 +337,6 @@
   position: absolute;
 }
 
-/*миксин свойств вложенных блоков*/
 /* блок с цифрой 1 */
 .pagination__one {
   position: absolute;
@@ -389,7 +408,6 @@
   background-position: center;
 }
 
-/*миксин свойств контента блков*/
 /*свойства выделенного блока*/
 .pagination__one > p {
   position: absolute;

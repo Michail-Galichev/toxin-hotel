@@ -6,6 +6,13 @@
 /*миксин блока навигации/регистрации/футера/копирайта*/
 /*миксин кнопок*/
 /*свойства пунктов меню*/
+/* дни недели */
+/* счётчики */
+/* свойства изображения expand more*/
+/*кнопки +/- */
+/*миксин для placeholder*/
+/*шарики*/
+/*звёзды*/
 /* свойства формы*/
 .search-room {
   position: absolute;
@@ -224,7 +231,7 @@ h1 {
   position: absolute;
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid rgba(31, 32, 65, 0.5);
   cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -237,7 +244,7 @@ h1 {
   position: absolute;
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid rgba(31, 32, 65, 0.5);
   cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -250,7 +257,7 @@ h1 {
   position: absolute;
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid rgba(31, 32, 65, 0.5);
   cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

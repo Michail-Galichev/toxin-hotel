@@ -1,16 +1,4 @@
-/* общие свойства для input*/
-@mixin input {
-  width: 318px;
-  height: 42px;
-  position: absolute;
-  border-radius: 4px;
-  top: 20px;
-  background: #ffffff;
-  box-sizing: border-box;
-  left: 0px;
-  box-sizing: border-box;
-  padding-left: 15px;
-}
+@import '../mixins.scss';
 
 .text-field__span {
   position: absolute;
