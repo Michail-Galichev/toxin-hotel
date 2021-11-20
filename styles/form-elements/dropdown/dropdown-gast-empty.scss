@@ -1,0 +1,118 @@
+@import '../../mixins.scss';
+
+/* блок dropdown gast empty*/
+
+.dropdown-gast__empty {
+  height: 221px;
+  width: 320px;
+  left: 587px;
+  top: 876px;
+  position: absolute;
+}
+
+/*свойства заголовка поля*/
+
+.dropdown-gast__empty > h3 {
+  @include headers3;
+}
+
+/* свойства текстового поля*/
+.dropdown-gast-empty__input {
+  @include input-max;
+  top: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+/* placeholder */
+
+.dropdown-gast-empty__input::placeholder {
+  width: 112px;
+  height: 18px;
+  @include input-placeholder;
+}
+
+/* стили expand more*/
+
+.dropdown-gast-empty__expand_more {
+  top: 20px;
+  right: 0;
+  @include expand_more;
+}
+
+/* свойства dropdown гости empty*/
+
+.dropdown-gast-empty__form {
+  position: absolute;
+  width: 320px;
+  height: 159px;
+  top: 62.56px;
+  left: px;
+  background: #ffffff;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+/* кнопки +/- */
+
+.dropdown__circle-plus1 {
+  @include circle-plus;
+  right: 7px;
+  top: 7px;
+}
+
+.dropdown__circle-plus2 {
+  @include circle-plus;
+  right: 7px;
+  top: 44px;
+}
+
+.dropdown__circle-plus3 {
+  @include circle-plus;
+  right: 7px;
+  top: 82px;
+}
+
+.dropdown__circle-minus1 {
+  @include circle-minus;
+  right: 69px;
+  top: 7px;
+}
+
+.dropdown__circle-minus2 {
+  @include circle-minus;
+  right: 69px;
+  top: 44px;
+}
+
+.dropdown__circle-minus3 {
+  @include circle-minus;
+  right: 69px;
+  top: 82px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.dropdown-gast-empty__form > .dropdown__circle-minus2 > .dropdown-p__minus {
+  color: rgba(31, 32, 65, 0.25);
+}
+.dropdown-gast-empty__form > .dropdown__circle-minus1 > .dropdown-p__minus {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+/*счётчики количества гостей*/
+.adults {
+  top: 13px;
+  @include counter;
+}
+.children {
+  top: 50px;
+  @include counter;
+}
+.babies {
+  top: 87px;
+  @include counter;
+}

@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/*миксин текста копирайта*/
+/*миксин заголовков h2*/
+/* миксин свойства заголовков*/
+/* маркер */
+/*миксин кнопок дропдауна +*/
+/*миксин кнопок дропдауна -*/
+/*миксин блока навигации/регистрации/футера/копирайта*/
+/*миксин кнопок*/
+/*миксин маленьких кнопок*/
+/*свойства пунктов меню*/
+/* дни недели */
+/* счётчики */
+/* свойства изображения expand more*/
+/*миксин для placeholder*/
+/* общие свойства для input w 318*/
+/* общие свойства для input w 266*/
+/*миксин свойст для полей w 150*/
+/*сердце*/
+/*счётчик лайков*/
+/*миксин параграф*/
+/*mixin для рамки checkbox*/
+/*шарики*/
+/*звёзды*/
+/*миксин карточек*/
+/*миксин свойств вложенных блоков*/
+/*миксин для правой стрелки*/
+/* миксин свойств для оформления текста в кнопке*/
+/*миксин заголовка h3 */
+/*миксин свойства формы*/
+/*миксин свойств контента блоков*/
+/*toggle */
+.toggle {
+  height: 89px;
+  width: 260px;
+  left: 587px;
+  top: 404.56px;
+  position: absolute;
+}
+
+.toggle > h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+  margin-bottom: 12px;
+}
+
+/* скрываем стагдартные чекбоксы*/
+.toggle__input1,
+.toggle__input2 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* состояние checked*/
+.toggle__checked {
+  top: 31px;
+  position: absolute;
+  left: 0px;
+  width: 40px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* состояние none checked*/
+.toggle__non-checked {
+  position: absolute;
+  left: 0px;
+  width: 40px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  cursor: pointer;
+  top: 65px;
+}
+
+/* :checked input1*/
+.toggle__input1:checked + .toggle__checked {
+  border: 1px solid #bc9cff;
+}
+
+.toggle__input1:checked + .toggle__checked::before {
+  position: absolute;
+  top: 3px;
+  left: 22px;
+  background-image: url(../img/2ectangle2.1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* :checked input2*/
+.toggle__input2:checked + .toggle__non-checked {
+  border: 1px solid #bc9cff;
+}
+
+.toggle__input2:checked ~ .toggle__non-checked::before {
+  position: absolute;
+  top: 3px;
+  left: 22px;
+  background-image: url(../img/2ectangle2.1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* ::before*/
+.toggle__checked::before {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  left: 4px;
+  top: 3px;
+  background-color: rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.toggle__non-checked::before {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  left: 4px;
+  top: 3px;
+  background-color: rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* Спецпредложения*/
+.toggle-checked__p {
+  position: absolute;
+  width: 210px;
+  height: 24px;
+  left: 50px;
+  top: 31px;
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.toggle-nonchecked__p {
+  position: absolute;
+  width: 210px;
+  height: 24px;
+  left: 50px;
+  top: 65px;
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+/*# sourceMappingURL=toogle.css.map */

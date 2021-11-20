@@ -6,7 +6,20 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
+  line-height: 18px;
   color: rgba(31, 32, 65, 0.75);
+}
+
+/*миксин заголовков h2*/
+
+@mixin landing-h2 {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1f2041;
 }
 
 /* миксин свойства заголовков*/
@@ -16,6 +29,20 @@
   font-style: normal;
   font-weight: bold;
   color: #1f2041;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+/* маркер */
+
+@mixin circle {
+  position: absolute;
+  width: 10.43px;
+  height: 10px;
+  left: 0px;
+  background: rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  margin-bottom: 24px;
 }
 
 /*миксин кнопок дропдауна +*/
@@ -38,7 +65,6 @@
   height: 30px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   cursor: pointer;
-
   box-sizing: border-box;
   border-radius: 22px;
 }
@@ -56,17 +82,39 @@
 /*миксин кнопок*/
 
 @mixin button {
-  display: inline-block;
+  position: absolute;
   background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(rgba(188, 156, 255, 1), rgba(139, 164, 249, 1)) border-box;
   border: 2px solid transparent;
   border-radius: 22px;
-  font-family: Montserrat;
   margin-right: 20px;
-  height: 34px;
+  height: 42px;
+  display: flex;
+  font-family: Montserrat;
   font-size: 12px;
   font-weight: bold;
   line-height: 15px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #bc9cff;
+}
+
+/*миксин маленьких кнопок*/
+
+@mixin button_mini {
+  position: absolute;
+  width: 97px;
+  height: 44px;
+  border-radius: 22px;
+  display: flex;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #bc9cff;
@@ -116,52 +164,39 @@
   display: flex;
   height: 15px;
   width: 92px;
-  left: 221px;
+  right: 7px;
   align-items: center;
   justify-content: center;
   position: absolute;
 }
-/* свойства изображения expand more*/
-
-@mixin expanded_more {
-  position: absolute;
-  width: 44px;
-  height: 44px;
-  background-image: url(../img/expand_more.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-}
 
 /* свойства изображения expand more*/
 @mixin expand_more {
+  position: absolute;
   width: 44px;
   height: 44px;
-  position: absolute;
-  left: 222px;
-  top: 20px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(31, 32, 65, 0.5);
   cursor: pointer;
 }
 
-/*кнопки +/- */
-@mixin circle-plus {
+@mixin paragraf2 {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  box-sizing: border-box;
-  border-radius: 22px;
-  cursor: pointer;
-}
-
-@mixin circle-minus {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  cursor: pointer;
-  box-sizing: border-box;
-  border-radius: 22px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #000000;
 }
 
 /*миксин для placeholder*/
@@ -175,17 +210,100 @@
   color: rgba(31, 32, 65, 0.25);
 }
 
-/* общие свойства для input*/
-@mixin input {
-  width: 318px;
+@mixin right_text {
+  height: 15px;
+  position: absolute;
+  left: 262.74px;
+  top: 0px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.5);
+  text-transform: uppercase;
+}
+
+/* общие свойства для input w 318*/
+@mixin input-max {
+  width: 320px;
   height: 44px;
   position: absolute;
-  top: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding-left: 15px;
+}
+
+/* общие свойства для input w 266*/
+@mixin input-medium {
+  width: 266px;
+  height: 44px;
+  position: absolute;
   background: #ffffff;
   box-sizing: border-box;
   left: 0px;
   box-sizing: border-box;
   padding-left: 15px;
+}
+
+/*миксин свойст для полей w 150*/
+
+@mixin input-mini {
+  padding-left: 15px;
+  position: absolute;
+  width: 150px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/*сердце*/
+
+@mixin favorite {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+/*счётчик лайков*/
+
+@mixin like-count {
+  position: absolute;
+  width: 6px;
+  height: 13px;
+  left: 22px;
+  top: 3px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+}
+
+/*миксин параграф*/
+
+@mixin paragraf {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
 }
 
 /*mixin для рамки checkbox*/
@@ -217,14 +335,21 @@
 /*звёзды*/
 
 @mixin stars {
-  background-image: url(../img/star_border.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  position: absolute;
   width: 24px;
   height: 24px;
-  background-size: 24px;
-  position: absolute;
-  top: 0px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 /*миксин карточек*/
@@ -247,25 +372,38 @@
   top: 31.44px;
 }
 
+/*миксин для правой стрелки*/
+
+@mixin arrow_forvard {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* миксин свойств для оформления текста в кнопке*/
 @mixin text-link {
-  position: absolute;
-  width: 59px;
-  height: 15px;
-  left: 19px;
-  top: 14px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
+  text-decoration: none;
   white-space: nowrap;
+  color: #bc9cff;
 }
 
-/*миксин заголовка h2 */
+/*миксин заголовка h3 */
 
-@mixin headers2 {
+@mixin headers3 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -273,6 +411,17 @@
   line-height: 15px;
   text-transform: uppercase;
   color: #1f2041;
+}
+
+/*миксин свойства формы*/
+
+@mixin form {
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 /*миксин свойств контента блоков*/
@@ -286,4 +435,17 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+}
+
+@mixin icon-details {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+}
+
+@mixin text-details {
+  height: 48px;
+  width: 233px;
+  left: 58px;
+  position: absolute;
 }

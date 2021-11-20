@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/*миксин текста копирайта*/
+/*миксин заголовков h2*/
+/* миксин свойства заголовков*/
+/* маркер */
+/*миксин кнопок дропдауна +*/
+/*миксин кнопок дропдауна -*/
+/*миксин блока навигации/регистрации/футера/копирайта*/
+/*миксин кнопок*/
+/*миксин маленьких кнопок*/
+/*свойства пунктов меню*/
+/* дни недели */
+/* счётчики */
+/* свойства изображения expand more*/
+/*миксин для placeholder*/
+/* общие свойства для input w 318*/
+/* общие свойства для input w 266*/
+/*миксин свойст для полей w 150*/
+/*сердце*/
+/*счётчик лайков*/
+/*миксин параграф*/
+/*mixin для рамки checkbox*/
+/*шарики*/
+/*звёзды*/
+/*миксин карточек*/
+/*миксин свойств вложенных блоков*/
+/*миксин для правой стрелки*/
+/* миксин свойств для оформления текста в кнопке*/
+/*миксин заголовка h3 */
+/*миксин свойства формы*/
+/*миксин свойств контента блоков*/
+/* блок like button */
+.like-button {
+  position: absolute;
+  width: 89.72px;
+  height: 51px;
+  left: 587px;
+  top: 534px;
+}
+
+/* скрываем стандартный чекбокс*/
+.like-button__input1,
+.like-button__input2 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* границы like button*/
+.like-button__none-checked {
+  position: absolute;
+  left: 0px;
+  width: 40px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  cursor: pointer;
+  top: 31px;
+  cursor: pointer;
+}
+
+.like-button-none-checked__favorite_border::before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(31, 32, 65, 0.25);
+  content: 'favorite_border';
+  left: 0px;
+  top: -1px;
+}
+
+.like-button__checked {
+  position: absolute;
+  left: 0px;
+  width: 40px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  cursor: pointer;
+  top: 31px;
+  left: 50px;
+  border: 1px solid #bc9cff;
+}
+
+.like-button-checked__favorite::before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(31, 32, 65, 0.25);
+  content: 'favorite';
+  top: -1px;
+  left: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*  шрифт счётчика лайков*/
+.like-button__p1 {
+  position: absolute;
+  width: 6px;
+  height: 13px;
+  left: 22px;
+  top: 3px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.like-button__p2 {
+  position: absolute;
+  width: 6px;
+  height: 13px;
+  left: 22px;
+  top: 3px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: #bc9cff;
+}
+
+/* checked для like-button__none-checked */
+.like-button__input1:hover + .like-button__none-checked > .like-button__p1 {
+  color: #bc9cff;
+}
+
+.like-button__input1:hover + .like-button__none-checked {
+  border: 1px solid #bc9cff;
+}
+
+.like-button__input1:hover
++ .like-button__none-checked
+> .like-button-none-checked__favorite_border::before {
+  content: 'favorite';
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* checked для like-button__checked */
+.like-button__input2:hover + .like-button__checked > .like-button__p2 {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.like-button__input2:hover + .like-button__checked {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.like-button__input2:hover
++ .like-button__checked
+> .like-button-checked__favorite::before {
+  content: 'favorite_border';
+  background: rgba(31, 32, 65, 0.25);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*# sourceMappingURL=like-button.css.map */

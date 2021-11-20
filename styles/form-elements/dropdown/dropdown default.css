@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/*миксин текста копирайта*/
+/*миксин заголовков h2*/
+/* миксин свойства заголовков*/
+/* маркер */
+/*миксин кнопок дропдауна +*/
+/*миксин кнопок дропдауна -*/
+/*миксин блока навигации/регистрации/футера/копирайта*/
+/*миксин кнопок*/
+/*миксин маленьких кнопок*/
+/*свойства пунктов меню*/
+/* дни недели */
+/* счётчики */
+/* свойства изображения expand more*/
+/*миксин для placeholder*/
+/* общие свойства для input w 318*/
+/* общие свойства для input w 266*/
+/*миксин свойст для полей w 150*/
+/*сердце*/
+/*счётчик лайков*/
+/*миксин параграф*/
+/*mixin для рамки checkbox*/
+/*шарики*/
+/*звёзды*/
+/*миксин карточек*/
+/*миксин свойств вложенных блоков*/
+/*миксин для правой стрелки*/
+/* миксин свойств для оформления текста в кнопке*/
+/*миксин заголовка h3 */
+/*миксин свойства формы*/
+/*миксин свойств контента блоков*/
+/* dropdown default */
+.dropdown-default {
+  height: 64px;
+  width: 266px;
+  left: 140px;
+  top: 876px;
+  position: absolute;
+}
+
+/*подзаголовок поля*/
+.dropdown-default > h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+
+/*текст справа*/
+.dropdown-default > span {
+  height: 15px;
+  position: absolute;
+  left: 262.74px;
+  top: 0px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.5);
+  text-transform: uppercase;
+  left: 209px;
+}
+
+/*свойства поля*/
+.dropdown-default__input {
+  top: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  width: 266px;
+  height: 44px;
+  position: absolute;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+/* картинка expand more*/
+.dropdown-default__expand_more {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+  top: 20px;
+  right: 0;
+}
+
+.dropdown-default__input::-webkit-input-placeholder {
+  width: 160px;
+  height: 24px;
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.dropdown-default__input:-ms-input-placeholder {
+  width: 160px;
+  height: 24px;
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.dropdown-default__input::-ms-input-placeholder {
+  width: 160px;
+  height: 24px;
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.dropdown-default__input::placeholder {
+  width: 160px;
+  height: 24px;
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+/*# sourceMappingURL=dropdown default.css.map */

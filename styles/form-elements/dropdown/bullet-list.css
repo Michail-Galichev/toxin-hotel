@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/*миксин текста копирайта*/
+/*миксин заголовков h2*/
+/* миксин свойства заголовков*/
+/* маркер */
+/*миксин кнопок дропдауна +*/
+/*миксин кнопок дропдауна -*/
+/*миксин блока навигации/регистрации/футера/копирайта*/
+/*миксин кнопок*/
+/*миксин маленьких кнопок*/
+/*свойства пунктов меню*/
+/* дни недели */
+/* счётчики */
+/* свойства изображения expand more*/
+/*миксин для placeholder*/
+/* общие свойства для input w 318*/
+/* общие свойства для input w 266*/
+/*миксин свойст для полей w 150*/
+/*сердце*/
+/*счётчик лайков*/
+/*миксин параграф*/
+/*mixin для рамки checkbox*/
+/*шарики*/
+/*звёзды*/
+/*миксин карточек*/
+/*миксин свойств вложенных блоков*/
+/*миксин для правой стрелки*/
+/* миксин свойств для оформления текста в кнопке*/
+/*миксин заголовка h3 */
+/*миксин свойства формы*/
+/*миксин свойств контента блоков*/
+/*bullet-list*/
+.bullet-list {
+  height: 147px;
+  width: 292px;
+  left: 979px;
+  top: 1196px;
+  position: absolute;
+}
+
+.bullet-list > h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+
+/*свойства пунктов списка*/
+.bullet-list__ul > li {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  list-style-type: none;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+/*свойства маркеров*/
+.circle1 {
+  top: 35px;
+  position: absolute;
+  width: 10.43px;
+  height: 10px;
+  left: 0px;
+  background: rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.circle2 {
+  top: 69px;
+  position: absolute;
+  width: 10.43px;
+  height: 10px;
+  left: 0px;
+  background: rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.circle3 {
+  top: 103px;
+  position: absolute;
+  width: 10.43px;
+  height: 10px;
+  left: 0px;
+  background: rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+/*# sourceMappingURL=bullet-list.css.map */

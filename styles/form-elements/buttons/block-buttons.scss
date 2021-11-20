@@ -1,0 +1,122 @@
+@import '../../mixins.scss';
+
+/*блок кнопок*/
+.buttons {
+  height: 195px;
+  width: 218px;
+  left: 979px;
+  top: 231px;
+  position: absolute;
+}
+
+.buttons > h3 {
+  @include headers3;
+}
+
+/*кнопка 1*/
+.buttons__a1 {
+  @include button_mini;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  left: 0px;
+  top: 31px;
+  color: #ffffff;
+  width: 99px;
+}
+
+/*кнопка 2*/
+.buttons__a2 {
+  @include button_mini;
+  left: 119px;
+  top: 31px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  opacity: 0.5;
+  color: #ffffff;
+  width: 99px;
+}
+
+.buttons-a2__p {
+  @include text-link;
+  position: absolute;
+  color: #ffffff;
+  top: 45px;
+  left: 139px;
+}
+
+/*кнопка 3*/
+.buttons__a3 {
+  @include button_mini;
+  height: 42px;
+  top: 105px;
+  left: 0px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border: 2px solid transparent;
+}
+/*кнопка 4*/
+.buttons__a4 {
+  @include button_mini;
+  height: 42px;
+  top: 105px;
+  left: 119px;
+  opacity: 0.5;
+  color: #bc9cff;
+  background-image: linear-gradient(white, white),
+    linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border: 2px solid transparent;
+}
+
+.buttons-a4__p {
+  @include text-link;
+  position: absolute;
+  width: 59px;
+  height: 15px;
+  left: 139px;
+  top: 119px;
+}
+
+/*кнопка 5*/
+.buttons__a5 {
+  @include text-link;
+  position: absolute;
+  width: 99px;
+  height: 44px;
+  left: 1px;
+  top: 180px;
+}
+
+/*кнопка 6*/
+.buttons__a6 {
+  @include text-link;
+  position: absolute;
+  width: 99px;
+  height: 44px;
+  left: 82px;
+  top: 180px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+/* кнопка перейти к оплате*/
+.buttons-payment {
+  @include button;
+  left: 979px;
+  top: 456px;
+  height: 42px;
+  width: 320px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #ffffff;
+}
+
+/*белая стрелка*/
+.buttons-payment__arrow_forward {
+  @include arrow_forvard;
+  top: 456px;
+  left: 1255px;
+  background: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

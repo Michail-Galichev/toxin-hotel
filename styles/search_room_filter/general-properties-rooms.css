@@ -1,25 +1,33 @@
 @charset "UTF-8";
 /*миксин текста копирайта*/
+/*миксин заголовков h2*/
 /* миксин свойства заголовков*/
+/* маркер */
 /*миксин кнопок дропдауна +*/
 /*миксин кнопок дропдауна -*/
 /*миксин блока навигации/регистрации/футера/копирайта*/
 /*миксин кнопок*/
+/*миксин маленьких кнопок*/
 /*свойства пунктов меню*/
 /* дни недели */
 /* счётчики */
 /* свойства изображения expand more*/
-/* свойства изображения expand more*/
-/*кнопки +/- */
 /*миксин для placeholder*/
-/* общие свойства для input*/
+/* общие свойства для input w 318*/
+/* общие свойства для input w 266*/
+/*миксин свойст для полей w 150*/
+/*сердце*/
+/*счётчик лайков*/
+/*миксин параграф*/
 /*mixin для рамки checkbox*/
 /*шарики*/
 /*звёзды*/
 /*миксин карточек*/
 /*миксин свойств вложенных блоков*/
+/*миксин для правой стрелки*/
 /* миксин свойств для оформления текста в кнопке*/
-/*миксин заголовка h2 */
+/*миксин заголовка h3 */
+/*миксин свойства формы*/
 /*миксин свойств контента блоков*/
 /*общие свойства карточек*/
 /* свойства изображения */
@@ -35,6 +43,8 @@
   font-style: normal;
   font-weight: bold;
   color: #1f2041;
+  font-size: 24px;
+  line-height: 29px;
   width: 61px;
   height: 24px;
   left: 20px;
@@ -109,62 +119,122 @@
 }
 
 .number-card-stars__star1 {
-  background-image: url(../img/star_border.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  position: absolute;
   width: 24px;
   height: 24px;
-  background-size: 24px;
-  position: absolute;
-  top: 0px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
   left: 0px;
 }
 
 .number-card-stars__star2 {
-  background-image: url(../img/star_border.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  position: absolute;
   width: 24px;
   height: 24px;
-  background-size: 24px;
-  position: absolute;
-  top: 0px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
   left: 24px;
 }
 
 .number-card-stars__star3 {
-  background-image: url(../img/star_border.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  position: absolute;
   width: 24px;
   height: 24px;
-  background-size: 24px;
-  position: absolute;
-  top: 0px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
   left: 48px;
 }
 
 .number-card-stars__star4 {
-  background-image: url(../img/star_border.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  position: absolute;
   width: 24px;
   height: 24px;
-  background-size: 24px;
-  position: absolute;
-  top: 0px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
   left: 72px;
 }
 
 .number-card-stars__star5 {
-  background-image: url(../img/star_border.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  position: absolute;
   width: 24px;
   height: 24px;
-  background-size: 24px;
-  position: absolute;
-  top: 0px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
   left: 96px;
 }
 

@@ -26,45 +26,53 @@
 /* основной заголовок */
 
 .august {
-  position: absolute;
+  @include landing-h2;
   width: 119px;
   height: 24px;
   left: 101px;
   top: 20px;
-
-  font-style: normal;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 23px;
-
-  text-align: center;
-
-  color: #1f2041;
 }
 
 /* стрелки */
 
-.calendar__arrow-right {
+.calendar-arrow-right__img {
+  @include arrow_forvard;
   width: 24px;
   height: 24px;
   position: absolute;
   top: 20px;
   left: 20px;
-  background-image: url(../img/arrow_forward.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  transform: rotate(180deg);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(188, 156, 255, 1)),
+    to(rgba(139, 164, 249, 1))
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.calendar__arrow-left {
+.calendar-arrow-left__img {
+  @include arrow_forvard;
   width: 24px;
   height: 24px;
   position: absolute;
   top: 20px;
   right: 20px;
-  background-image: url(../img/arrow_forward.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(188, 156, 255, 1)),
+    to(rgba(139, 164, 249, 1))
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+/*дни недели*/
 
 .days-week_mon {
   @include days-week;
@@ -133,16 +141,7 @@
   position: absolute;
   bottom: 18px;
   left: 20px;
-
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-
-  text-decoration: none;
-  text-transform: uppercase;
-
-  color: #bc9cff;
+  @include text-link;
 }
 
 .calendar__to-apply {
@@ -151,19 +150,10 @@
   position: absolute;
   right: 20px;
   bottom: 18px;
-
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-
-  text-decoration: none;
-  text-transform: uppercase;
-
-  color: #bc9cff;
+  @include text-link;
 }
 
-div.days__current-date {
+.days__current-date {
   color: #ffffff;
   height: 40px;
   width: 40px;
@@ -171,7 +161,13 @@ div.days__current-date {
   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
 }
 
-.days__img23 {
+.days__current-date > p,
+.days__19 > p,
+.days__23 > p {
+  color: #ffffff;
+}
+
+.days__23 {
   position: absolute;
   left: 158px;
   top: 120px;
@@ -179,7 +175,7 @@ div.days__current-date {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 }
 
-.days__img19 {
+.days__19 {
   position: absolute;
   left: 0px;
   top: 120px;
@@ -195,29 +191,6 @@ div.days__current-date {
 .days__highlighted19 {
   box-shadow: inset 20px 0 white;
 }
-
-.days-highlighted__p19 {
-  position: absolute;
-  left: 14px;
-  top: 132px;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  color: #ffffff;
-  z-index: 10000;
-}
-
 .days__highlighted23 {
   box-shadow: inset -20px 0 white;
-}
-
-.days-highlighted__p23 {
-  position: absolute;
-  left: 172px;
-  top: 132px;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  color: #ffffff;
-  z-index: 10000;
 }

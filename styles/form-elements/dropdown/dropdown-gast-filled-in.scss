@@ -1,0 +1,95 @@
+@import '../../mixins.scss';
+
+/* свойства dropdown гости filled in*/
+
+.dropdown-gast__filled-in {
+  height: 221.5576171875px;
+  width: 320px;
+  left: 979px;
+  top: 876px;
+  position: absolute;
+}
+
+/*свойства заголовка поля*/
+
+.dropdown-gast__filled-in > h3 {
+  @include headers3;
+}
+
+/* свойства текстового поля*/
+.dropdown-gast-filled-in__input {
+  @include input-max;
+  top: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+/* placeholder */
+
+.dropdown-gast-filled-in__input::placeholder {
+  width: 112px;
+  height: 18px;
+  @include input-placeholder;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/* стили expand more*/
+
+.dropdown-gast-filled-in__expand_more {
+  @include expand_more;
+  top: 20px;
+  right: 0;
+}
+
+/* свойства dropdown гости empty*/
+
+.dropdown-gast-filled-in__form {
+  position: absolute;
+  width: 320px;
+  height: 159px;
+  top: 62.56px;
+  left: px;
+  background: #ffffff;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+/* кнопки +/- */
+
+.dropdown-gast-filled-in__form > .dropdown__circle-minus1 {
+  @include circle-minus;
+  right: 69px;
+  top: 7px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown-gast-filled-in__form > .dropdown__circle-minus2 {
+  @include circle-minus;
+  right: 69px;
+  top: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+/*кнопки применить/очистить*/
+
+.dropdown__link1 {
+  position: absolute;
+  width: 72px;
+  height: 15px;
+  top: 131px;
+  left: 14px;
+  @include text-link;
+}
+
+.dropdown__link2 {
+  position: absolute;
+  width: 84px;
+  height: 15px;
+  right: 7px;
+  top: 131px;
+  @include text-link;
+}

@@ -1,0 +1,41 @@
+@import '../../mixins.scss';
+
+/* dropdown default */
+.dropdown-default {
+  height: 64px;
+  width: 266px;
+  left: 140px;
+  top: 876px;
+  position: absolute;
+}
+
+/*подзаголовок поля*/
+.dropdown-default > h3 {
+  @include headers3;
+}
+/*текст справа*/
+.dropdown-default > span {
+  @include right-text;
+  left: 209px;
+}
+/*свойства поля*/
+.dropdown-default__input {
+  top: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  @include input-medium;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+/* картинка expand more*/
+.dropdown-default__expand_more {
+  @include expand_more;
+  top: 20px;
+  right: 0;
+}
+
+.dropdown-default__input::placeholder {
+  width: 160px;
+  height: 24px;
+  @include input-placeholder;
+  color: rgba(31, 32, 65, 0.75);
+}

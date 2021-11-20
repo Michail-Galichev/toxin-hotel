@@ -1,0 +1,104 @@
+@import '../../mixins.scss';
+
+/* поле arrivale-date */
+
+.arrivale-date {
+  height: 65px;
+  width: 150px;
+  left: 141px;
+  top: 502px;
+  position: absolute;
+}
+
+/*поле дата прибытия*/
+.arrivale-date__input {
+  @include input-mini;
+  top: 20.44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+/*подзаголовок поля дата прибытия*/
+.arrivale-date > h3 {
+  @include headers3;
+}
+/*картинка поля дата прибытия */
+.arrivale-date__expand_more {
+  @include expand_more;
+  top: 21px;
+  right: 0;
+}
+/* поле departure-date */
+
+.departure-date {
+  height: 65px;
+  width: 150px;
+  left: 311px;
+  top: 502px;
+  position: absolute;
+}
+
+/*поле дата отъезда*/
+
+.departure-date__input {
+  @include input-mini;
+  top: 20.44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.departure-date > h3 {
+  @include headers3;
+}
+
+/*картинка для поля дата отъезда*/
+.departure-date__expand_more {
+  @include expand_more;
+  top: 21px;
+  right: 0;
+}
+
+/* поле filter date */
+
+.filter-date {
+  height: 65px;
+  width: 266px;
+  left: 141px;
+  top: 607px;
+  position: absolute;
+}
+
+/*поле filter-date */
+.filter-date__input {
+  @include input-medium;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  top: 20px;
+}
+/*подзаголовок filter-date */
+.filter-date > h3 {
+  @include headers3;
+}
+/*картинка для filter-date*/
+.filter-date__expand_more {
+  @include expand_more;
+  top: 21px;
+  right: 0;
+}
+
+/* dropdown__arrivale-date placeholder */
+.arrivale-date__input::placeholder {
+  @include input-placeholder;
+  color: rgba(31, 32, 65, 0.75);
+  text-transform: uppercase;
+}
+
+/* departure-date placeholder */
+.departure-date__input::placeholder {
+  @include input-placeholder;
+  color: rgba(31, 32, 65, 0.75);
+  text-transform: uppercase;
+}
+
+/* filter date placeholder */
+
+.filter-date__input::placeholder {
+  @include input-placeholder;
+  color: rgba(31, 32, 65, 0.75);
+}

@@ -1,0 +1,88 @@
+@import '../../mixins.scss';
+
+/* блок пагинации*/
+
+.pagination {
+  height: 106px;
+  width: 241px;
+  left: 979px;
+  top: 540px;
+  position: absolute;
+}
+
+/*подзаголовок*/
+.pagination > h3 {
+  @include headers3;
+}
+
+/* блок с цифрой 1 */
+.pagination__one {
+  @include pagination;
+  left: 1px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 50%;
+}
+/* блок с цифрой 2 */
+.pagination__two {
+  @include pagination;
+  left: 41px;
+}
+/* блок с цифрой 3 */
+.pagination__three {
+  @include pagination;
+  left: 81px;
+}
+/* блок с многоточием */
+.pagination__four {
+  @include pagination;
+  left: 121px;
+}
+
+/* блок с цифрой 15 */
+.pagination__five {
+  @include pagination;
+  left: 161px;
+}
+
+/* свойства последнего подблока*/
+.pagination__six {
+  @include pagination;
+  left: 201px;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border-radius: 50%;
+}
+
+.pagination__seven {
+  @include arrow_forvard;
+  position: absolute;
+  left: 209px;
+  top: 39.44px;
+  width: 24px;
+  height: 24px;
+  background: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*свойства выделенного блока*/
+.pagination__one > p {
+  @include pagination-p;
+  color: #ffffff;
+}
+
+/*свойства блоков без выделения */
+.range > p {
+  @include pagination-p;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+/* свойства подписи блока пагинации*/
+
+.pagination > p {
+  width: 229px;
+  height: 24px;
+  left: 6px;
+  top: 82px;
+  @include copyright-text;
+}

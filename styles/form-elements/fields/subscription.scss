@@ -1,0 +1,44 @@
+@import '../../mixins.scss';
+
+/* поле subscription */
+
+.subscription {
+  height: 64px;
+  width: 267px;
+  left: 140px;
+  top: 712px;
+  position: absolute;
+}
+/*свойства поля subscription*/
+.subscription__input {
+  @include input-medium;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  top: 20px;
+}
+
+/*подзаголовок поля subscription*/
+.subscription > h3 {
+  @include headers3;
+}
+/*стрелка*/
+.subscription__arrow_forvard {
+  @include arrow_forvard;
+  top: 20px;
+  right: 0;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(188, 156, 255, 1)),
+    to(rgba(139, 164, 249, 1))
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* subscription placeholder */
+.subscription__input::placeholder {
+  @include input-placeholder;
+  color: rgba(31, 32, 65, 0.25);
+}

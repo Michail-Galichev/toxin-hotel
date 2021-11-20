@@ -1,0 +1,74 @@
+@import '../../mixins.scss';
+
+/* блок слайдера*/
+
+.range-slider {
+  height: 47px;
+  width: 266px;
+  left: 979px;
+  top: 143px;
+  position: absolute;
+}
+/*подзаголовок слайдера*/
+.range-slider > h3 {
+  @include headers3;
+}
+
+/* подписи слайдера */
+.range-slider > p {
+  @include right_text;
+  top: 0px;
+  left: 163.74px;
+  white-space: nowrap;
+  width: 102px;
+  height: 15px;
+}
+
+/*направляющая слайдера*/
+.range-slider__guide {
+  position: absolute;
+  width: 266px;
+  height: 6px;
+  top: 38.44px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+/* левый ползунок */
+.range-slider__circle-left {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 77px;
+  top: 34px;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+}
+
+/*правый ползунок*/
+
+.range-slider__circle-right {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 162px;
+  top: 33px;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+}
+
+/*подсветка выбранного диапазона*/
+
+.range-slider__illumination {
+  position: absolute;
+  width: 88px;
+  height: 6px;
+  left: 82px;
+  top: 38.44px;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border-radius: 3px;
+}

@@ -1,25 +1,33 @@
 @charset "UTF-8";
 /*миксин текста копирайта*/
+/*миксин заголовков h2*/
 /* миксин свойства заголовков*/
+/* маркер */
 /*миксин кнопок дропдауна +*/
 /*миксин кнопок дропдауна -*/
 /*миксин блока навигации/регистрации/футера/копирайта*/
 /*миксин кнопок*/
+/*миксин маленьких кнопок*/
 /*свойства пунктов меню*/
 /* дни недели */
 /* счётчики */
 /* свойства изображения expand more*/
-/* свойства изображения expand more*/
-/*кнопки +/- */
 /*миксин для placeholder*/
-/* общие свойства для input*/
+/* общие свойства для input w 318*/
+/* общие свойства для input w 266*/
+/*миксин свойст для полей w 150*/
+/*сердце*/
+/*счётчик лайков*/
+/*миксин параграф*/
 /*mixin для рамки checkbox*/
 /*шарики*/
 /*звёзды*/
 /*миксин карточек*/
 /*миксин свойств вложенных блоков*/
+/*миксин для правой стрелки*/
 /* миксин свойств для оформления текста в кнопке*/
-/*миксин заголовка h2 */
+/*миксин заголовка h3 */
+/*миксин свойства формы*/
 /*миксин свойств контента блоков*/
 @font-face {
   font-family: 'Montserrat';
@@ -58,11 +66,11 @@ body {
 }
 
 .account-login {
-  position: absolute;
   width: 380px;
   height: 358px;
   left: 560px;
   top: 704px;
+  position: absolute;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
   -webkit-box-sizing: border-box;
@@ -72,44 +80,57 @@ body {
   border-radius: 4px;
 }
 
-.account-login-header {
-  position: absolute;
+/*свойства заголовка h1*/
+.account-login__header {
   width: 320px;
   height: 30px;
   left: 30px;
   top: 40px;
-  font-family: 'Montserrat';
+  position: absolute;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
+  color: #1f2041;
   font-size: 24px;
   line-height: 29px;
-  color: #1f2041;
 }
 
-.account-login-input-email {
+/* поле e-mail*/
+.account-login__input-email {
+  width: 320px;
+  height: 44px;
   position: absolute;
-  width: 299.5px;
-  height: 42px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
   padding-left: 15px;
   left: 30px;
   top: 90px;
 }
 
-.account-login-input-password {
+/* поле password*/
+.account-login__input-password {
+  width: 320px;
+  height: 44px;
   position: absolute;
-  width: 299.5px;
-  height: 42px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
   padding-left: 15px;
   left: 30px;
   top: 144px;
 }
 
-.account-login-paragraf {
-  position: absolute;
+.account-login > p {
   width: 164px;
   height: 18px;
   left: 30px;
   top: 292px;
+  position: absolute;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
@@ -125,105 +146,147 @@ body {
 }
 
 /* кнопка войти */
-.account-login-link_to-come-in {
-  position: absolute;
+.account-login-link__to-come-in {
   top: 208px;
   left: 30px;
-  display: inline-block;
+  width: 318px;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  margin-right: 20px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 320px;
-  height: 42px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
-  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
-  border: 2px solid transparent;
-  border-radius: 22px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 15px;
   text-transform: uppercase;
+  text-decoration: none;
   color: #bc9cff;
 }
 
 /* кнопка создать */
-.account-login-link_create {
-  position: absolute;
+.account-login-link__create {
   top: 282px;
   left: 251px;
   width: 99px;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  margin-right: 20px;
   height: 42px;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
-  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
-  border: 2px solid transparent;
-  border-radius: 22px;
-  text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
+  text-decoration: none;
   color: #bc9cff;
 }
 
-/* подпись к кнопке войти */
-.account-login-link_to-come-in span {
-  position: absolute;
-  width: 280px;
-  top: 14px;
-  height: 15px;
-  left: 20px;
-  font-size: 12px;
-  line-height: 15px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-}
-
-/* подпись к кнопке создать */
-.account-login-link_create span {
-  position: absolute;
-  top: 14px;
-  left: 18px;
-  width: 62px;
-  height: 15px;
-  font-size: 12px;
-  line-height: 15px;
-  font-style: normal;
-  font-weight: bold;
-  font-family: 'Montserrat';
-}
-
 /* hover для кнопок */
-.account-login-link_to-come-in:hover,
-.account-login-link_create:hover {
+.account-login-link__create:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #ffffff;
   border: none;
 }
 
-.block-link-image:hover .account-login-link-image_to-come-in {
-  fill: white;
+.account-login-link:hover .account-login-link-to-come-in {
+  background: white;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.account-login-link:hover .account-login-link__to-come-in {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #ffffff;
+  border: none;
 }
 
 /* картинка для кнопки вход */
-.account-login-link-image_to-come-in {
+.account-login-link-to-come-in {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
   position: absolute;
-  left: 290px;
-  top: 13px;
-  fill: url("#paint0_linear");
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 306px;
+  cursor: pointer;
+  top: 208px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-input.account-login-input-password::-webkit-input-placeholder {
+/*свойства placeholder*/
+.account-login__input-password::-webkit-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 55px;
+}
+.account-login__input-password:-ms-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 55px;
+}
+.account-login__input-password::-ms-input-placeholder {
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 55px;
+}
+.account-login__input-password::placeholder {
   height: 18px;
   font-family: 'Montserrat';
   font-style: normal;
@@ -234,40 +297,7 @@ input.account-login-input-password::-webkit-input-placeholder {
   width: 55px;
 }
 
-input.account-login-input-password:-ms-input-placeholder {
-  height: 18px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.25);
-  width: 55px;
-}
-
-input.account-login-input-password::-ms-input-placeholder {
-  height: 18px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.25);
-  width: 55px;
-}
-
-input.account-login-input-password::placeholder {
-  height: 18px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.25);
-  width: 55px;
-}
-
-input.account-login-input-email::-webkit-input-placeholder {
+.account-login__input-email::-webkit-input-placeholder {
   height: 18px;
   font-family: 'Montserrat';
   font-style: normal;
@@ -278,7 +308,7 @@ input.account-login-input-email::-webkit-input-placeholder {
   width: 40px;
 }
 
-input.account-login-input-email:-ms-input-placeholder {
+.account-login__input-email:-ms-input-placeholder {
   height: 18px;
   font-family: 'Montserrat';
   font-style: normal;
@@ -289,7 +319,7 @@ input.account-login-input-email:-ms-input-placeholder {
   width: 40px;
 }
 
-input.account-login-input-email::-ms-input-placeholder {
+.account-login__input-email::-ms-input-placeholder {
   height: 18px;
   font-family: 'Montserrat';
   font-style: normal;
@@ -300,7 +330,7 @@ input.account-login-input-email::-ms-input-placeholder {
   width: 40px;
 }
 
-input.account-login-input-email::placeholder {
+.account-login__input-email::placeholder {
   height: 18px;
   font-family: 'Montserrat';
   font-style: normal;

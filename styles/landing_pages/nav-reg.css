@@ -1,25 +1,33 @@
 @charset "UTF-8";
 /*миксин текста копирайта*/
+/*миксин заголовков h2*/
 /* миксин свойства заголовков*/
+/* маркер */
 /*миксин кнопок дропдауна +*/
 /*миксин кнопок дропдауна -*/
 /*миксин блока навигации/регистрации/футера/копирайта*/
 /*миксин кнопок*/
+/*миксин маленьких кнопок*/
 /*свойства пунктов меню*/
 /* дни недели */
 /* счётчики */
 /* свойства изображения expand more*/
-/* свойства изображения expand more*/
-/*кнопки +/- */
 /*миксин для placeholder*/
-/* общие свойства для input*/
+/* общие свойства для input w 318*/
+/* общие свойства для input w 266*/
+/*миксин свойст для полей w 150*/
+/*сердце*/
+/*счётчик лайков*/
+/*миксин параграф*/
 /*mixin для рамки checkbox*/
 /*шарики*/
 /*звёзды*/
 /*миксин карточек*/
 /*миксин свойств вложенных блоков*/
+/*миксин для правой стрелки*/
 /* миксин свойств для оформления текста в кнопке*/
-/*миксин заголовка h2 */
+/*миксин заголовка h3 */
+/*миксин свойства формы*/
 /*миксин свойств контента блоков*/
 * {
   margin: 0;
@@ -82,17 +90,26 @@ body {
 }
 
 .nav-reg-buttons__to-come-in {
-  display: inline-block;
+  position: absolute;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
   border: 2px solid transparent;
   border-radius: 22px;
-  font-family: Montserrat;
   margin-right: 20px;
-  height: 34px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Montserrat;
   font-size: 12px;
   font-weight: bold;
   line-height: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #bc9cff;
@@ -101,17 +118,26 @@ body {
 
 /*"Зарегистрироваться"*/
 .nav-reg-buttons__register {
-  display: inline-block;
+  position: absolute;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
   border: 2px solid transparent;
   border-radius: 22px;
-  font-family: Montserrat;
   margin-right: 20px;
-  height: 34px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Montserrat;
   font-size: 12px;
   font-weight: bold;
   line-height: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #bc9cff;

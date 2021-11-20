@@ -1,0 +1,107 @@
+@import '../../mixins.scss';
+
+/* блок like button */
+
+.like-button {
+  position: absolute;
+  width: 89.72px;
+  height: 51px;
+  left: 587px;
+  top: 534px;
+}
+
+/* скрываем стандартный чекбокс*/
+
+.like-button__input1,
+.like-button__input2 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* границы like button*/
+
+.like-button__none-checked {
+  @include border;
+  top: 31px;
+  cursor: pointer;
+}
+
+.like-button-none-checked__favorite_border::before {
+  @include favorite;
+  content: 'favorite_border';
+  left: 0px;
+  top: -1px;
+}
+
+.like-button__checked {
+  @include border;
+  top: 31px;
+  left: 50px;
+  border: 1px solid #bc9cff;
+}
+
+.like-button-checked__favorite::before {
+  @include favorite;
+  content: 'favorite';
+  top: -1px;
+  left: 0px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*  шрифт счётчика лайков*/
+
+.like-button__p1 {
+  @include like-count;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.like-button__p2 {
+  @include like-count;
+  color: #bc9cff;
+}
+
+/* checked для like-button__none-checked */
+
+.like-button__input1:hover + .like-button__none-checked > .like-button__p1 {
+  color: #bc9cff;
+}
+
+.like-button__input1:hover + .like-button__none-checked {
+  border: 1px solid #bc9cff;
+}
+
+.like-button__input1:hover
+  + .like-button__none-checked
+  > .like-button-none-checked__favorite_border::before {
+  content: 'favorite';
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* checked для like-button__checked */
+
+.like-button__input2:hover + .like-button__checked > .like-button__p2 {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.like-button__input2:hover + .like-button__checked {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.like-button__input2:hover
+  + .like-button__checked
+  > .like-button-checked__favorite::before {
+  content: 'favorite_border';
+  background: rgba(31, 32, 65, 0.25);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

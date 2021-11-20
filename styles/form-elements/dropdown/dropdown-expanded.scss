@@ -1,0 +1,116 @@
+@import '../../mixins.scss';
+
+/*  dropdown-expanded */
+
+.dropdown-expanded {
+  position: absolute;
+  height: 181.5576171875px;
+  width: 266px;
+  left: 140px;
+  top: 960px;
+}
+/*подзаголовок поля*/
+.dropdown-expanded > h3 {
+  @include headers3;
+}
+
+/*текст справа*/
+.dropdown-expanded > span {
+  @include right-text;
+  position: absolute;
+  left: 196px;
+  width: 70px;
+}
+
+.dropdown-expanded__input {
+  @include input-medium;
+  top: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.dropdown-expanded__expand_more {
+  @include expand_more;
+  top: 20px;
+  right: 0;
+}
+
+.dropdown-expanded__input::placeholder {
+  width: 160px;
+  height: 24px;
+  @include input-placeholder;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/* стили формы dropdown */
+
+.dropdown-expanded__form {
+  position: absolute;
+  width: 266px;
+  height: 119px;
+  left: 0px;
+  top: 64px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top: none;
+  box-sizing: border-box;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+/* кнопки +/- */
+
+.dropdown-expanded__form > .dropdown__circle-minus1 {
+  @include circle-minus;
+  right: 69px;
+  top: 7px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown-expanded__form > .dropdown__circle-minus2 {
+  @include circle-minus;
+  right: 69px;
+  top: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown-p__minus {
+  font-family: 'Montserrat';
+  text-align: center;
+  color: rgba(31, 32, 65, 0.5);
+  position: absolute;
+  top: 3px;
+  left: 11px;
+}
+
+.dropdown-p__plus {
+  font-family: 'Montserrat';
+  text-align: center;
+  color: rgba(31, 32, 65, 0.5);
+  position: absolute;
+  top: 4px;
+  left: 9px;
+}
+.dropdown__p {
+  margin-bottom: 22px;
+  margin-left: 15px;
+  width: 83px;
+  height: 15px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #1f2041;
+}
+
+.first {
+  margin-top: 11px;
+}
+
+.last {
+  color: rgba(31, 32, 65, 0.25);
+}

@@ -1,5 +1,5 @@
 .check
-  h2 Checkbox Buttons
+  h3 Checkbox Buttons
   label.checkbox.options 
     input.checkbox__input(type="checkbox")
     .checkbox__view    
@@ -15,19 +15,19 @@
     | (до 10 человек)
 
 .radio
-  h2 radio Buttons
+  h3 radio Buttons
   label.radio-label__men
-    input.radio__input(type='radio' name='sex' value='men' checked='')
+    input.radio-label__input(type='radio' name='sex' value='men' checked='')
     |         Мужчина
-    .radio-view__men
+    .radio-label__custom-men
       
   label.radio-label__women
-    input.radio__input(type='radio' name='sex' value='women')
+    input.radio-label__input(type='radio' name='sex' value='women')
     |         Женщина
-    .radio-view__women
+    .radio-label__custom-women
 
 .toggle
-  h2 toggle
+  h3 toggle
   label.toggle__labbel1
     input(type="checkbox" class="toggle__input1" checked='' )
     .toggle__checked 
@@ -39,33 +39,35 @@
 
 
 .like-button 
-  h2 like button 
+  h3 like button 
   label.like-button__labbel1
     input(type="checkbox" class="like-button__input1" autocomplete='off' )
     .like-button__none-checked
-      p.like-button__p 2 
+      .like-button-none-checked__favorite_border
+      p.like-button__p1 2 
   label.like-button__labbel2
     input(type="checkbox" class="like-button__input2" checked='')
-    .like-button__checked 
-      p.like-button__p 12
+    .like-button__checked
+      .like-button-checked__favorite
+      p.like-button__p2 12
 
-.rate-button  
-  h2 rate button
-  .rate-button__stars1
-    .rate-button__star1.hover
-    .rate-button__star2.hover 
-    .rate-button__star3.hover
-    .rate-button__star4.hover
-    .rate-button__star5.hover
-  .rate-button__stars2
-    .rate-button__star1.hover
-    .rate-button__star2.hover
-    .rate-button__star3.hover
-    .rate-button__star4.hover
-    .rate-button__star5.hover
+
+h3.rate-button__h3 rate button
+.rate-button__stars1
+  .rate-button__star1.material-icons-outlined star
+  .rate-button__star2.material-icons-outlined star
+  .rate-button__star3.material-icons-outlined star
+  .rate-button__star4.material-icons-outlined star
+  .rate-button__star5.material-icons-outlined star_border
+.rate-button__stars2
+  .rate-button__star1.material-icons-outlined star
+  .rate-button__star2.material-icons-outlined star
+  .rate-button__star3.material-icons-outlined star
+  .rate-button__star4.material-icons-outlined star
+  .rate-button__star5.material-icons-outlined star
 
 .rich-checkbox-buttons
-  h2 rich Checkbox Buttons
+  h3 rich Checkbox Buttons
   label.rich-checkbox-buttons__label
     input.rich-checkbox-buttons__input(type="checkbox")
     .rich-checkbox-buttons__div

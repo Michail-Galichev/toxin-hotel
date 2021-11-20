@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/*миксин текста копирайта*/
+/*миксин заголовков h2*/
+/* миксин свойства заголовков*/
+/* маркер */
+/*миксин кнопок дропдауна +*/
+/*миксин кнопок дропдауна -*/
+/*миксин блока навигации/регистрации/футера/копирайта*/
+/*миксин кнопок*/
+/*миксин маленьких кнопок*/
+/*свойства пунктов меню*/
+/* дни недели */
+/* счётчики */
+/* свойства изображения expand more*/
+/*миксин для placeholder*/
+/* общие свойства для input w 318*/
+/* общие свойства для input w 266*/
+/*миксин свойст для полей w 150*/
+/*сердце*/
+/*счётчик лайков*/
+/*миксин параграф*/
+/*mixin для рамки checkbox*/
+/*шарики*/
+/*звёзды*/
+/*миксин карточек*/
+/*миксин свойств вложенных блоков*/
+/*миксин для правой стрелки*/
+/* миксин свойств для оформления текста в кнопке*/
+/*миксин заголовка h3 */
+/*миксин свойства формы*/
+/*миксин свойств контента блоков*/
+/* checkbox list default */
+.checkbox-list__default {
+  height: 44px;
+  width: 266px;
+  left: 141px;
+  top: 1182px;
+  cursor: pointer;
+  position: absolute;
+}
+
+/* стили заголовка checkbox list default */
+.checkbox-list__default > h3 {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+  top: 14px;
+}
+
+/* стили expanded more*/
+.checkbox-list__expand_more {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+  top: 0px;
+  position: absolute;
+  left: 222px;
+}
+
+/* checkbox list expanded */
+.checkbox-list__expanded {
+  height: 217px;
+  width: 266px;
+  left: 140px;
+  top: 1246px;
+  position: absolute;
+}
+
+/* стили заголовка checkbox list expanded */
+.checkbox-list__expanded > h3 {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+  top: 14px;
+}
+
+/* стили expanded more expanded*/
+.checkbox-list-expanded__expand_more {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: 222px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+/* checkbox block */
+.checkbox-list-expanded__block {
+  height: 171px;
+  width: 222px;
+  top: 47px;
+  position: absolute;
+}
+
+/* свойства меток checkbox */
+.checkbox-list-expanded__block > label {
+  margin-bottom: 12px;
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  padding-left: 30px;
+}
+
+/* скрываем стандартные checkbox*/
+.checkbox-list-expanded-block-label__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* стили для кастомных checkbox*/
+.checkbox-list-expanded-block-label__custom {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* checked */
+.checkbox-list-expanded-block-label__input:checked
++ .checkbox-list-expanded-block-label__custom {
+  border: 1px solid #bc9cff;
+  background-image: url(../img/check.svg);
+  background-size: 10px 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*# sourceMappingURL=checkbox-list-default-expanded.css.map */

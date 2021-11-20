@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/*миксин текста копирайта*/
+/*миксин заголовков h2*/
+/* миксин свойства заголовков*/
+/* маркер */
+/*миксин кнопок дропдауна +*/
+/*миксин кнопок дропдауна -*/
+/*миксин блока навигации/регистрации/футера/копирайта*/
+/*миксин кнопок*/
+/*миксин маленьких кнопок*/
+/*свойства пунктов меню*/
+/* дни недели */
+/* счётчики */
+/* свойства изображения expand more*/
+/*миксин для placeholder*/
+/* общие свойства для input w 318*/
+/* общие свойства для input w 266*/
+/*миксин свойст для полей w 150*/
+/*сердце*/
+/*счётчик лайков*/
+/*миксин параграф*/
+/*mixin для рамки checkbox*/
+/*шарики*/
+/*звёзды*/
+/*миксин карточек*/
+/*миксин свойств вложенных блоков*/
+/*миксин для правой стрелки*/
+/* миксин свойств для оформления текста в кнопке*/
+/*миксин заголовка h3 */
+/*миксин свойства формы*/
+/*миксин свойств контента блоков*/
+/*блок rich-checkbox-buttons */
+.rich-checkbox-buttons {
+  height: 145px;
+  width: 266px;
+  left: 587px;
+  top: 1196px;
+  position: absolute;
+}
+
+.rich-checkbox-buttons > h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+
+/* стили меток checkbox */
+.rich-checkbox-buttons__label {
+  display: block;
+  margin-bottom: 44px;
+  margin-top: 14px;
+  padding-left: 30px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/* скрываем стандартные checkbox */
+.rich-checkbox-buttons__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* кастомные checkbox */
+.rich-checkbox-buttons__div {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  position: absolute;
+  left: 0px;
+}
+
+/* блоки дополнительных подписей checkbox */
+.rich-checkbox-buttons__hallway {
+  position: absolute;
+  width: 203px;
+  height: 28px;
+  left: 30px;
+  top: 55px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.rich-checkbox-buttons__helper {
+  position: absolute;
+  width: 236px;
+  height: 28px;
+  left: 30px;
+  top: 117px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.rich-checkbox-buttons__input:checked + .rich-checkbox-buttons__div {
+  background-image: url("../img/check.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 10px 8px;
+  border: 1px solid #bc9cff;
+}
+/*# sourceMappingURL=rich-checkbox.css.map */

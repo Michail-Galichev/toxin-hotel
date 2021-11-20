@@ -1,0 +1,47 @@
+@import '../../mixins.scss';
+
+.rate-button__h3 {
+  @include headers3;
+  position: absolute;
+  top: 625px;
+  left: 587px;
+}
+
+.rate-button__star1 {
+  @include stars;
+  left: 0px;
+}
+.rate-button__star2 {
+  @include stars;
+  left: 24px;
+}
+.rate-button__star3 {
+  @include stars;
+  left: 48px;
+}
+.rate-button__star4 {
+  @include stars;
+  left: 72px;
+}
+.rate-button__star5 {
+  @include stars;
+  left: 96px;
+}
+
+/* группа 1*/
+
+.rate-button__stars1 {
+  position: absolute;
+  height: 24px;
+  width: 120px;
+  left: 587px;
+  top: 656px;
+}
+/* группа 2*/
+.rate-button__stars2 {
+  height: 24px;
+  width: 120px;
+  position: absolute;
+  left: 727px;
+  top: 656px;
+}

@@ -1,119 +1,97 @@
+mixin dropdown(var1,var2,var3,adults,children,babies,button1,button2)
+  p.dropdown__p.first #{var1}
+    p.dropdown__p #{var2}
+    p.dropdown__p #{var3}
+    .dropdown__circle-plus1
+      p.dropdown-p__plus +
+    .dropdown__circle-plus2
+      p.dropdown-p__plus +
+    .dropdown__circle-plus3 
+      p.dropdown-p__plus +
+    .dropdown__circle-minus1
+      p.dropdown-p__minus -
+    .dropdown__circle-minus2
+      p.dropdown-p__minus -
+    .dropdown__circle-minus3
+      p.dropdown-p__minus.last -
+    if (adults)  
+      .adults #{adults} 
+    if (children)  
+      .children #{children}
+    if (babies)  
+      .babies #{babies}
+    
+
+  if (button1)
+    a.dropdown__link1(href="#") #{button1}
+  if (button2)  
+    a.dropdown__link2(href="#") #{button2}
+
+
+
 .dropdown-default
-  h2 dropdown 
-  span.text-field__span default
+  h3 dropdown 
+  span default
   input.dropdown-default__input(type="text" placeholder='2 спальни, 2 кровати...')
-  .dropdown-default__img
+  .dropdown-default__expand_more.material-icons-outlined expand_more
     
 .dropdown-expanded  
-  h2 dropdown 
-  span.text-field__span expanded
+  h3 dropdown 
+  span expanded
   input.dropdown-expanded__input(type="text" placeholder='2 спальни, 2 кровати...')
-  .dropdown-expanded__img  
+  .dropdown-expanded__expand_more.material-icons-outlined expand_more  
   .dropdown-expanded__form
-    p.dropdown__p.first спальни 
-    p.dropdown__p кровати 
-    p.dropdown__p ванные комнаты
-    .dropdown__circle-plus1
-      p.dropdown-p__plus +
-    .dropdown__circle-plus2
-      p.dropdown-p__plus +
-    .dropdown__circle-plus3 
-      p.dropdown-p__plus +
-    .dropdown__circle-minus1
-      p.dropdown-p__minus -
-    .dropdown__circle-minus2
-      p.dropdown-p__minus -
-    .dropdown__circle-minus3
-      p.dropdown-p__minus.last -
-
+    +dropdown('спальни', 'кровати', 'ванные комнаты', '2', '2','0')
 .checkbox-list__default 
-  h2 expandable checkbox list
-  .checkbox-list__img 
+  h3 expandable checkbox list
+  .checkbox-list__expand_more.material-icons-outlined expand_more 
 
 .checkbox-list__expanded 
-  h2 expandable checkbox list
-  .checkbox-list__img
-  .checkbox-block
+  h3 expandable checkbox list
+  .checkbox-list-expanded__expand_more.material-icons-outlined expand_more 
+  .checkbox-list-expanded__block
     label
-      input.checkbox-block__input(type="checkbox")
-      .checkbox-list__div
+      input.checkbox-list-expanded-block-label__input(type="checkbox")
+      .checkbox-list-expanded-block-label__custom
       | Завтрак  
     label
-      input.checkbox-block__input(type="checkbox" checked='')
-      .checkbox-list__div
+      input.checkbox-list-expanded-block-label__input(type="checkbox" checked='')
+      .checkbox-list-expanded-block-label__custom
       | Письменный стол
     label
-      input.checkbox-block__input(type="checkbox" checked='')
-      .checkbox-list__div
+      input.checkbox-list-expanded-block-label__input(type="checkbox" checked='')
+      .checkbox-list-expanded-block-label__custom
       | Стул для кормления
     label
-      input.checkbox-block__input(type="checkbox" checked='')
-      .checkbox-list__div
+      input.checkbox-list-expanded-block-label__input(type="checkbox" checked='')
+      .checkbox-list-expanded-block-label__custom
       | Кроватка
     label
-      input.checkbox-block__input(type="checkbox")
-      .checkbox-list__div
+      input.checkbox-list-expanded-block-label__input(type="checkbox")
+      .checkbox-list-expanded-block-label__custom
       | Телевизор
     label
-      input.checkbox-block__input(type="checkbox")
-      .checkbox-list__div 
-      | Шампунь 
+      input.checkbox-list-expanded-block-label__input(type="checkbox")
+      .checkbox-list-expanded-block-label__custom
+      | Шампунь
+  
+ 
 
 .dropdown-gast__empty 
-  h2 dropdown 
+  h3 dropdown 
   input.dropdown-gast-empty__input(type="text" placeholder='Сколко гостей')
-  .dropdown-gast-empty__img
+  .dropdown-gast-empty__expand_more.material-icons-outlined expand_more
   .dropdown-gast-empty__form
-    p.dropdown__p.first взрослые 
-    p.dropdown__p дети
-    p.dropdown__p младенцы
-    .dropdown__circle-plus1
-      p.dropdown-p__plus +
-    .dropdown__circle-plus2
-      p.dropdown-p__plus +
-    .dropdown__circle-plus3 
-      p.dropdown-p__plus +
-    .adults 0
-    .children 0
-    .babies 0
-    .dropdown__circle-minus1
-      p.dropdown-p__minus.last -
-    .dropdown__circle-minus2
-      p.dropdown-p__minus.last -
-    .dropdown__circle-minus3
-      p.dropdown-p__minus.last -
-
-    a.dropdown__link2(href="#") применить
-
+    +dropdown('взрослые', 'дети', 'младенцы', '0', '0', '0', false, 'применить' )
 .dropdown-gast__filled-in
-  h2 dropdown 
+  h3 dropdown 
   input.dropdown-gast-filled-in__input(type="text" placeholder='3 гостя')
-  .dropdown-gast-filled-in__img
+  .dropdown-gast-filled-in__expand_more.material-icons-outlined expand_more
   .dropdown-gast-filled-in__form
-    p.dropdown__p.first взрослые 
-    p.dropdown__p дети
-    p.dropdown__p младенцы
-    .dropdown__circle-plus1
-      p.dropdown-p__plus +
-    .dropdown__circle-plus2
-      p.dropdown-p__plus +
-    .dropdown__circle-plus3 
-      p.dropdown-p__plus +
-    .adults 2
-    .children 1
-    .babies 0
-    .dropdown__circle-minus1
-      p.dropdown-p__minus -
-    .dropdown__circle-minus2
-      p.dropdown-p__minus -
-    .dropdown__circle-minus3
-      p.dropdown-p__minus.last -
-
-    a.dropdown__link1(href="#") очистить
-    a.dropdown__link2(href="#") применить
+    +dropdown('взрослые','дети','младенцы','2','1','0','очистить','применить')
 
 .bullet-list
-  h2 bullet list
+  h3 bullet list
   ul.bullet-list__ul 
     li Нельзя с питомцами
     li Без вечеринок

@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/*миксин текста копирайта*/
+/*миксин заголовков h2*/
+/* миксин свойства заголовков*/
+/* маркер */
+/*миксин кнопок дропдауна +*/
+/*миксин кнопок дропдауна -*/
+/*миксин блока навигации/регистрации/футера/копирайта*/
+/*миксин кнопок*/
+/*миксин маленьких кнопок*/
+/*свойства пунктов меню*/
+/* дни недели */
+/* счётчики */
+/* свойства изображения expand more*/
+/*миксин для placeholder*/
+/* общие свойства для input w 318*/
+/* общие свойства для input w 266*/
+/*миксин свойст для полей w 150*/
+/*сердце*/
+/*счётчик лайков*/
+/*миксин параграф*/
+/*mixin для рамки checkbox*/
+/*шарики*/
+/*звёзды*/
+/*миксин карточек*/
+/*миксин свойств вложенных блоков*/
+/*миксин для правой стрелки*/
+/* миксин свойств для оформления текста в кнопке*/
+/*миксин заголовка h3 */
+/*миксин свойства формы*/
+/*миксин свойств контента блоков*/
+/* радио кнопки */
+.radio {
+  position: absolute;
+  top: 313px;
+  left: 587px;
+  height: 55px;
+  width: 220.75px;
+}
+
+/* заголовок */
+.radio > h3 {
+  width: 107px;
+  height: 15px;
+  white-space: pre;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+  margin-bottom: 12px;
+}
+
+/* скрываем стандартный радио-баттон */
+.radio-label__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* свойства метки кнопок */
+.radio-label__men {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  height: 24px;
+  width: 68px;
+  position: absolute;
+  padding-left: 33px;
+  left: 0px;
+  top: 31px;
+}
+
+.radio-label__women {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  height: 24px;
+  width: 73px;
+  padding-left: 33px;
+  left: 116px;
+  top: 31px;
+}
+
+/* свойства кнопки none checked */
+.radio-label__custom-men {
+  width: 20px;
+  position: absolute;
+  height: 20px;
+  -webkit-box-shadow: 0 0 0 1px rgba(31, 32, 65, 0.25);
+          box-shadow: 0 0 0 1px rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  top: 0px;
+  left: 4px;
+}
+
+.radio-label__custom-women {
+  width: 20px;
+  position: absolute;
+  height: 20px;
+  -webkit-box-shadow: 0 0 0 1px rgba(31, 32, 65, 0.25);
+          box-shadow: 0 0 0 1px rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  top: 0px;
+  left: 4px;
+}
+
+/* checked */
+.radio-label__input:checked + .radio-label__custom-men::before,
+.radio-label__input:checked + .radio-label__custom-women::before {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+}
+
+.radio-label__input:checked + .radio-label__custom-men,
+.radio-label__input:checked + .radio-label__custom-women {
+  -webkit-box-shadow: 0 0 0 1px #bc9cff;
+          box-shadow: 0 0 0 1px #bc9cff;
+}
+
+/*свойства before*/
+.radio-label__custom-men::before,
+.radio-label__custom-women::before {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  left: 4px;
+  top: 4px;
+  background-color: white;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=radio-button.css.map */

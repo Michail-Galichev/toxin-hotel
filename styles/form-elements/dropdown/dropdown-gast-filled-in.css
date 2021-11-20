@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/*миксин текста копирайта*/
+/*миксин заголовков h2*/
+/* миксин свойства заголовков*/
+/* маркер */
+/*миксин кнопок дропдауна +*/
+/*миксин кнопок дропдауна -*/
+/*миксин блока навигации/регистрации/футера/копирайта*/
+/*миксин кнопок*/
+/*миксин маленьких кнопок*/
+/*свойства пунктов меню*/
+/* дни недели */
+/* счётчики */
+/* свойства изображения expand more*/
+/*миксин для placeholder*/
+/* общие свойства для input w 318*/
+/* общие свойства для input w 266*/
+/*миксин свойст для полей w 150*/
+/*сердце*/
+/*счётчик лайков*/
+/*миксин параграф*/
+/*mixin для рамки checkbox*/
+/*шарики*/
+/*звёзды*/
+/*миксин карточек*/
+/*миксин свойств вложенных блоков*/
+/*миксин для правой стрелки*/
+/* миксин свойств для оформления текста в кнопке*/
+/*миксин заголовка h3 */
+/*миксин свойства формы*/
+/*миксин свойств контента блоков*/
+/* свойства dropdown гости filled in*/
+.dropdown-gast__filled-in {
+  height: 221.5576171875px;
+  width: 320px;
+  left: 979px;
+  top: 876px;
+  position: absolute;
+}
+
+/*свойства заголовка поля*/
+.dropdown-gast__filled-in > h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+
+/* свойства текстового поля*/
+.dropdown-gast-filled-in__input {
+  width: 320px;
+  height: 44px;
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  padding-left: 15px;
+  top: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+/* placeholder */
+.dropdown-gast-filled-in__input::-webkit-input-placeholder {
+  width: 112px;
+  height: 18px;
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+.dropdown-gast-filled-in__input:-ms-input-placeholder {
+  width: 112px;
+  height: 18px;
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+.dropdown-gast-filled-in__input::-ms-input-placeholder {
+  width: 112px;
+  height: 18px;
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+.dropdown-gast-filled-in__input::placeholder {
+  width: 112px;
+  height: 18px;
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/* стили expand more*/
+.dropdown-gast-filled-in__expand_more {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+  top: 20px;
+  right: 0;
+}
+
+/* свойства dropdown гости empty*/
+.dropdown-gast-filled-in__form {
+  position: absolute;
+  width: 320px;
+  height: 159px;
+  top: 62.56px;
+  left: px;
+  background: #ffffff;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+/* кнопки +/- */
+.dropdown-gast-filled-in__form > .dropdown__circle-minus1 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  right: 69px;
+  top: 7px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown-gast-filled-in__form > .dropdown__circle-minus2 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  right: 69px;
+  top: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+/*кнопки применить/очистить*/
+.dropdown__link1 {
+  position: absolute;
+  width: 72px;
+  height: 15px;
+  top: 131px;
+  left: 14px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #bc9cff;
+}
+
+.dropdown__link2 {
+  position: absolute;
+  width: 84px;
+  height: 15px;
+  right: 7px;
+  top: 131px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #bc9cff;
+}
+/*# sourceMappingURL=dropdown-gast-filled-in.css.map */

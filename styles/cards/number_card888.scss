@@ -3,14 +3,11 @@
 /*  свойства формы */
 
 .number-card__luxury {
-  position: absolute;
+  @include form;
   width: 270px;
   height: 257px;
   left: 980px;
   top: 559.5px;
-  background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  border-radius: 4px;
 }
 
 /* свойства изображения */
@@ -22,129 +19,100 @@
 /* основной заголовок */
 
 .number-card__h1 {
-  @include headers;
-  width: 59px;
+  @include landing-h2;
+  width: 60px;
   height: 21px;
-  left: 36px;
+  left: 20px;
   top: 171px;
-  padding-top: 3px;
-  font-size: 14px;
-  line-height: 17px;
 }
 
 /* свойства № */
 
-.number-card__span {
-  position: absolute;
-  width: 34px;
-  height: 12px;
-  left: -27px;
-  top: 4px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
+.number-card__h1 > span {
+  font-size: 14px;
   line-height: 17px;
-  color: #1f2041;
 }
 
 /* свойства параграфа люкс */
 .number-card-p__luxury {
+  @include text-link;
   position: absolute;
   width: 41px;
   height: 15px;
-  left: 67px;
-  top: 176px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #bc9cff;
+  left: 80px;
+  top: 178px;
 }
 
 /* цена за сутки */
 
 .number-card-p__price-per-day {
-  position: absolute;
+  @include copyright-text;
   width: 100px;
   height: 20px;
   left: 153px;
   top: 176px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 18px;
   color: rgba(31, 32, 65, 0.5);
 }
 
-.number-card-span__per-day {
-  position: absolute;
-  width: 100px;
-  height: 20px;
-  left: 27px;
-  top: 1px;
-  font-family: Montserrat;
-  font-style: normal;
+.number-card-p__price-per-day > span {
   font-weight: normal;
   font-size: 12px;
-  line-height: 18px;
-
-  color: rgba(31, 32, 65, 0.5);
 }
 
+/*блок звёзды*/
+.number-card__stars {
+  position: absolute;
+  top: 214px;
+  left: 20.26px;
+  width: 120px;
+  height: 24px;
+}
 /* звёзды */
 
-.number-card__star1 {
+.number-card-stars__star1 {
   @include stars;
-  left: 20px;
+  left: 0px;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
-.number-card__star2 {
+.number-card-stars__star2 {
   @include stars;
-  left: 47px;
+  left: 24px;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
-.number-card__star3 {
+.number-card-stars__star3 {
   @include stars;
-  left: 74px;
+  left: 48px;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
-.number-card__star4 {
+.number-card-stars__star4 {
   @include stars;
-  left: 101px;
+  left: 72px;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
-.number-card__star5 {
+.number-card-stars__star5 {
   @include stars;
-  left: 127px;
-}
-
-.hover:hover {
-  background-image: url(../img/star.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  left: 95.74px;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /* отзывы */
 
-.number-card__reviews {
-  position: absolute;
+.number-card-p__reviews {
+  @include copyright-text;
   width: 90px;
   height: 18px;
-  left: 104px;
-  top: 222.56px;
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: right;
-  color: rgba(31, 32, 65, 0.5);
+  left: 160px;
+  top: 217.56px;
 }
-.number-card-reviews__span {
-  position: absolute;
+.number-card-p__reviews > span {
   font-weight: normal;
-  top: 2.56px;
-  left: -20px;
 }
 
 /* шарики */
@@ -172,23 +140,26 @@
 /* вперед назад */
 
 .number-card_expand-more-left {
-  background-image: url(../img/expand_more_left.svg);
-  position: absolute;
-  width: 44px;
-  height: 44px;
+  @include expand_more;
   top: 54px;
   left: 0px;
-  background-repeat: no-repeat;
-  background-position: center;
+  transform: rotate(90deg);
+  color: #ffffff;
 }
 
 .number-card_expand-more-right {
-  background-image: url(../img/expand_more_rieght.svg);
-  position: absolute;
-  width: 44px;
-  height: 44px;
+  @include expand_more;
   top: 54px;
   right: 0px;
-  background-repeat: no-repeat;
-  background-position: center;
+  transform: rotate(-90deg);
+  color: #ffffff;
+}
+
+.number-card__line {
+  position: absolute;
+  width: 230px;
+  height: 1px;
+  left: 20px;
+  top: 205px;
+  background: rgba(31, 32, 65, 0.1);
 }

@@ -1,25 +1,33 @@
 @charset "UTF-8";
 /*миксин текста копирайта*/
+/*миксин заголовков h2*/
 /* миксин свойства заголовков*/
+/* маркер */
 /*миксин кнопок дропдауна +*/
 /*миксин кнопок дропдауна -*/
 /*миксин блока навигации/регистрации/футера/копирайта*/
 /*миксин кнопок*/
+/*миксин маленьких кнопок*/
 /*свойства пунктов меню*/
 /* дни недели */
 /* счётчики */
 /* свойства изображения expand more*/
-/* свойства изображения expand more*/
-/*кнопки +/- */
 /*миксин для placeholder*/
-/* общие свойства для input*/
+/* общие свойства для input w 318*/
+/* общие свойства для input w 266*/
+/*миксин свойст для полей w 150*/
+/*сердце*/
+/*счётчик лайков*/
+/*миксин параграф*/
 /*mixin для рамки checkbox*/
 /*шарики*/
 /*звёзды*/
 /*миксин карточек*/
 /*миксин свойств вложенных блоков*/
+/*миксин для правой стрелки*/
 /* миксин свойств для оформления текста в кнопке*/
-/*миксин заголовка h2 */
+/*миксин заголовка h3 */
+/*миксин свойства формы*/
 /*миксин свойств контента блоков*/
 /* свойства формы*/
 .search-room {
@@ -44,6 +52,8 @@ h1 {
   font-style: normal;
   font-weight: bold;
   color: #1f2041;
+  font-size: 24px;
+  line-height: 29px;
   width: 320px;
   height: 59px;
   left: 30px;
@@ -58,6 +68,8 @@ h1 {
   font-style: normal;
   font-weight: bold;
   color: #1f2041;
+  font-size: 24px;
+  line-height: 29px;
   width: 83px;
   height: 15px;
   left: 30px;
@@ -73,6 +85,8 @@ h1 {
   font-style: normal;
   font-weight: bold;
   color: #1f2041;
+  font-size: 24px;
+  line-height: 29px;
   width: 83px;
   height: 15px;
   left: 200px;
@@ -88,6 +102,8 @@ h1 {
   font-style: normal;
   font-weight: bold;
   color: #1f2041;
+  font-size: 24px;
+  line-height: 29px;
   position: absolute;
   width: 43px;
   height: 15px;
@@ -239,7 +255,7 @@ h1 {
   position: absolute;
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.5);
+  border: 1px solid rgba(31, 32, 65, 0.25);
   cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -252,7 +268,7 @@ h1 {
   position: absolute;
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.5);
+  border: 1px solid rgba(31, 32, 65, 0.25);
   cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -265,7 +281,7 @@ h1 {
   position: absolute;
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.5);
+  border: 1px solid rgba(31, 32, 65, 0.25);
   cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
