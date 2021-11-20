@@ -1,0 +1,522 @@
+@charset "UTF-8";
+/*миксин текста копирайта*/
+/*миксин заголовков h2*/
+/* миксин свойства заголовков*/
+/* маркер */
+/*миксин кнопок дропдауна +*/
+/*миксин кнопок дропдауна -*/
+/*миксин блока навигации/регистрации/футера/копирайта*/
+/*миксин кнопок*/
+/*миксин маленьких кнопок*/
+/*свойства пунктов меню*/
+/* дни недели */
+/* счётчики */
+/* свойства изображения expand more*/
+/*миксин для placeholder*/
+/* общие свойства для input w 318*/
+/* общие свойства для input w 266*/
+/*миксин свойст для полей w 150*/
+/*сердце*/
+/*счётчик лайков*/
+/*миксин параграф*/
+/*mixin для рамки checkbox*/
+/*шарики*/
+/*звёзды*/
+/*миксин карточек*/
+/*миксин свойств вложенных блоков*/
+/*миксин для правой стрелки*/
+/* миксин свойств для оформления текста в кнопке*/
+/*миксин заголовка h3 */
+/*миксин свойства формы*/
+/*миксин свойств контента блоков*/
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Italic.eot");
+  src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* свойства формы */
+.searching-results {
+  position: absolute;
+  width: 380px;
+  height: 512px;
+  left: 920px;
+  top: 625px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+/* свойства № */
+.span__h1 {
+  position: absolute;
+  width: 69px;
+  height: 30px;
+  left: -46px;
+  top: 4px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1f2041;
+}
+
+/* основной заголовок */
+.searching-results__h1 {
+  position: absolute;
+  width: 69px;
+  height: 30px;
+  left: 50px;
+  top: 42px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 17px;
+  color: #1f2041;
+}
+
+/* свойства параграфа люкс */
+.p__luxury {
+  position: absolute;
+  width: 41px;
+  height: 15px;
+  left: 108px;
+  top: 49px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #bc9cff;
+}
+
+/* свойства параграфа цена засутки */
+.p__price-per-day {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  left: 250px;
+  top: 49px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.span__per-day {
+  position: absolute;
+  font-size: 12px;
+  font-weight: normal;
+  left: -64px;
+  top: 2px;
+}
+
+/* подписи для поля дат */
+.searching-results-header__arrival {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  color: #1f2041;
+  font-size: 24px;
+  line-height: 29px;
+  width: 83px;
+  left: 30px;
+  top: 90px;
+}
+
+.searching-results-header__departure {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  color: #1f2041;
+  font-size: 24px;
+  line-height: 29px;
+  width: 83px;
+  left: 200px;
+  top: 90px;
+}
+
+.searching-results-header__gast {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  color: #1f2041;
+  font-size: 24px;
+  line-height: 29px;
+  position: absolute;
+  width: 43px;
+  top: 175px;
+  left: 30px;
+}
+
+/* поля дат */
+.searching-results__arrival-date {
+  position: absolute;
+  width: 150px;
+  height: 44px;
+  left: 30px;
+  top: 110px;
+  padding-left: 15px;
+  background-image: url(../img/expand_more.svg) no-repeat right;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.searching-results__date-of-departure {
+  position: absolute;
+  width: 150px;
+  height: 44px;
+  left: 200px;
+  top: 110.44px;
+  padding-left: 15px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* блоки изображений полей дат*/
+.searching-results-expand-more__arrival-date {
+  position: relative;
+  pointer-events: none;
+  width: 44px;
+  height: 44px;
+  left: 136px;
+  top: 110px;
+}
+
+.searching-results-expand-more__date-of-departure {
+  position: relative;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  left: 306px;
+  top: 65px;
+  pointer-events: none;
+}
+
+.expand-more__img {
+  position: absolute;
+  top: 18px;
+  left: 21px;
+}
+
+/* поле гости */
+.searching-results__gast {
+  position: absolute;
+  width: 320px;
+  height: 44px;
+  left: 30px;
+  top: 195px;
+  background: #ffffff;
+  padding-left: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* блок изображения поля гости */
+.searching-results-gast__expand-more {
+  position: absolute;
+  left: 325.74px;
+  top: 215.56px;
+  cursor: pointer;
+}
+
+/* параграфы */
+.searcning-results__p1 {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  height: 24px;
+  width: 116px;
+  position: absolute;
+  top: 252.56px;
+  left: 30px;
+}
+
+.searcning-results__p2 {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  position: absolute;
+  height: 24px;
+  width: 214px;
+  top: 283px;
+  left: 30px;
+}
+
+.searcning-results__p3 {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  position: absolute;
+  height: 36px;
+  width: 214px;
+  top: 316px;
+  left: 30px;
+  line-height: 18px;
+}
+
+.searcning-results__p4 {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  position: absolute;
+  top: 252.56px;
+  height: 24px;
+  width: 57px;
+  right: 30px;
+}
+
+.searcning-results__p5 {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  position: absolute;
+  height: 24px;
+  width: 20px;
+  top: 283px;
+  right: 30px;
+}
+
+.searcning-results__p6 {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  position: absolute;
+  top: 314px;
+  height: 24px;
+  width: 37px;
+  right: 30px;
+}
+
+/* заголовки итого и сумма */
+.searching-results-h2__total {
+  position: absolute;
+  width: 60px;
+  height: 24px;
+  left: 30px;
+  top: 390px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1f2041;
+}
+
+.searching-results-h2__summ {
+  position: absolute;
+  width: 60px;
+  height: 24px;
+  right: 47px;
+  top: 390px;
+  white-space: nowrap;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1f2041;
+}
+
+/* кнопка */
+.searching-results-link__to-book {
+  position: absolute;
+  top: 437.56px;
+  left: 28px;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 316px;
+  height: 42px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #bc9cff;
+}
+
+.searching-results-link__to-book span {
+  position: absolute;
+  width: 280px;
+  top: 14px;
+  height: 15px;
+  left: 20px;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+}
+
+.searching-results-link__to-book:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #ffffff;
+  border: none;
+}
+
+.searching-results-image__to-book {
+  position: absolute;
+  left: 290px;
+  top: 13px;
+  fill: url("#paint0_linear");
+}
+
+.searching-results__block:hover .searching-results-image__to-book {
+  fill: white;
+}
+
+/* placeholder */
+::-webkit-input-placeholder {
+  width: 50px;
+  height: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+:-ms-input-placeholder {
+  width: 50px;
+  height: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+::-ms-input-placeholder {
+  width: 50px;
+  height: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+::placeholder {
+  width: 50px;
+  height: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/* информационые кнопки */
+.searching-results__information1 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 250px;
+  top: 283.56px;
+  cursor: pointer;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.searching-results__information2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 250px;
+  top: 317.56px;
+  cursor: pointer;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.searching-results-information__p {
+  position: absolute;
+  left: 6.5px;
+  top: 2px;
+  font-family: 'Montserrat';
+  width: 4px;
+  height: 14px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+}
+/*# sourceMappingURL=searching-results.css.map */

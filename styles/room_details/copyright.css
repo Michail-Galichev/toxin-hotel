@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/*миксин текста копирайта*/
+/*миксин заголовков h2*/
+/* миксин свойства заголовков*/
+/* маркер */
+/*миксин кнопок дропдауна +*/
+/*миксин кнопок дропдауна -*/
+/*миксин блока навигации/регистрации/футера/копирайта*/
+/*миксин кнопок*/
+/*миксин маленьких кнопок*/
+/*свойства пунктов меню*/
+/* дни недели */
+/* счётчики */
+/* свойства изображения expand more*/
+/*миксин для placeholder*/
+/* общие свойства для input w 318*/
+/* общие свойства для input w 266*/
+/*миксин свойст для полей w 150*/
+/*сердце*/
+/*счётчик лайков*/
+/*миксин параграф*/
+/*mixin для рамки checkbox*/
+/*шарики*/
+/*звёзды*/
+/*миксин карточек*/
+/*миксин свойств вложенных блоков*/
+/*миксин для правой стрелки*/
+/* миксин свойств для оформления текста в кнопке*/
+/*миксин заголовка h3 */
+/*миксин свойства формы*/
+/*миксин свойств контента блоков*/
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Italic.eot");
+  src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+.copyrighting {
+  position: absolute;
+  width: 1440px;
+  left: 0px;
+  background: white;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+  height: 70px;
+  top: 1867px;
+}
+
+.copyrighting__text {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  height: 18px;
+  top: 26px;
+  left: 140px;
+  width: 372px;
+  line-height: 17px;
+}
+
+.copyrighting__text2 {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  top: 176px;
+  height: 18px;
+  left: 104px;
+  width: 560px;
+  text-align: center;
+  line-height: 17px;
+}
+/*# sourceMappingURL=copyright.css.map */

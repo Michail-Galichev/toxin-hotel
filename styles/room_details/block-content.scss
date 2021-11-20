@@ -1,0 +1,185 @@
+@import '../mixins.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  width: 1440px;
+  height: 1934px;
+  background: #ffffff;
+}
+
+/*фото номера 1*/
+
+.room-details__img1 {
+  position: absolute;
+  width: 981px;
+  height: 485px;
+  left: 0px;
+  top: 70px;
+  background-image: url('../img/room_details1.png');
+  background-repeat: no-repeat;
+}
+
+/*фото номера 2*/
+
+.room-details__img2 {
+  position: absolute;
+  width: 461px;
+  height: 243px;
+  left: 979px;
+  top: 70px;
+  background-image: url('../img/room_details2.png');
+  background-repeat: no-repeat;
+}
+
+/*фото номера 3*/
+
+.room-details__img3 {
+  position: absolute;
+  width: 461px;
+  height: 243px;
+  left: 979px;
+  top: 313px;
+  background-image: url('../img/room_details3.png');
+  background-repeat: no-repeat;
+}
+
+/*блок детали номера*/
+
+.room-details__block {
+  position: absolute;
+  width: 291px;
+  height: 229px;
+  left: 140px;
+  top: 625px;
+}
+
+/* свойства изображений блока детали номера*/
+////////////////////////////////////////////////////////////////////////////////
+.material-icons-outlined {
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.fa-gradient {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(188, 156, 255, 1)),
+    to(rgba(139, 164, 249, 1))
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.room-details__h2 {
+  @include landing-h2;
+  width: 204px;
+  height: 24px;
+  left: 140px;
+  top: 625px;
+}
+
+.room-details-block__face {
+  @include icon-details;
+}
+
+.room-details-block__city {
+  @include icon-details;
+  top: 89px;
+}
+
+.room-details-block__whatshot {
+  @include icon-details;
+  top: 178px;
+}
+/////////////////////////////////////////////////////////////////////
+
+/*свойства текста блока детали номера*/
+////////////////////////////////////////////////////////////////////
+.room-details-block__comfort {
+  top: 3px;
+  @include text-details;
+}
+
+.room-details-block__convenience {
+  @include text-details;
+  top: 92px;
+}
+
+.room-details-block__cosiness {
+  @include text-details;
+  top: 181px;
+}
+
+.text {
+  @include paragraf;
+}
+
+.text-span {
+  font-weight: bold;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+///////////////////////////////////////////////////////////////////////
+
+.room-details__reviews > h1 {
+  position: absolute;
+  width: 302px;
+  height: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1f2041;
+}
+
+.room-details__reviews {
+  height: 306px;
+  width: 712px;
+  left: 139px;
+  top: 928px;
+  position: absolute;
+}
+
+.room-details-reviews__men {
+  height: 133px;
+  width: 711px;
+  top: 44px;
+  position: absolute;
+}
+
+.room-details-reviews__women {
+  height: 133px;
+  width: 711px;
+  top: 199px;
+  position: absolute;
+}
+
+.room-details__regulations {
+  height: 160px;
+  width: 292px;
+  left: 139px;
+  top: 1264px;
+  position: absolute;
+}
+
+.room-details__regulations > h2 {
+  width: 91.77px;
+  height: 24px;
+  @include landing-h2;
+}
