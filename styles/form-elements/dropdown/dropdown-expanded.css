@@ -1,4 +1,25 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Italic.eot");
+  src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
 /*миксин текста копирайта*/
 /*миксин заголовков h2*/
 /* миксин свойства заголовков*/
@@ -73,8 +94,7 @@
   height: 44px;
   position: absolute;
   background: #ffffff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   left: 0px;
   box-sizing: border-box;
   padding-left: 15px;
@@ -93,26 +113,20 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: rgba(31, 32, 65, 0.5);
   cursor: pointer;
   top: 20px;
   right: 0;
 }
 
-.dropdown-expanded__input::-webkit-input-placeholder {
+.dropdown-expanded__input::-moz-placeholder {
   width: 160px;
   height: 24px;
   height: 18px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -125,20 +139,7 @@
   width: 160px;
   height: 24px;
   height: 18px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.25);
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.dropdown-expanded__input::-ms-input-placeholder {
-  width: 160px;
-  height: 24px;
-  height: 18px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -151,7 +152,7 @@
   width: 160px;
   height: 24px;
   height: 18px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -170,8 +171,7 @@
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.5);
   border-top: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
@@ -183,8 +183,7 @@
   height: 30px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   cursor: pointer;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 22px;
   right: 69px;
   top: 7px;
@@ -197,8 +196,7 @@
   height: 30px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   cursor: pointer;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 22px;
   right: 69px;
   top: 44px;
@@ -206,7 +204,7 @@
 }
 
 .dropdown-p__minus {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   text-align: center;
   color: rgba(31, 32, 65, 0.5);
   position: absolute;
@@ -215,7 +213,7 @@
 }
 
 .dropdown-p__plus {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   text-align: center;
   color: rgba(31, 32, 65, 0.5);
   position: absolute;
@@ -228,7 +226,7 @@
   margin-left: 15px;
   width: 83px;
   height: 15px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -244,5 +242,4 @@
 
 .last {
   color: rgba(31, 32, 65, 0.25);
-}
-/*# sourceMappingURL=dropdown-expanded.css.map */
+}/*# sourceMappingURL=dropdown-expanded.css.map */

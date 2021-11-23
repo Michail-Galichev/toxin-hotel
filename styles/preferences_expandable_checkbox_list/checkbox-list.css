@@ -37,8 +37,7 @@
   height: 20px;
   left: 0px;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 4px;
 }
 
@@ -54,5 +53,4 @@
   background-image: url(../img/expand_more_expanded.svg);
   background-repeat: no-repeat;
   background-position: center;
-}
-/*# sourceMappingURL=checkbox-list.css.map */
+}/*# sourceMappingURL=checkbox-list.css.map */

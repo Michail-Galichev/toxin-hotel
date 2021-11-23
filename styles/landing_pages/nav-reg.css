@@ -1,4 +1,25 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Italic.eot");
+  src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
 /*миксин текста копирайта*/
 /*миксин заголовков h2*/
 /* миксин свойства заголовков*/
@@ -45,8 +66,7 @@ body {
   width: 1440px;
   left: 0px;
   background: white;
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
-          box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+  box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
   top: 0px;
   height: 70px;
   z-index: 1;
@@ -91,25 +111,18 @@ body {
 
 .nav-reg-buttons__to-come-in {
   position: absolute;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
   border: 2px solid transparent;
   border-radius: 22px;
   margin-right: 20px;
   height: 42px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-family: Montserrat;
   font-size: 12px;
   font-weight: bold;
   line-height: 15px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #bc9cff;
@@ -119,25 +132,18 @@ body {
 /*"Зарегистрироваться"*/
 .nav-reg-buttons__register {
   position: absolute;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
   border: 2px solid transparent;
   border-radius: 22px;
   margin-right: 20px;
   height: 42px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-family: Montserrat;
   font-size: 12px;
   font-weight: bold;
   line-height: 15px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #bc9cff;
@@ -166,7 +172,6 @@ body {
 /*hover для кнопок*/
 .nav-reg-buttons__register:hover,
 .nav-reg-buttons__to-come-in:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #ffffff;
 }
@@ -186,7 +191,7 @@ body {
 }
 
 .nav-reg-ul-li__a {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   text-decoration: none;
   padding-right: 20px;
   display: inline-block;
@@ -227,5 +232,4 @@ body {
 .nav-reg-expand_more1:hover,
 .nav-reg-expand_more2:hover {
   fill: rgba(31, 32, 65, 0.75);
-}
-/*# sourceMappingURL=nav-reg.css.map */
+}/*# sourceMappingURL=nav-reg.css.map */

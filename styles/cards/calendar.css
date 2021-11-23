@@ -1,4 +1,25 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Italic.eot");
+  src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
 /*миксин текста копирайта*/
 /*миксин заголовков h2*/
 /* миксин свойства заголовков*/
@@ -32,7 +53,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 /* свойства формы */
@@ -42,21 +63,13 @@
   height: 369px;
   left: 980px;
   top: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
 }
 
@@ -77,7 +90,7 @@
 
 /* стрелки */
 .calendar-arrow-right__img {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -85,15 +98,9 @@
   position: absolute;
   width: 44px;
   height: 44px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 24px;
   height: 24px;
   position: absolute;
@@ -106,7 +113,7 @@
 }
 
 .calendar-arrow-left__img {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -114,15 +121,9 @@
   position: absolute;
   width: 44px;
   height: 44px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 24px;
   height: 24px;
   position: absolute;
@@ -136,20 +137,15 @@
 
 /*дни недели*/
 .days-week_mon {
+  font-family: "Montserrat";
   position: absolute;
   top: 74px;
   height: 39px;
   width: 37px;
   color: #bc9cff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -159,20 +155,15 @@
 }
 
 .days-week_tue {
+  font-family: "Montserrat";
   position: absolute;
   top: 74px;
   height: 39px;
   width: 37px;
   color: #bc9cff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -182,20 +173,15 @@
 }
 
 .days-week_wed {
+  font-family: "Montserrat";
   position: absolute;
   top: 74px;
   height: 39px;
   width: 37px;
   color: #bc9cff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -205,20 +191,15 @@
 }
 
 .days-week_the {
+  font-family: "Montserrat";
   position: absolute;
   top: 74px;
   height: 39px;
   width: 37px;
   color: #bc9cff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -228,20 +209,15 @@
 }
 
 .days-week_fri {
+  font-family: "Montserrat";
   position: absolute;
   top: 74px;
   height: 39px;
   width: 37px;
   color: #bc9cff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -251,20 +227,15 @@
 }
 
 .days-week_sut {
+  font-family: "Montserrat";
   position: absolute;
   top: 74px;
   height: 39px;
   width: 37px;
   color: #bc9cff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -274,20 +245,15 @@
 }
 
 .days-week_sun {
+  font-family: "Montserrat";
   position: absolute;
   top: 74px;
   height: 39px;
   width: 37px;
   color: #bc9cff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -301,11 +267,8 @@
   position: absolute;
   top: 109px;
   left: 17px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .days div {
@@ -315,16 +278,10 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -376,7 +333,6 @@
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6fcf97), to(#66d2ea));
   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
 }
 
@@ -391,7 +347,6 @@
   left: 158px;
   top: 120px;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 }
 
@@ -400,23 +355,18 @@
   left: 0px;
   top: 120px;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 }
 
 .date-range {
-  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   opacity: 0.25;
 }
 
 .days__highlighted19 {
-  -webkit-box-shadow: inset 20px 0 white;
-          box-shadow: inset 20px 0 white;
+  box-shadow: inset 20px 0 white;
 }
 
 .days__highlighted23 {
-  -webkit-box-shadow: inset -20px 0 white;
-          box-shadow: inset -20px 0 white;
-}
-/*# sourceMappingURL=calendar.css.map */
+  box-shadow: inset -20px 0 white;
+}/*# sourceMappingURL=calendar.css.map */

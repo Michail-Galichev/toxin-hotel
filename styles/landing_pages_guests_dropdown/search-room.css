@@ -1,4 +1,25 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Italic.eot");
+  src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
 /*миксин текста копирайта*/
 /*миксин заголовков h2*/
 /* миксин свойства заголовков*/
@@ -39,10 +60,8 @@
   top: 140px;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.12);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -129,8 +148,7 @@ h1 {
   padding-left: 15px;
   background-image: url(../img/expand_more.svg) no-repeat right;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 4px;
 }
 
@@ -144,8 +162,7 @@ h1 {
   padding-left: 15px;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 4px;
 }
 
@@ -191,8 +208,7 @@ h1 {
   background: #ffffff;
   padding-left: 15px;
   border: 1px solid rgba(31, 32, 65, 0.5);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
 }
@@ -217,10 +233,8 @@ h1 {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-top: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   z-index: 1000;
 }
 
@@ -229,8 +243,7 @@ h1 {
   width: 30px;
   height: 30px;
   border: 1px solid rgba(31, 32, 65, 0.5);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 22px;
   cursor: pointer;
   left: 283px;
@@ -242,8 +255,7 @@ h1 {
   width: 30px;
   height: 30px;
   border: 1px solid rgba(31, 32, 65, 0.5);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 22px;
   cursor: pointer;
   left: 283px;
@@ -255,8 +267,7 @@ h1 {
   width: 30px;
   height: 30px;
   border: 1px solid rgba(31, 32, 65, 0.5);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 22px;
   cursor: pointer;
   left: 283px;
@@ -269,8 +280,7 @@ h1 {
   height: 30px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   cursor: pointer;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 22px;
   left: 221px;
   top: 7px;
@@ -282,8 +292,7 @@ h1 {
   height: 30px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   cursor: pointer;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 22px;
   left: 221px;
   top: 44px;
@@ -295,15 +304,14 @@ h1 {
   height: 30px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   cursor: pointer;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 22px;
   left: 221px;
   top: 82px;
 }
 
 p.dropdown-p__minus {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   text-align: center;
   color: rgba(31, 32, 65, 0.5);
   position: absolute;
@@ -312,7 +320,7 @@ p.dropdown-p__minus {
 }
 
 p.dropdown-p__plus {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   text-align: center;
   color: rgba(31, 32, 65, 0.5);
   position: absolute;
@@ -325,7 +333,7 @@ p.dropdown-p__plus {
   margin-left: 15px;
   width: 83px;
   height: 15px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -345,7 +353,7 @@ p.dropdown-p__plus {
   position: absolute;
   top: 131px;
   left: 14px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -362,7 +370,7 @@ p.dropdown-p__plus {
   position: absolute;
   right: 7px;
   top: 131px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -378,15 +386,10 @@ p.dropdown-p__plus {
   top: 300px;
   left: 30px;
   display: inline-block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 316px;
   height: 42px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
   border: 2px solid transparent;
   border-radius: 22px;
@@ -406,11 +409,10 @@ span {
   line-height: 15px;
   font-style: normal;
   font-weight: bold;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 .search-room__pick-up-a-room:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #ffffff;
   border: none;
@@ -430,10 +432,10 @@ span {
 }
 
 /* plceholder */
-.search-room__gast::-webkit-input-placeholder {
+.search-room__gast::-moz-placeholder {
   height: 18px;
   width: 112px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -443,17 +445,7 @@ span {
 .search-room__gast:-ms-input-placeholder {
   height: 18px;
   width: 112px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.25);
-}
-.search-room__gast::-ms-input-placeholder {
-  height: 18px;
-  width: 112px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -463,7 +455,7 @@ span {
 .search-room__gast::placeholder {
   height: 18px;
   width: 112px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -471,8 +463,7 @@ span {
   color: rgba(31, 32, 65, 0.25);
 }
 
-.search-room__arrival-date::-webkit-input-placeholder,
-.search-room__date-of-departure::-webkit-input-placeholder {
+.search-room__arrival-date::-moz-placeholder, .search-room__date-of-departure::-moz-placeholder {
   width: 103px;
   height: 24px;
   font-family: Montserrat;
@@ -483,20 +474,7 @@ span {
   color: rgba(31, 32, 65, 0.75);
 }
 
-.search-room__arrival-date:-ms-input-placeholder,
-.search-room__date-of-departure:-ms-input-placeholder {
-  width: 103px;
-  height: 24px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.search-room__arrival-date::-ms-input-placeholder,
-.search-room__date-of-departure::-ms-input-placeholder {
+.search-room__arrival-date:-ms-input-placeholder, .search-room__date-of-departure:-ms-input-placeholder {
   width: 103px;
   height: 24px;
   font-family: Montserrat;
@@ -521,67 +499,48 @@ span {
 
 .adults {
   top: 13px;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   color: #1f2041;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 15px;
   width: 92px;
   right: 7px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: absolute;
 }
 
 .children {
   top: 50px;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   color: #1f2041;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 15px;
   width: 92px;
   right: 7px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: absolute;
 }
 
 .babies {
   top: 87px;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   color: #1f2041;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 15px;
   width: 92px;
   right: 7px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-}
-/*# sourceMappingURL=search-room.css.map */
+}/*# sourceMappingURL=search-room.css.map */

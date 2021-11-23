@@ -1,4 +1,25 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Italic.eot");
+  src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
 /*миксин текста копирайта*/
 /*миксин заголовков h2*/
 /* миксин свойства заголовков*/
@@ -45,8 +66,7 @@
   width: 150px;
   height: 44px;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 4px;
   top: 20.44px;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -73,15 +93,9 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: rgba(31, 32, 65, 0.5);
   cursor: pointer;
   top: 21px;
@@ -104,8 +118,7 @@
   width: 150px;
   height: 44px;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 4px;
   top: 20.44px;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -131,15 +144,9 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: rgba(31, 32, 65, 0.5);
   cursor: pointer;
   top: 21px;
@@ -161,8 +168,7 @@
   height: 44px;
   position: absolute;
   background: #ffffff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   left: 0px;
   box-sizing: border-box;
   padding-left: 15px;
@@ -191,15 +197,9 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: rgba(31, 32, 65, 0.5);
   cursor: pointer;
   top: 21px;
@@ -207,9 +207,9 @@
 }
 
 /* dropdown__arrivale-date placeholder */
-.arrivale-date__input::-webkit-input-placeholder {
+.arrivale-date__input::-moz-placeholder {
   height: 18px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -220,18 +220,7 @@
 }
 .arrivale-date__input:-ms-input-placeholder {
   height: 18px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.25);
-  color: rgba(31, 32, 65, 0.75);
-  text-transform: uppercase;
-}
-.arrivale-date__input::-ms-input-placeholder {
-  height: 18px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -242,7 +231,7 @@
 }
 .arrivale-date__input::placeholder {
   height: 18px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -253,9 +242,9 @@
 }
 
 /* departure-date placeholder */
-.departure-date__input::-webkit-input-placeholder {
+.departure-date__input::-moz-placeholder {
   height: 18px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -266,18 +255,7 @@
 }
 .departure-date__input:-ms-input-placeholder {
   height: 18px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.25);
-  color: rgba(31, 32, 65, 0.75);
-  text-transform: uppercase;
-}
-.departure-date__input::-ms-input-placeholder {
-  height: 18px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -288,7 +266,7 @@
 }
 .departure-date__input::placeholder {
   height: 18px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -299,9 +277,9 @@
 }
 
 /* filter date placeholder */
-.filter-date__input::-webkit-input-placeholder {
+.filter-date__input::-moz-placeholder {
   height: 18px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -311,17 +289,7 @@
 }
 .filter-date__input:-ms-input-placeholder {
   height: 18px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.25);
-  color: rgba(31, 32, 65, 0.75);
-}
-.filter-date__input::-ms-input-placeholder {
-  height: 18px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -331,12 +299,11 @@
 }
 .filter-date__input::placeholder {
   height: 18px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: rgba(31, 32, 65, 0.25);
   color: rgba(31, 32, 65, 0.75);
-}
-/*# sourceMappingURL=date.css.map */
+}/*# sourceMappingURL=date.css.map */

@@ -1,4 +1,25 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Italic.eot");
+  src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
 /*миксин текста копирайта*/
 /*миксин заголовков h2*/
 /* миксин свойства заголовков*/
@@ -46,8 +67,7 @@ body {
   width: 1440px;
   left: 0px;
   background: white;
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
-          box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+  box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
   top: 140px;
   height: 70px;
 }
@@ -90,65 +110,55 @@ body {
 }
 
 .nav-reg-buttons__to-come-in {
-  display: inline-block;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
-  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
-  border: 2px solid transparent;
+  position: absolute;
+  width: 97px;
+  height: 44px;
   border-radius: 22px;
+  display: flex;
   font-family: Montserrat;
-  margin-right: 20px;
-  height: 34px;
   font-size: 12px;
   font-weight: bold;
   line-height: 15px;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #bc9cff;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
+  border: 2px solid transparent;
   width: 87px;
+  height: 34px;
+  top: 18px;
+  left: 1200px;
 }
 
 /*"Зарегистрироваться"*/
 .nav-reg-buttons__register {
-  display: inline-block;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
+  position: absolute;
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
   border: 2px solid transparent;
   border-radius: 22px;
-  font-family: Montserrat;
   margin-right: 20px;
-  height: 34px;
+  height: 42px;
+  display: flex;
+  font-family: Montserrat;
   font-size: 12px;
   font-weight: bold;
   line-height: 15px;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #bc9cff;
   width: 192px;
-}
-
-/*подпись войти*/
-.nav-reg-buttons__to-come-in > span {
-  position: absolute;
-  width: 84 px;
-  top: 12px;
-  width: 47px;
-  left: 24px;
-}
-
-/* подпись зарегистрироаться*/
-.nav-reg-buttons__register > span {
-  position: absolute;
-  width: 163px;
-  top: 12px;
-  left: 130px;
-  width: 157px;
-  height: 15px;
+  height: 34px;
+  top: 18px;
+  left: 500px;
 }
 
 /*hover для кнопок*/
 .nav-reg-buttons__register:hover,
 .nav-reg-buttons__to-come-in:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #ffffff;
 }
@@ -169,7 +179,7 @@ body {
 
 /*свойства пунктов меню*/
 .nav-reg-ul-li__a {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   text-decoration: none;
   padding-right: 20px;
   display: inline-block;
@@ -188,18 +198,45 @@ body {
 }
 
 /*картика expand_more*/
-.nav-reg__expand_more1 {
-  fill: rgba(31, 32, 65, 0.5);
-  top: 32px;
-  left: 646px;
+.nav-reg__expand-more1 {
   position: absolute;
+  width: 44px;
+  height: 44px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  top: 23px;
+  left: 643px;
 }
 
-.nav-reg__expand_more2 {
-  fill: rgba(31, 32, 65, 0.5);
-  top: 32px;
-  left: 953px;
+.nav-reg__expand-more2 {
   position: absolute;
+  width: 44px;
+  height: 44px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 23px;
+  left: 953px;
 }
 
 /*пункт меню вакансии*/
@@ -207,49 +244,45 @@ body {
   margin-left: 22px;
 }
 
-.nav-reg-expand_more1:hover,
-.nav-reg-expand_more2:hover {
-  fill: rgba(31, 32, 65, 0.75);
+.nav-reg__expand-more1:hover,
+.nav-reg__expand-more2:hover {
+  color: rgba(31, 32, 65, 0.75);
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.eot");
   src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat-Bold.eot");
   src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat-Italic.eot");
   src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
   font-weight: normal;
   font-style: italic;
 }
-
 .copyrighting {
   position: absolute;
   width: 1440px;
   left: 0px;
   background: white;
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
-          box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+  box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
   height: 70px;
   top: 733px;
 }
 
 .copyrighting__text {
   position: absolute;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -263,7 +296,7 @@ body {
 
 .copyrighting__text2 {
   position: absolute;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -274,5 +307,4 @@ body {
   width: 560px;
   text-align: center;
   line-height: 17px;
-}
-/*# sourceMappingURL=copyright.css.map */
+}/*# sourceMappingURL=copyright.css.map */

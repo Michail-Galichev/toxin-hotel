@@ -2,10 +2,11 @@ mixin reviews(path,likes,name,time)
   .reviews__img
     img(src=path)
   .reviews__like-button
-    label.like-button__labbel2
-      input(type="checkbox" class="like-button__input2" checked='')
-      .like-button__checked 
-        p.like-button__p #{likes}
+    label.like-button__labbel1
+      input(type="checkbox" class="like-button__input1" checked='')
+      .like-button__none-checked
+        .like-button-none-checked__favorite_border
+        p.like-button__p1 #{likes}
   .reviews__user
     p.reviews-user__name #{name}
     p.reviews-user__time #{time}
@@ -14,34 +15,34 @@ mixin reviews(path,likes,name,time)
 .room-details__img1     
 .room-details__img2     
 .room-details__img3     
-h2.room-details__h2 Сведения о номере
 .room-details__block
-  .room-details-block__face
-    .material-icons-outlined.fa-gradient mood
+  h2 Сведения о номере
+  .room-details-block__face.material-icons-outlined.fa-gradient mood
   .room-details-block__comfort
     p.text 
       span.text-span Комфорт                                 
       | Шумопоглощающие стены
-  .room-details-block__city
-    .material-icons-outlined.fa-gradient location_city
+  
+  .room-details-block__city.material-icons-outlined.fa-gradient location_city
   .room-details-block__convenience
     p.text 
       span.text-span Удобство                                                       
       | Окно в каждой из спален
-  .room-details-block__whatshot
-    .material-icons-outlined.fa-gradient whatshot
+  
+  .room-details-block__whatshot.material-icons-outlined.fa-gradient whatshot
   .room-details-block__cosiness
     p.text 
       span.text-span Уют                                               
       | Номер оснащён камином
 .room-details__reviews 
-  h1 Отзывы посетителей номера
+  h2 Отзывы посетителей номера
+  p 2 отзыва
   .room-details-reviews__men
-    +reviews('../img/image.jpg','12','Мурад Сарафанов','5 дней назад')  
+    +reviews('../img/men.svg','12','Мурад Сарафанов','5 дней назад')  
     
     p.reviews__content Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
   .room-details-reviews__women
-    +reviews('../img/women.jpg','2','Патрисия Стёклышкова','Неделю    назад')  
+    +reviews('../img/women.svg','2','Патрисия Стёклышкова','Неделю    назад')  
  
     p.reviews__content Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент
 
@@ -49,12 +50,25 @@ h2.room-details__h2 Сведения о номере
   h2 Правила
   ul.room-details-regulations__ul 
     li Нельзя с питомцами
-    li Без вечеринок
-    li Время прибытия - после 13:00, а выезд до 12:00
-  .room-details-regulations__circle1
-  .room-details-regulations__circle2
-  .room-details-regulations__circle3
-  
-  
-  
+    li Без вечеринок 
+    li.pre Время прибытия - после 13:00,            а        выезд до 12:00
+.cansel 
+  h2 Отмена
+  p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.  
+
+.impressions
+  h2 Впечатления от номера
+  ul.impressions__ul 
+    li.impressions-ul__li1  Великолепно
+    li.impressions-ul__li2 Хорошо
+    li.impressions-ul__li3 Удовлетворительно
+    li.impressions-ul__li4 Разочарован
+  .impressions__block 
+    .impressions-block__great
+    .impressions-block__satisfactorily 
+    .impressions-block__ok
+    .impressions-block__circle 
+      p.impressions-block-circle__number 260
+      p.impressions-block-circle__of-votes голосов   
+        
   

@@ -13,7 +13,7 @@
 
 .elements-name_h1 {
   position: absolute;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   text-align: right;
@@ -27,7 +27,7 @@
 
 .elements-name_h2 {
   position: absolute;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   text-align: right;
@@ -42,7 +42,7 @@
 
 .elements-name_h3 {
   position: absolute;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   text-align: right;
@@ -57,7 +57,7 @@
 
 .elements-name_body {
   position: absolute;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   text-align: right;
@@ -71,7 +71,7 @@
 
 .content-h1 {
   position: absolute;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   color: #1f2041;
@@ -85,7 +85,7 @@
 
 .content-h2 {
   position: absolute;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   color: #1f2041;
@@ -99,7 +99,7 @@
 
 .content-h3 {
   position: absolute;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   color: #1f2041;
@@ -116,7 +116,7 @@
   position: absolute;
   left: 67px;
   width: 301px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   height: 48px;
   font-size: 14px;
   line-height: 24px;
@@ -124,5 +124,4 @@
   font-weight: normal;
   top: 273px;
   color: rgba(31, 32, 65, 0.75);
-}
-/*# sourceMappingURL=block-headers-body.css.map */
+}/*# sourceMappingURL=block-headers-body.css.map */

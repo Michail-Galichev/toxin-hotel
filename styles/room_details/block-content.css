@@ -1,4 +1,25 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Italic.eot");
+  src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
 /*миксин текста копирайта*/
 /*миксин заголовков h2*/
 /* миксин свойства заголовков*/
@@ -78,25 +99,69 @@ body {
 .room-details__block {
   position: absolute;
   width: 291px;
-  height: 229px;
+  height: 273px;
   left: 140px;
   top: 625px;
 }
 
+/*подзаголовок сведения о номере*/
+.room-details__block > h2 {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1f2041;
+}
+
 /* свойства изображений блока детали номера*/
-.material-icons-outlined {
+.room-details-block__face {
+  position: absolute;
+  left: 0px;
+  width: 48px;
+  height: 48px;
   font-family: Material Icons;
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
   line-height: 41px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
+  top: 44px;
+}
+
+.room-details-block__city {
+  position: absolute;
+  left: 0px;
+  width: 48px;
+  height: 48px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  top: 133px;
+}
+
+.room-details-block__whatshot {
+  position: absolute;
+  left: 0px;
+  width: 48px;
+  height: 48px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  top: 222px;
 }
 
 .fa-gradient {
@@ -106,43 +171,9 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.room-details__h2 {
-  position: absolute;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 23px;
-  color: #1f2041;
-  width: 204px;
-  height: 24px;
-  left: 140px;
-  top: 625px;
-}
-
-.room-details-block__face {
-  position: absolute;
-  width: 48px;
-  height: 48px;
-}
-
-.room-details-block__city {
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  top: 89px;
-}
-
-.room-details-block__whatshot {
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  top: 178px;
-}
-
 /*свойства текста блока детали номера*/
 .room-details-block__comfort {
-  top: 3px;
+  top: 47px;
   height: 48px;
   width: 233px;
   left: 58px;
@@ -154,7 +185,7 @@ body {
   width: 233px;
   left: 58px;
   position: absolute;
-  top: 92px;
+  top: 136px;
 }
 
 .room-details-block__cosiness {
@@ -162,12 +193,12 @@ body {
   width: 233px;
   left: 58px;
   position: absolute;
-  top: 181px;
+  top: 225px;
 }
 
 .text {
   position: absolute;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -181,10 +212,21 @@ body {
   white-space: pre-wrap;
 }
 
-.room-details__reviews > h1 {
+/* блок отзывы посетителей номера*/
+.room-details__reviews {
+  position: absolute;
+  width: 712px;
+  height: 306px;
+  left: 139px;
+  top: 928px;
+}
+
+/*подзаголовок отзывы посетителей номера*/
+.room-details__reviews > h2 {
   position: absolute;
   width: 302px;
   height: 24px;
+  position: absolute;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -193,14 +235,23 @@ body {
   color: #1f2041;
 }
 
-.room-details__reviews {
-  height: 306px;
-  width: 712px;
-  left: 139px;
-  top: 928px;
+/*количество отзывов*/
+.room-details__reviews > p {
   position: absolute;
+  width: 62px;
+  height: 14px;
+  right: 1px;
+  top: 5px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.5);
 }
 
+/*блок отзыва мужчины*/
 .room-details-reviews__men {
   height: 133px;
   width: 711px;
@@ -208,13 +259,31 @@ body {
   position: absolute;
 }
 
+/*блок отзыва женщины*/
 .room-details-reviews__women {
-  height: 133px;
-  width: 711px;
+  height: 107px;
+  width: 710px;
   top: 199px;
   position: absolute;
 }
 
+/*общие свойсива изображений пользователей*/
+.reviews__img {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 0px;
+  left: 0px;
+}
+
+/*кнопка нравиться*/
+.reviews__like-button {
+  position: absolute;
+  left: 4px;
+  top: 60px;
+}
+
+/*блок правила*/
 .room-details__regulations {
   height: 160px;
   width: 292px;
@@ -223,9 +292,11 @@ body {
   position: absolute;
 }
 
+/*подзаголовок правила*/
 .room-details__regulations > h2 {
   width: 91.77px;
   height: 24px;
+  left: 21px;
   position: absolute;
   font-family: Montserrat;
   font-style: normal;
@@ -234,4 +305,206 @@ body {
   line-height: 23px;
   color: #1f2041;
 }
-/*# sourceMappingURL=block-content.css.map */
+
+/*свойства списка*/
+.room-details-regulations__ul {
+  position: absolute;
+  width: 271.14px;
+  height: 116px;
+  left: 0px;
+  bottom: 0px;
+}
+
+/*свойства пунктов списка правил*/
+.room-details-regulations__ul > li {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  list-style-image: url(../img/marker.svg);
+  margin-bottom: 10px;
+  margin-left: 17px;
+  padding-left: 4px;
+}
+
+/*допкласс*/
+.pre {
+  white-space: pre-line;
+}
+
+/*блок отмена*/
+.cansel {
+  position: absolute;
+  width: 341px;
+  height: 140px;
+  left: 501px;
+  top: 1264px;
+}
+
+/*заголовок блока отмена*/
+.cansel > h2 {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1f2041;
+}
+
+/*контент блока отмена*/
+.cansel > p {
+  position: absolute;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+  top: 44px;
+  width: 341px;
+  height: 96px;
+  line-height: 24px;
+}
+
+/*блок впечатления от номера*/
+.impressions {
+  position: absolute;
+  width: 311px;
+  height: 170px;
+  left: 501px;
+  top: 625px;
+  display: flex;
+}
+
+/*подзаголовок блока*/
+.impressions > h2 {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1f2041;
+}
+
+/*свойст списка оценок*/
+.impressions__ul {
+  position: absolute;
+  top: 70px;
+  left: 165px;
+  position: absolute;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  list-style-type: none;
+}
+
+.impressions-ul__li1 {
+  list-style-image: url(../img/orange.svg);
+}
+
+.impressions-ul__li2 {
+  list-style-image: url(../img/green.svg);
+}
+
+.impressions-ul__li3 {
+  list-style-image: url(../img/blue.svg);
+}
+
+.impressions-ul__li4 {
+  list-style-image: url(../img/grey.svg);
+}
+
+/*блок диаграммы*/
+.impressions__block {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 45px;
+}
+
+/*свойства сектора отлично*/
+.impressions-block__great {
+  width: 59px;
+  height: 120px;
+  background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
+  border-radius: 100% 0 0 100%/50% 0 0 50%;
+}
+
+/*свойства сектора удовлетворительно*/
+.impressions-block__satisfactorily {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 59px;
+  height: 59px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 0 100% 100% 0/50% 100% 0 50%;
+}
+
+/*свойства сектора хорошо*/
+.impressions-block__ok {
+  position: absolute;
+  width: 59px;
+  right: 0;
+  height: 59px;
+  bottom: 0;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border-radius: 0 100% 100% 0/50% 0 100% 50%;
+}
+
+.impressions-block__circle {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background: #ffffff;
+}
+
+.impressions-block-circle__of-votes {
+  font-family: "Montserrat";
+  position: absolute;
+  top: 74px;
+  height: 39px;
+  width: 37px;
+  color: #bc9cff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  width: 64px;
+  height: 15px;
+  position: absolute;
+  top: 60px;
+  left: 23px;
+  text-transform: uppercase;
+}
+
+.impressions-block-circle__number {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  color: #1f2041;
+  font-size: 24px;
+  line-height: 29px;
+  position: absolute;
+  top: 30px;
+  left: 32px;
+  width: 46px;
+  height: 30px;
+  color: #bc9cff;
+}/*# sourceMappingURL=block-content.css.map */
