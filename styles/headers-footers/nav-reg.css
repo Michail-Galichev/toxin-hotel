@@ -1,25 +1,28 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Regular.eot");
   src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Bold.eot");
   src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Italic.eot");
   src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
   font-weight: normal;
   font-style: italic;
 }
+
 /*миксин текста копирайта*/
 /*миксин заголовков h2*/
 /* миксин свойства заголовков*/
@@ -61,13 +64,13 @@ body {
   background: #e5e5e5;
 }
 
-/*свойства блока навигации/регистрации*/
 .nav-reg {
   position: absolute;
   width: 1440px;
   left: 0px;
   background: white;
-  box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
   top: 140px;
   height: 70px;
 }
@@ -101,74 +104,14 @@ body {
   top: 28.33px;
 }
 
-/*блок кнопок*/
-.nav-reg__buttons {
-  position: absolute;
-  top: 16px;
-  left: 989px;
-  height: 38px;
-}
-
-.nav-reg-buttons__to-come-in {
-  position: absolute;
-  width: 97px;
-  height: 44px;
-  border-radius: 22px;
-  display: flex;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 15px;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #bc9cff;
-  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
-  border: 2px solid transparent;
-  width: 87px;
-  height: 34px;
-  top: 18px;
-  left: 997px;
-}
-
-/*"Зарегистрироваться"*/
-.nav-reg-buttons__register {
-  position: absolute;
-  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
-  border: 2px solid transparent;
-  border-radius: 22px;
-  margin-right: 20px;
-  height: 42px;
-  display: flex;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 15px;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #bc9cff;
-  width: 192px;
-  height: 34px;
-  top: 18px;
-  left: 1104px;
-}
-
-/*hover для кнопок*/
-.nav-reg-buttons__register:hover,
-.nav-reg-buttons__to-come-in:hover {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-}
-
 /*горизонтальное меню*/
 .nav-reg__ul {
   position: absolute;
   list-style: none;
   margin: 0;
   padding-left: 0px;
+  height: 21px;
+  width: 447px;
   left: 530px;
   top: 26px;
 }
@@ -191,60 +134,151 @@ body {
   margin-bottom: 12px;
 }
 
+/*кнопки*/
+.nav-reg__buttons-to-come-in {
+  position: absolute;
+  width: 95px;
+  height: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #bc9cff;
+  height: 30px;
+  width: 83px;
+  top: 18px;
+  left: 997px;
+}
+
+.nav-reg__buttons-register {
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(#bc9cff, #8ba4f9);
+  border-radius: 22px;
+  height: 44px;
+  width: 320px;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 196px;
+  height: 34px;
+  top: 18px;
+  left: 1104px;
+}
+
+/*доп кнопки меню*/
+.nav-reg__expand_more1 {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  top: 26px;
+  left: 643px;
+}
+
+.nav-reg__expand_more2 {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  top: 26px;
+  left: 953px;
+}
+
+/*подписи кнопок*/
+.nav-reg__register {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #bc9cff;
+  position: absolute;
+  top: 27px;
+  left: 1123px;
+  width: 157px;
+  height: 15px;
+  cursor: pointer;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.nav-reg__to-come-in {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #bc9cff;
+  position: absolute;
+  top: 27px;
+  left: 1017px;
+  width: 47px;
+  height: 15px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/*hover для кнопок*/
+.nav-reg__register:hover + .nav-reg__buttons-register,
+.nav-reg__to-come-in:hover + .nav-reg__buttons-to-come-in,
+.nav-reg__buttons-register:hover,
+.nav-reg__buttons-to-come-in:hover {
+  opacity: 0.5;
+}
+
 /*hover для меню */
 .nav-reg-ul-li__a:hover {
   color: rgba(31, 32, 65, 0.75);
   font-weight: bold;
 }
 
-/*картика expand_more*/
-.nav-reg__expand-more1 {
-  position: absolute;
-  width: 44px;
-  height: 44px;
-  font-family: Material Icons;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(31, 32, 65, 0.5);
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  top: 23px;
-  left: 643px;
-}
-
-.nav-reg__expand-more2 {
-  position: absolute;
-  width: 44px;
-  height: 44px;
-  font-family: Material Icons;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(31, 32, 65, 0.5);
-  cursor: pointer;
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 23px;
-  left: 953px;
-}
-
-/*пункт меню вакансии*/
-.vacancy {
-  margin-left: 22px;
-}
-
-.nav-reg__expand-more1:hover,
-.nav-reg__expand-more2:hover {
+/*hover для expand more*/
+.nav-reg__expand_more1:hover,
+.nav-reg__expand_more2:hover {
   color: rgba(31, 32, 65, 0.75);
-}/*# sourceMappingURL=nav-reg.css.map */
+}
+/*# sourceMappingURL=nav-reg.css.map */

@@ -23,9 +23,8 @@ body {
   @include form;
 }
 
-/*свойства заголовка h1*/
 
-.account-login__header {
+.account-login > h1 {
   width: 320px;
   height: 30px;
   left: 30px;
@@ -33,15 +32,11 @@ body {
   @include headers;
 }
 
-/* поле e-mail*/
-
 .account-login__input-email {
   @include input-max;
   left: 30px;
   top: 90px;
 }
-
-/* поле password*/
 
 .account-login__input-password {
   @include input-max;
@@ -50,6 +45,7 @@ body {
 }
 
 .account-login > p {
+  position: absolute;
   width: 164px;
   height: 18px;
   left: 30px;
@@ -57,69 +53,90 @@ body {
   @include paragraf2;
 }
 
-/* кнопка войти */
-.account-login-link__to-come-in {
+/*блок кнопки войти*/
+
+.account-login__button-to-come-in {
+  position: absolute;
   top: 208px;
   left: 30px;
-  width: 318px;
+  width: 320px;
+  height: 44px;
+  cursor: pointer;
+}
+
+/* кнопка войти */
+.account-login-button-to-come-in__a {
   @include button;
+  width: 320px;
+}
+.account-login-button-to-come-in__p {
+  @include text-link;
+  left: 20px;
+  top: 14px;
+  color: #ffffff;
+  width: 280px;
+  height: 15px;
+  text-align: center;
+}
+
+.account-login-button-to-come-in{
+  @include arrow_forvard;
+  color:#ffffff;
+  left: 276px;
+}
+
+/*блок кнопки создать */
+.account-login__button-create{
+  position: absolute;
+  left: 251px;
+  top: 282px;
+  width: 99px;
+  height: 44px;
+  cursor:pointer;
 }
 
 /* кнопка создать */
-.account-login-link__create {
-  top: 282px;
-  left: 251px;
-  width: 99px;
-  @include button;
+
+.account-login-button-create__a {
+  @include button_mini;
+}
+
+
+/* подпись к кнопке создать */
+
+.account-login-button-create__p{
+  @include text-link;
+  top: 14px;
+  left: 18px;
+  height: 15px;
+  width: 62px;
 }
 
 /* hover для кнопок */
 
-.account-login-link__create:hover {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-  border: none;
+.account-login__button-to-come-in:hover .account-login-button-to-come-in__a,
+.account-login__button-create:hover .account-login-button-create__a {
+  opacity: 0.5;
 }
 
-.account-login-link:hover .account-login-link-to-come-in {
-  background: white;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
-.account-login-link:hover .account-login-link__to-come-in {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-  border: none;
+.block-link-image:hover .account-login-link-image_to-come-in {
+  fill: white;
 }
 
 /* картинка для кнопки вход */
 
-.account-login-link-to-come-in {
-  @include arrow_forvard;
-  left: 306px;
-  cursor: pointer;
-  top: 208px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(rgba(188, 156, 255, 1)),
-    to(rgba(139, 164, 249, 1))
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.account-login-link-image_to-come-in {
+  position: absolute;
+  left: 290px;
+  top: 13px;
+  fill: url("#paint0_linear");
 }
 
-/*свойства placeholder*/
-
-.account-login__input-password::placeholder {
+input.account-login-input-password::placeholder {
   @include input-placeholder;
   width: 55px;
 }
-.account-login__input-email::placeholder {
+input.account-login-input-email::placeholder {
   @include input-placeholder;
   width: 40px;
 }

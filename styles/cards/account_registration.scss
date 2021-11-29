@@ -1,4 +1,4 @@
-@import '../mixins.scss';
+@import "../mixins.scss";
 
 // Форма account_registration
 
@@ -10,21 +10,21 @@
   @include form;
 }
 
-.account-registration__header {
+.account-registration > h1 {
+  @include headers;
   width: 320px;
   height: 30px;
-  left: 30px;
   top: 40px;
-  @include headers;
+  left: 30px;
 }
 
-.account-registration-input__name {
+.account-registration__input-name {
   @include input-max;
   left: 30px;
   top: 90px;
 }
 
-.account-registration-input__lastname {
+.account-registration__input-lastname {
   @include input-max;
   left: 30px;
   top: 144px;
@@ -76,7 +76,7 @@
 
 .account-registration-checkbox__custom::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 12px;
   height: 12px;
   left: 4px;
@@ -97,7 +97,7 @@
 
 /*заголовок поля дата рождения*/
 
-.account-registration-header__date-of-birth {
+.account-registration__header-date-of-birth {
   width: 118px;
   height: 15px;
   left: 30px;
@@ -108,7 +108,7 @@
 
 /* свойства поля дата рождения*/
 
-.account-registration-input__date-of-birth {
+.account-registration__input-date-of-birth {
   @include input-max;
   left: 30px;
   top: 262px;
@@ -116,7 +116,7 @@
 
 /*заголовок полей параметры входа*/
 
-.account-registration-header__login-details {
+.account-registration__header-login-details {
   width: 211px;
   height: 15px;
   left: 30px;
@@ -127,14 +127,14 @@
 
 /*поле e-mail*/
 
-.account-registration-input__email {
+.account-registration__input-email {
   @include input-max;
   left: 30px;
   top: 346px;
 }
 
 /*поле password*/
-.account-registration-input__password {
+.account-registration__input-password {
   @include input-max;
   left: 30px;
   top: 400px;
@@ -149,83 +149,98 @@
   top: 584px;
 }
 
-/* кнопка войти */
-.account-registration-link__to-come-in {
+/*блок кнопки зарегистрироваться */
+.account-registration__button-reg {
+  position: absolute;
   top: 498px;
   left: 30px;
-  width: 318px;
-  @include button;
+  width: 320px;
+  height: 44px;
 }
 
-/* кнопка создать */
-
-.account-registration-link__create {
-  top: 572px;
-  left: 251px;
-  width: 99px;
+.account-registration-button-reg__a {
   @include button;
+  position: absolute;
+  width: 320px;
+}
+
+/*подпись кнопки зарегистрироваться */
+
+.account-registration-button-reg__p {
+  @include text-link;
+  color: #ffffff;
+  position: absolute;
+  width: 280px;
+  height: 15px;
+  left: 20px;
+  top: 14px;
+  text-align: center;
+}
+
+.account-registration-button-reg {
+  @include expand-more;
+  color: #ffffff;
+  left: 276px;
+}
+
+/*блок кнопки войти*/
+
+.account-registration__button-to-come-in {
+  width: 99px;
+  height: 44px;
+  position: absolute;
+  left: 251px;
+  top: 572px;
+}
+
+/* кнопка войти */
+
+.account-registration-button-to-come-in__a {
+  width: 99px;
+  @include button-mini;
+}
+
+.account-registration-button-to-come-in__p {
+  @include text-link;
+  position: absolute;
+  left: 26px;
+  top: 14px;
+  width: 47px;
+  height: 15px;
+  cursor: pointer;
 }
 
 /* hover для кнопок */
 
-.account-registration-link__create:hover {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-  border: none;
+.account-registration__button-to-come-in:hover
+  .account-registration-button-to-come-in__a {
+  opacity: 0.5;
 }
 
-.account-registration-link:hover .account-registration-link-to-come-in {
-  background: white;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.account-registration-link:hover .account-registration-link__to-come-in {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-  border: none;
-}
-
-/* картинка для кнопки вход */
-
-.account-registration-link-to-come-in {
-  @include arrow_forvard;
-  left: 306px;
-  cursor: pointer;
-  top: 498px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(rgba(188, 156, 255, 1)),
-    to(rgba(139, 164, 249, 1))
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.account-registration__button-reg:hover .account-registration-button-reg__a {
+  opacity: 0.5;
 }
 
 // Свойства placeholder для input
 
-.account-registration-input__email::placeholder {
+.account-registration__input-email::placeholder {
   @include input-placeholder;
   width: 40px;
 }
-.account-registration-input__password::placeholder {
+.account-registration__input-password::placeholder {
   @include input-placeholder;
   width: 55px;
 }
-.account-registration-input__name::placeholder {
+.account-registration__input-name::placeholder {
   @include input-placeholder;
   width: 32px;
 }
-.account-registration-input__lastname::placeholder {
+.account-registration__input-lastname::placeholder {
   @include input-placeholder;
   width: 69px;
 }
 
-.account-registration-input__date-of-birth::placeholder {
+.account-registration__input-date-of-birth::placeholder {
   @include input-placeholder;
   width: 69px;
 }
@@ -256,7 +271,7 @@
   height: 24px;
   left: 26px;
   top: -5px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -270,7 +285,7 @@
   width: 72px;
   height: 24px;
   top: -5px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -280,7 +295,7 @@
 
 /*кастомные радио кнопки*/
 
-.account-registration-radio-label-men-input__custom {
+.account-registration-radio-label-men__custom {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -290,7 +305,7 @@
   box-shadow: 0 0 0 1px rgba(31, 32, 65, 0.25);
 }
 
-.account-registration-radio-label-women-input__custom {
+.account-registration-radio-label-women__custom {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -302,25 +317,25 @@
 
 /*событие checked для кнопки*/
 .account-registration-radio-label-men__input:checked
-  + .account-registration-radio-label-men-input__custom::before,
+  + .account-registration-radio-label-men__custom::before,
 .account-registration-radio-label-women__input:checked
-  + .account-registration-radio-label-women-input__custom::before {
+  + .account-registration-radio-label-women__custom::before {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 }
 /*событие checked для обводки*/
 .account-registration-radio-label-men__input:checked
-  + .account-registration-radio-label-men-input__custom,
+  + .account-registration-radio-label-men__custom,
 .account-registration-radio-label-women__input:checked
-  + .account-registration-radio-label-women-input__custom {
+  + .account-registration-radio-label-women__custom {
   box-shadow: 0 0 0 1px #bc9cff;
 }
 
 /*свойства псевдоэлемента*/
 
-.account-registration-radio-label-women-input__custom::before,
-.account-registration-radio-label-men-input__custom::before {
+.account-registration-radio-label-women__custom::before,
+.account-registration-radio-label-men__custom::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 12px;
   height: 12px;
   left: 4px;

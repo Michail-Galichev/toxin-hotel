@@ -1,25 +1,28 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Regular.eot");
   src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Bold.eot");
   src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Italic.eot");
   src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
   font-weight: normal;
   font-style: italic;
 }
+
 * {
   margin: 0px;
   padding: 0px;
@@ -108,13 +111,17 @@ body {
   left: 105px;
   width: 171px;
   height: 56px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
   line-height: 27.78px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #1f2041;
   top: 7px;
 }
@@ -125,13 +132,17 @@ body {
   left: 105px;
   width: 171px;
   height: 56px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
   line-height: 27.78px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #1f2041;
   top: 97px;
 }
@@ -142,13 +153,17 @@ body {
   left: 105px;
   width: 171px;
   height: 56px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
   line-height: 27.78px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #1f2041;
   top: 187px;
 }
@@ -159,13 +174,17 @@ body {
   left: 105px;
   width: 171px;
   height: 56px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
   line-height: 27.78px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #1f2041;
   top: 277px;
 }
@@ -176,13 +195,17 @@ body {
   left: 105px;
   width: 171px;
   height: 56px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
   line-height: 27.78px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #1f2041;
   top: 367px;
 }
@@ -194,13 +217,17 @@ body {
   left: 105px;
   width: 171px;
   height: 56px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
   line-height: 27.78px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #1f2041;
 }
 
@@ -210,13 +237,18 @@ body {
   left: 105px;
   width: 171px;
   height: 56px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
   line-height: 27.78px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #1f2041;
   top: 547px;
-}/*# sourceMappingURL=block-square.css.map */
+}
+/*# sourceMappingURL=block-square.css.map */

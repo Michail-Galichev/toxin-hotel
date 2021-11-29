@@ -1,4 +1,4 @@
-@import 'nav-reg.scss';
+@import "../mixins.scss";
 
 .nav {
   @include navigation;
@@ -44,8 +44,10 @@
   list-style: none;
   margin: 0;
   padding-left: 0px;
-  left: 530px;
+  left: 712px;
   top: 26px;
+  height: 30px;
+  width: 588px;
 }
 
 .nav__ul > li {
@@ -54,7 +56,7 @@
 
 /*свойства пунктов меню*/
 
-.nav-reg-ul-li__a {
+.nav-ul-li__a {
   @include menu;
 }
 
@@ -66,15 +68,19 @@
 
 /*картика expand_more*/
 .nav__expand_more1 {
-  fill: rgba(31, 32, 65, 0.5);
-  top: 32px;
-  left: 646px;
+  @include expand_more;
+  width: 24px;
+  height: 24px;
+  top: 26px;
+  left: 825px;
   position: absolute;
 }
 .nav__expand_more2 {
-  fill: rgba(31, 32, 65, 0.5);
-  top: 32px;
-  left: 953px;
+  @include expand_more;
+  width: 24px;
+  height: 24px;
+  top: 26px;
+  left: 1135px;
   position: absolute;
 }
 /*пункт меню вакансии*/
@@ -82,9 +88,15 @@
   margin-left: 22px;
 }
 
-.nav-expand_more1:hover,
-.nav-expand_more2:hover {
-  fill: rgba(31, 32, 65, 0.75);
+/*hover для меню */
+.nav-ul-li__a:hover {
+  color: rgba(31, 32, 65, 0.75);
+  font-weight: bold;
+}
+
+.nav__expand_more1:hover,
+.nav__expand_more2:hover {
+  color: rgba(31, 32, 65, 0.75);
 }
 
 .nav__vertical-line {
@@ -102,7 +114,6 @@
   height: 18px;
   right: 140px;
   top: 26px;
-
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;

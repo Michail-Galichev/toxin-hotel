@@ -1,9 +1,9 @@
-@import '../mixins.scss';
+@import "../mixins.scss";
 
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 /* свойства формы */
@@ -13,93 +13,92 @@
   height: 369px;
   left: 171px;
   top: 330px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  border-radius: 4px;
+  @include form;
   z-index: 200;
 }
 
 /* основной заголовок */
 
 .august {
-  position: absolute;
+  @include landing-h2;
   width: 119px;
   height: 24px;
   left: 101px;
   top: 20px;
-
-  font-style: normal;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 23px;
-
-  text-align: center;
-
-  color: #1f2041;
 }
 
 /* стрелки */
 
-.calendar__arrow-right {
+.calendar__img-arrow-right {
+  @include arrow_forvard;
   width: 24px;
   height: 24px;
   position: absolute;
   top: 20px;
   left: 20px;
-  background-image: url(../img/arrow_forward.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  transform: rotate(180deg);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(188, 156, 255, 1)),
+    to(rgba(139, 164, 249, 1))
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.calendar__arrow-left {
+.calendar__img-arrow-left {
+  @include arrow_forvard;
   width: 24px;
   height: 24px;
   position: absolute;
   top: 20px;
   right: 20px;
-  background-image: url(../img/arrow_forward.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(188, 156, 255, 1)),
+    to(rgba(139, 164, 249, 1))
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* дни недели */
+/*дни недели*/
 
-.days-week_mon {
+.calendar__days-week-mon {
   @include days-week;
   left: 22px;
 }
-.days-week_tue {
+.calendar__days-week-tue {
   @include days-week;
   left: 62px;
 }
-.days-week_wed {
+.calendar__days-week-wed {
   @include days-week;
   left: 101px;
 }
-.days-week_the {
+.calendar__days-week-the {
   @include days-week;
   left: 141px;
 }
-.days-week_fri {
+.calendar__days-week-fri {
   @include days-week;
   left: 181px;
 }
-.days-week_sut {
+.calendar__days-week-sut {
   @include days-week;
   left: 221px;
 }
-.days-week_sun {
+.calendar__days-week-sun {
   @include days-week;
   left: 260px;
 }
 
-/* числа */
-.days {
+/*блок  чисел */
+.calendar__days {
   position: absolute;
   top: 109px;
   left: 17px;
@@ -107,7 +106,8 @@
   flex-wrap: wrap;
 }
 
-.days div {
+/*свойства чисел*/
+.calendar__days div {
   width: 40px;
   height: 40px;
   font-style: normal;
@@ -120,11 +120,9 @@
   justify-content: center;
   color: rgba(31, 32, 65, 0.5);
 }
-
-.days .prev-date {
-  color: rgba(31, 32, 65, 0.25);
-}
-.days .next-date {
+/*даты предидущего и следующего месяца*/
+.calendar__days .calendar-days__prev-date,
+.calendar__days .calendar-days__next-date {
   color: rgba(31, 32, 65, 0.25);
 }
 
@@ -136,16 +134,7 @@
   position: absolute;
   bottom: 18px;
   left: 20px;
-
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-
-  text-decoration: none;
-  text-transform: uppercase;
-
-  color: #bc9cff;
+  @include text-link;
 }
 
 .calendar__to-apply {
@@ -154,27 +143,32 @@
   position: absolute;
   right: 20px;
   bottom: 18px;
-
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-
-  text-decoration: none;
-  text-transform: uppercase;
-
-  color: #bc9cff;
+  @include text-link;
 }
 
-div.days__current-date {
+/*hover для ссылок-кнопок*/
+.calendar__clear:hover,
+.calendar__to-apply:hover {
+  color: rgba(31, 32, 65, 0.5);
+}
+
+/*текущая дата*/
+.calendar-days__current-date {
   color: #ffffff;
   height: 40px;
   width: 40px;
   border-radius: 50%;
   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
 }
+/*цвет шрифта выделенной даты*/
+.calendar-days__current-date > p,
+.calendar-days__19 > p,
+.calendar-days__23 > p {
+  color: #ffffff;
+}
 
-.days__img23 {
+/*свойства выделенной дыты*/
+.calendar-days__23 {
   position: absolute;
   left: 158px;
   top: 120px;
@@ -182,7 +176,7 @@ div.days__current-date {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 }
 
-.days__img19 {
+.calendar-days__19 {
   position: absolute;
   left: 0px;
   top: 120px;
@@ -190,37 +184,15 @@ div.days__current-date {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 }
 
-.date-range {
+/*подсветка выбранного диапазона */
+.calendar-days__date-range {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   opacity: 0.25;
 }
 
-.days__highlighted19 {
+.calendar-days__highlighted19 {
   box-shadow: inset 20px 0 white;
 }
-
-.days-highlighted__p19 {
-  position: absolute;
-  left: 14px;
-  top: 132px;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  color: #ffffff;
-  z-index: 10000;
-}
-
-.days__highlighted23 {
+.calendar-days__highlighted23 {
   box-shadow: inset -20px 0 white;
-}
-
-.days-highlighted__p23 {
-  position: absolute;
-  left: 172px;
-  top: 132px;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  color: #ffffff;
-  z-index: 10000;
 }

@@ -1,4 +1,4 @@
-@import '../../mixins.scss';
+@import "../../mixins.scss";
 
 /*блок кнопок*/
 .buttons {
@@ -15,7 +15,7 @@
 
 /*кнопка 1*/
 .buttons__a1 {
-  @include button_mini;
+  @include button;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   left: 0px;
   top: 31px;
@@ -23,18 +23,26 @@
   width: 99px;
 }
 
+.buttons__p1 {
+  @include text-link;
+  position: absolute;
+  color: #ffffff;
+  top: 45px;
+  left: 20px;
+}
+
+
 /*кнопка 2*/
 .buttons__a2 {
-  @include button_mini;
+  @include button;
   left: 119px;
   top: 31px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   opacity: 0.5;
-  color: #ffffff;
   width: 99px;
 }
 
-.buttons-a2__p {
+.buttons__p2 {
   @include text-link;
   position: absolute;
   color: #ffffff;
@@ -54,6 +62,18 @@
   background-clip: content-box, border-box;
   border: 2px solid transparent;
 }
+
+.buttons__p3 {
+  @include text-link;
+  position: absolute;
+  width: 59px;
+  height: 15px;
+  top: 119px;
+  left: 20px;
+}
+
+
+
 /*кнопка 4*/
 .buttons__a4 {
   @include button_mini;
@@ -69,13 +89,14 @@
   border: 2px solid transparent;
 }
 
-.buttons-a4__p {
+.buttons__p4 {
   @include text-link;
   position: absolute;
   width: 59px;
   height: 15px;
   left: 139px;
   top: 119px;
+  
 }
 
 /*кнопка 5*/
@@ -100,7 +121,7 @@
 }
 
 /* кнопка перейти к оплате*/
-.buttons-payment {
+.buttons__payment {
   @include button;
   left: 979px;
   top: 456px;
@@ -110,8 +131,18 @@
   color: #ffffff;
 }
 
+.buttons__payment-p{
+  @include text-link;
+  top: 470px;
+  left: 999px;
+  color: #ffffff;
+  width: 280px;
+  height: 15px;
+  text-align: center;
+}
+
 /*белая стрелка*/
-.buttons-payment__arrow_forward {
+.buttons__payment-arrow-forward {
   @include arrow_forvard;
   top: 456px;
   left: 1255px;

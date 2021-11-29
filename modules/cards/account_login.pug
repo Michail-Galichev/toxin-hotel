@@ -1,11 +1,13 @@
 form.account-login(action="/login" method="post")
-  h1.account-login__header Войти
+  h1 Войти
   input.account-login__input-email(type="email" name="email" placeholder="Email")
   input.account-login__input-password(type="password" name="password" placeholder="Пароль")
-  .account-login-link
-    a.account-login-link__to-come-in(href="#") Войти
-    .material-icons-outlined.account-login-link-to-come-in arrow_forward
+  .account-login__button-to-come-in
+    a.account-login-button-to-come-in__a(href="#")
+    p.account-login-button-to-come-in__p Войти
+    .material-icons-outlined.account-login-button-to-come-in arrow_forward
       
-
-  a.account-login-link__create(href="#") Создать
+  .account-login__button-create
+    a.account-login-button-create__a(href="#") 
+    p.account-login-button-create__p Создать
   p Нет аккаунта на Toxin?  

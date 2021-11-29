@@ -1,4 +1,4 @@
-@import '../mixins.scss';
+@import "../mixins.scss";
 
 * {
   margin: 0;
@@ -11,15 +11,13 @@ body {
   background: #e5e5e5;
 }
 
-/*свойства блока навигации/регистрации*/
-
 .nav-reg {
   @include navigation;
   top: 140px;
   height: 70px;
 }
 
-//Свойства логотипа блока  nav-reg.pug
+//Свойства логотипа блока  nav.pug
 
 .nav-reg__logo {
   width: 40px;
@@ -50,43 +48,6 @@ body {
   top: 28.33px;
 }
 
-/*блок кнопок*/
-.nav-reg__buttons {
-  position: absolute;
-  top: 16px;
-  left: 989px;
-  height: 38px;
-}
-
-//Кнопка "Войти"
-
-.nav-reg-buttons__to-come-in {
-  @include button-mini;
-  background: linear-gradient(#fff, #fff) padding-box,
-    linear-gradient(rgba(188, 156, 255, 1), rgba(139, 164, 249, 1)) border-box;
-  border: 2px solid transparent;
-  width: 87px;
-  height: 34px;
-  top: 18px;
-  left: 997px;
-}
-
-/*"Зарегистрироваться"*/
-.nav-reg-buttons__register {
-  @include button;
-  width: 192px;
-  height: 34px;
-  top: 18px;
-  left: 1104px;
-}
-
-/*hover для кнопок*/
-.nav-reg-buttons__register:hover,
-.nav-reg-buttons__to-come-in:hover {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-}
-
 /*горизонтальное меню*/
 
 .nav-reg__ul {
@@ -94,6 +55,8 @@ body {
   list-style: none;
   margin: 0;
   padding-left: 0px;
+  height: 21px;
+  width: 447px;
   left: 530px;
   top: 26px;
 }
@@ -108,36 +71,80 @@ body {
   @include menu;
 }
 
+/*кнопки*/
+.nav-reg__buttons-to-come-in {
+  @include button-mini;
+  height: 30px;
+  width: 83px;
+  top: 18px;
+  left: 997px;
+  
+}
+
+.nav-reg__buttons-register {
+  @include button;
+  width: 196px;
+  height: 34px;
+  top: 18px;
+  left: 1104px;
+}
+
+/*доп кнопки меню*/
+.nav-reg__expand_more1 {
+  @include expand_more;
+  width: 24px;
+  height: 24px;
+  top: 26px;
+  left: 643px;
+}
+.nav-reg__expand_more2 {
+  @include expand_more;
+  width: 24px;
+  height: 24px;
+  top: 26px;
+  left: 953px;
+}
+
+/*подписи кнопок*/
+.nav-reg__register {
+  @include text-link;
+  position: absolute;
+  top: 27px;
+  left: 1123px;
+  width: 157px;
+  height: 15px;
+  cursor: pointer;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.nav-reg__to-come-in {
+  @include text-link;
+  position: absolute;
+  top: 27px;
+  left: 1017px;
+  width: 47px;
+  height: 15px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/*hover для кнопок*/
+.nav-reg__register:hover + .nav-reg__buttons-register,
+.nav-reg__to-come-in:hover + .nav-reg__buttons-to-come-in,
+.nav-reg__buttons-register:hover,
+.nav-reg__buttons-to-come-in:hover {
+  opacity: 0.5;
+}
+
 /*hover для меню */
 .nav-reg-ul-li__a:hover {
   color: rgba(31, 32, 65, 0.75);
   font-weight: bold;
 }
 
-/*картика expand_more*/
-.nav-reg__expand-more1 {
-  @include expand_more;
-  width: 24px;
-  height: 24px;
-  top: 23px;
-  left: 643px;
-}
-
-.nav-reg__expand-more2 {
-  @include expand_more;
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 23px;
-  left: 953px;
-}
-
-/*пункт меню вакансии*/
-.vacancy {
-  margin-left: 22px;
-}
-
-.nav-reg__expand-more1:hover,
-.nav-reg__expand-more2:hover {
+/*hover для expand more*/
+.nav-reg__expand_more1:hover,
+.nav-reg__expand_more2:hover {
   color: rgba(31, 32, 65, 0.75);
 }

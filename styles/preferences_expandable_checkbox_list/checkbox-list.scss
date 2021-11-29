@@ -1,3 +1,5 @@
+@import '../mixins.scss';
+
 /* checkbox block */
 
 .checkbox-block {
@@ -23,7 +25,7 @@
 }
 
 /* скрываем стандартные checkbox*/
-.checkbox-block__input {
+.checkbox-block-label__input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -32,7 +34,7 @@
 }
 
 /* стили для кастомных checkbox*/
-.checkbox-list__div {
+.checkbox-block-label__custom {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -43,15 +45,17 @@
 }
 
 /* checked */
-.checkbox-block__input:checked + .checkbox-list__div {
+.checkbox-block-label__input:checked + .checkbox-block-label__custom {
   border: 1px solid rgba(188, 156, 255, 1);
-  background-image: url('../img/Vector.png');
+  background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 10px 8px;
 }
 
-.additional-amenities__expanded-more {
-  background-image: url(../img/expand_more_expanded.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.additional-amenities__expand-more {
+  @include expand-more;
+  left: 362px;
+  top: 795px;
+  transform: rotate(180deg);
 }

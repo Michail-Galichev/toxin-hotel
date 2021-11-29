@@ -1,4 +1,4 @@
-@import '../mixins.scss';
+@import "../mixins.scss";
 
 // Форма account_registration
 
@@ -8,62 +8,40 @@
   height: 646px;
   left: 533px;
   top: 89px;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  @include form;
   border-radius: 4px;
   z-index: 5;
 }
 
-.account-registration-header1 {
+.account-registration > h1 {
   @include headers;
   width: 320px;
   height: 30px;
+  top: 40px;
   left: 30px;
-  top: 33px;
-  font-size: 24px;
-  line-height: 29px;
 }
 
-.account-registration-input-name {
-  position: absolute;
-  width: 299.5px;
-  height: 42px;
-  padding-left: 15px;
+.account-registration__input-name {
+  @include input-max;
   left: 30px;
   top: 90px;
 }
 
-.account-registration-input-lastname {
-  position: absolute;
-  width: 299.5px;
-  height: 42px;
-  padding-left: 15px;
+.account-registration__input-lastname {
+  @include input-max;
   left: 30px;
   top: 144px;
 }
 
-input[type='date'] {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.25);
-  text-transform: uppercase;
-  content: attr(placeholder) !important;
-}
-
 /* Checkbox*/
 
-.checkbox {
+.account-registration__checkbox {
   position: absolute;
   top: 456px;
   left: 30px;
 }
 
-.checkbox__input {
+.account-registration-checkbox__input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -71,7 +49,7 @@ input[type='date'] {
   overflow: hidden;
 }
 
-.checkbox__div {
+.account-registration-checkbox__custom {
   position: absolute;
   width: 40px;
   height: 20px;
@@ -83,25 +61,25 @@ input[type='date'] {
 
 /* :checked*/
 
-.checkbox__input:checked ~ .checkbox__div {
+.account-registration-checkbox__input:checked
+  ~ .account-registration-checkbox__custom {
   border: 1px solid #bc9cff;
 }
 
-.checkbox__input:checked ~ .checkbox__div::before {
+.account-registration-checkbox__input:checked
+  ~ .account-registration-checkbox__custom::before {
   position: absolute;
   top: 3px;
   left: 22px;
-  background-image: url(../img/2ectangle2.1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   transition: 0.4s;
 }
 
 /* ::before*/
 
-.checkbox__div::before {
+.account-registration-checkbox__custom::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 12px;
   height: 12px;
   left: 4px;
@@ -112,13 +90,194 @@ input[type='date'] {
 }
 
 /* Спецпредложения*/
-.checkbox__p {
-  position: absolute;
+.account-registration__checkbox > p {
   width: 210px;
   height: 24px;
   left: 50px;
   top: -2px;
-  font-family: 'Montserrat';
+  @include paragraf;
+}
+
+/*заголовок поля дата рождения*/
+
+.account-registration__header-date-of-birth {
+  width: 118px;
+  height: 15px;
+  left: 30px;
+  position: absolute;
+  top: 242px;
+  @include headers3;
+}
+
+/* свойства поля дата рождения*/
+
+.account-registration__input-date-of-birth {
+  @include input-max;
+  left: 30px;
+  top: 262px;
+}
+
+/*заголовок полей параметры входа*/
+
+.account-registration__header-login-details {
+  width: 211px;
+  height: 15px;
+  left: 30px;
+  top: 326px;
+  position: absolute;
+  @include headers3;
+}
+
+/*поле e-mail*/
+
+.account-registration__input-email {
+  @include input-max;
+  left: 30px;
+  top: 346px;
+}
+
+/*поле password*/
+.account-registration__input-password {
+  @include input-max;
+  left: 30px;
+  top: 400px;
+}
+
+/*свойства подписи*/
+.account-registration > p {
+  @include paragraf2;
+  width: 186px;
+  height: 18px;
+  left: 30px;
+  top: 584px;
+}
+
+/*блок кнопки зарегистрироваться */
+.account-registration__button-reg {
+  position: absolute;
+  top: 498px;
+  left: 30px;
+  width: 320px;
+  height: 44px;
+ 
+}
+
+.account-registration-button-reg__a {
+  @include button;
+  position: absolute;
+  width: 320px;
+}
+
+/*подпись кнопки зарегистрироваться */
+
+.account-registration-button-reg__p {
+  @include text-link;
+  color: #ffffff;
+  position: absolute;
+  width: 280px;
+  height: 15px;
+  left: 20px;
+  top: 14px;
+  text-align: center;
+
+}
+
+.account-registration-button-reg{
+  @include expand-more;
+  color: #ffffff;
+  left: 276px;
+}
+
+/*блок кнопки войти*/
+
+.account-registration__button-to-come-in {
+  width: 99px;
+  height: 44px;
+  position: absolute;
+  left: 251px;
+  top: 572px;
+}
+
+/* кнопка войти */
+
+.account-registration-button-to-come-in__a {
+  width: 99px;
+  @include button-mini;
+}
+
+.account-registration-button-to-come-in__p {
+  @include text-link;
+  position: absolute;
+  left: 26px;
+  top: 14px;
+  width: 47px;
+  height: 15px;
+  cursor: pointer;
+}
+
+/* hover для кнопок */
+
+.account-registration__button-to-come-in:hover
+  .account-registration-button-to-come-in__a {
+  opacity: 0.5;
+}
+
+.account-registration__button-reg:hover .account-registration-button-reg__a {
+  opacity: 0.5;
+}
+
+
+// Свойства placeholder для input
+
+.account-registration__input-email::placeholder {
+  @include input-placeholder;
+  width: 40px;
+}
+.account-registration__input-password::placeholder {
+  @include input-placeholder;
+  width: 55px;
+}
+.account-registration__input-name::placeholder {
+  @include input-placeholder;
+  width: 32px;
+}
+.account-registration__input-lastname::placeholder {
+  @include input-placeholder;
+  width: 69px;
+}
+
+.account-registration__input-date-of-birth::placeholder {
+  @include input-placeholder;
+  width: 69px;
+}
+
+/*радио кнопки*/
+
+/*позиционирование блока кнопок*/
+.account-registration__radio {
+  position: absolute;
+  top: 198px;
+  left: 30px;
+}
+
+/*скрываем кнопки браузера*/
+.account-registration-radio-label-men__input,
+.account-registration-radio-label-women__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*свойства label*/
+.account-registration-radio__label-men {
+  position: absolute;
+  width: 68px;
+  height: 24px;
+  left: 26px;
+  top: -5px;
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -126,178 +285,67 @@ input[type='date'] {
   color: rgba(31, 32, 65, 0.75);
 }
 
-.account-registration-header_date-of-birth {
+.account-registration-radio__label-women {
   position: absolute;
-  width: 118px;
-  height: 15px;
-  left: 30px;
-  top: 242px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1f2041;
-}
-
-.account-registration-input-date-of-birth {
-  position: absolute;
-  width: 299.5px;
-  height: 42px;
-  padding-left: 15px;
-  left: 30px;
-  top: 262px;
-}
-
-.account-registration-header_login-details {
-  position: absolute;
-  width: 211px;
-  height: 15px;
-  left: 30px;
-  top: 326px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1f2041;
-}
-
-.account-registration-input-email {
-  position: absolute;
-  width: 299.5px;
-  height: 42px;
-  padding-left: 15px;
-  left: 30px;
-  top: 346px;
-}
-
-.account-registration-input-password {
-  position: absolute;
-  width: 299.5px;
-  height: 42px;
-  padding-left: 15px;
-  left: 30px;
-  top: 400px;
-}
-
-.account-registration-paragraf {
-  position: absolute;
-  width: 186px;
-  height: 18px;
-  left: 30px;
-  top: 584px;
-  font-family: 'Montserrat';
+  left: 148px;
+  width: 72px;
+  height: 24px;
+  top: -5px;
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 18px;
-  display: flex;
-  align-items: center;
-  color: #000000;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
 }
 
-.account-registration-link_pay {
+/*кастомные радио кнопки*/
+
+.account-registration-radio-label-men__custom {
   position: absolute;
-  top: 40px;
-  left: -2px;
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  width: 318px;
-  height: 42px;
-  background: linear-gradient(#fff, #fff) padding-box,
-    linear-gradient(rgba(188, 156, 255, 1), rgba(139, 164, 249, 1)) border-box;
-  border: 2px solid transparent;
-  border-radius: 22px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #bc9cff;
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  left: -29px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgba(31, 32, 65, 0.25);
 }
 
-.account-registration-link_to-come-in {
+.account-registration-radio-label-women__custom {
   position: absolute;
-  top: 572px;
-  left: 251px;
-  width: 99px;
-  height: 42px;
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(#fff, #fff) padding-box,
-    linear-gradient(rgba(188, 156, 255, 1), rgba(139, 164, 249, 1)) border-box;
-  border: 2px solid transparent;
-  border-radius: 22px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #bc9cff;
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  left: -32px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgba(31, 32, 65, 0.25);
 }
 
-.account-registration-link_to-come-in span {
-  position: absolute;
-  width: 47px;
-  top: 14px;
-  height: 15px;
-  left: 25.5px;
-  font-size: 12px;
-  line-height: 15px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-}
-
-.account-registration-link_pay span {
-  position: absolute;
-  top: 14px;
-  left: 19.5px;
-  width: 280px;
-  height: 15px;
-  font-size: 12px;
-  line-height: 15px;
-  font-style: normal;
-  font-weight: bold;
-  font-family: 'Montserrat';
-}
-
-.account-registration-link_to-come-in:hover,
-.account-registration-link_pay:hover {
+/*событие checked для кнопки*/
+.account-registration-radio-label-men__input:checked
+  + .account-registration-radio-label-men__custom::before,
+.account-registration-radio-label-women__input:checked
+  + .account-registration-radio-label-women__custom::before {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-  border: none;
+}
+/*событие checked для обводки*/
+.account-registration-radio-label-men__input:checked
+  + .account-registration-radio-label-men__custom,
+.account-registration-radio-label-women__input:checked
+  + .account-registration-radio-label-women__custom {
+  box-shadow: 0 0 0 1px #bc9cff;
 }
 
-.account-registration-link-image_pay {
+/*свойства псевдоэлемента*/
+
+.account-registration-radio-label-women__custom::before,
+.account-registration-radio-label-men__custom::before {
   position: absolute;
-  left: 290px;
-  top: 13px;
-  fill: url('#paint0_linear');
-}
-
-.block-link-image:hover .account-registration-link-image_pay {
-  fill: white;
-}
-
-// Свойства placeholder для input
-
-input.account-registration-input-email::placeholder {
-  @include input-placeholder;
-  width: 40px;
-}
-input.account-registration-input-password::placeholder {
-  @include input-placeholder;
-  width: 55px;
-}
-input.account-registration-input-name::placeholder {
-  @include input-placeholder;
-  width: 32px;
-}
-input.account-registration-input-lastname::placeholder {
-  @include input-placeholder;
-  width: 69px;
+  content: "";
+  width: 12px;
+  height: 12px;
+  left: 4px;
+  top: 4px;
+  background-color: white;
+  border-radius: 10px;
 }

@@ -1,25 +1,28 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Regular.eot");
   src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Bold.eot");
   src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Italic.eot");
   src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
   font-weight: normal;
   font-style: italic;
 }
+
 /*миксин текста копирайта*/
 /*миксин заголовков h2*/
 /* миксин свойства заголовков*/
@@ -148,9 +151,14 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -167,9 +175,14 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -186,9 +199,14 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -205,9 +223,14 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -224,20 +247,19 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   left: 96px;
-}
-
-.hover:hover {
-  background-image: url(../img/star.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 /* отзывы */
@@ -272,8 +294,10 @@ span {
   top: 129px;
   border-radius: 50%;
   border: 1px solid #ffffff;
-  box-sizing: border-box;
-  filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+          filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
   border: none;
   background: #ffffff;
   left: 218px;
@@ -286,8 +310,10 @@ span {
   top: 129px;
   border-radius: 50%;
   border: 1px solid #ffffff;
-  box-sizing: border-box;
-  filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+          filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
   left: 228px;
 }
 
@@ -298,8 +324,10 @@ span {
   top: 129px;
   border-radius: 50%;
   border: 1px solid #ffffff;
-  box-sizing: border-box;
-  filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+          filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
   left: 238px;
 }
 
@@ -310,32 +338,70 @@ span {
   top: 129px;
   border-radius: 50%;
   border: 1px solid #ffffff;
-  box-sizing: border-box;
-  filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+          filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
   left: 248px;
 }
 
 /* вперед назад */
-.number-card_expand-more-left {
-  background-image: url(../img/expand_more_left.svg);
+.number-card__expand-more-left {
   position: absolute;
+  width: 44px;
+  height: 44px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
   width: 44px;
   height: 44px;
   top: 54px;
   left: 0px;
-  background-repeat: no-repeat;
-  background-position: center;
+  color: #ffffff;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
-.number-card_expand-more-right {
-  background-image: url(../img/expand_more_rieght.svg);
+.number-card__expand-more-right {
   position: absolute;
+  width: 44px;
+  height: 44px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
   width: 44px;
   height: 44px;
   top: 54px;
   right: 0px;
-  background-repeat: no-repeat;
-  background-position: center;
+  color: #ffffff;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 /*горизонтальная полоса*/
@@ -349,26 +415,29 @@ span {
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Regular.eot");
   src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Bold.eot");
   src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Italic.eot");
   src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
   font-weight: normal;
   font-style: italic;
 }
+
 /*миксин текста копирайта*/
 /*миксин заголовков h2*/
 /* миксин свойства заголовков*/
@@ -407,7 +476,8 @@ span {
   width: 270px;
   height: 257px;
   background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
 }
 
@@ -417,7 +487,8 @@ span {
   width: 270px;
   height: 257px;
   background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
   left: 748px;
   top: 151px;
@@ -429,7 +500,8 @@ span {
   width: 270px;
   height: 257px;
   background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
   left: 1030px;
   top: 151px;
@@ -441,7 +513,8 @@ span {
   width: 270px;
   height: 257px;
   background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
   left: 466px;
   top: 428.5px;
@@ -453,7 +526,8 @@ span {
   width: 270px;
   height: 257px;
   background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
   left: 748px;
   top: 428.5px;
@@ -465,7 +539,8 @@ span {
   width: 270px;
   height: 257px;
   background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
   left: 1030px;
   top: 428.5px;
@@ -477,7 +552,8 @@ span {
   width: 270px;
   height: 257px;
   background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
   left: 466px;
   top: 706.5px;
@@ -489,7 +565,8 @@ span {
   width: 270px;
   height: 257px;
   background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
   left: 748px;
   top: 706.5px;
@@ -501,7 +578,8 @@ span {
   width: 270px;
   height: 257px;
   background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
   left: 1030px;
   top: 706.5px;
@@ -513,7 +591,8 @@ span {
   width: 270px;
   height: 257px;
   background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
   left: 466px;
   top: 984.5px;
@@ -525,7 +604,8 @@ span {
   width: 270px;
   height: 257px;
   background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
   left: 748px;
   top: 984.5px;
@@ -537,8 +617,10 @@ span {
   width: 270px;
   height: 257px;
   background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
   left: 1030px;
   top: 984.5px;
-}/*# sourceMappingURL=numbers.css.map */
+}
+/*# sourceMappingURL=numbers.css.map */

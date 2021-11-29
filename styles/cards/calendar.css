@@ -1,25 +1,28 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Regular.eot");
   src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Bold.eot");
   src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Italic.eot");
   src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
   font-weight: normal;
   font-style: italic;
 }
+
 /*миксин текста копирайта*/
 /*миксин заголовков h2*/
 /* миксин свойства заголовков*/
@@ -63,14 +66,15 @@
   height: 369px;
   left: 980px;
   top: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
   background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 /* основной заголовок */
@@ -89,7 +93,7 @@
 }
 
 /* стрелки */
-.calendar-arrow-right__img {
+.calendar__img-arrow-right {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: normal;
@@ -98,9 +102,15 @@
   position: absolute;
   width: 44px;
   height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 24px;
   height: 24px;
   position: absolute;
@@ -112,7 +122,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.calendar-arrow-left__img {
+.calendar__img-arrow-left {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: normal;
@@ -121,9 +131,15 @@
   position: absolute;
   width: 44px;
   height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 24px;
   height: 24px;
   position: absolute;
@@ -136,16 +152,22 @@
 }
 
 /*дни недели*/
-.days-week_mon {
+.calendar__days-week-mon {
   font-family: "Montserrat";
   position: absolute;
   top: 74px;
   height: 39px;
   width: 37px;
   color: #bc9cff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -154,16 +176,22 @@
   left: 22px;
 }
 
-.days-week_tue {
+.calendar__days-week-tue {
   font-family: "Montserrat";
   position: absolute;
   top: 74px;
   height: 39px;
   width: 37px;
   color: #bc9cff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -172,16 +200,22 @@
   left: 62px;
 }
 
-.days-week_wed {
+.calendar__days-week-wed {
   font-family: "Montserrat";
   position: absolute;
   top: 74px;
   height: 39px;
   width: 37px;
   color: #bc9cff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -190,16 +224,22 @@
   left: 101px;
 }
 
-.days-week_the {
+.calendar__days-week-the {
   font-family: "Montserrat";
   position: absolute;
   top: 74px;
   height: 39px;
   width: 37px;
   color: #bc9cff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -208,16 +248,22 @@
   left: 141px;
 }
 
-.days-week_fri {
+.calendar__days-week-fri {
   font-family: "Montserrat";
   position: absolute;
   top: 74px;
   height: 39px;
   width: 37px;
   color: #bc9cff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -226,16 +272,22 @@
   left: 181px;
 }
 
-.days-week_sut {
+.calendar__days-week-sut {
   font-family: "Montserrat";
   position: absolute;
   top: 74px;
   height: 39px;
   width: 37px;
   color: #bc9cff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -244,16 +296,22 @@
   left: 221px;
 }
 
-.days-week_sun {
+.calendar__days-week-sun {
   font-family: "Montserrat";
   position: absolute;
   top: 74px;
   height: 39px;
   width: 37px;
   color: #bc9cff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -262,34 +320,42 @@
   left: 260px;
 }
 
-/* числа */
-.days {
+/*блок  чисел */
+.calendar__days {
   position: absolute;
   top: 109px;
   left: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.days div {
+/*свойства чисел*/
+.calendar__days div {
   width: 40px;
   height: 40px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: rgba(31, 32, 65, 0.5);
 }
 
-.days .prev-date {
-  color: rgba(31, 32, 65, 0.25);
-}
-
-.days .next-date {
+/*даты предидущего и следующего месяца*/
+.calendar__days .calendar-days__prev-date,
+.calendar__days .calendar-days__next-date {
   color: rgba(31, 32, 65, 0.25);
 }
 
@@ -300,6 +366,7 @@
   position: absolute;
   bottom: 18px;
   left: 20px;
+  position: absolute;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -317,6 +384,7 @@
   position: absolute;
   right: 20px;
   bottom: 18px;
+  position: absolute;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -328,45 +396,62 @@
   color: #bc9cff;
 }
 
-.days__current-date {
+/*hover для ссылок-кнопок*/
+.calendar__clear:hover,
+.calendar__to-apply:hover {
+  color: rgba(31, 32, 65, 0.5);
+}
+
+/*текущая дата*/
+.calendar-days__current-date {
   color: #ffffff;
   height: 40px;
   width: 40px;
   border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6fcf97), to(#66d2ea));
   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
 }
 
-.days__current-date > p,
-.days__19 > p,
-.days__23 > p {
+/*цвет шрифта выделенной даты*/
+.calendar-days__current-date > p,
+.calendar-days__19 > p,
+.calendar-days__23 > p {
   color: #ffffff;
 }
 
-.days__23 {
+/*свойства выделенной дыты*/
+.calendar-days__23 {
   position: absolute;
   left: 158px;
   top: 120px;
   border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 }
 
-.days__19 {
+.calendar-days__19 {
   position: absolute;
   left: 0px;
   top: 120px;
   border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 }
 
-.date-range {
+/*подсветка выбранного диапазона */
+.calendar-days__date-range {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   opacity: 0.25;
 }
 
-.days__highlighted19 {
-  box-shadow: inset 20px 0 white;
+.calendar-days__highlighted19 {
+  -webkit-box-shadow: inset 20px 0 white;
+          box-shadow: inset 20px 0 white;
 }
 
-.days__highlighted23 {
-  box-shadow: inset -20px 0 white;
-}/*# sourceMappingURL=calendar.css.map */
+.calendar-days__highlighted23 {
+  -webkit-box-shadow: inset -20px 0 white;
+          box-shadow: inset -20px 0 white;
+}
+/*# sourceMappingURL=calendar.css.map */

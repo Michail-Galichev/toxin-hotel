@@ -1,36 +1,38 @@
 form.account-registration(action="/login" method="post")
-  h1.account-registration__header Регистрация аккаунта
-  input.account-registration-input__name(type="text" name="name" placeholder="Имя")
-  input.account-registration-input__lastname(type="text" name="lastname" placeholder="Фамилия")
+  h1 Регистрация аккаунта
+  input.account-registration__input-name(type="text" name="name" placeholder="Имя")
+  input.account-registration__input-lastname(type="text" name="lastname" placeholder="Фамилия")
   
   
   .account-registration__radio
     label.account-registration-radio__label-men 
       input.account-registration-radio-label-men__input(type='radio' name='sex' value='men' checked='')
       |         Мужчина
-      .account-registration-radio-label-men-input__custom
+      .account-registration-radio-label-men__custom
       
     label.account-registration-radio__label-women 
       input.account-registration-radio-label-women__input(type='radio' name='sex' value='men')
       |         Женщина
-      .account-registration-radio-label-women-input__custom
+      .account-registration-radio-label-women__custom
       
     
-  h3.account-registration-header__date-of-birth Дата рождения
-  input.account-registration-input__date-of-birth(type="text" placeholder="ДД.ММ.ГГГГ")
-  h3.account-registration-header__login-details Данные для входа в сервис
-  input.account-registration-input__email(type="email" name="email" placeholder="Email")
-  input.account-registration-input__password(type="password" name="password" placeholder="Пароль")
+  h3.account-registration__header-date-of-birth Дата рождения
+  input.account-registration__input-date-of-birth(type="text" placeholder="ДД.ММ.ГГГГ")
+  h3.account-registration__header-login-details Данные для входа в сервис
+  input.account-registration__input-email(type="email" name="email" placeholder="Email")
+  input.account-registration__input-password(type="password" name="password" placeholder="Пароль")
   label.account-registration__checkbox
     input(type="checkbox" class="account-registration-checkbox__input" autocomplete='off')
     .account-registration-checkbox__custom
     p Получать спецпредложения 
   
    
-  .account-registration-link
-    a.account-registration-link__to-come-in(href="#") Войти
-    .material-icons-outlined.account-registration-link-to-come-in arrow_forward
+  .account-registration__button-reg
+    a.account-registration-button-reg__a(href="#") 
+    p.account-registration-button-reg__p Зарегистрироваться
+    .material-icons-outlined.account-registration-button-reg arrow_forward
       
-
-  a.account-registration-link__create(href="#") Создать
+  .account-registration__button-to-come-in
+    a.account-registration-button-to-come-in__a(href="#") 
+    p.account-registration-button-to-come-in__p Войти
   p Уже есть аккаунт на Toxin

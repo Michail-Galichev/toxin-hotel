@@ -1,4 +1,4 @@
-@import '../mixins.scss';
+@import "../mixins.scss";
 
 /* свойства формы*/
 
@@ -10,19 +10,16 @@
   @include form;
 }
 
-/* свойства основного заголовка*/
-
-h1 {
+/*свойства заголовка формы*/
+.search-room > h1 {
   @include headers;
   width: 320px;
   height: 59px;
   left: 30px;
   top: 40px;
 }
-
-/*свойства заголовков полей*/
-
-.search-room-header__arrival {
+/*подзаголовок поля дата прибытия*/
+.search-room__header-arrival-date {
   @include headers3;
   position: absolute;
   width: 83px;
@@ -31,7 +28,8 @@ h1 {
   top: 120px;
 }
 
-.search-room-header__departure {
+/*подзаголовок поля дата отъезда*/
+.search-room__header-date-of-departure {
   @include headers3;
   position: absolute;
   width: 83px;
@@ -40,7 +38,8 @@ h1 {
   top: 120px;
 }
 
-.search-room-header__gast {
+/*подзаголовок поля дата гости*/
+.search-room__header-gast {
   @include headers3;
   position: absolute;
   width: 43px;
@@ -50,209 +49,121 @@ h1 {
 }
 
 /* поля дат*/
-.search-room__arrival-date {
+.search-room__input-arrival-date {
+  @include input-mini;
   left: 30px;
   top: 140.44px;
-  @include input-mini;
+  border-radius: 4px;
 }
 
-.search-room__date-of-departure {
+.search-room__input-date-of-departure {
   left: 200px;
   top: 140.44px;
+  border-radius: 4px;
   @include input-mini;
 }
 
 /* блоки изображений */
-.search-room-arrival-date__expand-more {
-  @include expand-more;
-  left: 135px;
-  top: 139.5px;
+.search-room__arrival-date-expand-more {
+  @include expand_more;
+  left: 136px;
+  top: 140px;
 }
 
-.search-room-date-of-departure__expand-more {
-  @include expand-more;
-  left: 305px;
-  top: 139.5px;
+.search-room__date-of-departure-expand-more {
+  @include expand_more;
+  left: 306px;
+  top: 140px;
+}
+
+.search-room__gast-expand-more {
+  @include expand_more;
+  top: 225.56px;
+  left: 305.74px;
 }
 
 /* поле гости */
 
-.search-room__gast {
-  @include input-max;
+.search-room__input-gast {
+  position: absolute;
   left: 30px;
   top: 225px;
+  @include input-max;
+  border-radius: 4px;
 }
 
-/* dropdown */
+/* блок кнопки */
 
-/*свойства картинки expand-more */
-.search-room-dropdown__expand-more {
-  @include expand-more;
-  left: 305.74px;
-  top: 225.56px;
-}
-
-/*свойства формы dropdown*/
-.dropdown {
-  display: none;
+.search-room__button {
   position: absolute;
+  top: 300px;
+  left: 30px;
+  width: 320px;
+  height: 44px;
+}
+
+/*подпись кнопки */
+.search-room-button__div-pick-up-a-room {
+  @include text-link;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  width: 280px;
+  text-align: center;
+  top: 14px;
+  left: 18px;
+  color: #ffffff;
+}
+
+/*свойства кнопки*/
+.search-room-button__pick-up-a-room {
+  @include button;
+  top: 0px;
+  left: 0px;
+  width: 320px;
+}
+
+/*стрелка*/
+.search-room-button__arrow-forward {
+  @include arrow_forvard;
+  position: absolute;
+  left: 274px;
+  top: 0px;
+  background: white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+/*hover */
+.search-room__button:hover .search-room-button__pick-up-a-room {
+  opacity: 0.5;
+}
+
+/* plceholder */
+.search-room__input-gast::placeholder {
+  height: 18px;
+  width: 112px;
+  @include input-placeholder;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.search-room__input-arrival-date::placeholder,
+.search-room__input-date-of-departure::placeholder {
+  width: 103px;
+  height: 24px;
+  @include input-placeholder;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/*dropdowns form*/
+.search-room__dropdown {
+  display: none;
+  @include form;
   width: 320px;
   height: 159px;
   left: 30px;
   top: 269px;
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-top: none;
-  box-sizing: border-box;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   z-index: 1000;
-}
-/*свойства кнопок +/-*/
-
-.dropdown__circle-plus1 {
-  @include circle-plus;
-  left: 283px;
-  top: 7px;
-}
-
-.dropdown__circle-plus2 {
-  @include circle-plus;
-  left: 283px;
-  top: 44px;
-}
-
-.dropdown__circle-plus3 {
-  @include circle-plus;
-  left: 283px;
-  top: 82px;
-}
-
-.dropdown__circle-minus1 {
-  @include circle-minus;
-  left: 221px;
-  top: 7px;
-}
-
-.dropdown__circle-minus2 {
-  @include circle-minus;
-  left: 221px;
-  top: 44px;
-}
-
-.dropdown__circle-minus3 {
-  @include circle-minus;
-  left: 221px;
-  top: 82px;
-}
-
-/*подписи кнопок +/-*/
-.dropdown-p__minus {
-  font-family: 'Montserrat';
-  text-align: center;
-  color: rgba(31, 32, 65, 0.5);
-  position: absolute;
-  top: 3px;
-  left: 11px;
-}
-
-.dropdown-p__plus {
-  font-family: 'Montserrat';
-  text-align: center;
-  color: rgba(31, 32, 65, 0.5);
-  position: absolute;
-  top: 4px;
-  left: 9px;
-}
-
-/* совйства списка dropdown*/
-.dropdown__p {
-  @include headers3;
-  margin-bottom: 18px;
-  margin-left: 15px;
-  width: 83px;
-  height: 15px;
-}
-.first {
-  margin-top: 11px;
-}
-/* кнопка очистить*/
-.dropdown__link1 {
-  @include text-link;
-  width: 72px;
-  height: 15px;
-  position: absolute;
-  top: 131px;
-  left: 14px;
-}
-
-/*кнопка применить*/
-.dropdown__link2 {
-  @include text-link;
-  width: 84px;
-  height: 15px;
-  position: absolute;
-  right: 7px;
-  top: 131px;
-}
-
-.search-room-dropdown__expand-more:active ~ .dropdown {
-  display: block;
-}
-
-/* кнопка подобрать номер*/
-
-.search-room__pick-up-a-room {
-  @include button;
-  top: 300px;
-  left: 30px;
-  width: 318px;
-}
-
-/*картинка для кнопки подобрать номер*/
-
-.search-room-pick-up-a-room {
-  @include expand-more;
-  top: 300px;
-  left: 306px;
-}
-
-/*hover для кнопки подобрать номер*/
-.search-room__pick-up-a-room:hover {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-  border: none;
-}
-
-.search-room-link:hover .search-room-pick-up-a-room {
-  background: white;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.search-room-link:hover .search-room__pick-up-a-room {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-  border: none;
-}
-
-/* plceholder */
-.search-room__gast::placeholder {
-  height: 18px;
-  width: 112px;
-  @include input-placeholder;
-}
-
-.search-room__arrival-date::placeholder {
-  height: 24px;
-  width: 103px;
-  @include input-placeholder;
-}
-
-.search-room__date-of-departure::placeholder {
-  height: 24px;
-  width: 103px;
-  @include input-placeholder;
 }

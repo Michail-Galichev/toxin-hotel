@@ -1,4 +1,4 @@
-@import '../mixins.scss';
+@import "../mixins.scss";
 
 /*общие свойства карточек*/
 
@@ -24,7 +24,7 @@
 /* свойства № */
 
 .number-card-header__span {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
@@ -39,7 +39,7 @@
   height: 15px;
   left: 87px;
   top: 178px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -59,7 +59,7 @@
 }
 
 .number-card-price-per-day__p {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -107,12 +107,6 @@
 .number-card-stars__star5 {
   @include stars;
   left: 96px;
-}
-
-.hover:hover {
-  background-image: url(../img/star.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 /* отзывы */
@@ -164,26 +158,24 @@ span {
 
 /* вперед назад */
 
-.number-card_expand-more-left {
-  background-image: url(../img/expand_more_left.svg);
-  position: absolute;
+.number-card__expand-more-left {
+  @include expand-more;
   width: 44px;
   height: 44px;
   top: 54px;
   left: 0px;
-  background-repeat: no-repeat;
-  background-position: center;
+  color: #ffffff;
+  transform: rotate(90deg);
 }
 
-.number-card_expand-more-right {
-  background-image: url(../img/expand_more_rieght.svg);
-  position: absolute;
+.number-card__expand-more-right {
+  @include expand-more;
   width: 44px;
   height: 44px;
   top: 54px;
   right: 0px;
-  background-repeat: no-repeat;
-  background-position: center;
+  color: #ffffff;
+  transform: rotate(-90deg);
 }
 
 /*горизонтальная полоса*/

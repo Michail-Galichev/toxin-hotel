@@ -1,5 +1,5 @@
-@import '../mixins.scss';
-
+@import "../mixins.scss";
+@import "../fonts.scss";
 /* свойства формы */
 
 .searching-results {
@@ -10,8 +10,12 @@
   top: 104px;
   @include form;
 }
+
+
+
+
 /* основной заголовок */
-.searching-results__h1 {
+.searching-results > h1 {
   @include headers;
   width: 69px;
   height: 30px;
@@ -183,51 +187,45 @@
   white-space: nowrap;
 }
 
-/* кнопка забронировать */
-
-.searching-results-link__to-book {
-  @include button;
+/*блок кнопки забронировать*/
+.searching-results__button-to-book{
+  position: absolute;
   top: 437.56px;
   left: 30px;
   width: 320px;
-}
-/*стрелка*/
-.searching-results-link-to-book__arrow-forward {
-  @include arrow_forvard;
-  top: 437.56px;
-  left: 306px;
+  height: 44px;
   cursor: pointer;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(rgba(188, 156, 255, 1)),
-    to(rgba(139, 164, 249, 1))
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+}
+
+
+/* кнопка забронировать */
+
+.searching-results-button-to-book__a {
+  @include button;
+}
+
+.searching-results-button-to-book__p{
+@include text-link;
+width: 280px;
+height: 15px;
+top: 14px;
+left: 18px;
+color: #ffffff;
+text-align: center;
+}
+
+/*стрелка*/
+.searching-results-button-to-book {
+  @include arrow_forvard;
+  left: 276px;
+  color: #ffffff;
 }
 
 /*hover для кнопки*/
-.searching-results-link__to-book:hover {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-  border: none;
+.searching-results__button-to-book:hover .searching-results-button-to-book__a{
+  opacity: 0.5;
 }
 
-.searching-results__link:hover .searching-results-link__to-book {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-  border: none;
-}
-
-.searching-results__link:hover .searching-results-link-to-book__arrow-forward {
-  background: white;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 /* placeholder */
 
@@ -282,7 +280,7 @@
   position: absolute;
   left: 6.5px;
   top: 2px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   width: 4px;
   height: 14px;
   font-style: normal;

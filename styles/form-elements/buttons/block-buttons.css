@@ -1,25 +1,28 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Regular.eot");
   src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Bold.eot");
   src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Italic.eot");
   src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
   font-weight: normal;
   font-style: italic;
 }
+
 /*миксин текста копирайта*/
 /*миксин заголовков h2*/
 /* миксин свойства заголовков*/
@@ -72,19 +75,13 @@
 /*кнопка 1*/
 .buttons__a1 {
   position: absolute;
-  width: 97px;
-  height: 44px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(#bc9cff, #8ba4f9);
   border-radius: 22px;
-  display: flex;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 15px;
-  align-items: center;
-  justify-content: center;
+  height: 44px;
+  width: 320px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #bc9cff;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   left: 0px;
   top: 31px;
@@ -92,31 +89,42 @@
   width: 99px;
 }
 
+.buttons__p1 {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #bc9cff;
+  position: absolute;
+  color: #ffffff;
+  top: 45px;
+  left: 20px;
+}
+
 /*кнопка 2*/
 .buttons__a2 {
   position: absolute;
-  width: 97px;
-  height: 44px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(#bc9cff, #8ba4f9);
   border-radius: 22px;
-  display: flex;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 15px;
-  align-items: center;
-  justify-content: center;
+  height: 44px;
+  width: 320px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #bc9cff;
   left: 119px;
   top: 31px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   opacity: 0.5;
-  color: #ffffff;
   width: 99px;
 }
 
-.buttons-a2__p {
+.buttons__p2 {
+  position: absolute;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -135,41 +143,52 @@
 /*кнопка 3*/
 .buttons__a3 {
   position: absolute;
-  width: 97px;
-  height: 44px;
+  width: 95px;
+  height: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
+  border: 2px solid transparent;
   border-radius: 22px;
-  display: flex;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 15px;
-  align-items: center;
-  justify-content: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #bc9cff;
   height: 42px;
   top: 105px;
   left: 0px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background-image: linear-gradient(white, white), linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   background-origin: border-box;
   background-clip: content-box, border-box;
   border: 2px solid transparent;
 }
 
+.buttons__p3 {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #bc9cff;
+  position: absolute;
+  width: 59px;
+  height: 15px;
+  top: 119px;
+  left: 20px;
+}
+
 /*кнопка 4*/
 .buttons__a4 {
   position: absolute;
-  width: 97px;
-  height: 44px;
+  width: 95px;
+  height: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
+  border: 2px solid transparent;
   border-radius: 22px;
-  display: flex;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 15px;
-  align-items: center;
-  justify-content: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #bc9cff;
@@ -178,13 +197,15 @@
   left: 119px;
   opacity: 0.5;
   color: #bc9cff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background-image: linear-gradient(white, white), linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   background-origin: border-box;
   background-clip: content-box, border-box;
   border: 2px solid transparent;
 }
 
-.buttons-a4__p {
+.buttons__p4 {
+  position: absolute;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -203,6 +224,7 @@
 
 /*кнопка 5*/
 .buttons__a5 {
+  position: absolute;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -221,6 +243,7 @@
 
 /*кнопка 6*/
 .buttons__a6 {
+  position: absolute;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -239,23 +262,15 @@
 }
 
 /* кнопка перейти к оплате*/
-.buttons-payment {
+.buttons__payment {
   position: absolute;
-  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
-  border: 2px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(#bc9cff, #8ba4f9);
   border-radius: 22px;
-  margin-right: 20px;
-  height: 42px;
-  display: flex;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 15px;
-  align-items: center;
-  justify-content: center;
+  height: 44px;
+  width: 320px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #bc9cff;
   left: 979px;
   top: 456px;
   height: 42px;
@@ -264,8 +279,27 @@
   color: #ffffff;
 }
 
+.buttons__payment-p {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #bc9cff;
+  top: 470px;
+  left: 999px;
+  color: #ffffff;
+  width: 280px;
+  height: 15px;
+  text-align: center;
+}
+
 /*белая стрелка*/
-.buttons-payment__arrow_forward {
+.buttons__payment-arrow-forward {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: normal;
@@ -274,13 +308,20 @@
   position: absolute;
   width: 44px;
   height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   top: 456px;
   left: 1255px;
   background: white;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}/*# sourceMappingURL=block-buttons.css.map */
+}
+/*# sourceMappingURL=block-buttons.css.map */

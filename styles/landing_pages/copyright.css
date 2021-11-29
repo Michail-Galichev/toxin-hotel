@@ -1,25 +1,28 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Regular.eot");
   src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Bold.eot");
   src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Italic.eot");
   src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
   font-weight: normal;
   font-style: italic;
 }
+
 /*миксин текста копирайта*/
 /*миксин заголовков h2*/
 /* миксин свойства заголовков*/
@@ -55,7 +58,8 @@
   width: 1440px;
   left: 0px;
   background: white;
-  box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
   height: 70px;
   top: 1273px;
 }
@@ -89,4 +93,5 @@
   width: 560px;
   text-align: center;
   line-height: 17px;
-}/*# sourceMappingURL=copyright.css.map */
+}
+/*# sourceMappingURL=copyright.css.map */

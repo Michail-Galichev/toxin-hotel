@@ -53,173 +53,169 @@
 /*миксин заголовка h3 */
 /*миксин свойства формы*/
 /*миксин свойств контента блоков*/
-.nav {
+.dropdown__circle-plus1 {
   position: absolute;
-  width: 1440px;
-  left: 0px;
-  background: white;
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
-          box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
-  top: 250px;
-  height: 70px;
-}
-
-.nav__logo {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 15px;
-  left: 140px;
-}
-
-.nav__logo > .curve-reight-gradient {
-  position: absolute;
-  top: 15.29px;
-  left: 21.4px;
-}
-
-.nav__logo > .curve-left-gradient {
-  position: absolute;
-  top: 15.29px;
-  left: 9.4px;
-}
-
-/*логотип токсин*/
-.nav__toxin {
-  width: 53.19px;
-  height: 12.95px;
-  position: absolute;
-  left: 192.5px;
-  top: 28.33px;
-}
-
-/*горизонтальное меню*/
-.nav__ul {
-  position: absolute;
-  list-style: none;
-  margin: 0;
-  padding-left: 0px;
-  left: 712px;
-  top: 26px;
+  width: 30px;
   height: 30px;
-  width: 588px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  cursor: pointer;
+  left: 283px;
+  top: 7px;
 }
 
-.nav__ul > li {
-  display: inline-block;
+.dropdown__circle-plus2 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  cursor: pointer;
+  left: 283px;
+  top: 44px;
 }
 
-/*свойства пунктов меню*/
-.nav-ul-li__a {
+.dropdown__circle-plus3 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  cursor: pointer;
+  left: 283px;
+  top: 82px;
+}
+
+.dropdown__circle-minus1 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  left: 221px;
+  top: 7px;
+}
+
+.dropdown__circle-minus2 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  left: 221px;
+  top: 44px;
+}
+
+.dropdown__circle-minus3 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  left: 221px;
+  top: 82px;
+}
+
+p.dropdown-p__minus {
   font-family: "Montserrat";
-  text-decoration: none;
-  padding-right: 20px;
-  display: inline-block;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
+  text-align: center;
   color: rgba(31, 32, 65, 0.5);
-  margin-bottom: 12px;
+  position: absolute;
+  top: 3px;
+  left: 11px;
 }
 
-/*hover для меню */
-.nav-reg-ul-li__a:hover {
-  color: rgba(31, 32, 65, 0.75);
+p.dropdown-p__plus {
+  font-family: "Montserrat";
+  text-align: center;
+  color: rgba(31, 32, 65, 0.5);
+  position: absolute;
+  top: 4px;
+  left: 9px;
+}
+
+.dropdown__p {
+  margin-bottom: 18px;
+  margin-left: 15px;
+  width: 83px;
+  height: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
   font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
 }
 
-/*картика expand_more*/
-.nav__expand_more1 {
+.first {
+  margin-top: 11px;
+}
+
+.dropdown__link1 {
+  width: 72px;
+  height: 15px;
   position: absolute;
-  width: 44px;
-  height: 44px;
-  font-family: Material Icons;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: rgba(31, 32, 65, 0.5);
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  top: 26px;
-  left: 825px;
+  top: 131px;
+  left: 14px;
   position: absolute;
-}
-
-.nav__expand_more2 {
-  position: absolute;
-  width: 44px;
-  height: 44px;
-  font-family: Material Icons;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: rgba(31, 32, 65, 0.5);
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  top: 26px;
-  left: 1135px;
-  position: absolute;
-}
-
-/*пункт меню вакансии*/
-.vacancy {
-  margin-left: 22px;
-}
-
-/*hover для меню */
-.nav-ul-li__a:hover {
-  color: rgba(31, 32, 65, 0.75);
-  font-weight: bold;
-}
-
-.nav__expand_more1:hover,
-.nav__expand_more2:hover {
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.nav__vertical-line {
-  position: absolute;
-  width: 1px;
-  height: 30px;
-  right: 260px;
-  top: 20px;
-  background: rgba(31, 32, 65, 0.1);
-}
-
-.nav__guest-name {
-  position: absolute;
-  width: 100px;
-  height: 18px;
-  right: 140px;
-  top: 26px;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #bc9cff;
+}
+
+.dropdown__link2 {
+  width: 84px;
+  height: 15px;
+  position: absolute;
+  right: 7px;
+  top: 131px;
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #bc9cff;
+}
+
+.dropdown__link1:hover,
+.dropdown__link2:hover {
   color: rgba(31, 32, 65, 0.5);
 }
-/*# sourceMappingURL=nav.css.map */
+
+.dropdown__expand-more:active ~ .dropdown {
+  display: block;
+}
+
+.dropdown__expand-more:active + .search-room__gast::after {
+  border-bottom: none;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+/*# sourceMappingURL=search_room_dropdown.css.map */

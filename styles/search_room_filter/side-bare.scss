@@ -1,4 +1,4 @@
-@import '../mixins.scss';
+@import "../mixins.scss";
 
 /*блок поля даты пребывания*/
 
@@ -12,14 +12,15 @@
 
 /*заголовок поля даты пребывания*/
 
-.dates-of-stay > h2 {
-  @include landing-h2;
+.dates-of-stay > h3 {
+  @include headers3;
 }
 
 /*свойства поля даты пребывания */
 
 .dates-of-stay__input {
   @include input-medium;
+  top: 20px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 2px;
 }
@@ -50,8 +51,8 @@
 }
 
 /*заголовок поля гости*/
-.guests > h2 {
-  @include landing-h2;
+.guests > h3 {
+  @include headers3;
 }
 
 /*свойства поля гости*/
@@ -59,6 +60,7 @@
   @include input-medium;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 2px;
+  top: 20px;
 }
 
 /*свойства изображения expand more*/
@@ -87,8 +89,8 @@
 
 /*заголовок слайдера*/
 
-.range-slider > h2 {
-  @include landing-h2;
+.range-slider > h3 {
+  @include headers3;
 }
 
 /* подписи слайдера */
@@ -185,8 +187,8 @@
 
 /* свойства заголовка */
 
-.check__house-rule > h2 {
-  @include landing-h2;
+.check__house-rule > h3 {
+  @include headers3;
   margin-bottom: 12px;
 }
 
@@ -233,7 +235,7 @@
 /* checked */
 
 .check-house-rule__input:checked + .check-house-rule__view {
-  background-image: url('../img/checked.svg');
+  background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 10px 8px;
@@ -260,8 +262,8 @@
 
 /*заголовок checkbox*/
 
-.rich-checkbox-buttons > h2 {
-  @include landing-h2;
+.rich-checkbox-buttons > h3 {
+  @include headers3;
 }
 
 /* стили меток checkbox */
@@ -331,7 +333,7 @@
 }
 
 .rich-checkbox-buttons__input:checked + .rich-checkbox-buttons__div {
-  background-image: url('../img/checked.svg');
+  background-image: url("../img/check.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 10px 8px;
@@ -350,8 +352,8 @@
 
 /*заголовок удобства номера*/
 
-.room-amenities > h2 {
-  @include landing-h2;
+.room-amenities > h3 {
+  @include headers3;
   position: absolute;
   height: 15px;
   width: 133px;
@@ -361,26 +363,28 @@
 
 .room-amenities__input {
   @include input-medium;
+  top: 20px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
 
-input.room-amenities__input::placeholder {
+.room-amenities__input::placeholder {
   @include input-placeholder;
   color: rgba(31, 32, 65, 0.75);
 }
 
 /*expand more удобства номера*/
 
-.room-amenities__expanded-more {
+.room-amenities__expand-more {
   top: 20px;
   left: 222px;
   @include expand_more;
+  color: rgba(31, 32, 65, 0.75);
 }
 
 /*expand more дополнительные условия*/
-.additional-amenities__expanded-more {
+.additional-amenities__expand-more {
   left: 362px;
   top: 795px;
   @include expand_more;
@@ -388,11 +392,11 @@ input.room-amenities__input::placeholder {
 
 /* заголовок дополнительные удобства*/
 
-.additional-amenities > h2 {
+.additional-amenities > h3 {
   position: absolute;
   width: 209px;
   height: 15px;
   left: 140px;
   top: 809px;
-  @include landing-h2;
+  @include headers3;
 }

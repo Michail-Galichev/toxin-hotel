@@ -1,25 +1,28 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Regular.eot");
   src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Bold.eot");
   src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Italic.eot");
   src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
   font-weight: normal;
   font-style: italic;
 }
+
 /*миксин текста копирайта*/
 /*миксин заголовков h2*/
 /* миксин свойства заголовков*/
@@ -72,12 +75,13 @@
 
 /* свойства текстового поля*/
 .dropdown-gast-empty__input {
-  width: 320px;
-  height: 44px;
+  width: 318px;
+  height: 42px;
   position: absolute;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 2px;
   padding-left: 15px;
   top: 20px;
@@ -87,7 +91,7 @@
 }
 
 /* placeholder */
-.dropdown-gast-empty__input::-moz-placeholder {
+.dropdown-gast-empty__input::-webkit-input-placeholder {
   width: 112px;
   height: 18px;
   height: 18px;
@@ -99,6 +103,17 @@
   color: rgba(31, 32, 65, 0.25);
 }
 .dropdown-gast-empty__input:-ms-input-placeholder {
+  width: 112px;
+  height: 18px;
+  height: 18px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.dropdown-gast-empty__input::-ms-input-placeholder {
   width: 112px;
   height: 18px;
   height: 18px;
@@ -133,9 +148,15 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: rgba(31, 32, 65, 0.5);
   cursor: pointer;
 }
@@ -143,16 +164,18 @@
 /* свойства dropdown гости empty*/
 .dropdown-gast-empty__form {
   position: absolute;
-  width: 320px;
+  width: 318px;
   height: 159px;
-  top: 62.56px;
+  top: 62px;
   left: px;
   background: #ffffff;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border: 1px solid rgba(31, 32, 65, 0.5);
-  box-sizing: border-box;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 
 /* кнопки +/- */
@@ -161,7 +184,8 @@
   width: 30px;
   height: 30px;
   border: 1px solid rgba(31, 32, 65, 0.5);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 22px;
   cursor: pointer;
   right: 7px;
@@ -173,7 +197,8 @@
   width: 30px;
   height: 30px;
   border: 1px solid rgba(31, 32, 65, 0.5);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 22px;
   cursor: pointer;
   right: 7px;
@@ -185,7 +210,8 @@
   width: 30px;
   height: 30px;
   border: 1px solid rgba(31, 32, 65, 0.5);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 22px;
   cursor: pointer;
   right: 7px;
@@ -198,7 +224,8 @@
   height: 30px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   cursor: pointer;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 22px;
   right: 69px;
   top: 7px;
@@ -210,7 +237,8 @@
   height: 30px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   cursor: pointer;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 22px;
   right: 69px;
   top: 44px;
@@ -222,7 +250,8 @@
   height: 30px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   cursor: pointer;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 22px;
   right: 69px;
   top: 82px;
@@ -245,12 +274,18 @@
   font-weight: bold;
   font-size: 12px;
   color: #1f2041;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 15px;
   width: 92px;
   right: 7px;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
 }
 
@@ -261,12 +296,18 @@
   font-weight: bold;
   font-size: 12px;
   color: #1f2041;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 15px;
   width: 92px;
   right: 7px;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
 }
 
@@ -277,11 +318,18 @@
   font-weight: bold;
   font-size: 12px;
   color: #1f2041;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 15px;
   width: 92px;
   right: 7px;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
-}/*# sourceMappingURL=dropdown-gast-empty.css.map */
+}
+/*# sourceMappingURL=dropdown-gast-empty.css.map */

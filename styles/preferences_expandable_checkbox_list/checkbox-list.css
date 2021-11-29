@@ -1,4 +1,58 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Italic.eot");
+  src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/*миксин текста копирайта*/
+/*миксин заголовков h2*/
+/* миксин свойства заголовков*/
+/* маркер */
+/*миксин кнопок дропдауна +*/
+/*миксин кнопок дропдауна -*/
+/*миксин блока навигации/регистрации/футера/копирайта*/
+/*миксин кнопок*/
+/*миксин маленьких кнопок*/
+/*свойства пунктов меню*/
+/* дни недели */
+/* счётчики */
+/* свойства изображения expand more*/
+/*миксин для placeholder*/
+/* общие свойства для input w 318*/
+/* общие свойства для input w 266*/
+/*миксин свойст для полей w 150*/
+/*сердце*/
+/*счётчик лайков*/
+/*миксин параграф*/
+/*mixin для рамки checkbox*/
+/*шарики*/
+/*звёзды*/
+/*миксин карточек*/
+/*миксин свойств вложенных блоков*/
+/*миксин для правой стрелки*/
+/* миксин свойств для оформления текста в кнопке*/
+/*миксин заголовка h3 */
+/*миксин свойства формы*/
+/*миксин свойств контента блоков*/
 /* checkbox block */
 .checkbox-block {
   height: 171px;
@@ -22,7 +76,7 @@
 }
 
 /* скрываем стандартные checkbox*/
-.checkbox-block__input {
+.checkbox-block-label__input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -31,26 +85,49 @@
 }
 
 /* стили для кастомных checkbox*/
-.checkbox-list__div {
+.checkbox-block-label__custom {
   position: absolute;
   width: 20px;
   height: 20px;
   left: 0px;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 4px;
 }
 
 /* checked */
-.checkbox-block__input:checked + .checkbox-list__div {
+.checkbox-block-label__input:checked + .checkbox-block-label__custom {
   border: 1px solid #bc9cff;
-  background-image: url("../img/Vector.png");
+  background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 10px 8px;
 }
 
-.additional-amenities__expanded-more {
-  background-image: url(../img/expand_more_expanded.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}/*# sourceMappingURL=checkbox-list.css.map */
+.additional-amenities__expand-more {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+  left: 362px;
+  top: 795px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+/*# sourceMappingURL=checkbox-list.css.map */

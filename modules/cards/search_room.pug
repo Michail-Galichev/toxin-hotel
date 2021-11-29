@@ -1,43 +1,45 @@
 mixin dropdown(var1,var2,var3,button1,button2)
-  .dropdown
-    p.dropdown__p.first #{var1}
-    p.dropdown__p #{var2} 
-    p.dropdown__p #{var3}
-    .dropdown__circle-plus1
-      p.dropdown-p__plus +
-    .dropdown__circle-plus2
-      p.dropdown-p__plus +
-    .dropdown__circle-plus3 
-      p.dropdown-p__plus +
-    .dropdown__circle-minus1
-      p.dropdown-p__minus -
-    .dropdown__circle-minus2
-      p.dropdown-p__minus -
-    .dropdown__circle-minus3
-      p.dropdown-p__minus -
+  p.dropdown__p.first #{var1}
+  p.dropdown__p #{var2} 
+  p.dropdown__p #{var3}
+  .dropdown__circle-plus1
+    p.dropdown-p__plus +
+  .dropdown__circle-plus2
+    p.dropdown-p__plus +
+  .dropdown__circle-plus3 
+    p.dropdown-p__plus +
+  .dropdown__circle-minus1
+    p.dropdown-p__minus -
+  .dropdown__circle-minus2
+    p.dropdown-p__minus -
+  .dropdown__circle-minus3
+    p.dropdown-p__minus -
+  if (button1)
     a.dropdown__link1(href="#") #{button1}
+  if (button2)
     a.dropdown__link2(href="#") #{button2}
 
-
 form.search-room(action="#")
-  h1.search-room__header Найдём номера под ваши пожелания
-  h3.search-room-header__arrival прибытие
-  h3.search-room-header__departure  выезд
+  h1 Найдём номера под ваши пожелания
+  h3.search-room__header-arrival-date прибытие
+  h3.search-room__header-date-of-departure  выезд
   
-  input.search-room__arrival-date(type="text" placeholder="ДД.ММ.ГГГГ")
-  .material-icons-outlined.search-room-arrival-date__expand-more expand_more
+  input.search-room__input-arrival-date(type="text" placeholder="ДД.ММ.ГГГГ")
+  .material-icons-outlined.search-room__arrival-date-expand-more expand_more
   
-  input.search-room__date-of-departure(type="text" placeholder="ДД.ММ.ГГГГ")
-  .material-icons-outlined.search-room-date-of-departure__expand-more expand_more
+  input.search-room__input-date-of-departure(type="text" placeholder="ДД.ММ.ГГГГ")
+  .material-icons-outlined.search-room__date-of-departure-expand-more expand_more
   
-  h3.search-room-header__gast гости
-  input.search-room__gast(type="text" placeholder="Сколько гостей")
-  .material-icons-outlined.search-room-dropdown__expand-more expand_more
+  h3.search-room__header-gast гости
+  input.search-room__input-gast(type="text" placeholder="Сколько гостей")
+  .material-icons-outlined.search-room__gast-expand-more expand_more
 
-  +dropdown('взрослые', 'дети', 'младенцы', 'очистить', 'применить')
+  .search-room__dropdown
+    +dropdown('взрослые', 'дети', 'младенцы', 'очистить', 'применить')
 
-  .search-room-link
-    a.search-room__pick-up-a-room(href="#") Подобрать номер
-    .material-icons-outlined.search-room-pick-up-a-room arrow_forward  
+  .search-room__button
+    .search-room-button__div-pick-up-a-room Подобрать номер
+    a.search-room-button__pick-up-a-room(href="#") 
+    .material-icons-outlined.search-room-button__arrow-forward  arrow_forward  
 
   

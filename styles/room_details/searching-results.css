@@ -1,25 +1,28 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Regular.eot");
   src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Bold.eot");
   src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Italic.eot");
   src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
   font-weight: normal;
   font-style: italic;
 }
+
 /*миксин текста копирайта*/
 /*миксин заголовков h2*/
 /* миксин свойства заголовков*/
@@ -51,42 +54,49 @@
 /*миксин свойства формы*/
 /*миксин свойств контента блоков*/
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Regular.eot");
   src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Bold.eot");
   src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Italic.eot");
   src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
   font-weight: normal;
   font-style: italic;
 }
+
 /* свойства формы */
 .searching-results {
   position: absolute;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   width: 380px;
   height: 512px;
   left: 920px;
   top: 625px;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
 /* основной заголовок */
-.searching-results__h1 {
+.searching-results > h1 {
   position: absolute;
   font-family: Montserrat;
   font-style: normal;
@@ -113,6 +123,7 @@
   height: 15px;
   left: 107px;
   top: 52px;
+  position: absolute;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -198,7 +209,8 @@
   width: 150px;
   height: 44px;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 4px;
 }
 
@@ -208,7 +220,8 @@
   width: 150px;
   height: 44px;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 4px;
   left: 200px;
   top: 110.44px;
@@ -224,9 +237,15 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: rgba(31, 32, 65, 0.5);
   cursor: pointer;
   left: 136px;
@@ -244,21 +263,28 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: rgba(31, 32, 65, 0.5);
   cursor: pointer;
 }
 
 /* поле гости */
 .searching-results__gast {
-  width: 320px;
-  height: 44px;
+  width: 318px;
+  height: 42px;
   position: absolute;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 2px;
   padding-left: 15px;
   left: 30px;
@@ -275,9 +301,15 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: rgba(31, 32, 65, 0.5);
   cursor: pointer;
   left: 305.74px;
@@ -400,31 +432,49 @@
   white-space: nowrap;
 }
 
-/* кнопка забронировать */
-.searching-results-link__to-book {
+/*блок кнопки забронировать*/
+.searching-results__button-to-book {
   position: absolute;
-  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
-  border: 2px solid transparent;
-  border-radius: 22px;
-  margin-right: 20px;
-  height: 42px;
-  display: flex;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 15px;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #bc9cff;
   top: 437.56px;
   left: 30px;
   width: 320px;
+  height: 44px;
+  cursor: pointer;
+}
+
+/* кнопка забронировать */
+.searching-results-button-to-book__a {
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(#bc9cff, #8ba4f9);
+  border-radius: 22px;
+  height: 44px;
+  width: 320px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.searching-results-button-to-book__p {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #bc9cff;
+  width: 280px;
+  height: 15px;
+  top: 14px;
+  left: 18px;
+  color: #ffffff;
+  text-align: center;
 }
 
 /*стрелка*/
-.searching-results-link-to-book__arrow-forward {
+.searching-results-button-to-book {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: normal;
@@ -433,40 +483,26 @@
   position: absolute;
   width: 44px;
   height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 437.56px;
-  left: 306px;
-  cursor: pointer;
-  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 276px;
+  color: #ffffff;
 }
 
 /*hover для кнопки*/
-.searching-results-link__to-book:hover {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-  border: none;
-}
-
-.searching-results__link:hover .searching-results-link__to-book {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-  border: none;
-}
-
-.searching-results__link:hover .searching-results-link-to-book__arrow-forward {
-  background: white;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.searching-results__button-to-book:hover .searching-results-button-to-book__a {
+  opacity: 0.5;
 }
 
 /* placeholder */
-.searching-results__arrival-date::-moz-placeholder {
+.searching-results__arrival-date::-webkit-input-placeholder {
   width: 103px;
   height: 24px;
   height: 18px;
@@ -479,6 +515,18 @@
   color: rgba(31, 32, 65, 0.75);
 }
 .searching-results__arrival-date:-ms-input-placeholder {
+  width: 103px;
+  height: 24px;
+  height: 18px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+.searching-results__arrival-date::-ms-input-placeholder {
   width: 103px;
   height: 24px;
   height: 18px;
@@ -503,7 +551,7 @@
   color: rgba(31, 32, 65, 0.75);
 }
 
-.searching-results__date-of-departure::-moz-placeholder {
+.searching-results__date-of-departure::-webkit-input-placeholder {
   width: 103px;
   height: 24px;
   height: 18px;
@@ -529,6 +577,19 @@
   color: rgba(31, 32, 65, 0.75);
 }
 
+.searching-results__date-of-departure::-ms-input-placeholder {
+  width: 103px;
+  height: 24px;
+  height: 18px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+
 .searching-results__date-of-departure::placeholder {
   width: 103px;
   height: 24px;
@@ -542,7 +603,7 @@
   color: rgba(31, 32, 65, 0.75);
 }
 
-.searching-results__gast::-moz-placeholder {
+.searching-results__gast::-webkit-input-placeholder {
   width: 50px;
   height: 24px;
   height: 18px;
@@ -556,6 +617,19 @@
 }
 
 .searching-results__gast:-ms-input-placeholder {
+  width: 50px;
+  height: 24px;
+  height: 18px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.searching-results__gast::-ms-input-placeholder {
   width: 50px;
   height: 24px;
   height: 18px;
@@ -590,7 +664,8 @@
   top: 283.56px;
   cursor: pointer;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 10px;
 }
 
@@ -602,7 +677,8 @@
   top: 317.56px;
   cursor: pointer;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 10px;
 }
 
@@ -619,4 +695,5 @@
   line-height: 14px;
   text-align: right;
   color: rgba(31, 32, 65, 0.25);
-}/*# sourceMappingURL=searching-results.css.map */
+}
+/*# sourceMappingURL=searching-results.css.map */

@@ -1,9 +1,9 @@
-@import '../mixins.scss';
+@import "../mixins.scss";
 
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 /* свойства формы */
@@ -13,14 +13,7 @@
   height: 369px;
   left: 980px;
   top: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  border-radius: 4px;
+  @include form;
 }
 
 /* основной заголовок */
@@ -35,7 +28,7 @@
 
 /* стрелки */
 
-.calendar-arrow-right__img {
+.calendar__img-arrow-right {
   @include arrow_forvard;
   width: 24px;
   height: 24px;
@@ -53,7 +46,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.calendar-arrow-left__img {
+.calendar__img-arrow-left {
   @include arrow_forvard;
   width: 24px;
   height: 24px;
@@ -74,37 +67,37 @@
 
 /*дни недели*/
 
-.days-week_mon {
+.calendar__days-week-mon {
   @include days-week;
   left: 22px;
 }
-.days-week_tue {
+.calendar__days-week-tue {
   @include days-week;
   left: 62px;
 }
-.days-week_wed {
+.calendar__days-week-wed {
   @include days-week;
   left: 101px;
 }
-.days-week_the {
+.calendar__days-week-the {
   @include days-week;
   left: 141px;
 }
-.days-week_fri {
+.calendar__days-week-fri {
   @include days-week;
   left: 181px;
 }
-.days-week_sut {
+.calendar__days-week-sut {
   @include days-week;
   left: 221px;
 }
-.days-week_sun {
+.calendar__days-week-sun {
   @include days-week;
   left: 260px;
 }
 
-/* числа */
-.days {
+/*блок  чисел */
+.calendar__days {
   position: absolute;
   top: 109px;
   left: 17px;
@@ -112,7 +105,8 @@
   flex-wrap: wrap;
 }
 
-.days div {
+/*свойства чисел*/
+.calendar__days div {
   width: 40px;
   height: 40px;
   font-style: normal;
@@ -125,11 +119,9 @@
   justify-content: center;
   color: rgba(31, 32, 65, 0.5);
 }
-
-.days .prev-date {
-  color: rgba(31, 32, 65, 0.25);
-}
-.days .next-date {
+/*даты предидущего и следующего месяца*/
+.calendar__days .calendar-days__prev-date,
+.calendar__days .calendar-days__next-date {
   color: rgba(31, 32, 65, 0.25);
 }
 
@@ -153,21 +145,29 @@
   @include text-link;
 }
 
-.days__current-date {
+/*hover для ссылок-кнопок*/
+.calendar__clear:hover,
+.calendar__to-apply:hover {
+  color: rgba(31, 32, 65, 0.5);
+}
+
+/*текущая дата*/
+.calendar-days__current-date {
   color: #ffffff;
   height: 40px;
   width: 40px;
   border-radius: 50%;
   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
 }
-
-.days__current-date > p,
-.days__19 > p,
-.days__23 > p {
+/*цвет шрифта выделенной даты*/
+.calendar-days__current-date > p,
+.calendar-days__19 > p,
+.calendar-days__23 > p {
   color: #ffffff;
 }
 
-.days__23 {
+/*свойства выделенной дыты*/
+.calendar-days__23 {
   position: absolute;
   left: 158px;
   top: 120px;
@@ -175,7 +175,7 @@
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 }
 
-.days__19 {
+.calendar-days__19 {
   position: absolute;
   left: 0px;
   top: 120px;
@@ -183,14 +183,15 @@
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 }
 
-.date-range {
+/*подсветка выбранного диапазона */
+.calendar-days__date-range {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   opacity: 0.25;
 }
 
-.days__highlighted19 {
+.calendar-days__highlighted19 {
   box-shadow: inset 20px 0 white;
 }
-.days__highlighted23 {
+.calendar-days__highlighted23 {
   box-shadow: inset -20px 0 white;
 }

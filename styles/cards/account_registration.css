@@ -1,25 +1,28 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Regular.eot");
   src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Bold.eot");
   src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Italic.eot");
   src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
   font-weight: normal;
   font-style: italic;
 }
+
 /*миксин текста копирайта*/
 /*миксин заголовков h2*/
 /* миксин свойства заголовков*/
@@ -58,16 +61,15 @@
   position: absolute;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
-.account-registration__header {
-  width: 320px;
-  height: 30px;
-  left: 30px;
-  top: 40px;
+.account-registration > h1 {
   position: absolute;
   font-family: Montserrat;
   font-style: normal;
@@ -75,28 +77,34 @@
   color: #1f2041;
   font-size: 24px;
   line-height: 29px;
+  width: 320px;
+  height: 30px;
+  top: 40px;
+  left: 30px;
 }
 
-.account-registration-input__name {
-  width: 320px;
-  height: 44px;
+.account-registration__input-name {
+  width: 318px;
+  height: 42px;
   position: absolute;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 2px;
   padding-left: 15px;
   left: 30px;
   top: 90px;
 }
 
-.account-registration-input__lastname {
-  width: 320px;
-  height: 44px;
+.account-registration__input-lastname {
+  width: 318px;
+  height: 42px;
   position: absolute;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 2px;
   padding-left: 15px;
   left: 30px;
@@ -123,21 +131,26 @@
   width: 40px;
   height: 20px;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 10px;
   cursor: pointer;
 }
 
 /* :checked*/
-.account-registration-checkbox__input:checked ~ .account-registration-checkbox__custom {
+.account-registration-checkbox__input:checked
+~ .account-registration-checkbox__custom {
   border: 1px solid #bc9cff;
 }
 
-.account-registration-checkbox__input:checked ~ .account-registration-checkbox__custom::before {
+.account-registration-checkbox__input:checked
+~ .account-registration-checkbox__custom::before {
   position: absolute;
   top: 3px;
   left: 22px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -151,6 +164,7 @@
   top: 3px;
   background-color: rgba(31, 32, 65, 0.25);
   border-radius: 10px;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -170,7 +184,7 @@
 }
 
 /*заголовок поля дата рождения*/
-.account-registration-header__date-of-birth {
+.account-registration__header-date-of-birth {
   width: 118px;
   height: 15px;
   left: 30px;
@@ -186,13 +200,14 @@
 }
 
 /* свойства поля дата рождения*/
-.account-registration-input__date-of-birth {
-  width: 320px;
-  height: 44px;
+.account-registration__input-date-of-birth {
+  width: 318px;
+  height: 42px;
   position: absolute;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 2px;
   padding-left: 15px;
   left: 30px;
@@ -200,7 +215,7 @@
 }
 
 /*заголовок полей параметры входа*/
-.account-registration-header__login-details {
+.account-registration__header-login-details {
   width: 211px;
   height: 15px;
   left: 30px;
@@ -216,13 +231,14 @@
 }
 
 /*поле e-mail*/
-.account-registration-input__email {
-  width: 320px;
-  height: 44px;
+.account-registration__input-email {
+  width: 318px;
+  height: 42px;
   position: absolute;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 2px;
   padding-left: 15px;
   left: 30px;
@@ -230,13 +246,14 @@
 }
 
 /*поле password*/
-.account-registration-input__password {
-  width: 320px;
-  height: 44px;
+.account-registration__input-password {
+  width: 318px;
+  height: 42px;
   position: absolute;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 2px;
   padding-left: 15px;
   left: 30px;
@@ -251,8 +268,12 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #000000;
   width: 186px;
   height: 18px;
@@ -260,95 +281,127 @@
   top: 584px;
 }
 
-/* кнопка войти */
-.account-registration-link__to-come-in {
+/*блок кнопки зарегистрироваться */
+.account-registration__button-reg {
+  position: absolute;
   top: 498px;
   left: 30px;
-  width: 318px;
+  width: 320px;
+  height: 44px;
+}
+
+.account-registration-button-reg__a {
   position: absolute;
-  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
-  border: 2px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(#bc9cff, #8ba4f9);
   border-radius: 22px;
-  margin-right: 20px;
-  height: 42px;
-  display: flex;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 15px;
-  align-items: center;
-  justify-content: center;
+  height: 44px;
+  width: 320px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #bc9cff;
+  position: absolute;
+  width: 320px;
 }
 
-/* кнопка создать */
-.account-registration-link__create {
-  top: 572px;
-  left: 251px;
-  width: 99px;
+/*подпись кнопки зарегистрироваться */
+.account-registration-button-reg__p {
   position: absolute;
-  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
-  border: 2px solid transparent;
-  border-radius: 22px;
-  margin-right: 20px;
-  height: 42px;
-  display: flex;
   font-family: Montserrat;
-  font-size: 12px;
+  font-style: normal;
   font-weight: bold;
+  font-size: 12px;
   line-height: 15px;
-  align-items: center;
-  justify-content: center;
   text-transform: uppercase;
   text-decoration: none;
+  white-space: nowrap;
   color: #bc9cff;
-}
-
-/* hover для кнопок */
-.account-registration-link__create:hover {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #ffffff;
-  border: none;
+  position: absolute;
+  width: 280px;
+  height: 15px;
+  left: 20px;
+  top: 14px;
+  text-align: center;
 }
 
-.account-registration-link:hover .account-registration-link-to-come-in {
-  background: white;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.account-registration-link:hover .account-registration-link__to-come-in {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-  border: none;
-}
-
-/* картинка для кнопки вход */
-.account-registration-link-to-come-in {
-  font-family: "Material Icons";
+.account-registration-button-reg {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  font-family: Material Icons;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  position: absolute;
-  width: 44px;
-  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  left: 306px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(31, 32, 65, 0.5);
   cursor: pointer;
-  top: 498px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff;
+  left: 276px;
 }
 
-.account-registration-input__email::-moz-placeholder {
+/*блок кнопки войти*/
+.account-registration__button-to-come-in {
+  width: 99px;
+  height: 44px;
+  position: absolute;
+  left: 251px;
+  top: 572px;
+}
+
+/* кнопка войти */
+.account-registration-button-to-come-in__a {
+  width: 99px;
+  position: absolute;
+  width: 95px;
+  height: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #bc9cff;
+}
+
+.account-registration-button-to-come-in__p {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #bc9cff;
+  position: absolute;
+  left: 26px;
+  top: 14px;
+  width: 47px;
+  height: 15px;
+  cursor: pointer;
+}
+
+/* hover для кнопок */
+.account-registration__button-to-come-in:hover
+.account-registration-button-to-come-in__a {
+  opacity: 0.5;
+}
+
+.account-registration__button-reg:hover .account-registration-button-reg__a {
+  opacity: 0.5;
+}
+
+.account-registration__input-email::-webkit-input-placeholder {
   height: 18px;
   font-family: "Montserrat";
   font-style: normal;
@@ -359,7 +412,7 @@
   width: 40px;
 }
 
-.account-registration-input__email:-ms-input-placeholder {
+.account-registration__input-email:-ms-input-placeholder {
   height: 18px;
   font-family: "Montserrat";
   font-style: normal;
@@ -370,7 +423,7 @@
   width: 40px;
 }
 
-.account-registration-input__email::placeholder {
+.account-registration__input-email::-ms-input-placeholder {
   height: 18px;
   font-family: "Montserrat";
   font-style: normal;
@@ -381,7 +434,18 @@
   width: 40px;
 }
 
-.account-registration-input__password::-moz-placeholder {
+.account-registration__input-email::placeholder {
+  height: 18px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 40px;
+}
+
+.account-registration__input-password::-webkit-input-placeholder {
   height: 18px;
   font-family: "Montserrat";
   font-style: normal;
@@ -392,7 +456,7 @@
   width: 55px;
 }
 
-.account-registration-input__password:-ms-input-placeholder {
+.account-registration__input-password:-ms-input-placeholder {
   height: 18px;
   font-family: "Montserrat";
   font-style: normal;
@@ -403,7 +467,7 @@
   width: 55px;
 }
 
-.account-registration-input__password::placeholder {
+.account-registration__input-password::-ms-input-placeholder {
   height: 18px;
   font-family: "Montserrat";
   font-style: normal;
@@ -414,7 +478,18 @@
   width: 55px;
 }
 
-.account-registration-input__name::-moz-placeholder {
+.account-registration__input-password::placeholder {
+  height: 18px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 55px;
+}
+
+.account-registration__input-name::-webkit-input-placeholder {
   height: 18px;
   font-family: "Montserrat";
   font-style: normal;
@@ -425,7 +500,7 @@
   width: 32px;
 }
 
-.account-registration-input__name:-ms-input-placeholder {
+.account-registration__input-name:-ms-input-placeholder {
   height: 18px;
   font-family: "Montserrat";
   font-style: normal;
@@ -436,7 +511,7 @@
   width: 32px;
 }
 
-.account-registration-input__name::placeholder {
+.account-registration__input-name::-ms-input-placeholder {
   height: 18px;
   font-family: "Montserrat";
   font-style: normal;
@@ -447,7 +522,18 @@
   width: 32px;
 }
 
-.account-registration-input__lastname::-moz-placeholder {
+.account-registration__input-name::placeholder {
+  height: 18px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 32px;
+}
+
+.account-registration__input-lastname::-webkit-input-placeholder {
   height: 18px;
   font-family: "Montserrat";
   font-style: normal;
@@ -458,7 +544,7 @@
   width: 69px;
 }
 
-.account-registration-input__lastname:-ms-input-placeholder {
+.account-registration__input-lastname:-ms-input-placeholder {
   height: 18px;
   font-family: "Montserrat";
   font-style: normal;
@@ -469,7 +555,7 @@
   width: 69px;
 }
 
-.account-registration-input__lastname::placeholder {
+.account-registration__input-lastname::-ms-input-placeholder {
   height: 18px;
   font-family: "Montserrat";
   font-style: normal;
@@ -480,7 +566,7 @@
   width: 69px;
 }
 
-.account-registration-input__date-of-birth::-moz-placeholder {
+.account-registration__input-lastname::placeholder {
   height: 18px;
   font-family: "Montserrat";
   font-style: normal;
@@ -491,7 +577,7 @@
   width: 69px;
 }
 
-.account-registration-input__date-of-birth:-ms-input-placeholder {
+.account-registration__input-date-of-birth::-webkit-input-placeholder {
   height: 18px;
   font-family: "Montserrat";
   font-style: normal;
@@ -502,7 +588,29 @@
   width: 69px;
 }
 
-.account-registration-input__date-of-birth::placeholder {
+.account-registration__input-date-of-birth:-ms-input-placeholder {
+  height: 18px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 69px;
+}
+
+.account-registration__input-date-of-birth::-ms-input-placeholder {
+  height: 18px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 69px;
+}
+
+.account-registration__input-date-of-birth::placeholder {
   height: 18px;
   font-family: "Montserrat";
   font-style: normal;
@@ -561,41 +669,49 @@
 }
 
 /*кастомные радио кнопки*/
-.account-registration-radio-label-men-input__custom {
+.account-registration-radio-label-men__custom {
   position: absolute;
   width: 20px;
   height: 20px;
   top: 3px;
   left: -29px;
   border-radius: 10px;
-  box-shadow: 0 0 0 1px rgba(31, 32, 65, 0.25);
+  -webkit-box-shadow: 0 0 0 1px rgba(31, 32, 65, 0.25);
+          box-shadow: 0 0 0 1px rgba(31, 32, 65, 0.25);
 }
 
-.account-registration-radio-label-women-input__custom {
+.account-registration-radio-label-women__custom {
   position: absolute;
   width: 20px;
   height: 20px;
   top: 3px;
   left: -32px;
   border-radius: 10px;
-  box-shadow: 0 0 0 1px rgba(31, 32, 65, 0.25);
+  -webkit-box-shadow: 0 0 0 1px rgba(31, 32, 65, 0.25);
+          box-shadow: 0 0 0 1px rgba(31, 32, 65, 0.25);
 }
 
 /*событие checked для кнопки*/
-.account-registration-radio-label-men__input:checked + .account-registration-radio-label-men-input__custom::before,
-.account-registration-radio-label-women__input:checked + .account-registration-radio-label-women-input__custom::before {
+.account-registration-radio-label-men__input:checked
++ .account-registration-radio-label-men__custom::before,
+.account-registration-radio-label-women__input:checked
++ .account-registration-radio-label-women__custom::before {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 }
 
 /*событие checked для обводки*/
-.account-registration-radio-label-men__input:checked + .account-registration-radio-label-men-input__custom,
-.account-registration-radio-label-women__input:checked + .account-registration-radio-label-women-input__custom {
-  box-shadow: 0 0 0 1px #bc9cff;
+.account-registration-radio-label-men__input:checked
++ .account-registration-radio-label-men__custom,
+.account-registration-radio-label-women__input:checked
++ .account-registration-radio-label-women__custom {
+  -webkit-box-shadow: 0 0 0 1px #bc9cff;
+          box-shadow: 0 0 0 1px #bc9cff;
 }
 
 /*свойства псевдоэлемента*/
-.account-registration-radio-label-women-input__custom::before,
-.account-registration-radio-label-men-input__custom::before {
+.account-registration-radio-label-women__custom::before,
+.account-registration-radio-label-men__custom::before {
   position: absolute;
   content: "";
   width: 12px;
@@ -604,4 +720,5 @@
   top: 4px;
   background-color: white;
   border-radius: 10px;
-}/*# sourceMappingURL=account_registration.css.map */
+}
+/*# sourceMappingURL=account_registration.css.map */

@@ -1,3 +1,15 @@
+mixin list(punkt1,punkt2,punkt3,punkt4,punkt5)
+  ul
+    li
+      a.navigation(href="") #{punkt1}
+    li
+      a.footer-ul-li__a(href="") #{punkt2}
+    li
+      a.footer-ul-li__a(href="") #{punkt3}   
+    li
+      a.footer-ul-li__a(href="") #{punkt4}
+    li
+      a.footer-ul-li__a(href="") #{punkt5}
 .footer
   .footer__logo     
     include logo-gradient 
@@ -5,42 +17,18 @@
     include toxin
   .footer__content 
     p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-  ul.footer__ul1
-    li
-      a.navigation(href="") навигация 
-    li
-      a.footer-ul-li__a(href="") О нас 
-    li
-      a.footer-ul-li__a(href="") Новости   
-    li
-      a.footer-ul-li__a(href="") Служба поддержки 
-    li
-      a.footer-ul-li__a(href="") Услуги 
-  ul.footer__ul2
-    li  
-      a.navigation(href="")  о нас 
-    li
-      a.footer-ul-li__a(href="") О сервисе
-    li
-      a.footer-ul-li__a(href="") Наша команда 
-    li
-      a.footer-ul-li__a(href="") Вакансии 
-    li
-      a.footer-ul-li__a(href="") Инвесторы
-  ul.footer__ul3
-    li
-      a.navigation(href="")  служба поддержки 
-    li
-      a.footer-ul-li__a(href="") Соглашения
-    li
-      a.footer-ul-li__a(href="") Сообщества 
-    li
-      a.footer-ul-li__a(href="") Связь с нами
+  .footer__ul1
+    +list('навигация','О нас','Новости','Служба поддержки','Услуги')
+  .footer__ul2
+    +list('о нас','О сервисе','Наша команда','Вакансия','Инвесторы')
+  .footer__ul3
+    +list('служба поддержки','Соглашения','Сообщества','Связь с нами')
+  
   .footer__subscription
     a.navigation.subscription-link(href="") подписка  
     p Получайте специальные                  предложения и новости сервиса
-    input.footer-subscription__input-email(type='email' placeholder='Email')
-    .footer-subscription__arrow
+  input.footer-subscription__input-email(type='email' placeholder='Email')
+  .footer-subscription__arrow.material-icons-outlined arrow_forward
     
         
     

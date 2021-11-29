@@ -1,4 +1,4 @@
-@import '../mixins.scss';
+@import "../mixins.scss";
 
 * {
   margin: 0;
@@ -49,51 +49,56 @@ body {
   top: 28.33px;
 }
 
-/*блок кнопок*/
-.nav-reg__buttons {
-  position: absolute;
-  top: 16px;
-  left: 989px;
-  height: 38px;
-}
-
 //Кнопка "Войти"
 
-.nav-reg-buttons__to-come-in {
-  @include button;
-  width: 87px;
+.nav-reg__buttons-to-come-in {
+  @include button-mini;
+  height: 30px;
+  width: 83px;
+  position: absolute;
+  top: 18px;
+  left: 997px;
 }
 
 /*"Зарегистрироваться"*/
-.nav-reg-buttons__register {
+.nav-reg__buttons-register {
   @include button;
+  height: 34px;
+  top: 18px;
+  left: 1104px;
   width: 192px;
 }
 
-/*подпись войти*/
-.nav-reg-buttons__to-come-in > span {
+/*подписи кнопок*/
+.nav-reg__register {
+  @include text-link;
   position: absolute;
-  width: 84 px;
-  top: 12px;
-  width: 47px;
-  left: 22px;
-}
-
-/* подпись зарегистрироаться*/
-.nav-reg-buttons__register > span {
-  position: absolute;
-  width: 163px;
-  top: 12px;
-  left: 132px;
+  top: 27px;
+  left: 1123px;
   width: 157px;
   height: 15px;
+  cursor: pointer;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.nav-reg__to-come-in {
+  @include text-link;
+  position: absolute;
+  top: 27px;
+  left: 1017px;
+  width: 47px;
+  height: 15px;
+  cursor: pointer;
+  z-index: 1;
 }
 
 /*hover для кнопок*/
-.nav-reg-buttons__register:hover,
-.nav-reg-buttons__to-come-in:hover {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
+.nav-reg__register:hover + .nav-reg__buttons-register,
+.nav-reg__to-come-in:hover + .nav-reg__buttons-to-come-in,
+.nav-reg__buttons-register:hover,
+.nav-reg__buttons-to-come-in:hover {
+  opacity: 0.5;
 }
 
 /*горизонтальное меню*/
@@ -123,15 +128,19 @@ body {
 
 /*картика expand_more*/
 .nav-reg__expand_more1 {
-  fill: rgba(31, 32, 65, 0.5);
-  top: 32px;
-  left: 646px;
+  @include expand_more;
+  width: 24px;
+  height: 24px;
+  top: 23px;
+  left: 643px;
   position: absolute;
 }
 
 .nav-reg__expand_more2 {
-  fill: rgba(31, 32, 65, 0.5);
-  top: 32px;
+  @include expand_more;
+  top: 23px;
+  width: 24px;
+  height: 24px;
   left: 953px;
   position: absolute;
 }
@@ -140,7 +149,7 @@ body {
   margin-left: 22px;
 }
 
-.nav-reg-expand_more1:hover,
-.nav-reg-expand_more2:hover {
-  fill: rgba(31, 32, 65, 0.75);
+.nav-reg__expand_more1:hover,
+.nav-reg__expand_more2:hover {
+  color: rgba(31, 32, 65, 0.75);
 }

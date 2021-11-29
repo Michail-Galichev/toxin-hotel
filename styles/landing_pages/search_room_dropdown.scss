@@ -1,56 +1,39 @@
 @import "../mixins.scss";
 
-.dropdown-expanded__form {
-  position: absolute;
-  width: 266px;
-  height: 119px;
-  left: 140px;
-  top: 779px;
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  border-top: none;
-  box-sizing: border-box;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-}
-
-/* кнопки +/- */
-
 .dropdown__circle-plus1 {
   @include circle-plus;
-  left: 229px;
+  left: 283px;
   top: 7px;
 }
 
 .dropdown__circle-plus2 {
   @include circle-plus;
-  left: 229px;
+  left: 283px;
   top: 44px;
 }
 
 .dropdown__circle-plus3 {
   @include circle-plus;
-  left: 229px;
+  left: 283px;
   top: 82px;
 }
 
 .dropdown__circle-minus1 {
   @include circle-minus;
-  left: 167px;
+  left: 221px;
   top: 7px;
 }
 
 .dropdown__circle-minus2 {
   @include circle-minus;
-  left: 167px;
+  left: 221px;
   top: 44px;
 }
 
 .dropdown__circle-minus3 {
   @include circle-minus;
-  left: 167px;
+  left: 221px;
   top: 82px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
 }
 
 p.dropdown-p__minus {
@@ -71,7 +54,7 @@ p.dropdown-p__plus {
   left: 9px;
 }
 .dropdown__p {
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   margin-left: 15px;
   width: 83px;
   height: 15px;
@@ -81,7 +64,6 @@ p.dropdown-p__plus {
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  white-space: nowrap;
   color: #1f2041;
 }
 
@@ -89,6 +71,35 @@ p.dropdown-p__plus {
   margin-top: 11px;
 }
 
-p.last {
-  color: rgba(31, 32, 65, 0.25);
+.dropdown__link1 {
+  width: 72px;
+  height: 15px;
+  position: absolute;
+  top: 131px;
+  left: 14px;
+  @include text-link;
+}
+
+.dropdown__link2 {
+  width: 84px;
+  height: 15px;
+  position: absolute;
+  right: 7px;
+  top: 131px;
+  @include text-link;
+}
+
+.dropdown__link1:hover,
+.dropdown__link2:hover {
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.dropdown__expand-more:active ~ .dropdown {
+  display: block;
+}
+.dropdown__expand-more:active + .search-room__gast::after {
+  border-bottom: none;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }

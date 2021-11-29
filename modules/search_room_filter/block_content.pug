@@ -1,81 +1,79 @@
-.block-content
-  .headers
-    h1 Номера, которые мы для вас подобрали
+h1 Номера, которые мы для вас подобрали
 
-  mixin room(klass,path,alt,number,price,reviews,first,luxury)  
-    form(class=klass, action="#")  
-      img.number-card__img(src=path, alt=alt)
-      .number-card__header 
-        h1.number-card-header__h1 
-          | № 
-          span.number-card-header__span #{number}
-      if (luxury)
-        p.number-card-p__luxury Люкс
-      .number-card-price-per-day 
-        p.number-card-price-per-day__p
-          |  #{price}&#8381;
-          span.number-card-per-day__span  в сутки
-      .number-card-stars
-        .number-card-stars__star1.hover
-        .number-card-stars__star2.hover
-        .number-card-stars__star3.hover
-        .number-card-stars__star4.hover
-        .number-card-stars__star5.hover
-      .number-card__reviews
-        p.number-card-reviews__p 
-          | #{reviews} 
-          span Отзывов
+mixin room(klass,path,alt,number,price,reviews,first,luxury,star1,star2,star3,star4,star5)  
+  form(class=klass, action="#")  
+    img.number-card__img(src=path, alt=alt)
+    .number-card__header 
+      h1.number-card-header__h1 
+        | № 
+        span.number-card-header__span #{number}
+    if (luxury)
+      p.number-card-p__luxury Люкс
+    .number-card-price-per-day 
+      p.number-card-price-per-day__p
+        |  #{price}&#8381;
+        span.number-card-per-day__span  в сутки
+    .number-card-stars
+      .number-card-stars__star1.material-icons-outlined #{star1}  
+      .number-card-stars__star2.material-icons-outlined #{star2}  
+      .number-card-stars__star3.material-icons-outlined #{star3}  
+      .number-card-stars__star4.material-icons-outlined #{star4}  
+      .number-card-stars__star5.material-icons-outlined #{star5}  
+    .number-card__reviews
+      p.number-card-reviews__p 
+        | #{reviews} 
+        span Отзывов
           
-      .number-card__ellipce1
-      .number-card__ellipce2
-      .number-card__ellipce3
-      .number-card__ellipce4
-      if(first)
-        .number-card_expand-more-left
-        .number-card_expand-more-right
-      .straight
+    .number-card__ellipce1
+    .number-card__ellipce2
+    .number-card__ellipce3
+    .number-card__ellipce4
+    if(first)
+      .number-card__expand-more-left.material-icons-outlined expand_more
+      .number-card__expand-more-right.material-icons-outlined expand_more
+    .straight
     
-  +room('number-card__888','../img/room888.png','room888','888','9900','145',true,true)   
-  +room('number-card__840','../img/room840.png','room840','840','9900','65')
-  +room('number-card__980','../img/room980.png','room980','980','8500','35',false,true)   
-  +room('number-card__856','../img/room856.png','room856','856','7300','19')
-  +room('number-card__740','../img/room740.png','room740','740','6000','44')   
-  +room('number-card__982','../img/room982.png','room982','982','5800','56')   
-  +room('number-card__678','../img/room678.png','room678','678','5500','45')   
-  +room('number-card__450','../img/room450.png','room450','450','5300','39')   
-  +room('number-card__350','../img/room350.png','room350','350','5000','77')   
-  +room('number-card__666','../img/room666.png','room666','666','5000','25')
-  +room('number-card__444','../img/room444.png','room444','444','5000','15')   
-  +room('number-card__352','../img/room352.png','room352','352','5000','55')            
++room('number-card__888','../img/room888.png','room888','888','9900','145',true,true,'star','star','star','star','star')   
++room('number-card__840','../img/room840.png','room840','840','9900','65',false,false,'star','star','star','star','star_border')
++room('number-card__980','../img/room980.png','room980','980','8500','35',false,true,'star','star','star','star_border','star_border')   
++room('number-card__856','../img/room856.png','room856','856','7300','19',false,false,'star','star','star','star','star')
++room('number-card__740','../img/room740.png','room740','740','6000','44',false,false,'star','star','star','star','star_border')   
++room('number-card__982','../img/room982.png','room982','982','5800','56',false,false,'star','star','star','star_border','star_border')   
++room('number-card__678','../img/room678.png','room678','678','5500','45',false,false,'star','star','star','star','star')   
++room('number-card__450','../img/room450.png','room450','450','5300','39',false,false,'star','star','star','star','star_border')   
++room('number-card__350','../img/room350.png','room350','350','5000','77',false,false,'star','star','star','star_border','star_border')   
++room('number-card__666','../img/room666.png','room666','666','5000','25',false,false,'star','star','star','star','star')
++room('number-card__444','../img/room444.png','room444','444','5000','15',false,false,'star','star','star','star_border','star_border')   
++room('number-card__352','../img/room352.png','room352','352','5000','55',false,false,'star','star','star','star_border','star_border')            
 
 
-  .pagination 
-    .pagination__one
-      p 1 
-    .pagination__two.range 
-      p 2
-    .pagination__three.range
-      p 3
-    .pagination__four.range 
-      p ...
-    .pagination__five.range
-      p 15
-    .pagination__six 
-    .pagination__seven  
-    p  1 – 12 из 100+ вариантов аренды
+.pagination 
+  .pagination__one
+    p 1 
+  .pagination__two.range 
+    p 2
+  .pagination__three.range
+    p 3
+  .pagination__four.range 
+    p ...
+  .pagination__five.range
+    p 15
+  .pagination__six 
+  .pagination__seven.material-icons-outlined arrow_forward  
+  p  1 – 12 из 100+ вариантов аренды
 
 .dates-of-stay
-  h2 дыты пребывания в отеле
+  h3 дыты пребывания в отеле
   input.dates-of-stay__input(type="text" placeholder="19 авг - 23 авг")
-  .dates-of-stay__expanded-more 
+  .dates-of-stay__expanded-more.material-icons-outlined expand_more
 
 .guests
-  h2 гости
+  h3 гости
   input.guests__input(type="text" placeholder="3 гостя, 1 младенец")
-  .guests__expanded-more
+  .guests__expanded-more.material-icons-outlined expand_more
 
 .range-slider
-  h2 диапазон цены
+  h3 диапазон цены
   p.range-slider__p 5 000₽ - 10 000₽
   .range-slider__guide
   .range-slider__illumination
@@ -84,7 +82,7 @@
   p.range-slider__price Стоимость за сутки пребывания в номере
 
 .check__house-rule
-  h2 Правило дома
+  h3 Правило дома
   label.check-house-rule__checkbox.options 
     input.check-house-rule__input(type="checkbox")
     .check-house-rule__view    
@@ -101,7 +99,7 @@
 
 
 .rich-checkbox-buttons
-  h2 Доступность
+  h3 Доступность
   label.rich-checkbox-buttons__label
     input.rich-checkbox-buttons__input(type="checkbox")
     .rich-checkbox-buttons__div
@@ -115,10 +113,10 @@
     .rich-checkbox-buttons__helper На 1 этаже вас встретит специалист  и проводит до номера.
 
 .room-amenities
-  h2 удобства номера
+  h3 удобства номера
   input.room-amenities__input(type="text" placeholder="2 спальни, 2 кровати")
-  .room-amenities__expanded-more
+  .room-amenities__expand-more.material-icons-outlined expand_more
 
 .additional-amenities
-  h2 дополнительные удобства
-  .additional-amenities__expanded-more
+  h3 дополнительные удобства
+  .additional-amenities__expand-more.material-icons-outlined expand_more

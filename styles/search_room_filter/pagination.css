@@ -1,25 +1,28 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Regular.eot");
   src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Bold.eot");
   src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Italic.eot");
   src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
   font-weight: normal;
   font-style: italic;
 }
+
 /*миксин текста копирайта*/
 /*миксин заголовков h2*/
 /* миксин свойства заголовков*/
@@ -66,6 +69,7 @@
   height: 40px;
   top: 31.44px;
   left: 1px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 50%;
 }
@@ -113,19 +117,34 @@
   height: 40px;
   top: 31.44px;
   left: 201px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6fcf97), to(#66d2ea));
   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
   border-radius: 50%;
 }
 
 .pagination__seven {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 24px;
   width: 24px;
   left: 209px;
   top: 39.5px;
-  position: absolute;
-  background-image: url("../img/arrow_forward_weit.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  color: #ffffff;
 }
 
 /*свойства выделенного блока*/
@@ -154,7 +173,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-/* чвойства подписи блока пагинации*/
+/* свойства подписи блока пагинации*/
 .pagination > p {
   position: absolute;
   width: 229px;
@@ -167,4 +186,5 @@
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
-}/*# sourceMappingURL=pagination.css.map */
+}
+/*# sourceMappingURL=pagination.css.map */

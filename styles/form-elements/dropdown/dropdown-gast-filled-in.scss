@@ -21,8 +21,9 @@
   @include input-max;
   top: 20px;
   border: 1px solid rgba(31, 32, 65, 0.5);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  
 }
 
 /* placeholder */
@@ -46,9 +47,9 @@
 
 .dropdown-gast-filled-in__form {
   position: absolute;
-  width: 320px;
+  width: 318px;
   height: 159px;
-  top: 62.56px;
+  top: 62px;
   left: px;
   background: #ffffff;
   border-bottom-left-radius: 2px;
