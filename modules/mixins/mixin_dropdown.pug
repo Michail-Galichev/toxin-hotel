@@ -1,0 +1,28 @@
+mixin dropdown(nameOne,nameTwo,nameThree,counterOne,counterTwo,counterThree,clear,toApply)
+  p.dropdown__p.first #{nameOne}
+    p.dropdown__p #{nameTwo}
+    p.dropdown__p #{nameThree}
+    .dropdown__circle-plus1
+      p.dropdown-p__plus +
+    .dropdown__circle-plus2
+      p.dropdown-p__plus +
+    .dropdown__circle-plus3 
+      p.dropdown-p__plus +
+    .dropdown__circle-minus1
+      p.dropdown-p__minus -
+    .dropdown__circle-minus2
+      p.dropdown-p__minus -
+    .dropdown__circle-minus3
+      p.dropdown-p__minus.last -
+    .adults #{counterOne} 
+    .children #{counterTwo}
+    .babies #{counterThree}
+    
+
+  if (clear)
+    a.dropdown__link1(href="#") #{clear}
+  if (toApply)  
+    a.dropdown__link2(href="#") #{toApply}
+
+
+

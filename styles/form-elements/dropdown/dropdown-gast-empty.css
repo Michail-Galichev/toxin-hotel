@@ -75,7 +75,7 @@
 
 /* свойства текстового поля*/
 .dropdown-gast-empty__input {
-  width: 318px;
+  width: 320px;
   height: 42px;
   position: absolute;
   background: #ffffff;
@@ -164,7 +164,7 @@
 /* свойства dropdown гости empty*/
 .dropdown-gast-empty__form {
   position: absolute;
-  width: 318px;
+  width: 320px;
   height: 159px;
   top: 62px;
   left: px;

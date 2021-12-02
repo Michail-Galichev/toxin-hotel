@@ -1,15 +1,3 @@
-mixin list(punkt1,punkt2,punkt3,punkt4,punkt5)
-  ul
-    li
-      a.navigation(href="") #{punkt1}
-    li
-      a.footer-ul-li__a(href="") #{punkt2}
-    li
-      a.footer-ul-li__a(href="") #{punkt3}   
-    li
-      a.footer-ul-li__a(href="") #{punkt4}
-    li
-      a.footer-ul-li__a(href="") #{punkt5}
 .footer
   .footer__logo     
     include logo-gradient 
@@ -18,11 +6,11 @@ mixin list(punkt1,punkt2,punkt3,punkt4,punkt5)
   .footer__content 
     p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
   .footer__ul1
-    +list('навигация','О нас','Новости','Служба поддержки','Услуги')
+    +list('navigation','footer-ul-li__a','навигация','О нас','Новости','Служба поддержки','Услуги')
   .footer__ul2
-    +list('о нас','О сервисе','Наша команда','Вакансия','Инвесторы')
+    +list('navigation','footer-ul-li__a','о нас','О сервисе','Наша команда','Вакансия','Инвесторы')
   .footer__ul3
-    +list('служба поддержки','Соглашения','Сообщества','Связь с нами')
+    +list('navigation','footer-ul-li__a','служба поддержки','Соглашения','Сообщества','Связь с нами')
   
   .footer__subscription
     a.navigation.subscription-link(href="") подписка  

@@ -1,25 +1,2 @@
 form.number-card(action="#")  
-  img.number-card__room840(src="../img/room840.png", alt="room_840")
-  h1.number-card__h1 
-    span № 
-    | 840
-  
-  p.number-card-p__price-per-day
-    | 9900₽ 
-    span в сутки
-  .number-card__stars
-    .material-icons-outlined.number-card-stars__star1 star
-    .material-icons-outlined.number-card-stars__star2 star
-    .material-icons-outlined.number-card-stars__star3 star
-    .material-icons-outlined.number-card-stars__star4 star
-    .material-icons-outlined.number-card-stars__star5 star_border
-  p.number-card-p__reviews 
-    | 65 
-    span Отзывов
-  .number-card__ellipce1
-  .number-card__ellipce2
-  .number-card__ellipce3
-  .number-card__ellipce4
-  
-  .number-card__line
-   
+  +room('number-card__840','../img/room840.png','room840','840','9900','65',false,false,'star','star','star','star','star_border') 

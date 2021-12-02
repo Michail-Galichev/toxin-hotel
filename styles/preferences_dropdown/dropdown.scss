@@ -92,3 +92,17 @@ p.dropdown-p__plus {
 p.last {
   color: rgba(31, 32, 65, 0.25);
 }
+
+/*счётчики количества условий комфорта*/
+.adults {
+  top: 13px;
+  @include counter;
+}
+.children {
+  top: 50px;
+  @include counter;
+}
+.babies {
+  top: 87px;
+  @include counter;
+}

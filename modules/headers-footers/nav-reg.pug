@@ -2,20 +2,12 @@
   span.nav-reg__to-come-in Войти
   a.nav-reg__buttons-to-come-in(href="#") 
   .nav-reg__register Зарегистрироваться
-  a.nav-reg__buttons-register(href="#") 
-  ul.nav-reg__ul
-    li 
-      a.nav-reg-ul-li__a(href="#" ) О нас
-    li
-      a.nav-reg-ul-li__a(href="#" ) Услуги  
-    li
-      a.nav-reg-ul-li__a.vacancy(href="#" ) Вакансии  
-    li 
-      a.nav-reg-ul-li__a(href="#" ) Новости 
-    li 
-      a.nav-reg-ul-li__a(href="#" ) Соглашения
-  .nav-reg__expand_more1.material-icons-outlined expand_more
-  .nav-reg__expand_more2.material-icons-outlined expand_more
+  a.nav-reg__buttons-register(href="../website_pages/registration.pug") 
+  .nav-reg__ul  
+    +menu('nav-reg-ul-li__basic','О нас','Услуги','Вакансии','Новости','Соглашения')
+    
+    .nav-reg__expand_more1.material-icons-outlined expand_more
+    .nav-reg__expand_more2.material-icons-outlined expand_more
   .nav-reg__logo
     include logo-gradient
   .nav-reg__toxin 

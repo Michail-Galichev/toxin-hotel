@@ -1,27 +1,21 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Material+Icons')
-    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
-    title Search room/ Filter/Preferences Dropdown
-    style
-      include ../styles/landing_pages/nav-reg.css
-      include ../styles/search_room_filter/block-content.css
-      include ../styles/search_room_filter/copyright.css
-      include ../styles/search_room_filter/footer.css
-      include ../styles/headers-footers/icon.css
-      include ../styles/search_room_filter/numbers.css
-      include ../styles/search_room_filter/general-properties-rooms.css
-      include ../styles/search_room_filter/pagination.css
-      include ../styles/search_room_filter/side-bare.css
-      include ../styles/preferences_dropdown/dropdown.css
-      include ../styles/preferences_dropdown/test.css
-  body 
-    include ../modules/headers-footers/nav-reg
-    include ../modules/headers-footers/footer
-    include ../modules/headers-footers/copyright
-    include ../modules/search_room_filter/block_content
-    include ../modules/preferences_dropdown/dropdown
+extends ../modules/templates/sample
+block variables 
+  - var titlePage = 'Prefernces dropdown'
+block style 
+  include ../styles/landing_pages/nav-reg.css
+  include ../styles/search_room_filter/block-content.css
+  include ../styles/search_room_filter/copyright.css
+  include ../styles/search_room_filter/footer.css
+  include ../styles/headers-footers/icon.css
+  include ../styles/search_room_filter/numbers.css
+  include ../styles/search_room_filter/general-properties-rooms.css
+  include ../styles/search_room_filter/pagination.css
+  include ../styles/search_room_filter/side-bare.css
+  include ../styles/preferences_dropdown/dropdown.css
+  include ../styles/preferences_dropdown/test.css
+block content
+  include ../modules/headers-footers/nav-reg
+  include ../modules/headers-footers/footer
+  include ../modules/headers-footers/copyright
+  include ../modules/search_room_filter/block_content
+  include ../modules/preferences_dropdown/dropdown

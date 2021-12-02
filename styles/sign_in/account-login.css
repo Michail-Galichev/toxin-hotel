@@ -65,8 +65,7 @@
           box-sizing: border-box;
   -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-radius: 4px;
   border-radius: 4px;
   z-index: 5;
 }
@@ -86,7 +85,7 @@
 }
 
 .account-login__input-email {
-  width: 318px;
+  width: 320px;
   height: 42px;
   position: absolute;
   background: #ffffff;
@@ -100,7 +99,7 @@
 }
 
 .account-login__input-password {
-  width: 318px;
+  width: 320px;
   height: 42px;
   position: absolute;
   background: #ffffff;

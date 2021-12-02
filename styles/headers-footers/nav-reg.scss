@@ -52,23 +52,42 @@ body {
 
 .nav-reg__ul {
   position: absolute;
-  list-style: none;
-  margin: 0;
-  padding-left: 0px;
   height: 21px;
   width: 447px;
   left: 530px;
   top: 26px;
 }
 
-.nav-reg__ul > li {
-  display: inline-block;
+.nav-reg__ul > ul {
+  list-style: none;
 }
 
 /*свойства пунктов меню*/
-
-.nav-reg-ul-li__a {
+.nav-reg-ul-li__basic {
   @include menu;
+}
+
+.nav-reg-ul-li__aboutUs {
+  width: 43px;
+}
+
+.nav-reg-ul-li__service {
+  left: 63px;
+  width: 50px;
+}
+
+.nav-reg-ul-li__vacancy {
+  width: 72px;
+  left: 157px;
+}
+
+.nav-reg-ul-li__news {
+  width: 62px;
+  left: 249px;
+}
+.nav-reg-ul-li__agreements {
+  width: 92px;
+  left: 331px;
 }
 
 /*кнопки*/
@@ -78,7 +97,6 @@ body {
   width: 83px;
   top: 18px;
   left: 997px;
-  
 }
 
 .nav-reg__buttons-register {
@@ -93,16 +111,16 @@ body {
 .nav-reg__expand_more1 {
   @include expand_more;
   width: 24px;
-  height: 24px;
-  top: 26px;
-  left: 643px;
+  height: 21px;
+  top: 0px;
+  left: 113px;
 }
 .nav-reg__expand_more2 {
   @include expand_more;
   width: 24px;
-  height: 24px;
-  top: 26px;
-  left: 953px;
+  height: 21px;
+  top: 0px;
+  left: 423px;
 }
 
 /*подписи кнопок*/
@@ -138,7 +156,7 @@ body {
 }
 
 /*hover для меню */
-.nav-reg-ul-li__a:hover {
+.nav-reg__ul > ul > li > a:hover {
   color: rgba(31, 32, 65, 0.75);
   font-weight: bold;
 }

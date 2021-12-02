@@ -66,8 +66,7 @@
           box-sizing: border-box;
   -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-radius: 4px;
   border-radius: 4px;
   z-index: 5;
 }
@@ -87,7 +86,7 @@
 }
 
 .account-registration__input-name {
-  width: 318px;
+  width: 320px;
   height: 42px;
   position: absolute;
   background: #ffffff;
@@ -101,7 +100,7 @@
 }
 
 .account-registration__input-lastname {
-  width: 318px;
+  width: 320px;
   height: 42px;
   position: absolute;
   background: #ffffff;
@@ -204,7 +203,7 @@
 
 /* свойства поля дата рождения*/
 .account-registration__input-date-of-birth {
-  width: 318px;
+  width: 320px;
   height: 42px;
   position: absolute;
   background: #ffffff;
@@ -235,7 +234,7 @@
 
 /*поле e-mail*/
 .account-registration__input-email {
-  width: 318px;
+  width: 320px;
   height: 42px;
   position: absolute;
   background: #ffffff;
@@ -250,7 +249,7 @@
 
 /*поле password*/
 .account-registration__input-password {
-  width: 318px;
+  width: 320px;
   height: 42px;
   position: absolute;
   background: #ffffff;

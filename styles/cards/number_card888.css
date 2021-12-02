@@ -53,101 +53,149 @@
 /*миксин заголовка h3 */
 /*миксин свойства формы*/
 /*миксин свойств контента блоков*/
-/*  свойства формы */
-.number-card__luxury {
-  position: absolute;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  width: 270px;
-  height: 257px;
-  left: 980px;
-  top: 559.5px;
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Italic.eot");
+  src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype"), url("../fonts/Montserrat-Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/*миксин текста копирайта*/
+/*миксин заголовков h2*/
+/* миксин свойства заголовков*/
+/* маркер */
+/*миксин кнопок дропдауна +*/
+/*миксин кнопок дропдауна -*/
+/*миксин блока навигации/регистрации/футера/копирайта*/
+/*миксин кнопок*/
+/*миксин маленьких кнопок*/
+/*свойства пунктов меню*/
+/* дни недели */
+/* счётчики */
+/* свойства изображения expand more*/
+/*миксин для placeholder*/
+/* общие свойства для input w 318*/
+/* общие свойства для input w 266*/
+/*миксин свойст для полей w 150*/
+/*сердце*/
+/*счётчик лайков*/
+/*миксин параграф*/
+/*mixin для рамки checkbox*/
+/*шарики*/
+/*звёзды*/
+/*миксин карточек*/
+/*миксин свойств вложенных блоков*/
+/*миксин для правой стрелки*/
+/* миксин свойств для оформления текста в кнопке*/
+/*миксин заголовка h3 */
+/*миксин свойства формы*/
+/*миксин свойств контента блоков*/
+/*общие свойства карточек*/
 /* свойства изображения */
-.number-card__room888 {
+.number-card__img {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
 
 /* основной заголовок */
-.number-card__h1 {
+.number-card-header__h1 {
   position: absolute;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 19px;
-  line-height: 23px;
   color: #1f2041;
-  width: 60px;
-  height: 21px;
+  font-size: 24px;
+  line-height: 29px;
+  width: 61px;
+  height: 24px;
   left: 20px;
   top: 171px;
+  padding-top: 3px;
+  font-size: 14px;
+  line-height: 17.07px;
 }
 
 /* свойства № */
-.number-card__h1 > span {
-  font-size: 14px;
-  line-height: 17px;
+.number-card-header__span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23.75px;
+  color: #1f2041;
 }
 
 /* свойства параграфа люкс */
 .number-card-p__luxury {
   position: absolute;
-  font-family: Montserrat;
+  width: 41px;
+  height: 15px;
+  left: 87px;
+  top: 178px;
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
   color: #bc9cff;
-  position: absolute;
-  width: 41px;
-  height: 15px;
-  left: 80px;
-  top: 178px;
 }
 
 /* цена за сутки */
-.number-card-p__price-per-day {
+.number-card-price-per-day {
   position: absolute;
+  top: 175px;
+  left: 153px;
+  height: 20px;
+  width: 101px;
+}
+
+.number-card-price-per-day__p {
   font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.5);
+  white-space: nowrap;
+}
+
+.number-card-per-day__span {
+  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: rgba(31, 32, 65, 0.75);
-  width: 100px;
-  height: 20px;
-  left: 153px;
-  top: 176px;
-  font-weight: bold;
   color: rgba(31, 32, 65, 0.5);
 }
 
-.number-card-p__price-per-day > span {
-  font-weight: normal;
-  font-size: 12px;
-}
-
-/*блок звёзды*/
-.number-card__stars {
-  position: absolute;
-  top: 214px;
-  left: 20.26px;
-  width: 120px;
-  height: 24px;
-}
-
 /* звёзды */
+.number-card-stars {
+  position: absolute;
+  left: 20.26px;
+  bottom: 19px;
+  height: 24px;
+  width: 120px;
+}
+
 .number-card-stars__star1 {
   position: absolute;
   width: 24px;
@@ -170,8 +218,6 @@
   -webkit-background-clip: text;
   background-clip: text;
   left: 0px;
-  background-clip: text;
-  -webkit-background-clip: text;
 }
 
 .number-card-stars__star2 {
@@ -196,8 +242,6 @@
   -webkit-background-clip: text;
   background-clip: text;
   left: 24px;
-  background-clip: text;
-  -webkit-background-clip: text;
 }
 
 .number-card-stars__star3 {
@@ -222,8 +266,6 @@
   -webkit-background-clip: text;
   background-clip: text;
   left: 48px;
-  background-clip: text;
-  -webkit-background-clip: text;
 }
 
 .number-card-stars__star4 {
@@ -248,8 +290,6 @@
   -webkit-background-clip: text;
   background-clip: text;
   left: 72px;
-  background-clip: text;
-  -webkit-background-clip: text;
 }
 
 .number-card-stars__star5 {
@@ -273,29 +313,31 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  left: 95.74px;
-  background-clip: text;
-  -webkit-background-clip: text;
+  left: 96px;
 }
 
 /* отзывы */
-.number-card-p__reviews {
+.number-card__reviews {
   position: absolute;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.75);
   width: 90px;
   height: 18px;
-  font-weight: bold;
-  left: 160px;
+  left: 166px;
   top: 217.56px;
 }
 
-.number-card-p__reviews > span {
+.number-card-reviews__p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+span {
   font-weight: normal;
+  text-align: right;
 }
 
 /* шарики */
@@ -358,7 +400,7 @@
 }
 
 /* вперед назад */
-.number-card_expand-more-left {
+.number-card__expand-more-left {
   position: absolute;
   width: 44px;
   height: 44px;
@@ -378,14 +420,16 @@
           justify-content: center;
   color: rgba(31, 32, 65, 0.5);
   cursor: pointer;
+  width: 44px;
+  height: 44px;
   top: 54px;
   left: 0px;
+  color: #ffffff;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  color: #ffffff;
 }
 
-.number-card_expand-more-right {
+.number-card__expand-more-right {
   position: absolute;
   width: 44px;
   height: 44px;
@@ -405,19 +449,35 @@
           justify-content: center;
   color: rgba(31, 32, 65, 0.5);
   cursor: pointer;
+  width: 44px;
+  height: 44px;
   top: 54px;
   right: 0px;
+  color: #ffffff;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-  color: #ffffff;
 }
 
-.number-card__line {
+/*горизонтальная полоса*/
+.straight {
   position: absolute;
   width: 230px;
   height: 1px;
   left: 20px;
   top: 205px;
   background: rgba(31, 32, 65, 0.1);
+}
+
+/*  свойства формы */
+.number-card__luxury {
+  position: absolute;
+  width: 270px;
+  height: 257px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  left: 980px;
+  top: 559.5px;
 }
 /*# sourceMappingURL=number_card888.css.map */

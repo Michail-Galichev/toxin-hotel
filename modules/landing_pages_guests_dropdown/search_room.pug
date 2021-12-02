@@ -14,31 +14,9 @@ form.search-room(action="#")
   h3.search-room-header__gast гости
   input.search-room-input__gast(type="text" placeholder="Сколько гостей")
   .search-room-gast__expand-more.material-icons-outlined expand_more
-
-  
   .dropdown-gast-filled-in__form
-    p.dropdown__p.first взрослые 
-    p.dropdown__p дети
-    p.dropdown__p младенцы
-    .dropdown__circle-plus1
-      p.dropdown-p__plus +
-    .dropdown__circle-plus2
-      p.dropdown-p__plus +
-    .dropdown__circle-plus3 
-      p.dropdown-p__plus +
-    .adults 2
-    .children 1
-    .babies 0
-    .dropdown__circle-minus1
-      p.dropdown-p__minus -
-    .dropdown__circle-minus2
-      p.dropdown-p__minus -
-    .dropdown__circle-minus3
-      p.dropdown-p__minus.last -
+    +dropdown('взрослые', 'дети', 'младенцы','2','1','0','очистить','применить')
 
-    a.dropdown__link1(href="#") очистить
-    a.dropdown__link2(href="#") применить
- 
   .search-room__button
     .search-room-button__div-pick-up-a-room Подобрать номер
     a.search-room-button__pick-up-a-room(href="#") 

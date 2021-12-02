@@ -66,8 +66,7 @@
           box-sizing: border-box;
   -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-radius: 4px;
   z-index: 1;
 }
 
@@ -241,7 +240,7 @@
   position: absolute;
   left: 30px;
   top: 225px;
-  width: 318px;
+  width: 320px;
   height: 42px;
   position: absolute;
   background: #ffffff;
@@ -251,6 +250,8 @@
   border-radius: 2px;
   padding-left: 15px;
   border-radius: 4px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 /* блок кнопки */
@@ -260,7 +261,6 @@
   left: 30px;
   width: 320px;
   height: 44px;
-  background: green 1px solid;
 }
 
 /*подпись кнопки */
@@ -512,7 +512,7 @@
   width: 320px;
   height: 159px;
   left: 30px;
-  top: 269px;
+  top: 267px;
   position: absolute;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
@@ -520,8 +520,10 @@
           box-sizing: border-box;
   -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-radius: 4px;
+  border: rgba(31, 32, 65, 0.25) 1px solid;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   z-index: 1000;
 }
 /*# sourceMappingURL=search-room.css.map */

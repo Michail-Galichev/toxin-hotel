@@ -1,0 +1,32 @@
+mixin room(klass,path,alt,number,price,reviews,first,luxury,star1,star2,star3,star4,star5)  
+  form(class=klass, action="#")  
+    img.number-card__img(src=path, alt=alt)
+    .number-card__header 
+      h1.number-card-header__h1 
+        | № 
+        span.number-card-header__span #{number}
+    if (luxury)
+      p.number-card-p__luxury Люкс
+    .number-card-price-per-day 
+      p.number-card-price-per-day__p
+        |  #{price}&#8381;
+        span.number-card-per-day__span  в сутки
+    .number-card-stars
+      .number-card-stars__star1.material-icons-outlined #{star1}  
+      .number-card-stars__star2.material-icons-outlined #{star2}  
+      .number-card-stars__star3.material-icons-outlined #{star3}  
+      .number-card-stars__star4.material-icons-outlined #{star4}  
+      .number-card-stars__star5.material-icons-outlined #{star5}  
+    .number-card__reviews
+      p.number-card-reviews__p 
+        | #{reviews} 
+        span Отзывов
+          
+    .number-card__ellipce1
+    .number-card__ellipce2
+    .number-card__ellipce3
+    .number-card__ellipce4
+    if(first)
+      .number-card__expand-more-left.material-icons-outlined expand_more
+      .number-card__expand-more-right.material-icons-outlined expand_more
+    .straight

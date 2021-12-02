@@ -41,55 +41,65 @@
 
 .nav__ul {
   position: absolute;
-  list-style: none;
-  margin: 0;
-  padding-left: 0px;
-  left: 712px;
-  top: 26px;
-  height: 30px;
   width: 588px;
+  height: 30px;
+  left: 712px;
+  top: 20px;
 }
 
-.nav__ul > li {
-  display: inline-block;
+.nav__ul > ul {
+  list-style: none;
 }
 
 /*свойства пунктов меню*/
-
-.nav-ul-li__a {
+.nav-ul-li__basic{
   @include menu;
+  top: 6px;
 }
 
-/*hover для меню */
-.nav-reg-ul-li__a:hover {
-  color: rgba(31, 32, 65, 0.75);
-  font-weight: bold;
+.nav-ul-li__aboutUs {
+  width: 43px;
+  
 }
+.nav-ul-li__services {
+  left: 63px;
+  width: 50px;
+  }
+
+.nav-ul-li__vacancy {
+  width: 72px;
+  left: 157px;
+  }
+
+.nav-ul-li__news {
+  width: 62px;
+  left: 249px;
+  }
+.nav-ul-li__agreements {
+  width: 92px;
+  left: 331px;
+  }
 
 /*картика expand_more*/
 .nav__expand_more1 {
   @include expand_more;
   width: 24px;
-  height: 24px;
-  top: 26px;
-  left: 825px;
+  height: 21px;
+  top: 6px;
+  left: 113px;
   position: absolute;
 }
 .nav__expand_more2 {
   @include expand_more;
   width: 24px;
-  height: 24px;
-  top: 26px;
-  left: 1135px;
+  height: 21px;
+  top: 6px;
+  left: 423px;
   position: absolute;
-}
-/*пункт меню вакансии*/
-.vacancy {
-  margin-left: 22px;
 }
 
 /*hover для меню */
-.nav-ul-li__a:hover {
+.nav__ul > ul > li > a:hover {
   color: rgba(31, 32, 65, 0.75);
   font-weight: bold;
 }

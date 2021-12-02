@@ -1,28 +1,22 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
-    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Material+Icons')
-    
-    title Headers/Footers
-    style
-      include ../styles/colors-type/logo.css
-      include ../styles/headers-footers/nav-reg.css
-      include ../styles/headers-footers/nav.css
-      include ../styles/headers-footers/footer.css
-      include ../styles/headers-footers/footer-mobile.css
-      include ../styles/headers-footers/icon.css
-      include ../styles/headers-footers/copyright.css
-  body
-    include ../modules/colors-type/logo
-    include ../modules/headers-footers/nav-reg
-    include ../modules/headers-footers/nav
-    include ../modules/headers-footers/footer
-    include ../modules/headers-footers/copyright
-    include ../modules/headers-footers/footer-mobile
+extends ../modules/templates/sample
+block variables 
+  - var titlePage = 'Headers/Footers'
+  
+block style 
+  include ../styles/colors-type/logo.css
+  include ../styles/headers-footers/nav-reg.css
+  include ../styles/headers-footers/nav.css
+  include ../styles/headers-footers/footer.css
+  include ../styles/headers-footers/footer-mobile.css
+  include ../styles/headers-footers/icon.css
+  include ../styles/headers-footers/copyright.css
+block content
+  include ../modules/colors-type/logo
+  include ../modules/headers-footers/nav-reg
+  include ../modules/headers-footers/nav
+  include ../modules/headers-footers/footer
+  include ../modules/headers-footers/copyright
+  include ../modules/headers-footers/footer-mobile
     
     
     

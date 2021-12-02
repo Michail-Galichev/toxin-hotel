@@ -1,17 +1,8 @@
 .nav
-  ul.nav__ul 
-    li 
-      a.nav-ul-li__a(href="#" ) О нас
-    li
-      a.nav-ul-li__a(href="#" ) Услуги  
-    li
-      a.nav-ul-li__a.vacancy(href="#" ) Вакансии  
-    li 
-      a.nav-ul-li__a(href="#" ) Новости 
-    li 
-      a.nav-ul-li__a(href="#" ) Соглашения
-  .nav__expand_more1.material-icons-outlined expand_more  
-  .nav__expand_more2.material-icons-outlined expand_more
+  .nav__ul 
+    +menu('nav-ul-li__basic','О нас','Услуги','Вакансии','Новости','Соглашения')
+    .nav__expand_more1.material-icons-outlined expand_more  
+    .nav__expand_more2.material-icons-outlined expand_more
   .nav__logo
     include logo-gradient
   .nav__toxin 

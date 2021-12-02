@@ -1,13 +1,7 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Material+Icons')
-    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
-    title Landing page/Date Dropdown
-    style 
+extends ../modules/templates/sample
+block variables 
+  - var titlePage = 'Landing page/Date dropdown'
+block style 
       include ../styles/landing_pages/background.css
       include ../styles/landing_pages/nav-reg.css
       include ../styles/landing_pages/footer.css
@@ -15,7 +9,7 @@ html(lang="en")
       include ../styles/landing_pages/search-room.css
       include ../styles/landing_pages_date_dropdown/calendar.css
       include ../styles/headers-footers/icon.css
-  body 
+  block content
     include ../modules/headers-footers/footer
     include ../modules/cards/search_room
     include ../modules/headers-footers/nav-reg
